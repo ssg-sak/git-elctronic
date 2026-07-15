@@ -117,3 +117,32 @@ graph TD
        git commit -m "conflicts: 병합 충돌 해결 및 코드 정합성 복구"
        git push origin feature/이현석
        ```
+
+### 5. 🛡️ 외부 데이터 파일 안전하게 가져오기 (Safe Data File Ingestion Protocol)
+* **상황**: 외부 API(공공데이터 등)나 동료 개발자로부터 충전소 실시간 데이터 파일(CSV, JSON 등)을 내 로컬 환경 또는 가공 파이프라인으로 가져올 때, 파일 전송 중단, 기존 파일 덮어쓰기 유실, 혹은 불완전한 스키마 유입으로 인한 파이프라인 작동 불능을 방지해야 할 때.
+* **안전한 데이터 파일 반영 가이드**:
+  1. **임시 디렉토리(Staging Area)를 통한 원자적 교체(Atomic Rename)**:
+     * 가공 파이프라인이 즉시 읽어들이는 활성(Active) 경로(예: `/data/active/`)에 직접 다운로드하지 않습니다.
+     * `/data/temp/` 같은 임시 공간에 다운로드를 완전히 완료한 후, 검증을 통과하면 `mv` (이름 변경) 명령어를 통해 원자적(Atomic)으로 기존 파일을 대체합니다.
+     ```bash
+     # 위험한 방법: 즉시 다운로드하여 덮어쓰기 (네트워크 실패 시 불완전한 데이터가 적재됨)
+     curl -o /data/active/stations.json http://api.data.go.kr/stations
+     
+     # 안전한 방법: 임시 다운로드 후 검증 및 교체
+     curl -o /data/temp/stations_incoming.json http://api.data.go.kr/stations
+     # (검증 단계 통과 후)
+     mv /data/temp/stations_incoming.json /data/active/stations.json
+     ```
+  2. **파일 무결성 및 체크섬(Checksum) 검증**:
+     * 파일 전송 시 유실이나 깨짐이 없는지 검증하기 위해 전송처와 해시값(MD5 등)을 비교하거나, 파일의 포맷 유효성을 가공 전에 반드시 검사합니다.
+     * **JSON**: 파싱(Parse) 시 문법 에러가 발생하는지 `try-except` 구문으로 확인합니다.
+     * **CSV**: 헤더(Header) 개수와 각 행의 컬럼 수가 일치하는지 체크합니다.
+  3. **스키마 및 필수 값 정합성 검사 (Dry-Run)**:
+     * 데이터 파일을 로드하여 정식 가공하기 전에 핵심 필수 필드(`station_id`, `coordinate` 등)가 존재하고 데이터 타입이 맞는지 라이브러리(Pydantic, Great Expectations 등)나 검증 스크립트로 1차 검증(Dry-run)합니다.
+  4. **날짜/시간 기반 버전 관리 및 백업**:
+     * 동일한 이름의 파일(`data.json`)로 계속 덮어쓰면 과거 이력 추적이 불가능하고 복구가 어렵습니다.
+     * 파일명 뒤에 타임스탬프를 부여하여 저장하고(예: `stations_20260715_1730.json`), 활성 경로에는 가장 최신 파일에 연결된 심볼릭 링크(Symbolic Link)를 사용하는 것이 안전합니다.
+     ```bash
+     # 날짜별로 구분하여 백업 보존
+     cp /data/temp/stations_incoming.json /data/archive/stations_$(date +%Y%m%d_%H%M%S).json
+     ```
