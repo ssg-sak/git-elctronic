@@ -1,0 +1,8 @@
+{
+  "name": "@ev-safecharge/shared-types",
+  "version": "0.1.0",
+  "private": true,
+  "description": "프론트엔드·백엔드 공통 타입 정의",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

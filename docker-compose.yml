@@ -1,0 +1,37 @@
+# 로컬 개발용 인프라
+# 사용법: docker compose up -d
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: ev-safecharge-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ev_safecharge
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  # 앱 서비스는 Dockerfile 작성 후 주석 해제 (infra/docker/ 참고)
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: infra/docker/api.Dockerfile
+  #   ports:
+  #     - "4000:4000"
+  #   env_file: apps/api/.env
+  #   depends_on:
+  #     - db
+  #
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: infra/docker/web.Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - api
+
+volumes:
+  db-data:

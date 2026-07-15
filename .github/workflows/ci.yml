@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev, main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 앱이 초기화되면(스크립트가 생기면) 자동으로 빌드·테스트가 실행된다.
+      - name: Web - install & test
+        working-directory: apps/web
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+            npm run lint --if-present
+            npm test --if-present
+            npm run build --if-present
+          else
+            echo "apps/web 미초기화 — 건너뜀"
+          fi
+
+      - name: API - install & test
+        working-directory: apps/api
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+            npm run lint --if-present
+            npm test --if-present
+          else
+            echo "apps/api 미초기화 — 건너뜀"
+          fi
+
+      - name: Data pipeline - test
+        working-directory: apps/data-pipeline
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+            pytest || [ $? -eq 5 ]  # 테스트 없음(exit 5)은 허용
+          else
+            echo "apps/data-pipeline 미초기화 — 건너뜀"
+          fi

@@ -1,0 +1,10 @@
+{
+  "name": "ev-safecharge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "도착 시 실제 사용 가능성을 예측하는 전기차 충전소 추천 서비스",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

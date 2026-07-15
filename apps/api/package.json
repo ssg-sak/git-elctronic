@@ -1,0 +1,7 @@
+{
+  "name": "@ev-safecharge/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EV SafeCharge 백엔드 API 서버 (Express). 아직 초기화 전 — `npm init` 후 express 등 의존성을 추가하면 이 파일이 갱신됩니다.",
+  "main": "src/index.js"
+}
