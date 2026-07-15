@@ -5,6 +5,7 @@
 
 # 수집 원본 데이터 (대용량)
 apps/data-pipeline/collection/raw/
+apps/data-pipeline/collection/data/
 
 # API 테스트 결과 파일
 scripts/api-tests/*-result.json
