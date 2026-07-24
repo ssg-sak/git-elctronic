@@ -18,7 +18,8 @@ labels: enhancement
 - [ ] 프론트엔드 (apps/web)
 - [ ] 백엔드 (apps/api)
 - [ ] 데이터 수집 (apps/data-pipeline/collection)
-- [ ] 데이터 가공 (apps/data-pipeline/processing)
+- [ ] AI·데이터 ① 데이터·파이프라인 (apps/data-pipeline/processing, evaluation)
+- [ ] AI·데이터 ② 모델·평가·서빙 (packages/recommendation-core, docs/MODEL_*)
 
 ## 구현 아이디어 (선택)
 

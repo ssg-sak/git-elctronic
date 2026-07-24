@@ -1,0 +1,22 @@
+[Unit]
+Description=EV SafeCharge loop1 status (EvCharger getChargerStatus)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/ev-safecharge
+EnvironmentFile=/opt/ev-safecharge/.env
+# Design: 10 min poll · API period 10 (change window, max 10)
+# EvCharger daily ~1000: 5min×24h ≈1440 calls → evening skip. 10min×24h ≈720 fits.
+ExecStart=/opt/ev-safecharge/.venv/bin/python \
+  apps/data-pipeline/evaluation/personal/experiments/SANDBOX_20260717_status_periodic_collection/src/run_loop.py \
+  --interval-minutes 10 \
+  --period-minutes 10
+Restart=always
+RestartSec=30
+# EvCharger daily limit shared — do not run a second status collector on another host
+
+[Install]
+WantedBy=multi-user.target

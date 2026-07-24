@@ -1,0 +1,55 @@
+{
+  "as_of_kst": "2026-07-23T20:21:30+09:00",
+  "info": {
+    "info_source": "docs/data/extracted/charger/info/daegu_charger_info_20260723_latest.csv",
+    "rows_raw": 25368,
+    "stations_raw": 4210,
+    "quarantine_rows": 27,
+    "quarantine_stations": 9,
+    "service_rows": 24554,
+    "service_stations": 4141,
+    "delYn_Y_rows": 787,
+    "shared_coord_cluster_rows": 266,
+    "outputs": {
+      "quarantine": "docs/data/extracted/charger/info/daegu_charger_info_quarantine_coords_latest.csv",
+      "service": "docs/data/extracted/charger/info/daegu_charger_info_service_latest.csv",
+      "flagged": "docs/data/extracted/charger/info/daegu_charger_info_flagged_latest.csv"
+    }
+  },
+  "hours": {
+    "stations": 4210,
+    "service_stations": 4147,
+    "operating_Y_N_U": {
+      "Y": 3658,
+      "N": 357,
+      "UNKNOWN": 195
+    },
+    "full_csv": "docs/data/extracted/charger/hours/daegu_charger_hours_full_latest.csv"
+  },
+  "snapshot_sync": {
+    "archive_dirs": [
+      "docs/data/loops/_archive/from_lightsail_20260723/loop1/snapshots",
+      "docs/data/loops/_archive/from_lightsail_20260723_pm/loop1/snapshots"
+    ],
+    "copied_into_live": 201,
+    "already_in_live": 128,
+    "live_total_after": 553,
+    "sample_copied": [
+      "daegu_charger_status_20260722_213830.csv",
+      "daegu_charger_status_20260722_214508.csv",
+      "daegu_charger_status_20260722_215010.csv",
+      "daegu_charger_status_20260722_215511.csv",
+      "daegu_charger_status_20260722_220012.csv",
+      "…"
+    ]
+  },
+  "parking": {
+    "note": "docs/data/extracted/parking/PARKING_MOCK_DO_NOT_SCORE.md"
+  },
+  "status_snapshots_dirs": [
+    "docs/data/loops/loop1/snapshots",
+    "docs/data/loops/_archive/from_lightsail_20260723/loop1/snapshots",
+    "docs/data/loops/_archive/from_lightsail_20260723_pm/loop1/snapshots",
+    "apps/data-pipeline/evaluation/personal/experiments/SANDBOX_20260717_status_periodic_collection/data/snapshots"
+  ]
+}

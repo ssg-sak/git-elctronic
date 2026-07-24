@@ -1,0 +1,14 @@
+{
+  "as_of_kst": "2026-07-23T20:48:57+09:00",
+  "radius_m": 1000.0,
+  "stations": 4141,
+  "parking_pois": 1000,
+  "matched_within_radius": 2170,
+  "match_rate": 0.524,
+  "matched_with_realtime": 99,
+  "parking_source": "team5_pis",
+  "parking_is_mock": false,
+  "role": "DA① spatial join (no scores)",
+  "output": "docs/data/spatial_join/join_parking_team5_1000m.csv",
+  "note": "info CSV is page1 (~1000). Raising match rate needs full PIS pages in team_5."
+}

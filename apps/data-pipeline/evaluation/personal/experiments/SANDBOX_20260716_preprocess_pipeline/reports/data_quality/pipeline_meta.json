@@ -1,0 +1,218 @@
+{
+  "charger": {
+    "steps": [
+      "statNm restored via info join where possible"
+    ],
+    "pk_duplicates": 0,
+    "quarantine_rows": 27,
+    "statNm_restored_via_join": 525,
+    "status_rows": 525,
+    "info_rows": 25334,
+    "coverage_charger_pct": 2.0723,
+    "coverage_station_pct": 9.173,
+    "coverage_by_busi": {
+      "E1": 16.67,
+      "GS차지비": 0.8,
+      "GS칼텍스": 0.0,
+      "HUMAX EV": 0.91,
+      "LG유플러스": 0.0,
+      "LG유플러스 볼트업": 1.11,
+      "LG유플러스볼트업": 1.45,
+      "NICE인프라": 2.33,
+      "SK 일렉링크": 0.0,
+      "SK시그넷": 0.0,
+      "SK일렉링크": 2.5,
+      "㈜선광시스템": 0.0,
+      "㈜스타코프": 0.23,
+      "㈜아하": 0.0,
+      "㈜이브이에스이피": 0.0,
+      "㈜차지인": 0.0,
+      "㈜캐스트프로": 0.0,
+      "㈜클린일렉스": 0.0,
+      "㈜한진": 0.0,
+      "기후부": 100.0,
+      "기후에너지환경부": 95.4,
+      "넥씽": 0.0,
+      "농협경제지주㈜신재생에너지센터": 0.0,
+      "뉴로모빌리티": 9.52,
+      "뉴텍솔루션㈜": 0.0,
+      "대구환경공단": 0.0,
+      "대성물류건설": 4.0,
+      "대성물류건설㈜": 3.7,
+      "대한송유관공사": 0.0,
+      "동양이엔피": 0.0,
+      "레드이엔지": 0.0,
+      "롯데이노베이트": 0.0,
+      "매니지온": 0.0,
+      "볼타": 0.0,
+      "브라이트에너지파트너스": 6.25,
+      "블루네트웍스": 0.0,
+      "서울씨엔지(서울이브이)": 0.0,
+      "소프트베리": 0.0,
+      "스타코프": 0.22,
+      "스타코프㈜스타코프": 0.0,
+      "신세계아이앤씨": 0.0,
+      "씨어스": 0.69,
+      "아론": 0.0,
+      "아마노코리아": 0.0,
+      "아이파킹": 1.4,
+      "아이파킹 주식회사": 4.35,
+      "아하㈜": 0.0,
+      "에버온": 1.21,
+      "에스에스차저": 0.0,
+      "에스트래픽": 0.0,
+      "엘에스이링크㈜": 0.0,
+      "엘지유플러스": 0.0,
+      "위브이": 0.0,
+      "유니이브이": 0.0,
+      "유플러스아이티": 0.0,
+      "이브이시스": 0.0,
+      "이브이씨원": 0.0,
+      "이에스앤에이치": 0.0,
+      "이엘일렉트릭": 2.38,
+      "이지차저": 0.0,
+      "이카플러그": 0.0,
+      "일렉트리": 0.0,
+      "제주전기자동차서비스": 0.0,
+      "주식회사 에버온": 2.15,
+      "주식회사 태성콘텍": 1.91,
+      "차지비": 1.64,
+      "차지인": 0.0,
+      "채비": 2.07,
+      "캐스트프로": 0.0,
+      "코콤": 0.0,
+      "쿨사인": 0.0,
+      "쿨사인 주식회사": 0.0,
+      "클린일렉스": 3.92,
+      "타디스테크놀로지": 0.0,
+      "파워큐브": 0.81,
+      "파워큐브(SP)": 0.34,
+      "파워큐브(sp)": 0.0,
+      "파워큐브코리아": 0.57,
+      "파킹클라우드": 1.26,
+      "파킹클라우드 주식회사": 0.0,
+      "펌프킨": 0.0,
+      "포스코ICT": 9.09,
+      "플러그링크": 1.16,
+      "한국EV충전서비스센터": 0.0,
+      "한국전기차인프라기술": 0.95,
+      "한국전기차인프라기술㈜": 0.0,
+      "한국전기차충전서비스": 1.32,
+      "한국전력": 1.01,
+      "한국전자금융": 1.97,
+      "한솔엠에스": 0.0,
+      "한화솔루션": 0.0,
+      "현대엔지니어링": 0.56,
+      "현대자동차": 0.0,
+      "환경부": 100.0,
+      "휴맥스이브이": 1.96
+    },
+    "coverage_by_type": {
+      "02": 0.98,
+      "04": 17.63,
+      "05": 0.0,
+      "06": 12.02,
+      "07": 0.0,
+      "08": 0.0,
+      "10": 20.0,
+      "11": 0.0
+    }
+  },
+  "parking": {
+    "steps": [
+      "info_without_realtime=['MOCK-150-0-000007', 'MOCK-150-0-000010']"
+    ],
+    "oper_hours_derived_rows": 2,
+    "realtime_only_ids": [],
+    "info_without_realtime": [
+      "MOCK-150-0-000007",
+      "MOCK-150-0-000010"
+    ]
+  },
+  "tour": {
+    "encoding_repaired_cells": 99,
+    "steps": [
+      "mojibake_repaired_rows=53"
+    ],
+    "encoding_repaired_rows": 53
+  },
+  "city_tour": {
+    "steps": [
+      "city_tour has no coordinates; geocoding required later"
+    ],
+    "needs_geocoding": true
+  },
+  "walk": {
+    "steps": [
+      "high roadNmAddr missing -> keep rows; use lot/coords"
+    ],
+    "mngNo_duplicates": 0,
+    "roadNmAddr_missing_rate": 0.8130841121495327
+  },
+  "poi": {
+    "match_candidates": 16
+  },
+  "traffic": {
+    "link": {
+      "steps": [],
+      "pk_duplicates": 0,
+      "travel_time_inconsistent_rows": 0
+    },
+    "incident": {
+      "steps": [],
+      "pk_duplicates": 0,
+      "fk_fail_count": 0
+    }
+  },
+  "weather": {
+    "ultra_fcst": {
+      "kind": "ultra_fcst",
+      "steps": [
+        "ONLY nx=89,ny=90 — do not treat as city-wide spatial weather"
+      ],
+      "pk_duplicates": 0,
+      "unique_grids": [
+        [
+          "89",
+          "90"
+        ]
+      ],
+      "single_grid_only": true
+    },
+    "ncst": {
+      "kind": "ncst",
+      "steps": [
+        "ONLY nx=89,ny=90 — do not treat as city-wide spatial weather"
+      ],
+      "pk_duplicates": 0,
+      "unique_grids": [
+        [
+          "89",
+          "90"
+        ]
+      ],
+      "single_grid_only": true
+    },
+    "vilage": {
+      "kind": "vilage",
+      "steps": [
+        "ONLY nx=89,ny=90 — do not treat as city-wide spatial weather"
+      ],
+      "pk_duplicates": 0,
+      "unique_grids": [
+        [
+          "89",
+          "90"
+        ]
+      ],
+      "single_grid_only": true
+    },
+    "grids": [
+      [
+        "89",
+        "90"
+      ]
+    ],
+    "single_grid_only": true
+  }
+}

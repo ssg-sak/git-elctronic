@@ -1,0 +1,18 @@
+[Unit]
+Description=EV SafeCharge loop3 Daegu ITS traffic (linkspeed + dgincident)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/ev-safecharge
+EnvironmentFile=/opt/ev-safecharge/.env
+ExecStart=/opt/ev-safecharge/.venv/bin/python \
+  apps/data-pipeline/processing/loops/run_daegu_traffic_loop.py \
+  --interval-minutes 15
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
