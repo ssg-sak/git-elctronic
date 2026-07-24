@@ -1,0 +1,17 @@
+{
+  "stat_code_map": {
+    "1": "COMM_ERROR",
+    "2": "AVAILABLE",
+    "3": "CHARGING",
+    "4": "OPERATING_STOPPED",
+    "5": "MAINTENANCE",
+    "9": "STATUS_UNKNOWN",
+    "01": "COMM_ERROR",
+    "02": "AVAILABLE",
+    "03": "CHARGING",
+    "04": "OPERATING_STOPPED",
+    "05": "MAINTENANCE",
+    "09": "STATUS_UNKNOWN"
+  },
+  "note": "Do not invent meanings. Unmapped codes -> UNKNOWN_CODE"
+}

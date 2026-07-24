@@ -1,0 +1,39 @@
+{
+  "asOf": "2026-07-20T10:30:00+09:00",
+  "userLocation": {"latitude": 35.865, "longitude": 128.605},
+  "items": [
+    {
+      "stationId": "MOCK-ST001",
+      "stationName": "동성로 목충전소",
+      "score": 78.5,
+      "failureRisk": "보통",
+      "reliability": "보통",
+      "travelTimeSec": 420,
+      "distanceMeters": 2100,
+      "estimatedArrival": "2026-07-20T10:37:00+09:00",
+      "reason": "가용 1대 확인 · 이동 7분 · 다중 충전기",
+      "featuresUsed": {
+        "available_ratio": 0.33,
+        "total_chargers": 3,
+        "data_freshness_minutes": 0
+      }
+    },
+    {
+      "stationId": "MOCK-ST002",
+      "stationName": "수성구 목충전소",
+      "score": 62.0,
+      "failureRisk": "높음",
+      "reliability": "확인필요",
+      "travelTimeSec": 900,
+      "distanceMeters": 4500,
+      "estimatedArrival": "2026-07-20T10:45:00+09:00",
+      "reason": "1대 미관측 · 거리 김",
+      "featuresUsed": {
+        "available_ratio": 0.5,
+        "total_chargers": 2,
+        "data_freshness_minutes": 30
+      }
+    }
+  ],
+  "_note": "DA➁ 목 출력 샘플. score·reason·failureRisk는 DA➁가 채움."
+}

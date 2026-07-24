@@ -1,0 +1,57 @@
+{
+  "probed_at": "2026-07-23T16:00:46.594862+09:00",
+  "keys": {
+    "DATA_GO_KR_KEY": "SET(len=64)",
+    "DAEGU_PARKING_KEY": "MOCK",
+    "DAEGU_PARKING_RT_KEY": "MOCK",
+    "KAKAO_REST_KEY": "MOCK"
+  },
+  "probes": [
+    {
+      "name": "kotsa_PrkSttusInfo",
+      "http": 200,
+      "ctype": "text/html;charset=UTF-8",
+      "sniff": "html",
+      "format": "1",
+      "head": "<!DOCTYPE html>\r <html lang=\"ko\">\r \t<head>\r \t\t<meta charset=\"UTF-8\">\r \t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\t\t\r \t\t<meta name=\"viewport\" content=\"width=device-width"
+    },
+    {
+      "name": "kotsa_PrkOprInfo",
+      "http": 200,
+      "ctype": "text/html;charset=UTF-8",
+      "sniff": "html",
+      "format": "1",
+      "head": "<!DOCTYPE html>\r <html lang=\"ko\">\r \t<head>\r \t\t<meta charset=\"UTF-8\">\r \t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\t\t\r \t\t<meta name=\"viewport\" content=\"width=device-width"
+    },
+    {
+      "name": "kotsa_PrkRealtimeInfo",
+      "http": 200,
+      "ctype": "text/html;charset=UTF-8",
+      "sniff": "html",
+      "format": "1",
+      "head": "<!DOCTYPE html>\r <html lang=\"ko\">\r \t<head>\r \t\t<meta charset=\"UTF-8\">\r \t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\t\t\r \t\t<meta name=\"viewport\" content=\"width=device-width"
+    },
+    {
+      "name": "national_standard",
+      "http": 200,
+      "ctype": "application/json;charset=UTF-8",
+      "sniff": "json",
+      "head": "{\"response\":{\"header\":{\"resultCode\": \"30\",\"resultMsg\":\"SERVICE KEY IS NOT REGISTERED ERROR.\"}}}",
+      "resultCode": "30",
+      "resultMsg": "SERVICE KEY IS NOT REGISTERED ERROR.",
+      "ok_candidate": false
+    },
+    {
+      "name": "pis_prkInfo",
+      "http": null,
+      "skipped": "MOCK_or_missing"
+    },
+    {
+      "name": "pis_rltm",
+      "http": null,
+      "skipped": "MOCK_or_missing"
+    }
+  ],
+  "extracts": {},
+  "can_fetch_real_parking": false
+}

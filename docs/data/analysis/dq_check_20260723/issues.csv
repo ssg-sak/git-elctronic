@@ -1,0 +1,21 @@
+﻿sev,code,msg,detail
+INFO,INFO_COORD_NULL,lat/lng null,0
+INFO,INFO_COORD_OUT_BBOX,outside Daegu-ish bbox (may include Gunwi),27
+MED,INFO_COORD_COLLISION,≥10 stations share same lat/lng (6dp),"n_points=4 top={'35.842078,128.541011': 18, '35.892589,128.627348': 17, '35.87506,128.557353': 14, '35.877328,128.479797': 11}"
+MED,INFO_CHGERTYPE_UNKNOWN_CODE,unmapped codes ['11'],5
+INFO,INFO_USETIME_BLANK,useTime blank/vague,477 (1.9%)
+MED,INFO_USETIME_VAGUE,useTime points to store hours (F08→UNKNOWN),10
+INFO,INFO_USETIME_CLOSED,useTime says closed/non-open,39
+INFO,INFO_DELYN_Y,delYn=Y rows still in dump (filter for service),787
+INFO,INFO_OUTPUT_MISSING,output null share,0.1%
+INFO,HOURS_COVERAGE,hours stations 496 / info stations 4210,only_hours=0 only_info=3714
+MED,HOURS_SUBSET_NOT_FULL,hours is NOT full station universe — do not treat as complete useTime table,info_only=3714 · hours may be filtered extract
+OK,HOURS_USETIME_MATCH,hours useTime matches info on overlap,496
+OK,STATUS_RELIABILITY,snapshot reliability artifact present,see JSON
+INFO,TMAP_SHARED_COORDS,multiple statId share identical lat/lng in ETA sample,4
+INFO,TMAP_NEAR_ORIGIN_ARTIFACT,near-origin stations: tiny haversine but multi-min TMAP (routing/access),not a bug — do not rank by haversine
+HIGH,PARKING_STILL_FAIL,parking APIs KEY NOT REGISTERED / mock — occupancy features invalid,docs/data/주차_재수집_프로브_20260723.md
+MED,DAILY_DIR_MISSING,no daily folder 2026-07-18,
+MED,DAILY_DIR_MISSING,no daily folder 2026-07-19,
+MED,DAILY_DIR_MISSING,no daily folder 2026-07-20,
+INFO,DOC_DRIFT_FRESHNESS,EDA §14 CHECK~68% is old D1(statUpdDt-only); §16 event CHECK~0% — do not mix,use §16 / snapshot_all for current freshness

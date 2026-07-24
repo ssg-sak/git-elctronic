@@ -13,8 +13,15 @@ param(
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$envFile = Join-Path (Split-Path (Split-Path $PSScriptRoot -Parent) -Parent) ".env"
-$appKey = (Get-Content $envFile | Where-Object { $_ -match "^TMAP_APP_KEY=" }) -replace "^TMAP_APP_KEY=", ""
+$root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+$envFile = Join-Path $root ".env"
+$envMap = @{}
+Get-Content $envFile -Encoding UTF8 | ForEach-Object {
+    if ($_ -match "^\s*([A-Z0-9_]+)\s*=\s*(.*)$") {
+        $envMap[$Matches[1]] = $Matches[2].Trim().Trim('"').Trim("'")
+    }
+}
+$appKey = $envMap["TMAP_APP_KEY"]
 if (-not $appKey) {
     Write-Error ".env 파일에 TMAP_APP_KEY가 없습니다."
     exit 1

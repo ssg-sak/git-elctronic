@@ -9,11 +9,13 @@ EV SafeCharge는 사용자가 충전소에 **도착했을 때 실제로 충전�
 | 담당 | 디렉터리 | 상세 가이드 |
 |---|---|---|
 | 프론트엔드 (1명) | `apps/web/` | `apps/web/AGENTS.md` |
-| 백엔드 (1명) | `apps/api/`, `packages/recommendation-core/` | `apps/api/AGENTS.md` |
+| 백엔드 (1명) | `apps/api/` | `apps/api/AGENTS.md` |
 | 데이터 수집 (1명) | `apps/data-pipeline/collection/` | `apps/data-pipeline/AGENTS.md` |
-| 데이터 가공 (1명) | `apps/data-pipeline/processing/` | `apps/data-pipeline/AGENTS.md` |
+| AI·데이터 ① 데이터·파이프라인 (1명) | `apps/data-pipeline/processing/`, `evaluation/` | `apps/data-pipeline/AGENTS.md` |
+| AI·데이터 ② 모델·평가·서빙 (1명) | `packages/recommendation-core/`, `docs/모델_*` · `docs/AI_모델_*` | `README.md` 역할표 · 백엔드와 합의 |
 
-`packages/shared-types/`(공통 타입)는 프론트·백엔드 공동 관리, `docs/`·`infra/`는 전원 공용이다.
+`packages/shared-types/`(공통 타입)는 프론트·백엔드 공동 관리, `docs/`·`infra/`는 전원 공용이다.  
+`packages/recommendation-core/` 점수·추론은 **② 설계·구현**, API 연동은 **백엔드** — 변경 시 상호 합의.
 
 **자신의 담당 디렉터리 밖의 코드는 수정하지 않는다.** 다른 영역의 변경이 필요하면 해당 담당자와 합의 후 진행한다.
 

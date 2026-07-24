@@ -1,0 +1,24 @@
+[
+  {
+    "stationId": "MOCK-ST001",
+    "name": "동성로 목충전소",
+    "address": "대구 중구 동성로 1",
+    "latitude": 35.8714,
+    "longitude": 128.6014,
+    "totalChargers": 3,
+    "available24Hours": true,
+    "parkingFeeFlag": "FREE",
+    "operator": "환경부"
+  },
+  {
+    "stationId": "MOCK-ST002",
+    "name": "수성구 목충전소",
+    "address": "대구 수성구 범어동",
+    "latitude": 35.858,
+    "longitude": 128.631,
+    "totalChargers": 2,
+    "available24Hours": true,
+    "parkingFeeFlag": "PAID",
+    "operator": "환경부"
+  }
+]

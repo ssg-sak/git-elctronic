@@ -1,0 +1,18 @@
+{
+  "role": "DA① sample only — not a collection loop",
+  "origin": {
+    "label": "동대구역 인근",
+    "lat": 35.8797,
+    "lng": 128.6284
+  },
+  "sample_n": 15,
+  "tmap_ok": 15,
+  "tmap_fail": 0,
+  "as_of_kst": "2026-07-23T17:01:45+09:00",
+  "haversine_speed_proxy_kmh": 30.0,
+  "info_source": "docs\\data\\extracted\\charger\\info\\daegu_charger_info_20260723_latest.csv",
+  "hours_source": "docs\\data\\extracted\\charger\\hours\\daegu_charger_hours_latest.csv",
+  "outputs": {
+    "csv": "docs\\data\\analysis\\tmap_eta_sample_20260723\\haversine_vs_tmap_eta.csv"
+  }
+}
