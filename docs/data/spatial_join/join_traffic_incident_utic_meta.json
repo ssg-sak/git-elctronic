@@ -1,0 +1,10 @@
+{
+  "layer": "traffic_incident_utic",
+  "radius_m": 1000,
+  "stations": 4199,
+  "incidents": 6,
+  "matched": 435,
+  "match_rate": 0.1036,
+  "attribution": "경찰청 도시교통정보센터(UTIC)",
+  "output": "docs/data/spatial_join/join_traffic_incident_utic_1000m.csv"
+}

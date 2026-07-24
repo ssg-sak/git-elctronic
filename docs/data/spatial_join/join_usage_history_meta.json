@@ -1,0 +1,14 @@
+{
+  "layer": "usage_history_statId",
+  "radius_m": 80.0,
+  "usage_file": "docs/data/extracted/daegu_charger_usage_daily_20260331.csv",
+  "usage_rows": 128263,
+  "usage_stations": 219,
+  "evcharger_stations": 4199,
+  "matched": 201,
+  "match_rate": 0.9178,
+  "date_min": "2024-10-18",
+  "date_max": "2026-03-31",
+  "output": "docs/data/spatial_join/join_usage_history_statId.csv",
+  "note": "municipal station_id ≠ EvCharger statId; matched by coordinates"
+}

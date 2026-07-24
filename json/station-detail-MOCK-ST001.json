@@ -1,0 +1,37 @@
+{
+  "stationId": "MOCK-ST001",
+  "name": "동성로 목충전소",
+  "address": "대구 중구 동성로 1",
+  "latitude": 35.8714,
+  "longitude": 128.6014,
+  "available24Hours": true,
+  "parkingFeeFlag": "FREE",
+  "operator": "환경부",
+  "useTime": "24시간 이용가능",
+  "chargers": [
+    {
+      "chargerId": "01",
+      "chargerType": "DC콤보",
+      "outputKw": 50,
+      "status": "AVAILABLE",
+      "statusUpdatedAt": "2026-07-20T10:30:00+09:00",
+      "observedAt": "2026-07-20T10:30:00+09:00"
+    },
+    {
+      "chargerId": "02",
+      "chargerType": "AC완속",
+      "outputKw": 7,
+      "status": "CHARGING",
+      "statusUpdatedAt": "2026-07-20T10:15:00+09:00",
+      "observedAt": "2026-07-20T10:30:00+09:00"
+    },
+    {
+      "chargerId": "03",
+      "chargerType": "DC콤보",
+      "outputKw": 100,
+      "status": "OUT_OF_SERVICE",
+      "statusUpdatedAt": "2026-07-20T09:00:00+09:00",
+      "observedAt": "2026-07-20T10:30:00+09:00"
+    }
+  ]
+}

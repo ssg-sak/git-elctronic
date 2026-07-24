@@ -1,0 +1,8 @@
+{
+  "name": "@ev-safecharge/recommendation-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "추천 점수 계산 로직 (규칙 기반, 루트 AGENTS.md 도메인 규칙 준수)",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

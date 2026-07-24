@@ -1,0 +1,94 @@
+{
+  "stations_ok_coords": 4199,
+  "primary_radius_m": 1000,
+  "layer_summaries": [
+    {
+      "layer": "parking_mock",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 604,
+      "unmatched": 3595,
+      "match_rate_pct": 14.38
+    },
+    {
+      "layer": "traffic_link_mock",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 773,
+      "unmatched": 3426,
+      "match_rate_pct": 18.41
+    },
+    {
+      "layer": "traffic_incident_mock",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 650,
+      "unmatched": 3549,
+      "match_rate_pct": 15.48
+    },
+    {
+      "layer": "tour_api",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 1113,
+      "unmatched": 3086,
+      "match_rate_pct": 26.51
+    },
+    {
+      "layer": "walk_parks",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 2637,
+      "unmatched": 1562,
+      "match_rate_pct": 62.8
+    },
+    {
+      "layer": "parking_mock@500m",
+      "radius_m": 500,
+      "stations": 4199,
+      "matched": 186,
+      "unmatched": 4013,
+      "match_rate_pct": 4.43
+    },
+    {
+      "layer": "parking_mock@1000m",
+      "radius_m": 1000,
+      "stations": 4199,
+      "matched": 604,
+      "unmatched": 3595,
+      "match_rate_pct": 14.38
+    },
+    {
+      "layer": "parking_mock@3000m",
+      "radius_m": 3000,
+      "stations": 4199,
+      "matched": 2238,
+      "unmatched": 1961,
+      "match_rate_pct": 53.3
+    }
+  ],
+  "name_match": {
+    "layer": "tour_city_name_match",
+    "candidates": 16,
+    "auto_confirmed": 0,
+    "needs_review": 7,
+    "tour_with_coords": 57,
+    "city_total": 239,
+    "city_spatial_match_rate_pct": 0.0,
+    "note": "city_tour has no coordinates; name match only"
+  },
+  "quarantine": {
+    "layer": "charger_coordinate_quarantine",
+    "rows": 27,
+    "excluded_from_spatial_join": true,
+    "flags": {
+      "OUT_OF_BBOX|ADDR_DAEGU_COORD_SUSPECT": 26,
+      "OUT_OF_BBOX": 1
+    }
+  },
+  "outputs": {
+    "dir": "docs/data/spatial_join",
+    "fail_city_tour": "fail_city_tour_no_coords.csv",
+    "fail_sample": "fail_sample_unmatched_50_per_layer.csv"
+  }
+}

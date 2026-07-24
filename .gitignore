@@ -1,0 +1,45 @@
+# 인증키·시크릿
+.env
+.env.local
+.env.*.local
+
+# 수집 원본 데이터 (대용량)
+apps/data-pipeline/collection/raw/
+apps/data-pipeline/collection/data/
+
+# DA① 대용량 산출·원천 (GitHub 미포함 — 로컬/서버 보관)
+docs/data/extracted/
+docs/data/loops/**/snapshots/
+docs/data/loops/_archive/
+docs/data/loops/**/*.csv
+docs/data/loops/**/*.json
+
+apps/data-pipeline/evaluation/results/
+apps/data-pipeline/evaluation/**/data/
+apps/data-pipeline/reports/
+apps/data-pipeline/scratch/
+
+# API 테스트 결과 파일
+scripts/api-tests/*-result.json
+
+# Node
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# 로그·기타
+*.log
+.DS_Store
+*.bak
+*.bak_*
+
+docs/data/loops/**/logs/
+*.jsonl
+

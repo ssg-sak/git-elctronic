@@ -1,0 +1,18 @@
+# 담당 영역별 코드 오너 — GitHub 사용자명 확정 후 채워 넣을 것
+# 형식: <경로> @<github-username>
+
+# 프론트엔드
+# /apps/web/ @frontend-username
+
+# 백엔드
+# /apps/api/ @backend-username
+# /packages/recommendation-core/ @backend-username
+
+# 데이터 수집
+# /apps/data-pipeline/collection/ @data-collect-username
+
+# 데이터 가공
+# /apps/data-pipeline/processing/ @data-process-username
+
+# 공용 타입은 프론트·백엔드 공동 리뷰
+# /packages/shared-types/ @frontend-username @backend-username
