@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **대상** | Lightsail `ev-savecharge-server` · `52.79.224.112` |
+| **대상** | Lightsail `우분투-1` · `3.36.50.99` (1GB) |
 | **status** | interval **10분** · period **10분** · `ev-status-loop.service` (5분이면 일 1000 한도로 저녁 skip) |
 | **소통** | interval **15분** · `ev-traffic-loop.service` |
 | **관광지↔충전 이용** | **일 1회** 04:30 KST · `ev-tour-usage-daily.timer` (배치 · 수집 루프 아님) |
@@ -18,7 +18,7 @@ PC 끄면 야간 gap → 서버 24h 수집. **로컬 status/소통 루프는 끄
 
 ```powershell
 # PowerShell — 레포 루트에서
-$env:AWS_HOST = "52.79.224.112"
+$env:AWS_HOST = "3.36.50.99"
 $env:AWS_USER = "ubuntu"
 $env:AWS_KEY  = "$env:USERPROFILE\.ssh\LightsailDefaultKey-ap-northeast-2.pem"
 # Git Bash 또는 WSL:
@@ -30,7 +30,7 @@ bash infra/deployment/deploy_loops_lightsail.sh
 ```powershell
 # PowerShell — $host 는 예약 변수 → $awsHost 사용
 $key = "$env:USERPROFILE\.ssh\LightsailDefaultKey-ap-northeast-2.pem"
-$awsHost = "52.79.224.112"
+$awsHost = "3.36.50.99"
 scp -i $key -r "ubuntu@${awsHost}:/opt/ev-safecharge/docs/data/loops/loop1" ./loop1_from_server
 scp -i $key -r "ubuntu@${awsHost}:/opt/ev-safecharge/docs/data/loops/loop3" ./loop3_from_server
 ```

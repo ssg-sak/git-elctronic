@@ -16,7 +16,7 @@ from _bootstrap import ensure_paths
 
 ensure_paths()
 
-from features.status_standard import OFFICIAL_STATUSES, to_official_status
+from features.status_standard import OFFICIAL_STATUSES, to_official_status, map_raw_stat
 
 AVAILABLE = "AVAILABLE"
 CHARGING = "CHARGING"
@@ -32,6 +32,8 @@ def _normalize_events(events: pd.DataFrame) -> pd.DataFrame:
         rename["chgerId"] = "chargerId"
     if "fetchedAt" in df.columns and "observedAt" not in df.columns:
         rename["fetchedAt"] = "observedAt"
+    if "stat" in df.columns and "status" not in df.columns:
+        rename["stat"] = "status"
     df = df.rename(columns=rename)
 
     if "observedAt" not in df.columns and "snapshotId" in df.columns:
@@ -42,7 +44,13 @@ def _normalize_events(events: pd.DataFrame) -> pd.DataFrame:
     df["observedAt"] = pd.to_datetime(df["observedAt"], utc=True).dt.tz_convert(
         "Asia/Seoul"
     )
-    df["status"] = df["status"].map(to_official_status)
+    def _smart_map(s):
+        official = to_official_status(s)
+        if official == "UNKNOWN" and str(s).strip() != "UNKNOWN":
+            return map_raw_stat(s)
+        return official
+        
+    df["status"] = df["status"].map(_smart_map)
     df["charger_key"] = (
         df["stationId"].astype(str) + "|" + df["chargerId"].astype(str)
     )

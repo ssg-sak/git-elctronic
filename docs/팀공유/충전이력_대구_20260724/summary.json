@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-24T15:27:21+09:00",
+  "stamp": "20260724",
+  "n_files": 8,
+  "files": [],
+  "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "n_months": 8,
+  "month_min": "2025-10",
+  "month_max": "2026-05",
+  "daegu_sessions": 133176,
+  "stations": 130,
+  "kwh_total": 3086456.75,
+  "kwh_mean": 23.175773037183877,
+  "kwh_median": 21.35,
+  "min_mean": 27.979699170020627,
+  "sessions_per_month_median": 16193.5,
+  "top_districts": {
+    "달성군": 33766,
+    "군위군": 24546,
+    "동구": 19991,
+    "달서구": 17439,
+    "북구": 16738
+  },
+  "top_types": {
+    "휴게시설": 40322,
+    "공공시설": 32396,
+    "관광시설": 19564,
+    "주차시설": 18390,
+    "근린생활시설": 15141
+  },
+  "figures": [
+    "01_monthly_sessions_kwh.png",
+    "02_hourly_start.png",
+    "03_district_sessions.png",
+    "04_station_type_capacity.png",
+    "05_weekday_weekend.png"
+  ],
+  "filter": "지역==대구광역시 AND 주소.startswith(대구광역시)",
+  "dropped_non_daegu": 7083,
+  "dropped_by_region": {
+    "전북특별자치도": 4799,
+    "충청북도": 1755,
+    "전라남도": 529
+  }
+}

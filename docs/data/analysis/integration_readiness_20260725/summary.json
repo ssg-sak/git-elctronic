@@ -1,0 +1,25 @@
+{
+  "generated_at_kst": "2026-07-25T17:10:55+09:00",
+  "d1_as_of_ts": "2026-07-25T15:15:36.262723+09:00",
+  "d1_rows": 4210,
+  "public_candidates": 1853,
+  "public_candidates_coord_ok": 1848,
+  "public_confirmed_available": 1330,
+  "public_available_coord_ok": 1326,
+  "parking_1km_static_matches": 3922,
+  "parking_realtime_matches": 430,
+  "utic_matches_in_d1_snapshot": 437,
+  "utic_matches_current_join": 266,
+  "usage_history_matches": 200,
+  "reliability_effective_counts": {
+    "CHECK_REQUIRED": 3640,
+    "HIGH": 426,
+    "NORMAL": 144
+  },
+  "mvp_verdict": "INPUT_READY_WITH_FRESHNESS_GUARD",
+  "not_ready_for": [
+    "arrival-success probability model",
+    "parking congestion time profile",
+    "route-specific ETA or traffic score"
+  ]
+}

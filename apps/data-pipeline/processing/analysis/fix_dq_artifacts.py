@@ -31,7 +31,10 @@ from loop_paths import (  # noqa: E402
     EXTRACTED_CHARGER_INFO,
     LOOP1_SNAPSHOTS,
     LOOPS_ARCHIVE,
+    iter_status_csvs,
+    loop1_day_dir,
     status_snapshots_dirs,
+    ymd_from_filename,
 )
 
 KST = ZoneInfo("Asia/Seoul")
@@ -180,18 +183,20 @@ def _build_full_hours(info_path: Path, as_of: datetime) -> dict:
 
 
 def _sync_archive_snapshots_into_live() -> dict:
-    """Copy archive-only snapshot CSVs into loop1/snapshots so live path is complete."""
+    """Copy archive-only snapshot CSVs into loop1/snapshots/YYYYMMDD/."""
     LOOP1_SNAPSHOTS.mkdir(parents=True, exist_ok=True)
-    live_names = {p.name for p in LOOP1_SNAPSHOTS.glob("daegu_charger_status_*.csv")}
+    live_names = {p.name for p in iter_status_csvs(LOOP1_SNAPSHOTS)}
     archive_roots = sorted(LOOPS_ARCHIVE.glob("from_lightsail_*/loop1/snapshots"))
     copied = []
     skipped = 0
     for root in archive_roots:
-        for src in sorted(root.glob("daegu_charger_status_*.csv")):
+        for src in iter_status_csvs(root):
             if src.name in live_names:
                 skipped += 1
                 continue
-            dest = LOOP1_SNAPSHOTS / src.name
+            ymd = ymd_from_filename(src.name) or "unknown"
+            dest = loop1_day_dir(ymd) / src.name
+            dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, dest)
             live_names.add(src.name)
             copied.append(src.name)
@@ -199,7 +204,7 @@ def _sync_archive_snapshots_into_live() -> dict:
         "archive_dirs": [str(p.relative_to(REPO)).replace("\\", "/") for p in archive_roots],
         "copied_into_live": len(copied),
         "already_in_live": skipped,
-        "live_total_after": len(list(LOOP1_SNAPSHOTS.glob("daegu_charger_status_*.csv"))),
+        "live_total_after": len(iter_status_csvs(LOOP1_SNAPSHOTS)),
         "sample_copied": copied[:5] + (["…"] if len(copied) > 5 else []),
     }
 

@@ -29,9 +29,10 @@ from load_snapshots import load_snapshot  # noqa: E402
 from loop_paths import (  # noqa: E402
     EXTRACTED_CHARGER_INFO,
     EXTRACTED_DAILY,
+    LOOP1_DIR,
     LOOP1_LOGS,
     LOOPS_ARCHIVE,
-    LOOP1_DIR,
+    iter_status_csvs,
 )
 
 OUT = REPO / "docs" / "data" / "analysis" / "snapshot_all_20260723"
@@ -59,7 +60,7 @@ def collect_unique_files() -> dict[str, Path]:
     for pri, d in dirs:
         if not d.is_dir():
             continue
-        for path in d.glob("daegu_charger_status_*.csv"):
+        for path in iter_status_csvs(d):
             sid = path.stem.replace("daegu_charger_status_", "")
             cur = best.get(sid)
             if cur is None or pri < cur[0]:

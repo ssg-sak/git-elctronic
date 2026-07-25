@@ -1,4 +1,4 @@
-"""한국환경공단 EvCharger getChargerStatus 수집기 (실시간 상태, 2~5분 간격).
+"""한국환경공단 EvCharger getChargerStatus 수집기 (실시간 상태, 기본 5분 간격 · period 10).
 
 statUpdDt(상태 갱신 시각)와 fetchedAt(조회 시각)을 반드시 분리 저장한다.
 getChargerInfo와 일 호출 한도(1,000건/일)를 공유하므로 호출 전 잔여 여유를 확인한다.

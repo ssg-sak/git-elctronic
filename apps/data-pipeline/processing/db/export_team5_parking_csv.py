@@ -128,16 +128,43 @@ def export_from_raw(conn) -> tuple[pd.DataFrame, pd.DataFrame]:
     return pd.DataFrame(info_rows), pd.DataFrame(rt_from_raw)
 
 
-def export_realtime_table(conn) -> pd.DataFrame:
+def export_info_table(conn) -> pd.DataFrame:
+    """Full Team5 parking master (currently 1,764 lots)."""
     return pd.read_sql(
         """
+        SELECT
+          pklt_id AS pkltId, pklt_nm AS pkltNm, sgg_cd AS sggCd,
+          use_yn AS useYn, sysgrpy_yn AS sysgrpyYn,
+          pklt_se_cd AS pkltSeCd, pklt_type_cd AS pkltTypeCd,
+          road_nm_addr AS roadNmAddr, lotno_addr AS lotnoAddr,
+          COALESCE(road_nm_addr, lotno_addr) AS addr,
+          lat, lot AS lng, total_spaces AS prkNocmprt,
+          mng_inst_nm AS mngInstNm, telno,
+          wkday_oper_bgng_hr AS wkdayOperBgngHr,
+          wkday_oper_end_hr AS wkdayOperEndHr,
+          collected_at AS fetchedAt
+        FROM parking_lot_info
+        ORDER BY pklt_id
+        """,
+        conn,
+    )
+
+
+def export_realtime_table(conn, *, latest_only: bool) -> pd.DataFrame:
+    """Parking realtime rows: latest 106-lot batch or full retained history."""
+    latest_filter = """
+        WHERE collected_at = (SELECT MAX(collected_at) FROM parking_realtime_status)
+    """ if latest_only else ""
+    return pd.read_sql(
+        f"""
         SELECT
           id, source_raw_id, pklt_id AS pkltId, collected_at AS fetchedAt,
           pklt_se_cd AS pkltSeCd, pklt_type_cd AS pkltTypeCd,
           congestion_status, floor_count AS flrCnt,
           total_spaces, remaining_spaces, occupied_spaces, occupancy_rate
         FROM parking_realtime_status
-        ORDER BY pklt_id
+        {latest_filter}
+        ORDER BY fetchedAt, pkltId
         """,
         conn,
     )
@@ -149,16 +176,19 @@ def main() -> int:
     stamp = as_of.strftime("%Y%m%d_%H%M%S")
 
     with connect() as conn:
-        info_df, rt_raw_df = export_from_raw(conn)
-        rt_tbl = export_realtime_table(conn)
+        info_raw_df, rt_raw_df = export_from_raw(conn)
+        info_tbl = export_info_table(conn)
+        rt_latest_tbl = export_realtime_table(conn, latest_only=True)
+        rt_history_tbl = export_realtime_table(conn, latest_only=False)
 
     paths = {}
-    # prefer structured realtime table
-    rt = rt_tbl.copy()
-    rt["parking_source"] = "team5_pis"
-    rt["isMock"] = False
-    if rt.empty and len(rt_raw_df):
-        rt = rt_raw_df
+    # Prefer Team5 structured tables. Raw is only a compatibility fallback.
+    info_df = info_tbl.copy() if len(info_tbl) else info_raw_df.copy()
+    rt = rt_latest_tbl.copy() if len(rt_latest_tbl) else rt_raw_df.copy()
+    rt_history = rt_history_tbl.copy()
+    for frame in (info_df, rt, rt_history):
+        frame["parking_source"] = "team5_pis"
+        frame["isMock"] = False
 
     if len(info_df):
         p = EXTRACTED_PARKING / f"daegu_parking_info_team5_{stamp}.csv"
@@ -177,6 +207,12 @@ def main() -> int:
     rt.to_csv(latest_rt, index=False, encoding="utf-8-sig")
     paths["realtime"] = str(latest_rt.relative_to(REPO)).replace("\\", "/")
     print("realtime rows", len(rt))
+
+    # Keep the complete Team5 retention separately from the latest pointer.
+    p_history = EXTRACTED_PARKING / f"daegu_parking_realtime_history_team5_{stamp}.csv"
+    rt_history.to_csv(p_history, index=False, encoding="utf-8-sig")
+    paths["realtime_history"] = str(p_history.relative_to(REPO)).replace("\\", "/")
+    print("realtime history rows", len(rt_history))
 
     # joined view: realtime + info coords (for charger distance join)
     if len(info_df) and len(rt):

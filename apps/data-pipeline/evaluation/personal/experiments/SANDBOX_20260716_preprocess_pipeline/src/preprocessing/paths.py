@@ -18,21 +18,36 @@ CONFIG_DIR = Path(__file__).resolve().parent / "config"
 EXCLUDE_NAME_SUBSTRINGS = ["(1)"]
 
 
-def _latest_csv(prefix: str) -> str:
+def _latest_csv(prefix: str, *, require_cols: tuple[str, ...] = ()) -> str:
     """docs/data/extracted (및 도메인 하위폴더)에서 prefix 기준 최신 CSV의 상대 경로."""
+    import pandas as pd
+
     matches = [
         p
         for p in EXTRACTED_DIR.rglob(f"{prefix}*.csv")
         if not any(tok in p.name for tok in EXCLUDE_NAME_SUBSTRINGS)
+        and "quarantine" not in p.name.lower()
     ]
     if not matches:
         raise FileNotFoundError(f"No CSV matching {prefix}*.csv under {EXTRACTED_DIR}")
+    if require_cols:
+        ok = []
+        for p in matches:
+            try:
+                cols = set(pd.read_csv(p, nrows=0).columns)
+            except Exception:
+                continue
+            if all(c in cols for c in require_cols):
+                ok.append(p)
+        if ok:
+            matches = ok
     latest = max(matches, key=lambda p: p.stat().st_mtime)
     return latest.relative_to(EXTRACTED_DIR).as_posix()
 
 
 FILES = {
-    "charger_info": _latest_csv("daegu_charger_info_"),
+    # daily slim exports may omit limitYn — require it for access filter / D1
+    "charger_info": _latest_csv("daegu_charger_info_", require_cols=("limitYn",)),
     "charger_status": _latest_csv("daegu_charger_status_"),
     "city_tour": _latest_csv("daegu_city_tour_"),
     "parking_info": "parking/daegu_parking_info_team5_latest.csv",

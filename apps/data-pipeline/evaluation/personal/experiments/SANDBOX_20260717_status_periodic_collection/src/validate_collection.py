@@ -26,7 +26,7 @@ _DATA_PIPELINE = _REPO / "apps" / "data-pipeline"
 if str(_DATA_PIPELINE) not in sys.path:
     sys.path.insert(0, str(_DATA_PIPELINE))
 
-from loop_paths import LOOP1_INDEX, LOOP1_LOGS, status_snapshots_dir
+from loop_paths import LOOP1_INDEX, LOOP1_LOGS, iter_status_csvs, status_snapshots_dir
 
 SNAP_DIR = status_snapshots_dir()
 INDEX_CSV = LOOP1_INDEX
@@ -46,7 +46,7 @@ KEY_COLS = ["statId", "chgerId", "stat", "statUpdDt", "fetchedAt", "snapshotId"]
 
 
 def _load_snapshots() -> tuple[pd.DataFrame, list[dict]]:
-    files = sorted(SNAP_DIR.glob("daegu_charger_status_*.csv"))
+    files = iter_status_csvs(SNAP_DIR)
     per_snapshot: list[dict] = []
     frames = []
     for fp in files:

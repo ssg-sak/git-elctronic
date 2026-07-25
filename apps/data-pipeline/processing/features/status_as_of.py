@@ -60,7 +60,18 @@ def load_latest_status_as_of(
              snapshotId (source of winning row).
     """
     snap_dir = Path(snap_dir)
-    files = sorted(snap_dir.glob("daegu_charger_status_*.csv"))
+    # Live loop data is partitioned by date:
+    # snapshots/YYYYMMDD/daegu_charger_status_YYYYMMDD_HHMMSS.csv.
+    # Keep the flat glob too for legacy/archive inputs.
+    files_by_name: dict[str, Path] = {}
+    for pattern in ("daegu_charger_status_*.csv", "*/daegu_charger_status_*.csv"):
+        for path in snap_dir.glob(pattern):
+            if not path.is_file():
+                continue
+            current = files_by_name.get(path.name)
+            if current is None or len(path.parts) >= len(current.parts):
+                files_by_name[path.name] = path
+    files = sorted(files_by_name.values(), key=lambda path: path.name)
     empty_cols = [
         "statId",
         "chgerId",
