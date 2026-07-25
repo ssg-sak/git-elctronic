@@ -22,13 +22,11 @@
     "charger master/status coverage analysis",
     "rule-based features with quality flags",
     "parking/traffic mock join experiments",
-    "POI with coords (tour+parks); city tour attrs long/wide",
-    "single-grid weather hourly wide"
+    "POI with coords (tour+parks); city tour attrs long/wide"
   ],
   "need_more_data": [
     "full charger status snapshots / time series",
     "city_tour geocoding",
-    "multi-grid weather",
     "live traffic APIs when 404 fixed",
     "Kakao/TMAP real keys"
   ]
