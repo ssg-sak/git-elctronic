@@ -21,6 +21,7 @@ from .paths import (
     charger_info_csvs,
     charger_status_oneshot_csvs,
     ensure_out,
+    iter_status_csvs,
     parking_team5_csvs,
     status_snapshots_dirs,
 )
@@ -115,7 +116,7 @@ def run_inventory() -> dict[str, Any]:
     snap_dirs = status_snapshots_dirs()
     snap_files: list[Path] = []
     for d in snap_dirs:
-        snap_files.extend(sorted(d.glob("daegu_charger_status_*.csv")))
+        snap_files.extend(iter_status_csvs(d))
     n_snaps = len(snap_files)
     first = snap_files[0] if snap_files else None
     last = snap_files[-1] if snap_files else None

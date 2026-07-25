@@ -21,6 +21,7 @@ from loop_paths import (  # noqa: E402
     LOOP1_SNAPSHOTS,
     charger_info_csvs,
     charger_status_oneshot_csvs,
+    iter_status_csvs,
     parking_team5_csvs,
     status_snapshots_dirs,
 )

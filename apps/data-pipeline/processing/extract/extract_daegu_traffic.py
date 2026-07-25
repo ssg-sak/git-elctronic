@@ -27,7 +27,7 @@ if str(_PROCESSING) not in sys.path:
 from _bootstrap import ensure_paths
 
 REPO = ensure_paths()
-from loop_paths import loop3_dir
+from loop_paths import loop3_day_dir, loop3_dir, ymd_from_filename
 
 OUT_DIR = loop3_dir()
 KST = ZoneInfo("Asia/Seoul")
@@ -176,8 +176,11 @@ def extract(*, key: str | None = None) -> dict[str, Any]:
     inc_items = _items(inc_payload)
     inc_rows = [_normalize_incident(item, fetched_at) for item in inc_items]
 
-    link_path = OUT_DIR / f"daegu_traffic_linkspeed_{stamp}.csv"
-    inc_path = OUT_DIR / f"daegu_traffic_incident_{stamp}.csv"
+    ymd = stamp[:8]
+    day_dir = loop3_day_dir(ymd)
+    day_dir.mkdir(parents=True, exist_ok=True)
+    link_path = day_dir / f"daegu_traffic_linkspeed_{stamp}.csv"
+    inc_path = day_dir / f"daegu_traffic_incident_{stamp}.csv"
     _write_csv(link_path, LINK_FIELDS, link_rows)
     _write_csv(inc_path, INCIDENT_FIELDS, inc_rows)
 

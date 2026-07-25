@@ -135,7 +135,7 @@ cd apps/data-pipeline/evaluation && pytest tests/ -v
 
 | 항목 | 값 |
 |---|---|
-| **상태** | **Lightsail 24h** (`52.79.224.112`) · **PC 루프 끄기** (한도 이중 소모 금지) |
+| **상태** | **Lightsail 24h** (`3.36.50.99`, 1GB) · **PC 루프 끄기** (한도 이중 소모 금지) |
 | **간격** | interval **10분** · API period **10분** (5분이면 일 1000으로 저녁 skip) |
 | **경로** | `evaluation/personal/experiments/SANDBOX_20260717_status_periodic_collection/` → 저장 `docs/data/loops/loop1/` |
 | **재시작** | 2026-07-24 — interval 5→10 (전시간대 커버) |

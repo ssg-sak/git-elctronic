@@ -23,7 +23,7 @@ _DATA_PIPELINE = _REPO / "apps" / "data-pipeline"
 if str(_DATA_PIPELINE) not in sys.path:
     sys.path.insert(0, str(_DATA_PIPELINE))
 
-from loop_paths import status_snapshots_dir, status_snapshots_dirs
+from loop_paths import iter_status_csvs, status_snapshots_dir, status_snapshots_dirs
 
 SNAP_DIR = status_snapshots_dir()
 
@@ -47,7 +47,7 @@ def load_all_snapshots(snap_dir: str | Path | None = None) -> pd.DataFrame:
     files: list[Path] = []
     seen_names: set[str] = set()
     for directory in dirs:
-        for fp in sorted(directory.glob("daegu_charger_status_*.csv")):
+        for fp in iter_status_csvs(directory):
             if fp.name in seen_names:
                 continue
             seen_names.add(fp.name)

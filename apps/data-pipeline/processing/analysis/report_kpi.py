@@ -23,7 +23,7 @@ if str(_PROCESSING) not in sys.path:
 from _bootstrap import ensure_paths
 
 REPO = ensure_paths()
-from loop_paths import LOOP1_INDEX, LOOP1_LOGS, status_snapshots_dir, loop2_dir
+from loop_paths import LOOP1_INDEX, LOOP1_LOGS, iter_status_csvs, loop2_dir, status_snapshots_dir
 
 KST = ZoneInfo("Asia/Seoul")
 OUT_MD = REPO / "docs" / "data" / "운영" / "KPI_보고서.md"
@@ -64,7 +64,11 @@ def status_today(today: date) -> dict:
                 out["gap_max_min"] = round(float(gaps.dropna().max()), 2)
                 out["gaps_gt_12"] = int((gaps.dropna() > 12).sum())
 
-    snaps = sorted(status_snapshots_dir().glob(f"daegu_charger_status_{today.strftime('%Y%m%d')}_*.csv"))
+    snaps = [
+        p
+        for p in iter_status_csvs(status_snapshots_dir())
+        if f"_{today.strftime('%Y%m%d')}_" in p.name
+    ]
     if snaps:
         latest = snaps[-1]
         out["latest_snapshot"] = latest.name

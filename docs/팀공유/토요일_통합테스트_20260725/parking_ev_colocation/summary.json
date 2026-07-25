@@ -1,0 +1,23 @@
+{
+  "generated_at_kst": "2026-07-25T18:32:15+09:00",
+  "parking_master_rows": 1764,
+  "charger_stations_within_100m": 850,
+  "parking_lots_with_ev_candidates": 544,
+  "grade_counts": {
+    "STRONG": 55,
+    "LIKELY": 251,
+    "NEARBY_ONLY": 238
+  },
+  "policy": {
+    "STRONG": "≤20m and a name or address-number signal",
+    "LIKELY": "≤50m, or ≤100m with a name/address signal",
+    "NEARBY_ONLY": ">50m to ≤100m without a corroborating name/address signal"
+  },
+  "figures": [
+    "figures/01_colocation_grade_counts.png",
+    "figures/02_distance_by_grade.png",
+    "figures/03_parking_type_by_grade.png",
+    "figures/04_spaces_vs_distance.png"
+  ],
+  "not_a_guarantee": "Coordinate/name/address evidence only; validate STRONG samples before product claims."
+}

@@ -189,7 +189,7 @@ def main() -> int:
         "parking_is_mock": False,
         "role": "DA① spatial join (no scores)",
         "output": str(out_csv.relative_to(REPO)).replace("\\", "/"),
-        "note": "info CSV is page1 (~1000). Raising match rate needs full PIS pages in team_5.",
+        "note": "full Team5 parking_lot_info export (1,764 lots); unmatched stations remain null.",
     }
     meta_path = OUT_DIR / "join_parking_team5_meta.json"
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")

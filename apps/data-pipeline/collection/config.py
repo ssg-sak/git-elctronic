@@ -24,7 +24,8 @@ ZCODE = "27"
 DAEGU_CENTER_LAT = 35.8714
 DAEGU_CENTER_LNG = 128.6014
 
-# getChargerStatus 조회 시 최근 N분 변경분만 요청 (스케줄러 간격과 맞출 것)
+# getChargerStatus: 스케줄 간격(분) · API period(분, 공식 max 10)
+STATUS_INTERVAL_MINUTES = 5
 STATUS_PERIOD_MINUTES = 10
 
 # EvCharger 일 트래픽 한도 (AGENTS.md 기준, getChargerInfo/Status 합산으로 보수적으로 관리)

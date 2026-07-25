@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 from typing import Optional
 
 import config
+import daily_exports
 import db
 from http_client import ApiCallError, archive_raw, request_with_retry
 from logging_conf import get_logger
@@ -143,6 +144,11 @@ def collect(zcode: str = config.ZCODE) -> int:
         page_no += 1
 
     logger.info("getChargerInfo 총 %s건 수집 완료 (zcode=%s)", total_items, zcode)
+    try:
+        csv_path = daily_exports.export_charger_info_csv()
+        logger.info("getChargerInfo 일일 CSV 저장: %s", csv_path)
+    except Exception:
+        logger.exception("getChargerInfo 일일 CSV 저장 실패 (DB 수집은 완료됨)")
     return total_items
 
 

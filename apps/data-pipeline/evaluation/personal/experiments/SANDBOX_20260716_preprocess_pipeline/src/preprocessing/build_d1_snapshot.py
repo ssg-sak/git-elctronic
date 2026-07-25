@@ -26,7 +26,7 @@ _DATA_PIPELINE = REPO / "apps" / "data-pipeline"
 sys.path.insert(0, str(PROCESSING))
 sys.path.insert(0, str(_DATA_PIPELINE))
 
-from loop_paths import status_snapshots_dir  # noqa: E402
+from loop_paths import iter_status_csvs, status_snapshots_dir  # noqa: E402
 
 from features.station_features import (  # noqa: E402
     aggregate_availability_features,
@@ -349,7 +349,7 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         "as_of_ts": as_of.isoformat(),
         "master_chargers": int(len(master)),
         "status_chargers_as_of": int(len(status)),
-        "status_snapshot_files": len(list(STATUS_SNAP_DIR.glob("daegu_charger_status_*.csv"))),
+        "status_snapshot_files": len(iter_status_csvs(STATUS_SNAP_DIR)),
         "stations": int(out["statId"].nunique()),
         "observed_chargers": int(raw["status_missing"].eq(False).sum()) if len(raw) else 0,
         "parking_is_mock": parking_is_mock,

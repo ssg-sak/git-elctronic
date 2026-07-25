@@ -20,7 +20,7 @@ from build_panel import (  # noqa: E402
     build_state_panel,
 )
 from load_snapshots import load_snapshot  # noqa: E402
-from loop_paths import LOOP1_DIR, LOOP1_INDEX, LOOP1_LOGS, LOOPS_ARCHIVE  # noqa: E402
+from loop_paths import LOOP1_DIR, LOOP1_INDEX, LOOP1_LOGS, LOOPS_ARCHIVE, iter_status_csvs  # noqa: E402
 
 OUT_DIR = REPO / "docs" / "data" / "analysis" / "snapshot_all_20260723"
 REPORT_MD = REPO / "docs" / "보고" / "스냅샷_전체분석_20260723.md"
@@ -50,7 +50,7 @@ def collect_unique_files() -> dict[str, tuple[str, Path]]:
     best: dict[str, tuple[int, str, Path]] = {}
     for name, d in _snapshot_dirs():
         pri = 0 if name == "live_loop1" else 1
-        for path in d.glob("daegu_charger_status_*.csv"):
+        for path in iter_status_csvs(d):
             sid = path.stem.replace("daegu_charger_status_", "")
             cur = best.get(sid)
             if cur is None or pri < cur[0]:

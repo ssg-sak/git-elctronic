@@ -27,7 +27,15 @@ _DATA_PIPELINE = REPO_ROOT / "apps" / "data-pipeline"
 if str(_DATA_PIPELINE) not in sys.path:
     sys.path.insert(0, str(_DATA_PIPELINE))
 
-from loop_paths import EXTRACTED_DIR, LOOP1_DIR, LOOP1_INDEX, LOOP1_LOGS, LOOP1_SNAPSHOTS
+from loop_paths import (  # noqa: E402
+    EXTRACTED_DIR,
+    LOOP1_DIR,
+    LOOP1_INDEX,
+    LOOP1_LOGS,
+    LOOP1_SNAPSHOTS,
+    loop1_day_dir,
+    ymd_from_filename,
+)
 
 SNAPSHOT_DIR = LOOP1_SNAPSHOTS
 LOG_DIR = LOOP1_LOGS
@@ -229,7 +237,10 @@ def collect_snapshot(*, period_minutes: int = 10) -> dict[str, Any]:
             break
         page_no += 1
 
-    out_path = SNAPSHOT_DIR / f"daegu_charger_status_{snapshot_id}.csv"
+    ymd = ymd_from_filename(f"_{snapshot_id}_") or snapshot_id[:8]
+    day_dir = loop1_day_dir(ymd)
+    day_dir.mkdir(parents=True, exist_ok=True)
+    out_path = day_dir / f"daegu_charger_status_{snapshot_id}.csv"
     # Absolute path must stay inside sandbox
     if EXTRACTED_DIR.resolve() in out_path.resolve().parents or out_path.resolve().parent == EXTRACTED_DIR.resolve():
         raise RuntimeError("refusing to write snapshot into docs/data/extracted/")
