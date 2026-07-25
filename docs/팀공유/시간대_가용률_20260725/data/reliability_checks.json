@@ -1,10 +1,10 @@
 {
   "grades": {
-    "HIGH": 202567,
-    "NORMAL": 149926,
+    "HIGH": 241766,
+    "NORMAL": 177752,
     "CHECK_REQUIRED": 0
   },
-  "age_median": 4.45,
+  "age_median": 4.433333333333334,
   "age_p95": 9.15,
   "gaps_gt25": 11,
   "segments": 12,
@@ -17,14 +17,14 @@
     "2026-07-22": 56.4,
     "2026-07-23": 59.4,
     "2026-07-24": 57.0,
-    "2026-07-25": 55.6
+    "2026-07-25": 58.4
   },
   "checks": [
     {
       "id": "R1_call_log",
       "name": "live call_log 성공률 (시도분만 · quota skip 제외)",
       "pass": true,
-      "detail": "405/405 attempted · skip(quota)=101"
+      "detail": "530/530 attempted · skip(quota)=101"
     },
     {
       "id": "R2_gap25",
@@ -36,13 +36,13 @@
       "id": "R3_age_median",
       "name": "statUpdDt 경과 중앙값 ≤10분",
       "pass": true,
-      "detail": "median=4.45 · p95=9.15"
+      "detail": "median=4.43 · p95=9.15"
     },
     {
       "id": "R4_high_share",
       "name": "HIGH 등급 비율 ≥50%",
       "pass": true,
-      "detail": "{'HIGH': 202567, 'NORMAL': 149926, 'CHECK_REQUIRED': 0}"
+      "detail": "{'HIGH': 241766, 'NORMAL': 177752, 'CHECK_REQUIRED': 0}"
     },
     {
       "id": "R5_parse",
@@ -54,7 +54,7 @@
       "id": "R6_panel_avail",
       "name": "패널 가용률 시계열 산출 가능",
       "pass": true,
-      "detail": "ticks=756 · mean=62.2%"
+      "detail": "ticks=882 · mean=63.9%"
     }
   ],
   "pass_count": 5,

@@ -1,0 +1,25 @@
+{
+  "checked_at_kst": "2026-07-25T21:08:03+09:00",
+  "checks": [
+    {
+      "source": "EvCharger status (loop1)",
+      "file_count": 882,
+      "latest_file": "docs/data/loops/loop1/snapshots/20260725/daegu_charger_status_20260725_203431.csv",
+      "latest_collected_at_kst": "2026-07-25T20:34:31+09:00",
+      "age_minutes": 33.5,
+      "max_age_minutes": 30,
+      "status": "STALE_OR_MISSING"
+    },
+    {
+      "source": "Daegu traffic (loop3)",
+      "file_count": 266,
+      "latest_file": "docs/data/loops/loop3/20260725/daegu_traffic_linkspeed_20260725_202741.csv",
+      "latest_collected_at_kst": "2026-07-25T20:27:41+09:00",
+      "age_minutes": 40.4,
+      "max_age_minutes": 45,
+      "status": "PASS"
+    }
+  ],
+  "overall": "CHECK_REQUIRED",
+  "note": "Local-file freshness only. Run after Lightsail pull; this does not call APIs or rebuild D1."
+}

@@ -55,6 +55,7 @@
 - `spatial_join/` — Team5 주차 공간조인 결과·메타
 - `utic/` — 최신 대구 UTIC 돌발 CSV
 - `d1_sample/` — D1 전달용 표본 30행 (전체 D1·`.env`는 제외)
+- `data_validity_assessment/` — 내적·외적·신뢰성·측정타당성 검증, 외부 표본 검토 CSV
 
 ```text
 DA① | Saturday team package | 20260725
