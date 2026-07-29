@@ -14,6 +14,7 @@ import csv
 import json
 import os
 import sys
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
@@ -232,6 +233,38 @@ def _in_daegu(lat: float | None, lng: float | None, addr: str) -> bool:
     return "대구" in a
 
 
+def _is_kotsa_daegu(item: dict) -> bool:
+    """Use KOTSA's administrative-region field, not a broad coordinate box."""
+    sido = str(item.get("prk_plce_adres_sido") or "").strip()
+    addr = str(item.get("prk_plce_adres") or "").strip()
+    return sido == "대구광역시" or addr.startswith("대구광역시")
+
+
+def _dedupe_kotsa_csv(path: Path) -> int:
+    """Deduplicate a completed/resumed KOTSA extract by its source identifier."""
+    deduped = path.with_suffix(".dedup")
+    seen: set[str] = set()
+    kept = 0
+    with (
+        path.open(encoding="utf-8-sig", newline="") as source,
+        deduped.open("w", encoding="utf-8-sig", newline="") as target,
+    ):
+        reader = csv.DictReader(source)
+        if not reader.fieldnames:
+            raise RuntimeError(f"KOTSA extract has no header: {path}")
+        writer = csv.DictWriter(target, fieldnames=reader.fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        for row in reader:
+            source_id = str(row.get("prk_center_id") or "").strip()
+            if not source_id or source_id in seen:
+                continue
+            seen.add(source_id)
+            writer.writerow(row)
+            kept += 1
+    deduped.replace(path)
+    return kept
+
+
 def extract_national_daegu(key: str, stamp: str) -> Path | None:
     """Page through national parking API and keep Daegu rows."""
     rows: list[dict[str, str]] = []
@@ -314,101 +347,138 @@ def extract_national_daegu(key: str, stamp: str) -> Path | None:
     return path
 
 
-def extract_kotsa_daegu(key: str, stamp: str) -> Path | None:
-    rows: list[dict[str, str]] = []
-    page = 1
+def extract_kotsa_daegu(
+    key: str,
+    stamp: str,
+    *,
+    start_page: int = 1,
+) -> Path | None:
+    """Stream nationwide KOTSA pages and persist Daegu rows only.
+
+    ``start_page`` resumes a retained ``.partial`` output.  Each completed
+    page is checkpointed, so an interrupted nationwide scan does not discard
+    already filtered Daegu rows.
+    """
+    page_size = 1000
+    page = start_page
     total = None
-    while page <= 500:
-        status, ctype, body = _get(
-            KOTSA["PrkSttusInfo"],
-            {
-                "serviceKey": key,
-                "pageNo": str(page),
-                "numOfRows": "100",
-                "format": "2",
-            },
-            timeout=90,
-        )
-        if status != 200:
-            print(f"kotsa page={page} http={status}")
-            break
-        sniff = _sniff(body)
-        items: list[dict] = []
-        if sniff == "json":
-            data = _parse_json(body)
-            # try several shapes
-            payload = data.get("response") or data
-            header = payload.get("header") if isinstance(payload, dict) else {}
-            rc = (header or {}).get("resultCode") if isinstance(header, dict) else data.get("resultCode")
-            if rc not in ("00", "0", 0, None):
-                print(f"kotsa resultCode={rc} msg={(header or {}).get('resultMsg')}")
-                break
-            body_obj = payload.get("body") if isinstance(payload, dict) else None
-            if isinstance(body_obj, dict):
-                total = total or body_obj.get("totalCount")
-                raw_items = body_obj.get("items") or body_obj.get("item") or []
-            else:
-                raw_items = data.get("PrkSttusInfo") or data.get("items") or []
-            if isinstance(raw_items, dict) and "item" in raw_items:
-                raw_items = raw_items["item"]
-            if isinstance(raw_items, dict):
-                raw_items = [raw_items]
-            items = [x for x in (raw_items or []) if isinstance(x, dict)]
-        elif sniff == "xml":
-            root = ET.fromstring(body)
-            rc = root.findtext(".//resultCode")
-            if rc not in ("00", "0", None):
-                print(f"kotsa xml resultCode={rc}")
-                break
-            for it in root.findall(".//item"):
-                items.append({c.tag: (c.text or "") for c in it})
-            t = root.findtext(".//totalCount")
-            total = total or t
-        else:
-            print(f"kotsa sniff={sniff} abort")
-            break
-
-        if not items:
-            break
-        fetched = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
-        for it in items:
-            addr = str(it.get("prk_plce_adres") or it.get("prkPlceAdres") or "")
-            try:
-                lat = float(it.get("prk_plce_entrc_la") or it.get("prkPlceEntrcLa") or "")
-            except Exception:
-                lat = None
-            try:
-                lng = float(it.get("prk_plce_entrc_lo") or it.get("prkPlceEntrcLo") or "")
-            except Exception:
-                lng = None
-            if not _in_daegu(lat, lng, addr):
-                continue
-            row = {k: str(v) for k, v in it.items()}
-            row["fetchedAt"] = fetched
-            row["parking_source"] = "kotsa"
-            rows.append(row)
-        print(f"  kotsa page={page} items={len(items)} daegu_acc={len(rows)} total={total}")
-        try:
-            t_int = int(total) if total is not None else None
-        except Exception:
-            t_int = None
-        if t_int and page * 100 >= t_int:
-            break
-        if len(items) < 100:
-            break
-        page += 1
-
-    if not rows:
-        return None
+    daegu_rows = 0
     EXTRACTED_PARKING.mkdir(parents=True, exist_ok=True)
     path = EXTRACTED_PARKING / f"daegu_parking_info_kotsa_{stamp}.csv"
-    fields = list(rows[0].keys())
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(rows)
+    tmp_path = path.with_suffix(".csv.partial")
+    checkpoint_path = tmp_path.with_suffix(".partial.progress.json")
+    writer: csv.DictWriter | None = None
+    fieldnames: list[str] | None = None
+    mode = "w"
+    if start_page > 1:
+        if not tmp_path.exists():
+            raise FileNotFoundError(f"Cannot resume without partial file: {tmp_path}")
+        with tmp_path.open(encoding="utf-8-sig", newline="") as prior_file:
+            prior_reader = csv.DictReader(prior_file)
+            if not prior_reader.fieldnames:
+                raise RuntimeError(f"Partial file has no header: {tmp_path}")
+            daegu_rows = sum(1 for _ in prior_reader)
+            fieldnames = list(prior_reader.fieldnames)
+        mode = "a"
+
+    with tmp_path.open(mode, encoding="utf-8-sig", newline="") as out_file:
+        if fieldnames is not None:
+            writer = csv.DictWriter(
+                out_file,
+                fieldnames=fieldnames,
+                extrasaction="ignore",
+            )
+        while True:
+            status = 0
+            body = b""
+            data: dict | None = None
+            last_problem = ""
+            for attempt in range(1, 6):
+                status, _, body = _get(
+                    KOTSA["PrkSttusInfo"],
+                    {
+                        "serviceKey": key,
+                        "pageNo": str(page),
+                        "numOfRows": str(page_size),
+                        "format": "2",
+                    },
+                    timeout=90,
+                )
+                if status != 200:
+                    last_problem = f"http={status}"
+                elif _sniff(body) != "json":
+                    last_problem = f"response={_sniff(body)}"
+                else:
+                    try:
+                        parsed = _parse_json(body)
+                    except json.JSONDecodeError:
+                        parsed = None
+                    if isinstance(parsed, dict) and parsed.get("resultCode") in ("00", "0", 0, None):
+                        data = parsed
+                        break
+                    if isinstance(parsed, dict):
+                        last_problem = f"resultCode={parsed.get('resultCode')}"
+                    else:
+                        last_problem = "invalid JSON"
+                if attempt < 5:
+                    time.sleep(attempt * 3)
+            if data is None:
+                raise RuntimeError(
+                    f"KOTSA page={page} failed after retries ({last_problem})"
+                )
+            total = total or data.get("totalCount")
+            raw_items = data.get("PrkSttusInfo") or data.get("items") or []
+            if isinstance(raw_items, dict):
+                raw_items = raw_items.get("item", [raw_items])
+            items = [item for item in raw_items if isinstance(item, dict)]
+            if not items:
+                break
+
+            fetched = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
+            daegu_page = []
+            for item in items:
+                if not _is_kotsa_daegu(item):
+                    continue
+                row = {key: str(value) for key, value in item.items()}
+                row["fetchedAt"] = fetched
+                row["parking_source"] = "kotsa"
+                daegu_page.append(row)
+            if daegu_page:
+                if writer is None:
+                    fieldnames = list(daegu_page[0])
+                    writer = csv.DictWriter(out_file, fieldnames=fieldnames, extrasaction="ignore")
+                    writer.writeheader()
+                writer.writerows(daegu_page)
+                daegu_rows += len(daegu_page)
+
+            if page == 1 or page % 50 == 0:
+                print(f"  KOTSA page={page} Daegu={daegu_rows} total={total}", flush=True)
+            if len(items) < page_size or (total and page * page_size >= int(total)):
+                break
+            checkpoint_path.write_text(
+                json.dumps(
+                    {
+                        "last_completed_page": page,
+                        "next_page": page + 1,
+                        "daegu_rows": daegu_rows,
+                        "total_rows": total,
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                ),
+                encoding="utf-8",
+            )
+            page += 1
+
+    if not daegu_rows:
+        tmp_path.unlink(missing_ok=True)
+        checkpoint_path.unlink(missing_ok=True)
+        return None
+    unique_rows = _dedupe_kotsa_csv(tmp_path)
+    tmp_path.replace(path)
+    checkpoint_path.unlink(missing_ok=True)
     (EXTRACTED_PARKING / "daegu_parking_info_kotsa_latest.csv").write_bytes(path.read_bytes())
-    print(f"SAVED {len(rows)} -> {path.relative_to(REPO)}")
+    print(f"SAVED {unique_rows} unique Daegu rows -> {path.relative_to(REPO)}")
     return path
 
 

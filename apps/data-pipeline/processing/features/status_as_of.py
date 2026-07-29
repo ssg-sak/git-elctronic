@@ -94,9 +94,35 @@ def load_latest_status_as_of(
 
     frames = [pd.read_csv(fp, dtype={"statId": str, "chgerId": str}) for fp in files]
     df = pd.concat(frames, ignore_index=True)
-    df = df.drop_duplicates(subset=["snapshotId", "statId", "chgerId"], keep="first")
 
-    upd = pd.to_datetime(df["statUpdDt"], format="%Y%m%d%H%M%S", errors="coerce")
+    # The live API is paginated while rows are changing. A charger can move
+    # across a page boundary and appear twice in one snapshot. Keep the newest
+    # event-time row; page number and original order make ties deterministic.
+    df["__stat_updated_sort"] = pd.to_datetime(
+        df["statUpdDt"], format="%Y%m%d%H%M%S", errors="coerce"
+    )
+    df["__page_sort"] = pd.to_numeric(df.get("pageNo"), errors="coerce").fillna(-1)
+    df["__row_sort"] = range(len(df))
+    df = (
+        df.sort_values(
+            [
+                "snapshotId",
+                "statId",
+                "chgerId",
+                "__stat_updated_sort",
+                "__page_sort",
+                "__row_sort",
+            ],
+            na_position="first",
+        )
+        .drop_duplicates(
+            subset=["snapshotId", "statId", "chgerId"],
+            keep="last",
+        )
+        .drop(columns=["__page_sort", "__row_sort"])
+    )
+
+    upd = df.pop("__stat_updated_sort")
     # naive → KST
     if getattr(upd.dt, "tz", None) is None:
         upd = upd.dt.tz_localize(KST, ambiguous="NaT", nonexistent="NaT")
