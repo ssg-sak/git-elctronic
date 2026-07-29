@@ -30,6 +30,7 @@ def _station_tick_from_matrices(
     succ: np.ndarray,
     values: np.ndarray,
     recon: np.ndarray,
+    age: np.ndarray,
     station_codes: np.ndarray,
     n_stations: int,
     station_labels: np.ndarray,
@@ -44,9 +45,19 @@ def _station_tick_from_matrices(
         usable_obs = np.isin(obs, [2, 3]) & observed
         avail_rec = rec == 2
         usable_rec = np.isin(rec, [2, 3])
+        known_rec = ~np.isnan(rec)
 
         def bincount(mask: np.ndarray) -> np.ndarray:
             return np.bincount(station_codes[mask], minlength=n_stations)
+
+        min_age = np.full(n_stations, np.inf, dtype=float)
+        if known_rec.any():
+            np.minimum.at(
+                min_age,
+                station_codes[known_rec],
+                age[i, known_rec],
+            )
+        min_age[np.isinf(min_age)] = np.nan
 
         chargers = np.bincount(station_codes, minlength=n_stations)
         rows.append(
@@ -57,8 +68,10 @@ def _station_tick_from_matrices(
                     "observed_chargers": bincount(observed),
                     "available_observed": bincount(avail_obs),
                     "usable_observed": bincount(usable_obs),
+                    "known_recon": bincount(~np.isnan(rec)),
                     "available_recon": bincount(~np.isnan(rec) & avail_rec),
                     "usable_recon": bincount(~np.isnan(rec) & usable_rec),
+                    "observation_age_minutes": min_age,
                     "panel_time": all_ts[i],
                     "snapshotId": idx.loc[i, "snapshotId"],
                     "collection_success": bool(succ[i]),
@@ -141,6 +154,7 @@ def run_panel_restore(*, max_hold_minutes: int = MAX_HOLD_MINUTES) -> dict[str, 
         succ=succ,
         values=values,
         recon=recon,
+        age=age,
         station_codes=station_codes,
         n_stations=len(labels_arr),
         station_labels=labels_arr,

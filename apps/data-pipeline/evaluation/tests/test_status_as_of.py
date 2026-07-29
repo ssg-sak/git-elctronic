@@ -78,6 +78,46 @@ def test_last_seen_improves_observation_age(tmp_path: Path):
     assert 4 * 60 <= float(out.iloc[0]["observation_age_seconds"]) <= 6 * 60
 
 
+def test_same_snapshot_page_boundary_duplicate_keeps_newest_event(tmp_path: Path):
+    """A charger can move across API pages while one snapshot is collected."""
+    snapshot_id = "20260723_103617"
+    rows = [
+        {
+            "statId": "JA270010",
+            "chgerId": "01",
+            "stat": "5",
+            "statUpdDt": "20260723103017",
+            "fetchedAt": "2026-07-23 10:36:17",
+            "snapshotId": snapshot_id,
+            "pageNo": "4",
+        },
+        {
+            "statId": "JA270010",
+            "chgerId": "01",
+            "stat": "2",
+            "statUpdDt": "20260723103512",
+            "fetchedAt": "2026-07-23 10:36:17",
+            "snapshotId": snapshot_id,
+            "pageNo": "5",
+        },
+    ]
+    pd.DataFrame(rows).to_csv(
+        tmp_path / f"daegu_charger_status_{snapshot_id}.csv",
+        index=False,
+    )
+
+    as_of = datetime(2026, 7, 23, 10, 37, tzinfo=KST)
+    out = load_latest_status_as_of(tmp_path, as_of)
+
+    assert len(out) == 1
+    assert out.iloc[0]["stat"] == 2
+    assert out.iloc[0]["stat_mapped"] == "AVAILABLE"
+    assert out.iloc[0]["statUpdDt_dt"] == pd.Timestamp(
+        "2026-07-23 10:35:12",
+        tz=KST,
+    )
+
+
 def test_join_marks_missing_status():
     master = pd.DataFrame(
         [
