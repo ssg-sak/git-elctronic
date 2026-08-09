@@ -1,0 +1,12 @@
+{
+  "sampled_at_kst": "2026-07-30T09:52:56+09:00",
+  "raw_rows": 726068,
+  "raw_duplicate_groups": 1547,
+  "raw_duplicate_extra_rows": 1547,
+  "status_conflict_groups": 7,
+  "same_status_groups_sampled": 20,
+  "sample_rows": 54,
+  "selected_rows": 27,
+  "removed_rows": 27,
+  "selection_rule": "latest statUpdDt, then pageNo, then raw row order"
+}

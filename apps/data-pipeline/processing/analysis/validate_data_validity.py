@@ -426,7 +426,8 @@ def audit_usage_d1(paths: dict[str, Path | None], metrics: dict[str, Any]) -> pd
     add("D1", "내적", "D1_PUBLIC_ACCESS_FLAGS", public_bad == 0, str(public_bad),
         "public default and access restricted do not overlap", "build_d1_snapshot.py")
     add("이용이력", "외적", "USAGE_D1_COVERAGE", False, f"{history.sum()}/{len(d1)} ({history.mean():.1%})",
-        "history is auxiliary because coverage is limited", "integration readiness", warn=True)
+        "coverage ceiling = municipal ~219 stations (not join bug); auxiliary prior only",
+        "integration readiness", warn=True)
     return d1
 
 

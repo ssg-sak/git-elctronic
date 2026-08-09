@@ -1,0 +1,29 @@
+﻿statId,statNm,matched_id,matched_name,distance_m,radius_m,matched,remaining_spaces,total_spaces,occupancy_rate,congestion_status,has_realtime,parking_lat,parking_lng,parking_source,source_file
+CV000902,국민건강보험공단 대구경북지역본부,156-2-000096,두류1·2동 6공영주차장,202.7,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+EZ001952,대구광역시서부교육지원청,152-1-000017,내당동삼익맨션 남측,44.7,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+EZ100674,서광종합건설,156-2-000097,두류1·2동 7공영주차장,151.0,1000.0,True,,,,,False,35.85621688,128.56110148,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+KP000643,두류보성맨션 아파트,156-2-000018,두류1·2동 1공영주차장,361.0,1000.0,True,,,,,False,35.855681,128.569638,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+KP002174,홈플러스 내당점,152-1-000018,내당보성 홍실아파트 남측,234.5,1000.0,True,,,,,False,35.862117,128.562365,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+LU000587,아이작큐브,156-2-000096,두류1·2동 6공영주차장,190.3,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+LU002217,홍실1차아파트,152-1-000018,내당보성 홍실아파트 남측,13.0,1000.0,True,,,,,False,35.862117,128.562365,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+NT101674,대구 현대해상사옥,156-2-000096,두류1·2동 6공영주차장,180.3,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+PI530306,대구시 달서구 리베라빌라,156-2-000095,두류1·2동 5공영주차장,390.9,1000.0,True,,,,,False,35.85619338,128.56169601,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+PIS00548,대구 서구 대구서부고용복지플러스센터,152-1-000017,내당동삼익맨션 남측,61.1,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+PIS00560,대구 서구 내당삼익맨션,152-1-000017,내당동삼익맨션 남측,47.8,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+PL031835,대구 벽산타워,152-1-000017,내당동삼익맨션 남측,246.3,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+PL031986,대구 달서구 두류보성맨션,156-2-000018,두류1·2동 1공영주차장,360.6,1000.0,True,,,,,False,35.855681,128.569638,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+SF000068,뉴에버빌 (두류동),156-2-000095,두류1·2동 5공영주차장,333.8,1000.0,True,,,,,False,35.85619338,128.56169601,team5_pis,docs/data/spatial_join/join_parking_team5_1000m.csv
+CV000902,국민건강보험공단 대구경북지역본부,156-2-000096,두류1·2동 6공영주차장,202.7,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+EZ001952,대구광역시서부교육지원청,152-1-000017,내당동삼익맨션 남측,44.7,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+EZ100674,서광종합건설,156-2-000097,두류1·2동 7공영주차장,151.0,1000.0,True,,,,,False,35.85621688,128.56110148,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+KP000643,두류보성맨션 아파트,156-2-000018,두류1·2동 1공영주차장,361.0,1000.0,True,,,,,False,35.855681,128.569638,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+KP002174,홈플러스 내당점,152-1-000018,내당보성 홍실아파트 남측,234.5,1000.0,True,,,,,False,35.862117,128.562365,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+LU000587,아이작큐브,156-2-000096,두류1·2동 6공영주차장,190.3,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+LU002217,홍실1차아파트,152-1-000018,내당보성 홍실아파트 남측,13.0,1000.0,True,,,,,False,35.862117,128.562365,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+NT101674,대구 현대해상사옥,156-2-000096,두류1·2동 6공영주차장,180.3,1000.0,True,,,,,False,35.85693525,128.5606036,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+PI530306,대구시 달서구 리베라빌라,156-2-000095,두류1·2동 5공영주차장,390.9,1000.0,True,,,,,False,35.85619338,128.56169601,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+PIS00548,대구 서구 대구서부고용복지플러스센터,152-1-000017,내당동삼익맨션 남측,61.1,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+PIS00560,대구 서구 내당삼익맨션,152-1-000017,내당동삼익맨션 남측,47.8,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+PL031835,대구 벽산타워,152-1-000017,내당동삼익맨션 남측,246.3,1000.0,True,,,,,False,35.859338,128.556191,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+PL031986,대구 달서구 두류보성맨션,156-2-000018,두류1·2동 1공영주차장,360.6,1000.0,True,,,,,False,35.855681,128.569638,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv
+SF000068,뉴에버빌 (두류동),156-2-000095,두류1·2동 5공영주차장,333.8,1000.0,True,,,,,False,35.85619338,128.56169601,team5_pis,docs/팀공유/토요일_통합테스트_20260725/spatial_join/join_parking_team5_1000m.csv

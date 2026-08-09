@@ -1,0 +1,8 @@
+﻿dow,dow_ko,is_weekend,analyzable,provisional,panel_rows,n_timestamps,n_calendar_dates,n_stations,avail_mean,avail_median,confirmed_rate,in_use_rate_mean,exclude_reason
+0,월,False,True,True,582747,208,2,3443,0.7041,0.8571,0.8646,0.2959,
+1,화,False,True,True,621672,216,2,3491,0.7173,0.875,0.87,0.2827,
+2,수,False,True,True,683799,241,2,3547,0.7052,0.875,0.8563,0.2948,
+3,목,False,True,True,1002352,336,2,3585,0.704,0.8824,0.8466,0.296,
+4,금,False,True,True,612803,264,3,3599,0.6692,0.8333,0.8138,0.3308,
+5,토,True,True,True,400480,210,2,3128,0.6672,0.8182,0.8179,0.3328,
+6,일,True,True,True,537515,198,2,3248,0.6638,0.75,0.8541,0.3362,

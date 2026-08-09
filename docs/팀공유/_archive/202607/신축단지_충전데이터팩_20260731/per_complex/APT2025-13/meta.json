@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-13",
+  "complex_name": "태왕디아너스오페라",
+  "gu": "북구",
+  "dong": "고성동",
+  "move_in_ym": "2025-07",
+  "households": "532",
+  "cohort": "2025",
+  "notes": NaN,
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8815252,
+  "geocode_lng": 128.5848229,
+  "geocode_note": "고성동, 북구, 대구광역시, 대한민국",
+  "nearby_300m_stations": 8,
+  "nearby_500m_stations": 29,
+  "nearby_500m_chargers": 222,
+  "d1_rows_for_nearby_or_name": 29
+}

@@ -1,0 +1,5 @@
+﻿bucket,stations,total_chargers_mean,unobserved_rate_mean,confirmed_rate,d1_avail_mean_observed,d1_avail_n,d2_avail_mean,d2_stations_with_panel
+1,729,1.0,0.2167,0.631,0.8056,571,0.7859,591
+2-3,1507,2.36,0.2699,0.7551,0.7794,1224,0.7358,1250
+4-6,882,4.89,0.1984,0.8707,0.746,787,0.681,791
+7+,1092,15.36,0.205,0.9075,0.704,997,0.6437,999

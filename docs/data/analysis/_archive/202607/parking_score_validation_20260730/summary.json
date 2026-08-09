@@ -1,0 +1,59 @@
+{
+  "generated_at_kst": "2026-07-30T15:45:28+09:00",
+  "scope": {
+    "parking_source": "Team5 realtime only",
+    "excluded": [
+      "KOTSA partial/static extract",
+      "1km nearby parking join"
+    ],
+    "colocation_requirement": "STRONG only",
+    "max_parking_status_lag_minutes": 10,
+    "target": "station has >=1 available charger at t+15m"
+  },
+  "inventory": {
+    "status_event_rows": null,
+    "status_panel_rows": 228917,
+    "status_days": 8,
+    "parking_rows": 92758,
+    "parking_days": 8,
+    "strong_stations": 59,
+    "cohort_rows": 9146,
+    "cohort_stations": 55,
+    "aligned_parking_rows": 97,
+    "labeled_rows_15m": 7421,
+    "aligned_labeled_rows_15m": 64,
+    "parking_sources": [
+      "docs/data/extracted/parking/team5_full_snapshot_20260725_134854/parking_realtime_status.csv",
+      "docs/data/extracted/parking/incremental/20260725/team5_parking_incremental_20260725_140724/parking_realtime_status_new.csv",
+      "docs/data/extracted/parking/incremental/20260725/team5_parking_incremental_20260725_153820/parking_realtime_status_new.csv",
+      "docs/data/extracted/parking/incremental/20260727/team5_parking_incremental_20260727_201911/parking_realtime_status_new.csv",
+      "docs/data/extracted/parking/incremental/20260728/team5_parking_incremental_20260728_081520/parking_realtime_status_new.csv",
+      "docs/data/extracted/parking/incremental/20260730/team5_parking_incremental_20260730_135514/parking_realtime_status_new.csv"
+    ]
+  },
+  "evaluation": {
+    "skipped": true,
+    "reason": "insufficient labeled rows or calendar days for score evaluation",
+    "labeled_rows": 64,
+    "calendar_days": 2
+  },
+  "decision": {
+    "verdict": "PARKING_AUXILIARY_ONLY",
+    "include_in_score": false,
+    "reason": "점수 반영 근거 부족: Team5 시간 이력 14일 미달; t+15 미래 라벨 수 부족; insufficient labeled rows or calendar days for score evaluation",
+    "product_action": "주차 잔여면·점유율은 추천 점수와 순위에 반영하지 않는다. 검증된 공존 후보의 보조 안내 문구로만 표시한다.",
+    "gates": {
+      "cohort_stations": "PASS",
+      "calendar_days": "FAIL",
+      "labeled_rows": "FAIL",
+      "time_split": "FAIL",
+      "performance": "FAIL"
+    }
+  },
+  "artifacts": {
+    "strong_pairs": "strong_pairs_used.csv",
+    "cohort": "cohort_15m.csv",
+    "metrics": "metrics.csv",
+    "report": "README.md"
+  }
+}

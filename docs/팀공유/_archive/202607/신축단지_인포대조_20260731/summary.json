@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-03T12:49:48.346993+09:00",
+  "seed_n": 20,
+  "info_file": "docs/data/extracted/daily/2026-08-03/daegu_charger_info_20260803_latest.csv",
+  "verdict_counts": {
+    "MISSING_IN_INFO": 18,
+    "FOUND_NAME": 1,
+    "POSSIBLE_RELATED": 1
+  },
+  "missing": [
+    "수성포레스트스위첸",
+    "이안엑소디움에이펙스",
+    "화성파크드림구수산공원",
+    "빌리브루센트",
+    "대구역자이더스타",
+    "힐스테이트대구역퍼스트",
+    "힐스테이트대구역퍼스트2차",
+    "힐스테이트동인",
+    "빌리브라디체",
+    "해링턴플레이스감삼3차",
+    "태왕디아너스오페라",
+    "힐스테이트서대구역센트럴",
+    "두류스타힐스",
+    "두류역자이",
+    "더팰리스트데시앙",
+    "e편한세상동대구역센텀스퀘어",
+    "더샵동성로센트리엘",
+    "달서롯데캐슬센트럴스카이"
+  ],
+  "found": [
+    "두류역서한포레스트"
+  ],
+  "possible": [
+    "더센트럴화성파크드림"
+  ],
+  "caveats": [
+    "Seed is 2025 Daegu move-in SAMPLE from public blog lists, not official registry",
+    "Name match ≠ on-site chargers inside the complex",
+    "MISSING means no similar statNm in EvCharger dump — may still have nearby public chargers",
+    "Move-in date ≠ charger registration date"
+  ]
+}

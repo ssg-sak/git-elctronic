@@ -1,0 +1,15 @@
+{
+  "source": "docs\\data\\extracted\\parking\\team5_full_snapshot_20260803_152354\\parking_lot_info.csv",
+  "rows": 1767,
+  "유료무료_counts": {
+    "무료": 1406,
+    "유료": 247,
+    "nan": 108,
+    "유료+무료": 6
+  },
+  "nonnull_유료무료": 1659,
+  "files": [
+    "docs\\data\\analysis\\parking_fee_20260803\\주차장_유료무료.csv",
+    "docs\\data\\analysis\\parking_fee_20260803\\주차장_유료무료_간단.csv"
+  ]
+}

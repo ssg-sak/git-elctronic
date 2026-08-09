@@ -1,0 +1,23 @@
+{
+  "schema_version": "station_feature_panel_v1",
+  "dataset": "D2_station_feature_panel",
+  "row_unit": "statId × panel_ts",
+  "rows": 8673877,
+  "stations": 3741,
+  "panel_timestamps": 2840,
+  "gap_safe_minutes": 25,
+  "source_snapshots": 2840,
+  "source_rows_deduped": 1360372,
+  "files": {
+    "full_csv": null,
+    "full_parquet": "apps/data-pipeline/evaluation/results/datasets/station_feature_panel_20260808_132023.parquet",
+    "latest_csv": null,
+    "latest_parquet": "apps/data-pipeline/evaluation/results/datasets/station_feature_panel_latest.parquet",
+    "sample_csv": "apps/data-pipeline/evaluation/results/datasets/handoff_to_model/station_feature_panel_sample_50.csv"
+  },
+  "spec": "docs/data/스키마/데이터셋_명세.md",
+  "owner": "AI·data ①",
+  "consumer": "AI·data ②",
+  "write_csv": false,
+  "note": "availability among usable known (stat 2/3); other codes counted in known_chargers but not in usable_known denominator; set D2_WRITE_CSV=1 for full CSV"
+}

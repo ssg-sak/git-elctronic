@@ -171,6 +171,22 @@ def charger_info_csvs() -> list[Path]:
     return files
 
 
+def daily_charger_info_latests() -> list[Path]:
+    """Day pointers under extracted/daily/**/daegu_charger_info_*_latest.csv (oldest→newest)."""
+    if not EXTRACTED_DAILY.is_dir():
+        return []
+    return sorted(
+        EXTRACTED_DAILY.glob("**/daegu_charger_info_*_latest.csv"),
+        key=lambda p: (p.parent.name, p.name),
+    )
+
+
+def latest_daily_charger_info() -> Path | None:
+    """Newest fixed daily info dump pointer, or None."""
+    days = daily_charger_info_latests()
+    return days[-1] if days else None
+
+
 def charger_status_oneshot_csvs() -> list[Path]:
     return sorted(EXTRACTED_CHARGER_STATUS.glob("daegu_charger_status_*.csv"))
 
@@ -178,7 +194,3 @@ def charger_status_oneshot_csvs() -> list[Path]:
 def parking_team5_csvs() -> list[Path]:
     return sorted(EXTRACTED_PARKING.glob("daegu_parking_*_team5*.csv"))
 
-
-def parking_mock_csvs() -> list[Path]:
-    """Deprecated: mock parking removed 2026-07-23. Kept as empty-safe alias."""
-    return sorted(EXTRACTED_PARKING.glob("daegu_parking_*_mock.csv"))

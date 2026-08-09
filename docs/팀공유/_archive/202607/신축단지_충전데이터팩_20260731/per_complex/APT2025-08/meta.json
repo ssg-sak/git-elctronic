@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-08",
+  "complex_name": "힐스테이트대구역퍼스트",
+  "gu": "중구",
+  "dong": "태평로",
+  "move_in_ym": "2025-05",
+  "households": "216",
+  "cohort": "2025",
+  "notes": "1차",
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8773475,
+  "geocode_lng": 128.585243,
+  "geocode_note": "태평로, 태평로3가, 성내3동, 중구, 대구광역시, 41915, 대한민국",
+  "nearby_300m_stations": 15,
+  "nearby_500m_stations": 20,
+  "nearby_500m_chargers": 200,
+  "d1_rows_for_nearby_or_name": 20
+}

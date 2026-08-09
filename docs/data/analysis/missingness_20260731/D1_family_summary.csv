@@ -1,0 +1,11 @@
+﻿family,cols,mean_missing_pct,max_missing_pct,min_missing_pct
+eta,1,100.0,100.0,100.0
+incident,1,93.18,93.18,93.18
+parking_1h,3,89.83,89.83,89.83
+usage_history,3,63.5,95.25,0.0
+parking,5,55.65,90.1,1.64
+linkspeed,5,35.49,35.49,35.49
+status_asof,7,4.28,14.99,0.0
+access,4,0.0,0.0,0.0
+identity,6,0.0,0.0,0.0
+poi,1,0.0,0.0,0.0

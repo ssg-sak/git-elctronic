@@ -1,4 +1,4 @@
-"""Export SANDBOX snapshots to official json/charger-status-history.json schema."""
+"""Export status snapshots to docs/data/exports/charger-status-history.json (real track)."""
 from __future__ import annotations
 
 import json
@@ -19,7 +19,7 @@ from features.status_standard import to_official_status
 from loop_paths import status_snapshots_dir
 
 SNAP_DIR = status_snapshots_dir()
-OUT = REPO / "json" / "charger-status-history.json"
+OUT = REPO / "docs" / "data" / "exports" / "charger-status-history.json"
 
 
 def export_snapshots(

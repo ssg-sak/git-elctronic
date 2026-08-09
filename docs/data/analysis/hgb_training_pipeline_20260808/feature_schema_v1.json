@@ -1,0 +1,352 @@
+{
+  "version": "hgb_feature_schema_v1",
+  "status": "DA1_READY_PENDING_DA2_ACCEPTANCE",
+  "dataset": "station_horizon_training_v1",
+  "grain": "station_id × feature_as_of × horizon_minutes",
+  "primary_key": [
+    "station_id",
+    "feature_as_of",
+    "horizon_minutes"
+  ],
+  "target": "target_available",
+  "model_features": [
+    "horizon_minutes",
+    "available_count",
+    "usable_count",
+    "known_charger_count",
+    "direct_observed_count",
+    "total_chargers",
+    "observation_coverage",
+    "direct_observation_coverage",
+    "observation_age_minutes",
+    "available_count_delta_1tick",
+    "minutes_since_last_change",
+    "hour",
+    "weekday",
+    "is_weekend",
+    "sessions_per_charger",
+    "usage_daytype_avg",
+    "history_observed"
+  ],
+  "auxiliary_pre_cutoff_columns": [
+    "unobserved_rate"
+  ],
+  "columns": [
+    {
+      "name": "station_id",
+      "role": "identifier",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "charging station ID"
+    },
+    {
+      "name": "station_name",
+      "role": "metadata",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": true,
+      "unit": null,
+      "description": "charging station name"
+    },
+    {
+      "name": "feature_as_of",
+      "role": "identifier",
+      "model_input": false,
+      "dtype": "datetime64[ns]",
+      "nullable": false,
+      "unit": "KST",
+      "description": "feature cutoff time"
+    },
+    {
+      "name": "target_time",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "datetime64[ns]",
+      "nullable": false,
+      "unit": "KST",
+      "description": "feature_as_of plus horizon"
+    },
+    {
+      "name": "label_observed_at",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "datetime64[ns]",
+      "nullable": false,
+      "unit": "KST",
+      "description": "future tick used for label"
+    },
+    {
+      "name": "label_match_delta_minutes",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "minutes",
+      "description": "matched tick minus target time"
+    },
+    {
+      "name": "split",
+      "role": "identifier",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "date-block train/valid/test"
+    },
+    {
+      "name": "source_snapshot_id",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "source tick snapshot ID"
+    },
+    {
+      "name": "target_available",
+      "role": "target",
+      "model_input": false,
+      "dtype": "int8",
+      "nullable": false,
+      "unit": "0/1",
+      "description": "arrival availability label"
+    },
+    {
+      "name": "label_reason",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "conservative label reason"
+    },
+    {
+      "name": "label_quality",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "positive or full-coverage negative"
+    },
+    {
+      "name": "label_source",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": null,
+      "description": "label reconstruction method"
+    },
+    {
+      "name": "horizon_minutes",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "int64",
+      "nullable": false,
+      "unit": "minutes",
+      "description": "arrival horizon"
+    },
+    {
+      "name": "available_count",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "known available chargers at cutoff"
+    },
+    {
+      "name": "usable_count",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "known status 2 or 3 chargers"
+    },
+    {
+      "name": "known_charger_count",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "chargers known after bounded hold"
+    },
+    {
+      "name": "direct_observed_count",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "chargers directly observed at tick"
+    },
+    {
+      "name": "total_chargers",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "station charger count"
+    },
+    {
+      "name": "observation_coverage",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "0~1",
+      "description": "known over total chargers"
+    },
+    {
+      "name": "direct_observation_coverage",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "0~1",
+      "description": "direct observed over total"
+    },
+    {
+      "name": "observation_age_minutes",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": true,
+      "unit": "minutes",
+      "description": "freshest known charger observation age"
+    },
+    {
+      "name": "available_count_delta_1tick",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": true,
+      "unit": "chargers",
+      "description": "past-only change from prior continuous tick"
+    },
+    {
+      "name": "minutes_since_last_change",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": true,
+      "unit": "minutes",
+      "description": "past-only elapsed time since count change"
+    },
+    {
+      "name": "hour",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "int8",
+      "nullable": false,
+      "unit": "0~23",
+      "description": "feature cutoff hour"
+    },
+    {
+      "name": "weekday",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "int8",
+      "nullable": false,
+      "unit": "0~6",
+      "description": "Monday zero weekday"
+    },
+    {
+      "name": "is_weekend",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "bool",
+      "nullable": false,
+      "unit": null,
+      "description": "Saturday or Sunday"
+    },
+    {
+      "name": "sessions_per_charger",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": true,
+      "unit": "sessions",
+      "description": "historical sessions per charger"
+    },
+    {
+      "name": "usage_daytype_avg",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "float64",
+      "nullable": true,
+      "unit": "sessions/day",
+      "description": "historical weekday or weekend mean"
+    },
+    {
+      "name": "history_observed",
+      "role": "feature",
+      "model_input": true,
+      "dtype": "bool",
+      "nullable": false,
+      "unit": null,
+      "description": "usage-history join indicator"
+    },
+    {
+      "name": "unobserved_rate",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "0~1",
+      "description": "redundant complement of observation coverage"
+    },
+    {
+      "name": "target_known_chargers",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "known chargers at label tick"
+    },
+    {
+      "name": "target_total_chargers",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "chargers",
+      "description": "total chargers at label tick"
+    },
+    {
+      "name": "target_observation_coverage",
+      "role": "audit",
+      "model_input": false,
+      "dtype": "float64",
+      "nullable": false,
+      "unit": "0~1",
+      "description": "label-tick known coverage"
+    },
+    {
+      "name": "feature_date",
+      "role": "identifier",
+      "model_input": false,
+      "dtype": "string",
+      "nullable": false,
+      "unit": "YYYY-MM-DD",
+      "description": "split date"
+    }
+  ],
+  "excluded_from_model": {
+    "future_audit_columns": [
+      "target_known_chargers",
+      "target_total_chargers",
+      "target_observation_coverage",
+      "target_time",
+      "label_observed_at"
+    ],
+    "reason": "post-cutoff information is label audit only"
+  }
+}

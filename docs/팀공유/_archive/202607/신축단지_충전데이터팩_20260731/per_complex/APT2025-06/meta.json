@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-06",
+  "complex_name": "빌리브루센트",
+  "gu": "북구",
+  "dong": "칠성동",
+  "move_in_ym": "2025-03",
+  "households": "258",
+  "cohort": "2025",
+  "notes": "주상복합",
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8784451,
+  "geocode_lng": 128.5992542,
+  "geocode_note": "칠성동, 북구, 대구광역시, 대한민국",
+  "nearby_300m_stations": 4,
+  "nearby_500m_stations": 17,
+  "nearby_500m_chargers": 84,
+  "d1_rows_for_nearby_or_name": 17
+}

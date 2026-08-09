@@ -8,6 +8,7 @@ Does not train models or compute recommendation scores.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -41,37 +42,44 @@ STAT_IN_USE = 3
 
 
 def station_panel_from_charger_panel(wide: pd.DataFrame) -> pd.DataFrame:
-    """Aggregate charger-level ffilled panel → station × time features."""
-    # columns are "statId|chgerId"
-    stations = pd.Index([c.split("|", 1)[0] for c in wide.columns])
-    # melt for groupby
-    long = wide.stack(future_stack=True).rename("stat").reset_index()
-    long.columns = ["panel_ts", "charger", "stat"]
-    long["statId"] = long["charger"].str.split("|", n=1).str[0]
-    long = long.dropna(subset=["stat"])
+    """Aggregate charger-level ffilled panel → station × time features.
 
-    long["is_available"] = long["stat"] == STAT_AVAILABLE
-    long["is_in_use"] = long["stat"] == STAT_IN_USE
-    long["is_usable"] = long["stat"].isin([STAT_AVAILABLE, STAT_IN_USE])
+    Avoids a full melt/stack (which OOMs/thrashes on ~3k×20k panels).
+    Aggregates per-station column groups with vectorized counts.
+    """
+    from collections import defaultdict
 
-    g = long.groupby(["statId", "panel_ts"], sort=False)
-    out = g.agg(
-        known_chargers=("charger", "count"),
-        available_count=("is_available", "sum"),
-        in_use_count=("is_in_use", "sum"),
-        usable_known=("is_usable", "sum"),
-    ).reset_index()
-    out["available_count"] = out["available_count"].astype(int)
-    out["in_use_count"] = out["in_use_count"].astype(int)
-    out["usable_known"] = out["usable_known"].astype(int)
-    out["known_chargers"] = out["known_chargers"].astype(int)
+    groups: dict[str, list[str]] = defaultdict(list)
+    for col in wide.columns:
+        groups[str(col).split("|", 1)[0]].append(col)
 
-    # F01-style among usable known (avail / (avail+in_use)); null if none usable
-    out["availability_ratio_observed"] = out.apply(
-        lambda r: (r["available_count"] / r["usable_known"])
-        if r["usable_known"] > 0
-        else pd.NA,
-        axis=1,
+    parts: list[pd.DataFrame] = []
+    n_stations = len(groups)
+    for i, (sid, cols) in enumerate(groups.items(), start=1):
+        if i == 1 or i % 500 == 0 or i == n_stations:
+            print(f"  aggregating stations {i}/{n_stations}…", flush=True)
+        sub = wide[cols]
+        known = sub.notna().sum(axis=1)
+        available = (sub == STAT_AVAILABLE).sum(axis=1)
+        in_use = (sub == STAT_IN_USE).sum(axis=1)
+        usable = available + in_use
+        part = pd.DataFrame(
+            {
+                "statId": sid,
+                "panel_ts": wide.index,
+                "known_chargers": known.astype("int32"),
+                "available_count": available.astype("int32"),
+                "in_use_count": in_use.astype("int32"),
+                "usable_known": usable.astype("int32"),
+            }
+        )
+        # keep only ticks where at least one charger is known (matches prior melt dropna)
+        part = part.loc[part["known_chargers"].gt(0)]
+        parts.append(part)
+
+    out = pd.concat(parts, ignore_index=True)
+    out["availability_ratio_observed"] = (
+        out["available_count"].div(out["usable_known"]).where(out["usable_known"].gt(0))
     )
     out["has_confirmed_available"] = out["available_count"] >= 1
 
@@ -86,14 +94,64 @@ def station_panel_from_charger_panel(wide: pd.DataFrame) -> pd.DataFrame:
     ts_order = ts_order.assign(segment_id=seg.values)
     out = out.merge(ts_order, on="panel_ts", how="left")
 
-    # lags per station
-    out = out.sort_values(["statId", "panel_ts"])
-    out["avail_rate_lag_15m"] = out.groupby("statId")["availability_ratio_observed"].shift(1)
-    # ~4 * 15m steps ≈ 60m if interval is 15m
-    out["avail_rate_lag_60m"] = out.groupby("statId")["availability_ratio_observed"].shift(4)
+    # True calendar lags (not row-shift): same station + same segment only.
+    print("  attaching avail_rate lags…", flush=True)
+    out = add_avail_rate_time_lags(out)
 
     out["schema_version"] = SCHEMA_VERSION
     out["source_status"] = "sandbox_series"
+    return out
+
+
+def add_avail_rate_time_lags(panel: pd.DataFrame) -> pd.DataFrame:
+    """Attach avail_rate_lag_15m / avail_rate_lag_60m.
+
+    Definition (aligned with docs/data/스키마):
+      value of availability_ratio_observed at the latest tick T' where
+      - same statId and segment_id
+      - T' <= panel_ts - lag_minutes
+      - T' >= panel_ts - lag_minutes - tolerance_minutes
+    If none → null (do not cross gap-safe segment boundaries).
+    """
+    out = panel.copy()
+    out["panel_ts"] = pd.to_datetime(out["panel_ts"])
+    for col in ("avail_rate_lag_15m", "avail_rate_lag_60m"):
+        if col in out.columns:
+            out = out.drop(columns=[col])
+
+    specs = (
+        ("avail_rate_lag_15m", 15, 12),
+        ("avail_rate_lag_60m", 60, 15),
+    )
+    base = out[
+        ["statId", "segment_id", "panel_ts", "availability_ratio_observed"]
+    ].sort_values(["statId", "segment_id", "panel_ts"])
+
+    for col, lag_min, tol_min in specs:
+        left = base[["statId", "segment_id", "panel_ts"]].copy()
+        left["asof_ts"] = left["panel_ts"] - pd.Timedelta(minutes=lag_min)
+        right = base.rename(
+            columns={
+                "panel_ts": "lag_ts",
+                "availability_ratio_observed": col,
+            }
+        )[["statId", "segment_id", "lag_ts", col]]
+        left = left.sort_values("asof_ts")
+        right = right.sort_values("lag_ts")
+        hit = pd.merge_asof(
+            left,
+            right,
+            left_on="asof_ts",
+            right_on="lag_ts",
+            by=["statId", "segment_id"],
+            direction="backward",
+            tolerance=pd.Timedelta(minutes=tol_min),
+        )
+        out = out.merge(
+            hit[["statId", "segment_id", "panel_ts", col]],
+            on=["statId", "segment_id", "panel_ts"],
+            how="left",
+        )
     return out
 
 
@@ -118,8 +176,18 @@ def main() -> int:
     base = f"station_feature_panel_{stamp}"
     csv_path = OUT_DIR / f"{base}.csv"
     pq_path = OUT_DIR / f"{base}.parquet"
-    panel.to_csv(csv_path, index=False, encoding="utf-8-sig")
+    # Parquet is the daily contract. Full CSV is optional — writing ~GB CSVs
+    # twice routinely stalls evening rebuilds (RAM/disk).
+    write_csv = os.environ.get("D2_WRITE_CSV", "").strip() in {"1", "true", "TRUE", "yes"}
     panel.to_parquet(pq_path, index=False)
+    if write_csv:
+        panel.to_csv(csv_path, index=False, encoding="utf-8-sig")
+    # keep stable latest pointers for EDA / KPI consumers
+    latest_csv = OUT_DIR / "station_feature_panel_latest.csv"
+    latest_pq = OUT_DIR / "station_feature_panel_latest.parquet"
+    panel.to_parquet(latest_pq, index=False)
+    if write_csv:
+        panel.to_csv(latest_csv, index=False, encoding="utf-8-sig")
 
     sample = panel.head(50)
     sample_path = HANDOFF / "station_feature_panel_sample_50.csv"
@@ -136,14 +204,17 @@ def main() -> int:
         "source_snapshots": int(raw["snapshotId"].nunique()),
         "source_rows_deduped": int(len(raw)),
         "files": {
-            "full_csv": str(csv_path.relative_to(REPO)).replace("\\", "/"),
+            "full_csv": str(csv_path.relative_to(REPO)).replace("\\", "/") if write_csv else None,
             "full_parquet": str(pq_path.relative_to(REPO)).replace("\\", "/"),
+            "latest_csv": str(latest_csv.relative_to(REPO)).replace("\\", "/") if write_csv else None,
+            "latest_parquet": str(latest_pq.relative_to(REPO)).replace("\\", "/"),
             "sample_csv": str(sample_path.relative_to(REPO)).replace("\\", "/"),
         },
         "spec": "docs/data/스키마/데이터셋_명세.md",
         "owner": "AI·data ①",
         "consumer": "AI·data ②",
-        "note": "availability among usable known (stat 2/3); other codes counted in known_chargers but not in usable_known denominator",
+        "write_csv": write_csv,
+        "note": "availability among usable known (stat 2/3); other codes counted in known_chargers but not in usable_known denominator; set D2_WRITE_CSV=1 for full CSV",
     }
     (HANDOFF / "HANDOFF_META_D2.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2, default=str), encoding="utf-8"

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-08-02T09:03:58+09:00",
+  "stamp": "20260802",
+  "source": "docs/data/loops/loop3",
+  "ticks": 978,
+  "first_ts": "2026-07-22 16:47:00",
+  "last_ts": "2026-08-02 08:41:04",
+  "links_per_tick_median": 1960,
+  "pct_congested_mean": 27.62,
+  "pct_jam_mean": 3.76,
+  "speed_mean_overall": 35.71,
+  "figures": [
+    "01_congestion_timeseries.png",
+    "02_hourly_congestion_profile.png",
+    "03_hourly_vs_availability.png"
+  ],
+  "note": "city-wide only; no station spatial join"
+}

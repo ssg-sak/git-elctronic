@@ -1,0 +1,13 @@
+﻿id,name,value,target,status
+K1,status 루프 연속성,틱 44 · median 10.0분 · gap>12=1,≈5분 · gap≤2,OK
+K2,EvCharger 일일 호출,178 / 1000,≤800,OK
+K3,UTIC 돌발 루프,오늘 0회 · age=2597.4분 · 대구 22건,≈15분 · 최근 1시간 내 성공,FAIL
+K4,UTIC 조인 커버,942/4201 (rate=0.2242),matched > 0,OK
+K5,D1 관측 가용률,0.738,추세 보고용 (단정 금지),OK
+K6,확정 가용 소 비율,81.5% (3430/4210),≥50%,OK
+K7,미관측률,0.186,≤0.5,OK
+K8,D1 신선도,2026-08-09T07:23:21+09:00 (age=1.43h),당일·최근 (핸드오프 전 재빌드),OK
+K9,mock 혼입,traffic=utic/mock=False · parking=team5_pis,traffic 실 · 주차 mock거리 미투입,WARN
+K10,일일 점검 health,status_daily/ 참고 (자동 판정은 루프 체크포인트),healthy 또는 사유 기록,OK
+K11,D1 미관측 충전소 비율,13.2% (554),추세 모니터링,OK
+K12,info 일별 statId 증감,dump=2026-08-09 · statId=4224 · +0/-2 · gap=0d,일일 덤프 + diff 기록,OK

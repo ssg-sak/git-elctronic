@@ -8,5 +8,13 @@ EVAL_DIR = Path(__file__).resolve().parent.parent
 PROCESSING_DIR = EVAL_DIR.parent / "processing"
 FIXTURES_DIR = EVAL_DIR / "fixtures"
 
-sys.path.insert(0, str(PROCESSING_DIR))
-sys.path.insert(0, str(EVAL_DIR))
+# Flat imports in tests (from gap_safe_panel import ...) live under subpackages.
+for _p in (
+    PROCESSING_DIR,
+    PROCESSING_DIR / "features",
+    PROCESSING_DIR / "core",
+    PROCESSING_DIR / "analysis",
+    EVAL_DIR,
+):
+    if _p.is_dir() and str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))

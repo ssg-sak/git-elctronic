@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -92,8 +93,9 @@ def main() -> int:
     table = build_daily_table()
     out = args.output_dir if args.output_dir.is_absolute() else REPO / args.output_dir
     out.mkdir(parents=True, exist_ok=True)
-    csv_path = out / "daily_quality_trend_20260729.csv"
-    json_path = out / "daily_quality_trend_20260729_summary.json"
+    stamp = datetime.now(KST).strftime("%Y%m%d")
+    csv_path = out / f"daily_quality_trend_{stamp}.csv"
+    json_path = out / f"daily_quality_trend_{stamp}_summary.json"
     table.to_csv(csv_path, index=False, encoding="utf-8-sig")
     summary = {
         "generated_at_kst": pd.Timestamp.now(tz=KST).isoformat(timespec="seconds"),

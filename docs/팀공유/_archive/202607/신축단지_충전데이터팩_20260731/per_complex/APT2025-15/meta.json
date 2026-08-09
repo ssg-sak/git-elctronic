@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-15",
+  "complex_name": "두류스타힐스",
+  "gu": "서구",
+  "dong": "내당동",
+  "move_in_ym": "2025-07",
+  "households": "840",
+  "cohort": "2025",
+  "notes": NaN,
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8625618,
+  "geocode_lng": 128.5618878,
+  "geocode_note": "내당동, 서구, 대구광역시, 대한민국",
+  "nearby_300m_stations": 4,
+  "nearby_500m_stations": 11,
+  "nearby_500m_chargers": 27,
+  "d1_rows_for_nearby_or_name": 11
+}

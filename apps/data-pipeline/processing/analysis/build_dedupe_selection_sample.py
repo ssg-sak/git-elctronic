@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -122,8 +123,9 @@ def main() -> int:
     sample, summary = build_sample(data, args.sample_groups, args.seed)
     out = args.output_dir if args.output_dir.is_absolute() else REPO / args.output_dir
     out.mkdir(parents=True, exist_ok=True)
-    csv_path = out / "dedupe_selection_sample_20260729.csv"
-    json_path = out / "dedupe_selection_sample_20260729_summary.json"
+    stamp = datetime.now(KST).strftime("%Y%m%d")
+    csv_path = out / f"dedupe_selection_sample_{stamp}.csv"
+    json_path = out / f"dedupe_selection_sample_{stamp}_summary.json"
     sample.to_csv(csv_path, index=False, encoding="utf-8-sig")
     json_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=2))

@@ -1,0 +1,56 @@
+{
+  "role": "DA① offline calibration — not runtime ETA authority",
+  "as_of_kst": "2026-08-06T14:36:57+09:00",
+  "origin_count": 4,
+  "per_origin": 16,
+  "max_km": 8.0,
+  "haversine_speed_proxy_kmh": 30.0,
+  "candidate_source": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest.csv",
+  "tmap_ok": 64,
+  "tmap_fail": 0,
+  "ratio_tmap_over_haversine_median": 1.9375,
+  "ratio_by_band": [
+    {
+      "haversine_km_lo": 0,
+      "haversine_km_hi": 2,
+      "n": 16,
+      "ratio_median": 3.0145,
+      "ratio_p25": 2.39375,
+      "ratio_p75": 4.7124999999999995,
+      "tmap_eta_min_median": 6.6
+    },
+    {
+      "haversine_km_lo": 2,
+      "haversine_km_hi": 4,
+      "n": 16,
+      "ratio_median": 2.181,
+      "ratio_p25": 1.8659999999999999,
+      "ratio_p75": 2.46525,
+      "tmap_eta_min_median": 13.25
+    },
+    {
+      "haversine_km_lo": 4,
+      "haversine_km_hi": 6,
+      "n": 16,
+      "ratio_median": 1.904,
+      "ratio_p25": 1.7,
+      "ratio_p75": 2.09075,
+      "tmap_eta_min_median": 18.4
+    },
+    {
+      "haversine_km_lo": 6,
+      "haversine_km_hi": 8,
+      "n": 15,
+      "ratio_median": 1.474,
+      "ratio_p25": 1.359,
+      "ratio_p75": 1.8385,
+      "tmap_eta_min_median": 21.2
+    }
+  ],
+  "proxy_formula": "eta_proxy_min = haversine_km / 30 * 60 * ratio_median_band (fallback global median). Runtime truth = BE TMAP on final 3~5.",
+  "do_not": [
+    "bulk-fill D1 eta_minutes",
+    "replace BE TMAP at serve time",
+    "use link_speed alone as ETA"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-08-03T12:49:50.325062+09:00",
+  "concern": "real complex exists but EvCharger name/id missing (like 두류역서한포레스트)",
+  "brand_site_checks": [
+    {
+      "site_query": "두류역서한포레스트",
+      "info_charger_rows": 25,
+      "info_stations": 1,
+      "example_names": "대구 두류역서한포레스트"
+    },
+    {
+      "site_query": "반월당서한포레스트",
+      "info_charger_rows": 25,
+      "info_stations": 1,
+      "example_names": "반월당서한포레스트"
+    },
+    {
+      "site_query": "청라언덕역서한포레스트",
+      "info_charger_rows": 22,
+      "info_stations": 1,
+      "example_names": "청라언덕역서한포레스트"
+    },
+    {
+      "site_query": "범어서한포레스트",
+      "info_charger_rows": 52,
+      "info_stations": 5,
+      "example_names": "범어서한포레스트|범어서한포레스트 (아파트)|범어서한포레스트 (오피스텔)|범어서한포레스트 (완속충전기)"
+    },
+    {
+      "site_query": "만촌역서한포레스트",
+      "info_charger_rows": 68,
+      "info_stations": 4,
+      "example_names": "만촌역서한포레스트관리위원회|만촌역서한포레스트관리위원회(SP)|만촌역서한포레스트아파트|만촌역서한포레스트오피스텔"
+    }
+  ],
+  "overlap_info_vs_d1": {
+    "info_stations": 4212,
+    "d1_stations": 4210,
+    "info_not_in_d1": 8,
+    "d1_not_in_info": 6
+  },
+  "observation_state_counts": {
+    "STALE": 2906,
+    "UNOBSERVED": 621,
+    "FRESH": 439,
+    "NORMAL": 244
+  },
+  "unobserved_rate_d1": 0.14750593824228028,
+  "residential": {
+    "residential_stations": 911,
+    "residential_unobserved_rate": 0.13391877058177826,
+    "residential_history_rate": 0.006586169045005488,
+    "overall_history_rate": 0.047505938242280284
+  },
+  "name_pattern_quality": [
+    {
+      "name_pattern": "포레스트",
+      "stations": 19,
+      "unobserved_rate": 0.0,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "이다음",
+      "stations": 42,
+      "unobserved_rate": 0.16666666666666666,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "자이",
+      "stations": 27,
+      "unobserved_rate": 0.14814814814814814,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "힐스테이트",
+      "stations": 27,
+      "unobserved_rate": 0.1111111111111111,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "푸르지오",
+      "stations": 72,
+      "unobserved_rate": 0.08333333333333333,
+      "history_rate": 0.027777777777777776
+    },
+    {
+      "name_pattern": "e편한세상",
+      "stations": 48,
+      "unobserved_rate": 0.08333333333333333,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "센트레빌",
+      "stations": 3,
+      "unobserved_rate": 0.0,
+      "history_rate": 0.0
+    },
+    {
+      "name_pattern": "서한",
+      "stations": 88,
+      "unobserved_rate": 0.10227272727272728,
+      "history_rate": 0.0
+    }
+  ],
+  "info_delYn_Y_charger_rows": 791,
+  "info_delYn_Y_stations": 63,
+  "info_missing_coord_stations": 0,
+  "interpretation": [
+    "Type A gap: complex exists, no matching statNm in info (두류역서한포레스트) — unknown size without external apt registry",
+    "Type B gap: in info but UNOBSERVED in status — measurable and large",
+    "Type C gap: in info but no usage history — common for residential/restricted",
+    "Cannot claim completeness of Daegu EV inventory from EvCharger alone"
+  ]
+}

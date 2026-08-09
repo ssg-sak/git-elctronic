@@ -33,6 +33,11 @@ Log-Step "=== EV SafeCharge Daily Data Pipeline Update Started ==="
 Log-Step "Step 1: Pulling Lightsail loops"
 powershell -ExecutionPolicy Bypass -File scripts\pull_lightsail_loops.ps1
 
+# 1b. Fixed daily charger info dump (zcode=27, numOfRows=999; skip if today exists)
+# ~25–30 EvCharger API calls — shares daily quota with status loop
+Log-Step "Step 1b: Daily charger info dump (fixed conditions)"
+Run-PythonScript "apps\data-pipeline\processing\extract\dump_daily_charger_info.py"
+
 # 2. Export Team5 Parking Incremental
 Run-PythonScript "apps\data-pipeline\processing\db\export_team5_parking_incremental.py"
 
@@ -69,26 +74,9 @@ Run-PythonScript "apps\data-pipeline\evaluation\personal\experiments\SANDBOX_202
 # 9. Plot and Reliability All Snapshots
 Run-PythonScript "apps\data-pipeline\evaluation\personal\experiments\SANDBOX_20260717_status_periodic_collection\src\plot_and_reliability_all_snapshots.py"
 
-# 10. Copy Figures
+# 10. Copy figures+data (dedicated .py — PS here-string mangled 팀공유 paths)
 Log-Step "Step 10: Copying figures to Team Shared folder"
-$today = Get-Date -Format "yyyyMMdd"
-$targetDir = "docs\팀공유\시간대_가용률_$today\figures"
-if (-not (Test-Path $targetDir)) {
-    New-Item -ItemType Directory -Path $targetDir | Out-Null
-}
-try {
-    # It might be in 20260723 hardcoded, or the script might use a dynamic one. Let's just copy from the latest modified snapshot_all_* dir
-    $srcBase = Get-ChildItem -Path "docs\data\analysis" -Filter "snapshot_all_*" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($srcBase) {
-        $srcPath = Join-Path $srcBase.FullName "figures\*.png"
-        Copy-Item -Path $srcPath -Destination $targetDir -Force
-        Write-Host "Success: Copied figures from $($srcBase.Name) to $targetDir" -ForegroundColor Green
-    } else {
-        Write-Host "Warning: Could not find source figures directory." -ForegroundColor Yellow
-    }
-} catch {
-    Write-Host "Error copying figures: $_" -ForegroundColor Red
-}
+Run-PythonScript "apps\data-pipeline\processing\tools\share\copy_availability_share.py"
 
 # 11. Report KPI
 Run-PythonScript "apps\data-pipeline\processing\analysis\report_kpi.py"

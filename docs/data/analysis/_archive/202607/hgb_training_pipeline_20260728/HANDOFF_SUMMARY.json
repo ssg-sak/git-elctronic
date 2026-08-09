@@ -1,0 +1,20 @@
+{
+  "status": "DA1_READY_PENDING_DA2_ACCEPTANCE",
+  "dataset": "apps/data-pipeline/evaluation/results/datasets/station_horizon_training_v1.parquet",
+  "sample": "apps/data-pipeline/evaluation/results/datasets/station_horizon_training_sample.csv",
+  "report_dir": "docs/data/analysis/hgb_training_pipeline_20260728",
+  "rows": 798074,
+  "stations": 1532,
+  "quality_summary": {
+    "PASS": 18,
+    "WARN": 4,
+    "FAIL": 0
+  },
+  "model_features": 17,
+  "da2_pending": [
+    "HGB baseline comparison",
+    "time-out-of-sample feature ablation",
+    "probability calibration",
+    "model acceptance and serving"
+  ]
+}

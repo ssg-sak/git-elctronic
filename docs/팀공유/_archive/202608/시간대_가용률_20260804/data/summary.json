@@ -1,0 +1,24 @@
+{
+  "unique_snapshots": 2314,
+  "source_counts": {
+    "live_loop1": 2314
+  },
+  "span_hours": 438.2658333333333,
+  "first_ts": "2026-07-17 13:41:56",
+  "last_ts": "2026-08-04 19:57:53",
+  "event_rows": 1105755,
+  "unique_stations": 3691,
+  "unique_chargers": 20454,
+  "gap_median_min": 10.016666666666667,
+  "gap_mean_min": 11.368763510592304,
+  "gap_p95_min": 15.016666666666667,
+  "gaps_gt_25": 11,
+  "panel_avail_mean": 0.6575329719457295,
+  "raw_avail_mean": 0.7106424277784167,
+  "panel_avail_min": 0.3005143277002204,
+  "panel_avail_max": 0.870201096892139,
+  "panel_chargers_end": 19842,
+  "call_log_ok": 1962,
+  "call_log_n": 2063,
+  "live_index_rows": 1962
+}

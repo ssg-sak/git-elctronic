@@ -1,0 +1,18 @@
+﻿{
+    "source":  "Lightsail 3.36.50.99",
+    "note":  "DA??pull ??archive + merge live (PC loops stay OFF)",
+    "as_of_kst":  "2026-08-09T07:38:52+09:00",
+    "archive":  "docs/data/loops/_archive/from_lightsail_20260809_072742",
+    "services":  [
+                     "ev-status-loop",
+                     "ev-traffic-loop"
+                 ],
+    "loop1_snaps_on_server":  2604,
+    "loop1_snaps_added_to_live":  120,
+    "loop3_linkspeed_ticks_on_server":  1626,
+    "loop3_files_added_to_live":  160,
+    "loop3_incident_dated_files":  1626,
+    "loop3_incident_latest_rows":  0,
+    "utic_loop2_on_server":  false,
+    "utic_note":  "Lightsail has no loop2/UTIC service ??UTIC only if PC/other host runs it"
+}

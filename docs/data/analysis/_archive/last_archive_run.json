@@ -1,0 +1,370 @@
+{
+  "generated_at": "2026-08-08T17:41:21+09:00",
+  "moved": 87,
+  "kept_latest": {
+    "arrival_availability_replay_": "arrival_availability_replay_20260808",
+    "arrival_labels_tmap_eta_": "arrival_labels_tmap_eta_20260808",
+    "city_congestion_": "city_congestion_20260808",
+    "coord_feature_significance_": "coord_feature_significance_20260803",
+    "d1_explain_": "d1_explain_20260808",
+    "data_validity_assessment_": "data_validity_assessment_20260808",
+    "derived_v0_": "derived_v0_20260808",
+    "hgb_training_pipeline_": "hgb_training_pipeline_20260804",
+    "integration_readiness_": "integration_readiness_20260808",
+    "parking_score_validation_": "parking_score_validation_20260731",
+    "shadow_recommendation_": "shadow_recommendation_20260726",
+    "station_tmap_eta_": "station_tmap_eta_20260808",
+    "team5_parking_eda_": "team5_parking_eda_20260731",
+    "utic_incidents_": "utic_incidents_20260808"
+  },
+  "moves": [
+    {
+      "from": "arrival_availability_replay_20260728",
+      "to": "_archive/202607/arrival_availability_replay_20260728"
+    },
+    {
+      "from": "arrival_availability_replay_20260729",
+      "to": "_archive/202607/arrival_availability_replay_20260729"
+    },
+    {
+      "from": "arrival_availability_replay_20260804",
+      "to": "_archive/202608/arrival_availability_replay_20260804"
+    },
+    {
+      "from": "arrival_availability_replay_20260806",
+      "to": "_archive/202608/arrival_availability_replay_20260806"
+    },
+    {
+      "from": "arrival_labels_tmap_eta_20260806",
+      "to": "_archive/202608/arrival_labels_tmap_eta_20260806"
+    },
+    {
+      "from": "city_congestion_20260724",
+      "to": "_archive/202607/city_congestion_20260724"
+    },
+    {
+      "from": "city_congestion_20260725",
+      "to": "_archive/202607/city_congestion_20260725"
+    },
+    {
+      "from": "city_congestion_20260726",
+      "to": "_archive/202607/city_congestion_20260726"
+    },
+    {
+      "from": "city_congestion_20260728",
+      "to": "_archive/202607/city_congestion_20260728"
+    },
+    {
+      "from": "city_congestion_20260729",
+      "to": "_archive/202607/city_congestion_20260729"
+    },
+    {
+      "from": "city_congestion_20260730",
+      "to": "_archive/202607/city_congestion_20260730"
+    },
+    {
+      "from": "city_congestion_20260731",
+      "to": "_archive/202607/city_congestion_20260731"
+    },
+    {
+      "from": "city_congestion_20260801",
+      "to": "_archive/202608/city_congestion_20260801"
+    },
+    {
+      "from": "city_congestion_20260802",
+      "to": "_archive/202608/city_congestion_20260802"
+    },
+    {
+      "from": "city_congestion_20260803",
+      "to": "_archive/202608/city_congestion_20260803"
+    },
+    {
+      "from": "city_congestion_20260804",
+      "to": "_archive/202608/city_congestion_20260804"
+    },
+    {
+      "from": "city_congestion_20260805",
+      "to": "_archive/202608/city_congestion_20260805"
+    },
+    {
+      "from": "city_congestion_20260806",
+      "to": "_archive/202608/city_congestion_20260806"
+    },
+    {
+      "from": "city_congestion_20260807",
+      "to": "_archive/202608/city_congestion_20260807"
+    },
+    {
+      "from": "coord_feature_significance_20260731",
+      "to": "_archive/202607/coord_feature_significance_20260731"
+    },
+    {
+      "from": "d1_explain_20260724",
+      "to": "_archive/202607/d1_explain_20260724"
+    },
+    {
+      "from": "d1_explain_20260725",
+      "to": "_archive/202607/d1_explain_20260725"
+    },
+    {
+      "from": "d1_explain_20260726",
+      "to": "_archive/202607/d1_explain_20260726"
+    },
+    {
+      "from": "d1_explain_20260731",
+      "to": "_archive/202607/d1_explain_20260731"
+    },
+    {
+      "from": "d1_explain_20260801",
+      "to": "_archive/202608/d1_explain_20260801"
+    },
+    {
+      "from": "d1_explain_20260802",
+      "to": "_archive/202608/d1_explain_20260802"
+    },
+    {
+      "from": "d1_explain_20260803",
+      "to": "_archive/202608/d1_explain_20260803"
+    },
+    {
+      "from": "d1_explain_20260804",
+      "to": "_archive/202608/d1_explain_20260804"
+    },
+    {
+      "from": "d1_explain_20260805",
+      "to": "_archive/202608/d1_explain_20260805"
+    },
+    {
+      "from": "d1_explain_20260806",
+      "to": "_archive/202608/d1_explain_20260806"
+    },
+    {
+      "from": "d1_explain_20260807",
+      "to": "_archive/202608/d1_explain_20260807"
+    },
+    {
+      "from": "data_validity_assessment_20260725",
+      "to": "_archive/202607/data_validity_assessment_20260725"
+    },
+    {
+      "from": "data_validity_assessment_20260726",
+      "to": "_archive/202607/data_validity_assessment_20260726"
+    },
+    {
+      "from": "data_validity_assessment_20260727",
+      "to": "_archive/202607/data_validity_assessment_20260727"
+    },
+    {
+      "from": "data_validity_assessment_20260728",
+      "to": "_archive/202607/data_validity_assessment_20260728"
+    },
+    {
+      "from": "data_validity_assessment_20260730",
+      "to": "_archive/202607/data_validity_assessment_20260730"
+    },
+    {
+      "from": "data_validity_assessment_20260731",
+      "to": "_archive/202607/data_validity_assessment_20260731"
+    },
+    {
+      "from": "data_validity_assessment_20260801",
+      "to": "_archive/202608/data_validity_assessment_20260801"
+    },
+    {
+      "from": "data_validity_assessment_20260802",
+      "to": "_archive/202608/data_validity_assessment_20260802"
+    },
+    {
+      "from": "data_validity_assessment_20260803",
+      "to": "_archive/202608/data_validity_assessment_20260803"
+    },
+    {
+      "from": "data_validity_assessment_20260804",
+      "to": "_archive/202608/data_validity_assessment_20260804"
+    },
+    {
+      "from": "data_validity_assessment_20260805",
+      "to": "_archive/202608/data_validity_assessment_20260805"
+    },
+    {
+      "from": "data_validity_assessment_20260806",
+      "to": "_archive/202608/data_validity_assessment_20260806"
+    },
+    {
+      "from": "data_validity_assessment_20260807",
+      "to": "_archive/202608/data_validity_assessment_20260807"
+    },
+    {
+      "from": "derived_v0_20260806",
+      "to": "_archive/202608/derived_v0_20260806"
+    },
+    {
+      "from": "hgb_training_pipeline_20260728",
+      "to": "_archive/202607/hgb_training_pipeline_20260728"
+    },
+    {
+      "from": "hgb_training_pipeline_20260729",
+      "to": "_archive/202607/hgb_training_pipeline_20260729"
+    },
+    {
+      "from": "hgb_training_pipeline_20260803",
+      "to": "_archive/202608/hgb_training_pipeline_20260803"
+    },
+    {
+      "from": "integration_readiness_20260725",
+      "to": "_archive/202607/integration_readiness_20260725"
+    },
+    {
+      "from": "integration_readiness_20260726",
+      "to": "_archive/202607/integration_readiness_20260726"
+    },
+    {
+      "from": "integration_readiness_20260727",
+      "to": "_archive/202607/integration_readiness_20260727"
+    },
+    {
+      "from": "integration_readiness_20260728",
+      "to": "_archive/202607/integration_readiness_20260728"
+    },
+    {
+      "from": "integration_readiness_20260730",
+      "to": "_archive/202607/integration_readiness_20260730"
+    },
+    {
+      "from": "integration_readiness_20260731",
+      "to": "_archive/202607/integration_readiness_20260731"
+    },
+    {
+      "from": "integration_readiness_20260801",
+      "to": "_archive/202608/integration_readiness_20260801"
+    },
+    {
+      "from": "integration_readiness_20260802",
+      "to": "_archive/202608/integration_readiness_20260802"
+    },
+    {
+      "from": "integration_readiness_20260803",
+      "to": "_archive/202608/integration_readiness_20260803"
+    },
+    {
+      "from": "integration_readiness_20260804",
+      "to": "_archive/202608/integration_readiness_20260804"
+    },
+    {
+      "from": "integration_readiness_20260805",
+      "to": "_archive/202608/integration_readiness_20260805"
+    },
+    {
+      "from": "integration_readiness_20260806",
+      "to": "_archive/202608/integration_readiness_20260806"
+    },
+    {
+      "from": "integration_readiness_20260807",
+      "to": "_archive/202608/integration_readiness_20260807"
+    },
+    {
+      "from": "parking_score_validation_20260727",
+      "to": "_archive/202607/parking_score_validation_20260727"
+    },
+    {
+      "from": "parking_score_validation_20260730",
+      "to": "_archive/202607/parking_score_validation_20260730"
+    },
+    {
+      "from": "shadow_recommendation_20260725",
+      "to": "_archive/202607/shadow_recommendation_20260725"
+    },
+    {
+      "from": "station_tmap_eta_20260806",
+      "to": "_archive/202608/station_tmap_eta_20260806"
+    },
+    {
+      "from": "station_tmap_eta_20260807",
+      "to": "_archive/202608/station_tmap_eta_20260807"
+    },
+    {
+      "from": "team5_parking_eda_20260725",
+      "to": "_archive/202607/team5_parking_eda_20260725"
+    },
+    {
+      "from": "utic_incidents_20260724",
+      "to": "_archive/202607/utic_incidents_20260724"
+    },
+    {
+      "from": "utic_incidents_20260725",
+      "to": "_archive/202607/utic_incidents_20260725"
+    },
+    {
+      "from": "utic_incidents_20260726",
+      "to": "_archive/202607/utic_incidents_20260726"
+    },
+    {
+      "from": "utic_incidents_20260731",
+      "to": "_archive/202607/utic_incidents_20260731"
+    },
+    {
+      "from": "utic_incidents_20260801",
+      "to": "_archive/202608/utic_incidents_20260801"
+    },
+    {
+      "from": "utic_incidents_20260802",
+      "to": "_archive/202608/utic_incidents_20260802"
+    },
+    {
+      "from": "utic_incidents_20260803",
+      "to": "_archive/202608/utic_incidents_20260803"
+    },
+    {
+      "from": "utic_incidents_20260804",
+      "to": "_archive/202608/utic_incidents_20260804"
+    },
+    {
+      "from": "utic_incidents_20260805",
+      "to": "_archive/202608/utic_incidents_20260805"
+    },
+    {
+      "from": "utic_incidents_20260806",
+      "to": "_archive/202608/utic_incidents_20260806"
+    },
+    {
+      "from": "utic_incidents_20260807",
+      "to": "_archive/202608/utic_incidents_20260807"
+    },
+    {
+      "from": "comprehensive_eda_quality_20260725",
+      "to": "_archive/202607/comprehensive_eda_quality_20260725"
+    },
+    {
+      "from": "dq_check_20260723",
+      "to": "_archive/202607/dq_check_20260723"
+    },
+    {
+      "from": "fee_mapping_probe_20260730",
+      "to": "_archive/202607/fee_mapping_probe_20260730"
+    },
+    {
+      "from": "fee_operator_evorkr_probe_20260731",
+      "to": "_archive/202607/fee_operator_evorkr_probe_20260731"
+    },
+    {
+      "from": "parking_ev_colocation_20260725",
+      "to": "_archive/202607/parking_ev_colocation_20260725"
+    },
+    {
+      "from": "recommendation_handoff_20260728",
+      "to": "_archive/202607/recommendation_handoff_20260728"
+    },
+    {
+      "from": "snapshot_all_20260723",
+      "to": "_archive/202607/snapshot_all_20260723"
+    },
+    {
+      "from": "soc_route_scenarios_20260723",
+      "to": "_archive/202607/soc_route_scenarios_20260723"
+    },
+    {
+      "from": "tmap_eta_sample_20260723",
+      "to": "_archive/202607/tmap_eta_sample_20260723"
+    }
+  ]
+}

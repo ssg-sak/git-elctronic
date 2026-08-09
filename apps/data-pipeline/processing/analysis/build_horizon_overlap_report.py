@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime
 from itertools import combinations
 from pathlib import Path
 import sys
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -16,6 +18,7 @@ if str(_PROCESSING) not in sys.path:
 from _bootstrap import ensure_paths
 
 REPO = ensure_paths()
+KST = ZoneInfo("Asia/Seoul")
 DEFAULT_INPUT = REPO / "apps" / "data-pipeline" / "evaluation" / "results" / "datasets" / "station_horizon_training_v1.parquet"
 DEFAULT_OUT = REPO / "docs" / "data" / "quality"
 HORIZONS = (5, 10, 15, 30)
@@ -88,8 +91,9 @@ def main() -> int:
     out = args.output_dir if args.output_dir.is_absolute() else REPO / args.output_dir
     out.mkdir(parents=True, exist_ok=True)
     table, summary = build_report(input_path)
-    csv_path = out / "horizon_overlap_20260729.csv"
-    json_path = out / "horizon_overlap_20260729_summary.json"
+    stamp = datetime.now(KST).strftime("%Y%m%d")
+    csv_path = out / f"horizon_overlap_{stamp}.csv"
+    json_path = out / f"horizon_overlap_{stamp}_summary.json"
     table.to_csv(csv_path, index=False, encoding="utf-8-sig")
     json_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(table.to_string(index=False))
