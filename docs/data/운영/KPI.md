@@ -25,6 +25,12 @@
 | **K8** | D1 신선도 | 핸드오프 전 `as_of_ts` **당일·최근** | D1 메타 | as_of가 수 시간~일 전 |
 | **K9** | mock 혼입 | D1 `traffic_is_mock=false` · `parking_is_mock=false` · `parking_source=team5_pis` | D1 플래그 | mock 거리 재투입 |
 | **K10** | 일일 점검 health | `healthy` (또는 사유 기록) | `evaluation/results/status_daily/YYYY-MM-DD` | `unhealthy` 미기록 |
+| **K11** | D1 미관측 충전소 비율 | 추세 모니터링 (절대 목표 고정 안 함) | D1 `observation_state=UNOBSERVED` 비율 | 급증·원인 미기록 |
+| **K12** | info 일별 `statId` 증감 | 일일 덤프 diff 기록 | `daily/.../daegu_charger_info_*` | 덤프 공백 지속 |
+| **K13** | 신축단지 시드 × info 이름 커버 | 샘플 대조 결과 보고 | `신축단지_인포대조_*` · `MISSING_IN_INFO` 수 | 시드 미갱신·미보고 |
+
+> **범위:** MVP 재료는 **EvCharger에 등록·관측 가능한 충전소**. 신축 아파트 내부·미등록 충전기는 구조적 과소표집 가능 → “대구 완전 목록”을 KPI로 두지 않음.  
+> 계획: [`커버리지갭_단계계획_20260731.md`](../../팀공유/커버리지갭_단계계획_20260731.md)
 
 ---
 
@@ -114,6 +120,19 @@
 | 2026-07-21 | 72 | 372 | 낮 성공·저녁 IP이슈 | 64.5% (D1 10:01) | gap 1 · health OK |
 | 2026-07-22 | (루프 가동 중) | (기입) | 학원키 재가동 | **69.6%** (D1 13:36) | D1 재빌드 · **linkspeed 1,960 추출** · 주차만 D1 공백 |
 | 2026-07-23 | — | — | — | (D1 20:49 재빌드) | **주차 team5 조인·D1** · K9=`team5_pis`/mock=false · [기록](../주차/주차_조인_D1_기록_20260723.md) |
+| 2026-07-31 | 49 (오전) | 223 | 대구 5 · 조인 287 | **79.7%** (D1 08:12) | OK 9/10 · D2 latest 동기화 · [팀 핸드오프](../../팀공유/D1_KPI_핸드오프_20260731.md) |
+
+---
+
+## 6b. 커버리지 갭 KPI (K11–K13)
+
+| ID | 보는 법 | 비고 |
+|---|---|---|
+| K11 | D1 `UNOBSERVED` / 전체 | “미관측≠고장”. Type B 갭 |
+| K12 | 어제·오늘 info `statId` set diff | 신규 노출 후보만 (신설 확정 아님) |
+| K13 | 신축 입주 시드 단지명 ⊆ info `statNm` | Type A 샘플 모니터링 · [1차 결과](../../팀공유/신축단지_인포대조_20260731/README_쉬운설명.md) |
+
+스크립트: `processing/tools/share/compare_new_apt_vs_info.py` · `probe_info_coverage_gaps.py`
 
 ---
 

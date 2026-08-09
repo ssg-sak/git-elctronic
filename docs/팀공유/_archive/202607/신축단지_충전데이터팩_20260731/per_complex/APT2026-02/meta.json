@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2026-02",
+  "complex_name": "힐스테이트대명센트럴2차",
+  "gu": "남구",
+  "dong": "대명동",
+  "move_in_ym": "2026-02",
+  "households": "977",
+  "cohort": "2026",
+  "notes": "주상복합·입주전",
+  "source": "seemsinfo_2026",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.83873,
+  "geocode_lng": 128.5751,
+  "geocode_note": "대명동, 대명9동, 남구, 대구광역시, 42469, 대한민국",
+  "nearby_300m_stations": 4,
+  "nearby_500m_stations": 14,
+  "nearby_500m_chargers": 45,
+  "d1_rows_for_nearby_or_name": 14
+}

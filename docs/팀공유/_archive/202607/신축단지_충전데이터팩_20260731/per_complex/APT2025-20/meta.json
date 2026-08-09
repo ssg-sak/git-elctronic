@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-20",
+  "complex_name": "더샵동성로센트리엘",
+  "gu": "중구",
+  "dong": "공평동",
+  "move_in_ym": "2025-11",
+  "households": "392",
+  "cohort": "2025",
+  "notes": "주상복합",
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.87032,
+  "geocode_lng": 128.59819,
+  "geocode_note": "공평동, 성내1동, 중구, 대구광역시, 41938, 대한민국",
+  "nearby_300m_stations": 6,
+  "nearby_500m_stations": 22,
+  "nearby_500m_chargers": 74,
+  "d1_rows_for_nearby_or_name": 22
+}

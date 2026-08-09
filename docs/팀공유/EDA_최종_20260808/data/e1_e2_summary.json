@@ -1,0 +1,22 @@
+{
+  "E1_Peak_Hour": 8,
+  "E1_Peak_Rate": 0.776150237181789,
+  "E1_Low_Hour": 22,
+  "E1_Low_Rate": 0.41658425869539145,
+  "E2_Day_Stats": {
+    "Monday": 0.6173873604090249,
+    "Tuesday": 0.6582874075868307,
+    "Wednesday": 0.7673576095607697,
+    "Friday": 0.520326461432975,
+    "Saturday": 0.6314560381930272,
+    "Sunday": 0.653082618191311
+  },
+  "E2_Day_Ticks": {
+    "Monday": 107103,
+    "Tuesday": 126590,
+    "Wednesday": 72188,
+    "Friday": 55210,
+    "Saturday": 124201,
+    "Sunday": 100323
+  }
+}

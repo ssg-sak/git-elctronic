@@ -51,10 +51,15 @@ def test_reliability_grade_thresholds():
     assert grade_from_age_minutes(float("inf")) == "CHECK_REQUIRED"
 
 
-def test_effective_grade_picks_fresher():
-    assert effective_grade("CHECK_REQUIRED", "NORMAL") == "NORMAL"
-    assert effective_grade("HIGH", "NORMAL") == "HIGH"
-    assert effective_grade("CHECK_REQUIRED", "CHECK_REQUIRED") == "CHECK_REQUIRED"
+def test_observation_state_separates_unobserved_from_stale():
+    from station_features import observation_state
+
+    obs = pd.Series([0, 2, 3, 1])
+    grade = pd.Series(
+        ["CHECK_REQUIRED", "CHECK_REQUIRED", "NORMAL", "HIGH"]
+    )
+    out = observation_state(obs, grade)
+    assert list(out) == ["UNOBSERVED", "STALE", "NORMAL", "FRESH"]
 
 
 def test_observation_freshness_station_min():

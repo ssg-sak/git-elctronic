@@ -1,0 +1,203 @@
+{
+  "dataset": "station_horizon_training_v1",
+  "rows": 2127797,
+  "columns": 34,
+  "stations": 1627,
+  "feature_time_min": "2026-07-22T21:38:30",
+  "feature_time_max": "2026-08-08T11:07:45",
+  "source_profile": {
+    "eligible_stations": 1648,
+    "panel_ticks": 2484,
+    "panel_first_tick": "2026-07-22T21:38:30",
+    "panel_latest_tick": "2026-08-08T11:17:46",
+    "horizons": {
+      "5": {
+        "mapped_source_ticks": 2467,
+        "candidate_rows": 779073,
+        "labeled_rows": 575512,
+        "excluded_partial_unknown_rows": 203561,
+        "positive": 524973,
+        "negative": 50539,
+        "positive_rate": 0.912184281127066,
+        "stations": 1627
+      },
+      "10": {
+        "mapped_source_ticks": 2469,
+        "candidate_rows": 779155,
+        "labeled_rows": 572182,
+        "excluded_partial_unknown_rows": 206973,
+        "positive": 522396,
+        "negative": 49786,
+        "positive_rate": 0.9129892237085403,
+        "stations": 1627
+      },
+      "15": {
+        "mapped_source_ticks": 2449,
+        "candidate_rows": 773697,
+        "labeled_rows": 517827,
+        "excluded_partial_unknown_rows": 255870,
+        "positive": 479365,
+        "negative": 38462,
+        "positive_rate": 0.9257242283619819,
+        "stations": 1627
+      },
+      "30": {
+        "mapped_source_ticks": 2449,
+        "candidate_rows": 773283,
+        "labeled_rows": 462276,
+        "excluded_partial_unknown_rows": 311007,
+        "positive": 434801,
+        "negative": 27475,
+        "positive_rate": 0.9405658091702792,
+        "stations": 1484
+      }
+    }
+  },
+  "history_source": {
+    "file": "docs/data/extracted/charger/usage/daegu_charger_usage_daily_20260331.csv",
+    "date_min": "2024-10-18",
+    "date_max": "2026-03-31"
+  },
+  "rows_by_horizon": {
+    "5": 575512,
+    "10": 572182,
+    "15": 517827,
+    "30": 462276
+  },
+  "rows_by_split": {
+    "train": 1212710,
+    "valid": 489828,
+    "test": 425259
+  },
+  "target_by_split_horizon": [
+    {
+      "split": "test",
+      "horizon_minutes": 5,
+      "rows": 114219,
+      "positives": 104124,
+      "positive_rate": 0.9116171565151157
+    },
+    {
+      "split": "test",
+      "horizon_minutes": 10,
+      "rows": 114976,
+      "positives": 104855,
+      "positive_rate": 0.9119729334817701
+    },
+    {
+      "split": "test",
+      "horizon_minutes": 15,
+      "rows": 102733,
+      "positives": 95008,
+      "positive_rate": 0.9248050772390566
+    },
+    {
+      "split": "test",
+      "horizon_minutes": 30,
+      "rows": 93331,
+      "positives": 87652,
+      "positive_rate": 0.9391520502298272
+    },
+    {
+      "split": "train",
+      "horizon_minutes": 5,
+      "rows": 329974,
+      "positives": 300923,
+      "positive_rate": 0.9119597301605581
+    },
+    {
+      "split": "train",
+      "horizon_minutes": 10,
+      "rows": 325361,
+      "positives": 297118,
+      "positive_rate": 0.9131948819926174
+    },
+    {
+      "split": "train",
+      "horizon_minutes": 15,
+      "rows": 296449,
+      "positives": 274516,
+      "positive_rate": 0.9260142554031217
+    },
+    {
+      "split": "train",
+      "horizon_minutes": 30,
+      "rows": 260926,
+      "positives": 245714,
+      "positive_rate": 0.9416999455784398
+    },
+    {
+      "split": "valid",
+      "horizon_minutes": 5,
+      "rows": 131319,
+      "positives": 119926,
+      "positive_rate": 0.91324180050107
+    },
+    {
+      "split": "valid",
+      "horizon_minutes": 10,
+      "rows": 131845,
+      "positives": 120423,
+      "positive_rate": 0.9133679699647314
+    },
+    {
+      "split": "valid",
+      "horizon_minutes": 15,
+      "rows": 118645,
+      "positives": 109841,
+      "positive_rate": 0.9257954401786843
+    },
+    {
+      "split": "valid",
+      "horizon_minutes": 30,
+      "rows": 108019,
+      "positives": 101435,
+      "positive_rate": 0.9390477601162759
+    }
+  ],
+  "feature_null_rates": {
+    "horizon_minutes": 0.0,
+    "available_count": 0.0,
+    "usable_count": 0.0,
+    "known_charger_count": 0.0,
+    "direct_observed_count": 0.0,
+    "total_chargers": 0.0,
+    "observation_coverage": 0.0,
+    "direct_observation_coverage": 0.0,
+    "observation_age_minutes": 0.0,
+    "available_count_delta_1tick": 0.09598754016478075,
+    "minutes_since_last_change": 0.0,
+    "hour": 0.0,
+    "weekday": 0.0,
+    "is_weekend": 0.0,
+    "sessions_per_charger": 0.9261522598255378,
+    "usage_daytype_avg": 0.9261522598255378,
+    "history_observed": 0.0
+  },
+  "model_features": [
+    "horizon_minutes",
+    "available_count",
+    "usable_count",
+    "known_charger_count",
+    "direct_observed_count",
+    "total_chargers",
+    "observation_coverage",
+    "direct_observation_coverage",
+    "observation_age_minutes",
+    "available_count_delta_1tick",
+    "minutes_since_last_change",
+    "hour",
+    "weekday",
+    "is_weekend",
+    "sessions_per_charger",
+    "usage_daytype_avg",
+    "history_observed"
+  ],
+  "caveats": [
+    "Positive labels require one known available charger.",
+    "Negative labels require full station charger coverage.",
+    "Labels use a 25-minute bounded state reconstruction.",
+    "Historical usage ends before the panel and is a sparse optional prior.",
+    "DA② must run time-out-of-sample ablation and calibration."
+  ]
+}

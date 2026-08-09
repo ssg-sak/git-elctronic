@@ -1,0 +1,75 @@
+{
+  "generated_at_kst": "2026-08-06T20:48:31+09:00",
+  "method": "offline local-file invariants, cross-source consistency, and external-review samples",
+  "metrics": {
+    "master_stations": 4141,
+    "master_chargers": 24554,
+    "master_coord_ok": 24554,
+    "status_snapshot_count": 2602,
+    "status_latest_file": "docs/data/loops/loop1/snapshots/20260806/daegu_charger_status_20260806_200655.csv",
+    "status_key_overlap_pct": 99.12,
+    "status_reliability_failed": [
+      "R2_gap25"
+    ],
+    "status_duplicate_pair_snapshots": 52,
+    "status_gap_events": 11,
+    "parking_master_lots": 1767,
+    "parking_realtime_lots": 108,
+    "parking_1km_matches": 3922,
+    "parking_realtime_station_matches": 425,
+    "traffic_latest_links": 1960,
+    "traffic_grade_speed_means": {
+      "1": 40.55,
+      "2": 22.8,
+      "3": 14.46
+    },
+    "utic_latest_incidents": 8,
+    "utic_live_station_matches": 382,
+    "usage_rows": 128263,
+    "usage_date_range": "2024-10-18~2026-03-31",
+    "usage_join_matches": 201,
+    "d1_rows": 4210,
+    "d1_as_of_ts": "2026-08-06T20:06:55+09:00",
+    "d1_history_coverage_pct": 4.75,
+    "d1_parking_realtime": 425,
+    "d1_utic_matches": 382,
+    "d1_eta_values": 0,
+    "d1_observed_station_share_pct": 86.22,
+    "d1_confirmed_available_share_pct": 78.79,
+    "collection_health": "CHECK_REQUIRED",
+    "d1_to_status_drift_minutes": 0.0
+  },
+  "checks": {
+    "PASS": 18,
+    "WARN": 9,
+    "FAIL": 0
+  },
+  "mvp_verdict": {
+    "allowed": [
+      "public/available/fresh candidate filtering",
+      "state freshness warning",
+      "parking and UTIC explanatory context"
+    ],
+    "auxiliary_only": [
+      "parking realtime",
+      "UTIC proximity",
+      "usage history",
+      "city-wide linkspeed"
+    ],
+    "hold": [
+      "arrival-success probability",
+      "parking occupancy as charger availability",
+      "linkspeed as route ETA",
+      "long-term parking pattern"
+    ]
+  },
+  "external_review_samples": {
+    "usage_join_sample": 20
+  },
+  "figures": [
+    "figures/01_auxiliary_data_coverage.png",
+    "figures/02_check_verdicts.png"
+  ],
+  "construct_target": "사용자가 ETA 후 도착했을 때 실제로 충전을 시작할 수 있는지",
+  "construct_measurement_file": "construct_measurement_matrix.csv"
+}

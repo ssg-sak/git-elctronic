@@ -1,0 +1,27 @@
+{
+  "sample_n": 895744,
+  "sample_pos_rate": 0.9375,
+  "avail_ratio_t0": {
+    "auc": 0.45655506247678435,
+    "corr_with_current_available": -0.006648212470237115,
+    "verdict": "HOLD_KEEP — weak vs available_count; do not add to MVP yet"
+  },
+  "single_charger": {
+    "auc": 0.3350082166333238,
+    "rate_multi": 0.9646595565508254,
+    "rate_single": 0.8703872340260635,
+    "verdict": "RETAIN"
+  },
+  "eta_bucket_vs_horizon": {
+    "auc_horizon": 0.4518444678297727,
+    "note": "택1 — prefer horizon_minutes already in schema"
+  },
+  "stale_unobserved": {
+    "verdict": "HOLD_BLOCKED",
+    "reason": "station_feature_panel has no observation_age_minutes / observation_state per tick; cannot validate at feature_as_of without panel schema change"
+  },
+  "eta_is_proxy": {
+    "auc": null,
+    "verdict": "EXCLUDE_TRAINING — eval stratification only"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "checked_at_kst": "2026-08-09T08:48:28+09:00",
+  "dataset": "AWS Lightsail loop1 status snapshots merged locally",
+  "grain": "snapshotId × statId × chgerId",
+  "source_root": "docs/data/loops/loop1/snapshots",
+  "profile": {
+    "files": 2956,
+    "raw_rows": 1415711,
+    "curated_rows": 1412597,
+    "snapshot_count": 2956,
+    "charger_count": 21368,
+    "first_snapshot_kst": "2026-07-17T13:41:56",
+    "latest_snapshot_kst": "2026-08-09T07:23:21",
+    "latest_local_age_minutes": 85.1,
+    "cadence_median_minutes": 10.02,
+    "cadence_p95_minutes": 15.0,
+    "latest_rows": 393,
+    "latest_available_rows": 333
+  },
+  "checks": [
+    {
+      "code": "READABLE_FILES",
+      "status": "PASS",
+      "evidence": {
+        "requested_files": 2956,
+        "readable_files": 2956,
+        "unreadable_files": [],
+        "files_missing_required_columns": {},
+        "files_with_multiple_snapshot_ids": [],
+        "filename_snapshot_mismatches": []
+      },
+      "why_it_matters": "Unreadable files or missing columns break the replay population."
+    },
+    {
+      "code": "RAW_GRAIN_UNIQUENESS",
+      "status": "WARN",
+      "evidence": {
+        "duplicate_extra_rows": 3114,
+        "duplicate_groups": 3114,
+        "affected_snapshots": 185,
+        "conflicting_status_groups": 22,
+        "null_key_rows": 0,
+        "total_rows": 1415711,
+        "duplicate_rate": 0.0022,
+        "remediation": "Within each snapshotId × statId × chgerId, keep the row with the latest statUpdDt; break ties by pageNo and row order."
+      },
+      "why_it_matters": "Raw page-boundary duplicates can inflate availability before cleansing."
+    },
+    {
+      "code": "CURATED_GRAIN_UNIQUENESS",
+      "status": "PASS",
+      "evidence": {
+        "raw_rows": 1415711,
+        "curated_rows": 1412597,
+        "removed_rows": 3114,
+        "remaining_duplicate_rows": 0
+      },
+      "why_it_matters": "The DA① handoff must contain one deterministic row per charger and snapshot."
+    },
+    {
+      "code": "SNAPSHOT_ID_UNIQUENESS",
+      "status": "PASS",
+      "evidence": {
+        "snapshot_ids_in_multiple_files": 0,
+        "files_with_multiple_snapshot_ids": 0,
+        "filename_snapshot_mismatches": 0
+      },
+      "why_it_matters": "Ambiguous snapshot identity prevents a deterministic as-of cutoff."
+    },
+    {
+      "code": "STATUS_CODE_VALIDITY",
+      "status": "PASS",
+      "evidence": {
+        "invalid_or_null_rows": 0,
+        "allowed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          9
+        ]
+      },
+      "why_it_matters": "Unknown status codes must not be interpreted as available."
+    },
+    {
+      "code": "TIMESTAMP_PARSE",
+      "status": "PASS",
+      "evidence": {
+        "fetchedAt_parse_fail": 0,
+        "statUpdDt_parse_fail": 0,
+        "snapshotId_parse_fail": 0
+      },
+      "why_it_matters": "Unparseable timestamps cannot participate in arrival-time replay."
+    },
+    {
+      "code": "NO_TIME_TRAVEL",
+      "status": "PASS",
+      "evidence": {
+        "stat_updated_over_5m_after_fetch": 0,
+        "snapshot_over_5m_after_fetch": 0
+      },
+      "why_it_matters": "Future information would leak the outcome into recommendation features."
+    }
+  ],
+  "summary": {
+    "PASS": 6,
+    "WARN": 1,
+    "FAIL": 0
+  },
+  "recommendation_ready": true,
+  "open_issues": [
+    "RAW_GRAIN_UNIQUENESS"
+  ],
+  "interpretation": "Input quality only. This does not guarantee that an available charger remains available until arrival."
+}

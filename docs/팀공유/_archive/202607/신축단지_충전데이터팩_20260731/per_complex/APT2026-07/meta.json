@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2026-07",
+  "complex_name": "힐스테이트동대구센트럴",
+  "gu": "동구",
+  "dong": "신천동",
+  "move_in_ym": "2026-04",
+  "households": "481",
+  "cohort": "2026",
+  "notes": "주상복합·입주전",
+  "source": "seemsinfo_2026",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.87257,
+  "geocode_lng": 128.62181,
+  "geocode_note": "신천동, 신천3동, 동구, 대구광역시, 41257, 대한민국",
+  "nearby_300m_stations": 10,
+  "nearby_500m_stations": 27,
+  "nearby_500m_chargers": 184,
+  "d1_rows_for_nearby_or_name": 27
+}

@@ -1,0 +1,105 @@
+{
+  "status": "HGB_ARRIVAL_ETA_FITNESS_COMPLETE",
+  "model_family": "HistGradientBoostingClassifier",
+  "target": "target_available_at_arrival",
+  "decisions": [
+    {
+      "feature": "available_count",
+      "decision": "RETAIN",
+      "reason": "MVP / derived_v0",
+      "directional_auc": 0.7041066316565477,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "total_chargers",
+      "decision": "RETAIN",
+      "reason": "MVP / derived_v0",
+      "directional_auc": 0.6965110252148294,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "known_charger_count",
+      "decision": "RETAIN_CANDIDATE",
+      "reason": "univariate AUC",
+      "directional_auc": 0.6753966115107892,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "observation_coverage",
+      "decision": "RETAIN_CANDIDATE",
+      "reason": "univariate AUC",
+      "directional_auc": 0.5653270499673163,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "avail_ratio_t0",
+      "decision": "HOLD",
+      "reason": "weak; ablation-only",
+      "directional_auc": 0.5511807141045971,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "single_charger",
+      "decision": "RETAIN",
+      "reason": "MVP / derived_v0",
+      "directional_auc": 0.6541634716249767,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "hour",
+      "decision": "RETAIN_CANDIDATE",
+      "reason": "univariate AUC",
+      "directional_auc": 0.5599244304882856,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "weekday",
+      "decision": "HOLD_FOR_HGB",
+      "reason": "weak univariate; see ablation",
+      "directional_auc": 0.5160674966731791,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "is_weekend",
+      "decision": "HOLD_FOR_HGB",
+      "reason": "weak univariate; see ablation",
+      "directional_auc": 0.5204772971289272,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "avail_rate_lag_15m",
+      "decision": "RETAIN_FOR_ABLATION",
+      "reason": "panel lag; keep if LOO hurts",
+      "directional_auc": 0.5063100740698607,
+      "null_rate": 0.01456515479243814
+    },
+    {
+      "feature": "avail_rate_lag_60m",
+      "decision": "RETAIN_FOR_ABLATION",
+      "reason": "panel lag; keep if LOO hurts",
+      "directional_auc": 0.5159632416232125,
+      "null_rate": 0.030416061180346787
+    },
+    {
+      "feature": "horizon_minutes",
+      "decision": "RETAIN",
+      "reason": "MVP / derived_v0",
+      "directional_auc": 0.5477807631461277,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "tmap_eta_min",
+      "decision": "RETAIN_ALT",
+      "reason": "택1 with horizon — do not stack all three",
+      "directional_auc": 0.5486856360581278,
+      "null_rate": 0.0
+    },
+    {
+      "feature": "haversine_km",
+      "decision": "RETAIN_ALT",
+      "reason": "택1 with horizon — do not stack all three",
+      "directional_auc": 0.5288191031069117,
+      "null_rate": 0.0
+    }
+  ]
+}

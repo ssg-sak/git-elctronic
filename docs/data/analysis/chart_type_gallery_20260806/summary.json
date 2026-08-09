@@ -1,0 +1,43 @@
+{
+  "role": "DA① missing chart-type gallery",
+  "as_of_kst": "2026-08-06T16:26:16+09:00",
+  "source": "arrival_labels_tmap_eta_v1_with_derived.parquet (sampled)",
+  "sample_rows": 45000,
+  "sample_pos_rate": 0.8888888888888888,
+  "figures": [
+    "01_violin.png",
+    "02_kde.png",
+    "03_hexbin.png",
+    "04_pairplot.png",
+    "05_ecdf.png",
+    "06_qq.png",
+    "07_roc.png",
+    "08_pr.png",
+    "09_confusion.png",
+    "10_stacked_bar.png",
+    "11_errorbar.png",
+    "12_radar.png",
+    "13_waterfall.png",
+    "14_ridge.png",
+    "15_parallel.png",
+    "16_treemap.png",
+    "17_sankey.png"
+  ],
+  "baseline_model": {
+    "roc_auc": 0.743122,
+    "features": [
+      "current_available_count",
+      "total_chargers",
+      "horizon_minutes",
+      "haversine_km",
+      "single_charger"
+    ],
+    "note": "Not production model — chart-type demo + weak baseline only",
+    "test_pos_rate": 0.8888888888888888
+  },
+  "caveat": [
+    "Gallery for exploration/presentation — not new MVP features",
+    "ROC/PR/confusion use a toy logistic baseline only",
+    "Treemap/sankey/waterfall/ridge are matplotlib approximations"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "cha_on": {
+    "file": "docs/data/extracted/fee/kepco_kdn_cha_on_charging_fee_20251015.csv",
+    "rows": 1367,
+    "unique_cs_id": 1,
+    "stations": [
+      "한전KDN 본사"
+    ],
+    "fee_won_mean": 9947.6,
+    "fee_won_median": 8823.0,
+    "join_to_daegu_stations": false,
+    "reason": "cs_id=000001 only (한전KDN 본사). Not a national station fee table.",
+    "use": "SESSION example / UX mock for one site — not D1 fee map"
+  },
+  "kepco_tou": {
+    "file": "docs/data/extracted/fee/kepco_ev_tou_unit_price_20251031.csv",
+    "rows": 363,
+    "ym_range": [
+      "2022-07",
+      "2025-10"
+    ],
+    "latest_ym": "2025-10",
+    "tariff_names": [
+      "충전전력요금제(공통)",
+      "한전B2C공용요금제",
+      "한전B2C아파트요금제",
+      "한전B2B공용요금제(충전사업자)",
+      "한전B2BAPT요금제(충전사업자)",
+      "한전B2B요금제(환경부)",
+      "전기버스요금제(A형)",
+      "전기버스요금제(B형)"
+    ],
+    "latest_unit_prices": {
+      "충전전력요금제(공통)": {
+        "unit_won_per_kwh_offpeak": 54.95,
+        "unit_won_per_kwh_mid": 63.45,
+        "unit_won_per_kwh_peak": 66.98
+      },
+      "한전B2C공용요금제": {
+        "unit_won_per_kwh_offpeak": 333.05,
+        "unit_won_per_kwh_mid": 333.05,
+        "unit_won_per_kwh_peak": 333.05
+      },
+      "한전B2C아파트요금제": {
+        "unit_won_per_kwh_offpeak": 269.7,
+        "unit_won_per_kwh_mid": 280.8,
+        "unit_won_per_kwh_peak": 285.3
+      },
+      "한전B2B공용요금제(충전사업자)": {
+        "unit_won_per_kwh_offpeak": 264.3,
+        "unit_won_per_kwh_mid": 275.0,
+        "unit_won_per_kwh_peak": 279.4
+      },
+      "한전B2BAPT요금제(충전사업자)": {
+        "unit_won_per_kwh_offpeak": 264.3,
+        "unit_won_per_kwh_mid": 275.0,
+        "unit_won_per_kwh_peak": 279.4
+      },
+      "한전B2B요금제(환경부)": {
+        "unit_won_per_kwh_offpeak": 308.91,
+        "unit_won_per_kwh_mid": 308.91,
+        "unit_won_per_kwh_peak": 308.91
+      },
+      "전기버스요금제(A형)": {
+        "unit_won_per_kwh_offpeak": 152.2,
+        "unit_won_per_kwh_mid": 152.2,
+        "unit_won_per_kwh_peak": 152.2
+      },
+      "전기버스요금제(B형)": {
+        "unit_won_per_kwh_offpeak": 256.9,
+        "unit_won_per_kwh_mid": 256.9,
+        "unit_won_per_kwh_peak": 256.9
+      }
+    },
+    "join_to_daegu_stations": "partial_hint_only",
+    "reason": "No statId. Join only via operator/tariff class (busiId KP/ME hints).",
+    "use": "fee_tariff_ref for BE request-time TOU lookup",
+    "ref_csv": "docs/data/extracted/fee/fee_tariff_ref_kepco_latest.csv"
+  },
+  "contract": {
+    "owner_primary": "backend (request-time display/filter)",
+    "da1": "tariff ref + nullable fee_* hints, no fake fill, no score until gate",
+    "da2": "score weight only after team agreement"
+  }
+}

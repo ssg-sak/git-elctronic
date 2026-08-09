@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-31T08:33:20+09:00",
+  "source": "docs/data/extracted/parking/team5_full_snapshot_20260725_134854/parking_realtime_status.csv",
+  "incremental_sources": [
+    "docs/data/extracted/parking/incremental/20260725/team5_parking_incremental_20260725_140724/parking_realtime_status_new.csv",
+    "docs/data/extracted/parking/incremental/20260725/team5_parking_incremental_20260725_153820/parking_realtime_status_new.csv",
+    "docs/data/extracted/parking/incremental/20260727/team5_parking_incremental_20260727_201911/parking_realtime_status_new.csv",
+    "docs/data/extracted/parking/incremental/20260728/team5_parking_incremental_20260728_081520/parking_realtime_status_new.csv",
+    "docs/data/extracted/parking/incremental/20260730/team5_parking_incremental_20260730_135514/parking_realtime_status_new.csv",
+    "docs/data/extracted/parking/incremental/20260731/team5_parking_incremental_20260731_081849/parking_realtime_status_new.csv"
+  ],
+  "first_at": "2026-07-23 15:26:52",
+  "last_at": "2026-07-31 08:10:02",
+  "rows": 104638,
+  "lots": 108,
+  "batches": 977,
+  "dates_n": 9,
+  "occupancy_mean": 41.934890940487556,
+  "occupancy_median": 34.18,
+  "full_share": 11.479577209044516,
+  "figures": [
+    "01_fleet_occupancy_timeseries.png",
+    "02_hourly_occupancy.png",
+    "03_congestion_mix_timeseries.png",
+    "04_top_congested_lots.png",
+    "05_occupancy_vs_remaining.png"
+  ]
+}

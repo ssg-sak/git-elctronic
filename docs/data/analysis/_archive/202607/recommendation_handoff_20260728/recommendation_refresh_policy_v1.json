@@ -1,0 +1,56 @@
+{
+  "version": "recommendation_refresh_policy_v1_proposed",
+  "status": "PROPOSED_PENDING_DA2_BACKEND_APPROVAL",
+  "source": "DA① data handoff",
+  "principles": [
+    "Never claim availability_guaranteed=true without a reservation/lock API.",
+    "Use cached AWS loop data; do not trigger public API calls per client refresh.",
+    "Bind vehicle SOC and TMAP route values at request time."
+  ],
+  "triggers": [
+    {
+      "code": "PRIMARY_NO_LONGER_AVAILABLE",
+      "condition": "available_count <= 0",
+      "action": "IMMEDIATE_RERANK"
+    },
+    {
+      "code": "PRIMARY_SINGLE_CHARGER_LEFT",
+      "condition": "available_count == 1",
+      "action": "RECHECK_AND_PREPARE_FALLBACK"
+    },
+    {
+      "code": "STATUS_STALE",
+      "condition": "status_age_minutes > 15 or status missing",
+      "action": "RECHECK_REQUIRED"
+    },
+    {
+      "code": "SOC_DANGER",
+      "condition": "arrival_soc_percent <= 10",
+      "action": "HARD_FILTER_AND_RERANK"
+    },
+    {
+      "code": "SOC_WARNING",
+      "condition": "10 < arrival_soc_percent <= 15",
+      "action": "PREFER_NEARER_MULTI_CHARGER_FALLBACK"
+    },
+    {
+      "code": "ETA_DRIFT",
+      "condition": "abs(new_eta_minutes - old_eta_minutes) >= 5",
+      "action": "RECOMPUTE_SOC_AND_RERANK"
+    },
+    {
+      "code": "NEW_AWS_SNAPSHOT",
+      "condition": "source snapshotId changes during navigation",
+      "action": "COMPARE_PRIMARY_AND_RERANK_IF_TRIGGERED"
+    }
+  ],
+  "backend_flow": [
+    "bind request vehicle/current SOC/current location",
+    "fetch TMAP ETA and route distance for shortlist",
+    "compute arrival SOC",
+    "apply hard filters",
+    "rank in DA② recommendation core",
+    "return primary plus fallback candidates",
+    "on new cached snapshot or ETA drift, evaluate triggers"
+  ]
+}

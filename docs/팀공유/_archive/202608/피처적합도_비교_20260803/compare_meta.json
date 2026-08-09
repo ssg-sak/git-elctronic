@@ -1,0 +1,10 @@
+{
+  "baseline": "docs/data/analysis/hgb_training_pipeline_20260729",
+  "current": "docs/data/analysis/hgb_training_pipeline_20260803",
+  "target": "target_available",
+  "delta_csv": "docs/팀공유/피처적합도_비교_20260803/feature_fitness_delta.csv",
+  "markdown": "docs/팀공유/피처적합도_비교_20260803/피처적합도_비교_쉬운설명.md",
+  "n_decision_changed": 0,
+  "rows_baseline": 872700,
+  "rows_current": 1516551
+}

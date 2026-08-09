@@ -12,13 +12,18 @@ Does not compute scores or train models.
 """
 from __future__ import annotations
 
+import argparse
 import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import pandas as pd
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 REPO = Path(__file__).resolve().parents[8]
 PROCESSING = REPO / "apps" / "data-pipeline" / "processing"
@@ -31,6 +36,7 @@ from loop_paths import iter_status_csvs, status_snapshots_dir  # noqa: E402
 from features.station_features import (  # noqa: E402
     aggregate_availability_features,
     aggregate_reliability_combined,
+    observation_state,
     series_operating_now,
 )
 from features.status_as_of import join_master_with_status, load_latest_status_as_of  # noqa: E402
@@ -45,6 +51,44 @@ SANDBOX = (
 )
 MASTER = SANDBOX / "data" / "processed" / "charger_master.csv"
 STATUS_SNAP_DIR = status_snapshots_dir()
+_SNAP_STAMP = re.compile(r"_(\d{8})_(\d{6})")
+
+
+def latest_status_snapshot_as_of(snap_dir: Path | None = None) -> datetime | None:
+    """Wall time of the newest status CSV filename (…_YYYYMMDD_HHMMSS.csv)."""
+    directory = snap_dir or STATUS_SNAP_DIR
+    files = iter_status_csvs(directory)
+    if not files:
+        return None
+    best: datetime | None = None
+    for fp in files:
+        m = _SNAP_STAMP.search(fp.name)
+        if not m:
+            continue
+        try:
+            ts = datetime.strptime(m.group(1) + m.group(2), "%Y%m%d%H%M%S").replace(
+                tzinfo=KST
+            )
+        except ValueError:
+            continue
+        if best is None or ts > best:
+            best = ts
+    return best
+
+
+def resolve_as_of(mode: str = "latest-snap") -> datetime:
+    """Default latest-snap so observation_state reflects collection freshness, not rebuild lag.
+
+    - latest-snap: newest status snapshot stamp (offline handoff / after Lightsail pull)
+    - now: wall clock (live serving style; may be STALE if pull is old)
+    """
+    if mode == "now":
+        return datetime.now(KST)
+    snap_ts = latest_status_snapshot_as_of()
+    if snap_ts is None:
+        print("WARN: no status snapshots — falling back to now()", file=sys.stderr)
+        return datetime.now(KST)
+    return snap_ts
 SPATIAL = REPO / "docs" / "data" / "spatial_join"
 OUT_DIR = REPO / "apps" / "data-pipeline" / "evaluation" / "results" / "datasets"
 HANDOFF_DIR = OUT_DIR / "handoff_to_model"
@@ -256,6 +300,52 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
     # Does not override realtime availability. Scoring weight = DA➁ agreement.
     usage_feat = _load_usage_history_station_features()
 
+    # Parking short-horizon volatility (Team5 history) — additive, optional.
+    park_1h_path = SPATIAL / "parking_realtime_1h_features.csv"
+    if park_1h_path.exists():
+        park_1h = pd.read_csv(park_1h_path, dtype=str, low_memory=False)
+        for c in (
+            "parking_remaining_std_1h",
+            "parking_remaining_delta_1h",
+            "parking_realtime_ticks_1h",
+        ):
+            if c in park_1h.columns:
+                park_1h[c] = pd.to_numeric(park_1h[c], errors="coerce")
+        keep_1h = ["statId"] + [
+            c
+            for c in (
+                "parking_remaining_std_1h",
+                "parking_remaining_delta_1h",
+                "parking_realtime_ticks_1h",
+            )
+            if c in park_1h.columns
+        ]
+        park_1h = park_1h[keep_1h].drop_duplicates("statId")
+    else:
+        park_1h = pd.DataFrame(columns=["statId"])
+
+    # Nearest linkspeed (TMAP node-midpoint interim geom) — additive, not ETA.
+    link_join_path = SPATIAL / "join_linkspeed_nearest.csv"
+    if link_join_path.exists():
+        link_feat = pd.read_csv(link_join_path, dtype=str, low_memory=False)
+        for c in ("nearest_link_m", "link_speed_kph", "link_cong_grade"):
+            if c in link_feat.columns:
+                link_feat[c] = pd.to_numeric(link_feat[c], errors="coerce")
+        keep_link = ["statId"] + [
+            c
+            for c in (
+                "nearest_link_id",
+                "nearest_link_m",
+                "link_speed_kph",
+                "link_cong_grade",
+                "link_cong_grade_nm",
+            )
+            if c in link_feat.columns
+        ]
+        link_feat = link_feat[keep_link].drop_duplicates("statId")
+    else:
+        link_feat = pd.DataFrame(columns=["statId"])
+
     out = (
         meta[
             [
@@ -275,7 +365,9 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         .merge(avail, on="statId", how="left")
         .merge(reli, on="statId", how="left")
         .merge(parking, on="statId", how="left")
+        .merge(park_1h, on="statId", how="left")
         .merge(incident, on="statId", how="left")
+        .merge(link_feat, on="statId", how="left")
         .merge(poi, on="statId", how="left")
         .merge(usage_feat, on="statId", how="left")
     )
@@ -292,6 +384,13 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
     out["as_of_ts"] = as_of.isoformat()
     out["source_status"] = "sandbox_series"
     out["schema_version"] = SCHEMA_VERSION
+    out["observation_state"] = observation_state(
+        out.get("observed_count", pd.Series(0, index=out.index)),
+        out.get(
+            "reliability_grade_effective",
+            pd.Series("CHECK_REQUIRED", index=out.index),
+        ),
+    )
 
     ordered = [
         "statId",
@@ -313,6 +412,7 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         "observation_age_minutes",
         "observation_grade",
         "reliability_grade_effective",
+        "observation_state",
         "is_operating_now",
         "limitYn",
         "access_restricted",
@@ -333,9 +433,17 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         "parking_congestion_status",
         "parking_matched_id",
         "parking_has_realtime",
+        "parking_remaining_std_1h",
+        "parking_remaining_delta_1h",
+        "parking_realtime_ticks_1h",
         "parking_is_mock",
         "parking_source",
         "nearest_incident_m",
+        "nearest_link_id",
+        "nearest_link_m",
+        "link_speed_kph",
+        "link_cong_grade",
+        "link_cong_grade_nm",
         "traffic_is_mock",
         "traffic_source",
         "source_status",
@@ -361,9 +469,18 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         )
         if "parking_has_realtime" in out.columns
         else 0,
+        "parking_1h_feature_stations": int(
+            out["parking_remaining_std_1h"].notna().sum()
+        )
+        if "parking_remaining_std_1h" in out.columns
+        else 0,
         "traffic_is_mock": traffic_is_mock,
         "traffic_source": traffic_source,
         "incident_matched_stations": int(out["nearest_incident_m"].notna().sum()),
+        "linkspeed_matched_stations": int(out["nearest_link_id"].notna().sum())
+        if "nearest_link_id" in out.columns
+        else 0,
+        "linkspeed_join_policy": "MOCT_LINK SHP midpoint ≤400m (fallback TMAP nodes); not route ETA",
         "access_restricted_stations": int(out["access_restricted"].astype(bool).sum()),
         "recommend_public_default_stations": int(
             out["recommend_public_default"].astype(bool).sum()
@@ -373,15 +490,28 @@ def build_snapshot(as_of_ts: datetime | None = None) -> tuple[pd.DataFrame, dict
         ),
         "history_observed_stations": int(out["history_observed"].astype(bool).sum()),
         "usage_level_attached": True,
+        "observation_state_counts": out["observation_state"].value_counts(dropna=False).to_dict(),
     }
     return out[ordered], build_meta
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Build D1 station_feature_snapshot")
+    parser.add_argument(
+        "--as-of",
+        choices=("latest-snap", "now"),
+        default="latest-snap",
+        help="latest-snap=최신 status 파일 시각(기본). now=현재시각(라이브).",
+    )
+    args = parser.parse_args()
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     HANDOFF_DIR.mkdir(parents=True, exist_ok=True)
 
-    snap, build_meta = build_snapshot()
+    as_of = resolve_as_of(args.as_of)
+    print(f"D1 as_of mode={args.as_of} -> {as_of.isoformat()}", flush=True)
+    snap, build_meta = build_snapshot(as_of_ts=as_of)
+    build_meta["as_of_mode"] = args.as_of
     stamp = datetime.now(KST).strftime("%Y%m%d_%H%M%S")
     base = f"station_feature_snapshot_{stamp}"
     csv_path = OUT_DIR / f"{base}.csv"

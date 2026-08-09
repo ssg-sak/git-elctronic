@@ -23,7 +23,15 @@ if str(_PROCESSING) not in sys.path:
 from _bootstrap import ensure_paths
 
 REPO = ensure_paths()
-from loop_paths import LOOP1_INDEX, LOOP1_LOGS, iter_status_csvs, loop2_dir, status_snapshots_dir
+from loop_paths import (
+    LOOP1_INDEX,
+    LOOP1_LOGS,
+    daily_charger_info_latests,
+    iter_status_csvs,
+    latest_daily_charger_info,
+    loop2_dir,
+    status_snapshots_dir,
+)
 
 KST = ZoneInfo("Asia/Seoul")
 OUT_MD = REPO / "docs" / "data" / "운영" / "KPI_보고서.md"
@@ -195,6 +203,61 @@ def d1_status() -> dict:
     return out
 
 
+def info_coverage_status() -> dict:
+    """K11–K12 coverage: D1 UNOBSERVED + daily info dump / K12 statId diff."""
+    out: dict = {
+        "daily_latest": None,
+        "daily_export_date": None,
+        "info_rows": None,
+        "info_statIds": None,
+        "k12_n_added": None,
+        "k12_n_removed": None,
+        "k12_prev_path": None,
+        "dump_gap_days": None,
+        "unobserved_n": None,
+        "unobserved_pct": None,
+    }
+    latest = latest_daily_charger_info()
+    if latest and latest.exists():
+        out["daily_latest"] = str(latest.relative_to(REPO)).replace("\\", "/")
+        out["daily_export_date"] = latest.parent.name
+        try:
+            df = pd.read_csv(latest, dtype=str, usecols=lambda c: c in ("statId",), low_memory=False)
+            out["info_rows"] = int(len(df))
+            out["info_statIds"] = int(df["statId"].astype(str).str.strip().nunique()) if "statId" in df.columns else None
+        except ValueError:
+            df = pd.read_csv(latest, dtype=str, low_memory=False)
+            out["info_rows"] = int(len(df))
+            if "statId" in df.columns:
+                out["info_statIds"] = int(df["statId"].astype(str).str.strip().nunique())
+        meta = latest.parent / "info_dump_meta.json"
+        if meta.exists():
+            m = json.loads(meta.read_text(encoding="utf-8"))
+            k12 = m.get("k12") or {}
+            out["k12_n_added"] = k12.get("n_added")
+            out["k12_n_removed"] = k12.get("n_removed")
+            out["k12_prev_path"] = k12.get("prev_path")
+        try:
+            dump_day = date.fromisoformat(latest.parent.name)
+            out["dump_gap_days"] = (_now().date() - dump_day).days
+        except ValueError:
+            pass
+    else:
+        days = daily_charger_info_latests()
+        if days:
+            out["daily_latest"] = str(days[-1].relative_to(REPO)).replace("\\", "/")
+            out["daily_export_date"] = days[-1].parent.name
+
+    d1 = REPO / "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest.csv"
+    if d1.exists():
+        d = pd.read_csv(d1, dtype=str, usecols=lambda c: c in ("observation_state",), low_memory=False)
+        if "observation_state" in d.columns:
+            u = d["observation_state"].astype(str).eq("UNOBSERVED")
+            out["unobserved_n"] = int(u.sum())
+            out["unobserved_pct"] = round(float(u.mean()) * 100, 1) if len(d) else None
+    return out
+
+
 def usage_status() -> dict:
     path = REPO / "docs/data/spatial_join/join_usage_history_meta.json"
     if not path.exists():
@@ -209,7 +272,8 @@ def usage_status() -> dict:
     return m
 
 
-def evaluate(st: dict, ut: dict, d1: dict) -> list[dict]:
+def evaluate(st: dict, ut: dict, d1: dict, info: dict | None = None) -> list[dict]:
+    info = info or {}
     rows = []
     # K1
     k1_ok = st["ticks"] > 0 and (st.get("gaps_gt_12") or 0) <= 1 and (
@@ -319,11 +383,47 @@ def evaluate(st: dict, ut: dict, d1: dict) -> list[dict]:
             "status": "OK" if st["ticks"] else "WARN",
         }
     )
+    # K11
+    u_pct = info.get("unobserved_pct")
+    rows.append(
+        {
+            "id": "K11",
+            "name": "D1 미관측 충전소 비율",
+            "value": f"{u_pct}% ({info.get('unobserved_n')})" if u_pct is not None else "—",
+            "target": "추세 모니터링",
+            "status": "OK" if u_pct is not None else "WARN",
+        }
+    )
+    # K12
+    gap = info.get("dump_gap_days")
+    k12_ok = gap is not None and gap <= 1 and info.get("daily_latest")
+    k12_val = (
+        f"dump={info.get('daily_export_date')} · statId={info.get('info_statIds')} · "
+        f"+{info.get('k12_n_added')}/-{info.get('k12_n_removed')} · gap={gap}d"
+        if info.get("daily_latest")
+        else "일일 덤프 없음"
+    )
+    rows.append(
+        {
+            "id": "K12",
+            "name": "info 일별 statId 증감",
+            "value": k12_val,
+            "target": "일일 덤프 + diff 기록",
+            "status": "OK" if k12_ok else ("WARN" if info.get("daily_latest") else "FAIL"),
+        }
+    )
     return rows
 
 
 def render_md(payload: dict) -> str:
-    st, ut, d1, usage, kpis = payload["status"], payload["utic"], payload["d1"], payload["usage"], payload["kpis"]
+    st, ut, d1, usage, info, kpis = (
+        payload["status"],
+        payload["utic"],
+        payload["d1"],
+        payload["usage"],
+        payload.get("info_coverage") or {},
+        payload["kpis"],
+    )
     lines = [
         "# DA➀ KPI 보고서",
         "",
@@ -429,11 +529,24 @@ def render_md(payload: dict) -> str:
         "",
         "---",
         "",
-        "## 5. 다음 액션",
+        "## 5. 커버리지 (K11·K12)",
+        "",
+        f"- 일일 info 덤프: `{info.get('daily_latest')}` (export_date={info.get('daily_export_date')})",
+        f"- info 행/statId: {info.get('info_rows')} / {info.get('info_statIds')}",
+        f"- K12 diff: +{info.get('k12_n_added')} / -{info.get('k12_n_removed')} (vs `{info.get('k12_prev_path')}`)",
+        f"- 덤프 공백(일): {info.get('dump_gap_days')}",
+        f"- D1 UNOBSERVED: {info.get('unobserved_pct')}% ({info.get('unobserved_n')})",
+        "",
+        "> 덤프 조건 고정: `dump_daily_charger_info.py` · zcode=27 · numOfRows=999",
+        "",
+        "---",
+        "",
+        "## 6. 다음 액션",
         "",
         "- 루프 OFF 전이면 저녁에 한 번 더 `report_kpi.py` 실행",
         "- K8 WARN이면 D1 재빌드 후 재실행",
         "- K3 FAIL이면 UTIC 키/IP 확인 (학원 vs 집)",
+        "- K12 FAIL이면 `dump_daily_charger_info.py` 실행 (일일 쿼터 주의)",
         "- 기준선 한 줄은 [`KPI.md`](./KPI.md) §6에 수동 추가",
         "",
         "```",
@@ -450,7 +563,8 @@ def main() -> int:
     ut = utic_status(today)
     d1 = d1_status()
     usage = usage_status()
-    kpis = evaluate(st, ut, d1)
+    info = info_coverage_status()
+    kpis = evaluate(st, ut, d1, info)
     payload = {
         "generated_at": _now().isoformat(),
         "report_date": str(today),
@@ -459,6 +573,7 @@ def main() -> int:
         "utic": ut,
         "d1": d1,
         "usage": usage,
+        "info_coverage": info,
         "kpis": kpis,
     }
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)

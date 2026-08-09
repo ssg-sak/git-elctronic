@@ -1,0 +1,5 @@
+﻿age_bucket,stations,share_pct,age_median_min,confirmed_rate,avail_mean,unobserved_rate_mean
+<=5min_HIGH,176,4.18,2.6,0.9545,0.7557,0.0061
+5-15min_NORMAL,181,4.3,9.0,0.9724,0.6567,0.0211
+>15min_CHECK,3299,78.36,527.1,0.9354,0.7416,0.0678
+UNOBSERVED,554,13.16,,0.0,,1.0

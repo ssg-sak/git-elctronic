@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-07-31T09:07:34.002137+09:00",
+  "report_date": "2026-07-31",
+  "criteria": "docs/data/운영/KPI.md",
+  "status": {
+    "ticks": 49,
+    "first": "2026-07-31 00:08:15",
+    "last": "2026-07-31 08:12:11",
+    "gap_median_min": 10.02,
+    "gap_max_min": 12.47,
+    "gaps_gt_12": 1,
+    "latest_snapshot": "daegu_charger_status_20260731_081211.csv",
+    "latest_rows": 618,
+    "latest_avail_pct": 81.6,
+    "quota_date": "2026-07-31",
+    "calls": 223
+  },
+  "utic": {
+    "ticks_today": 1,
+    "fetched_at": "2026-07-31T08:19:38.030196+09:00",
+    "daegu_records": 5,
+    "national_records": 70,
+    "join_matched": 287,
+    "join_stations": 4201,
+    "join_match_rate": 0.0683,
+    "age_minutes": 47.9,
+    "k3_ok": true
+  },
+  "d1": {
+    "exists": true,
+    "rows": 4210,
+    "as_of_ts": "2026-07-31T08:12:11+09:00",
+    "availability_ratio_observed": 0.755,
+    "unobserved_rate": 0.229,
+    "has_confirmed_available_pct": 79.7,
+    "has_confirmed_available_n": 3357,
+    "traffic_is_mock": "False",
+    "traffic_source": "utic",
+    "parking_is_mock": "False",
+    "parking_source": "team5_pis",
+    "reliability": {
+      "CHECK_REQUIRED": 3505,
+      "HIGH": 458,
+      "NORMAL": 247
+    },
+    "as_of_age_hours": 0.92,
+    "public_n": 1853,
+    "restricted_n": 2357,
+    "public_availability_ratio_observed": 0.814,
+    "public_unobserved_rate": 0.236,
+    "public_has_confirmed_available_pct": 76.1,
+    "public_has_confirmed_available_n": 1411,
+    "usage_level_coverage_n": 200,
+    "public_usage_level_coverage_n": 192,
+    "public_usage_level_counts": {
+      "많음": 72,
+      "보통": 66,
+      "적음": 54
+    }
+  },
+  "usage": {
+    "layer": "usage_history_statId",
+    "radius_m": 80.0,
+    "usage_file": "docs/data/extracted/charger/usage/daegu_charger_usage_daily_20260331.csv",
+    "usage_rows": 128263,
+    "usage_stations": 219,
+    "evcharger_stations": 4201,
+    "matched": 201,
+    "match_rate": 0.9178,
+    "date_min": "2024-10-18",
+    "date_max": "2026-03-31",
+    "output": "docs/data/spatial_join/join_usage_history_statId.csv",
+    "note": "municipal station_id ≠ EvCharger statId; matched by coordinates",
+    "d1_merged": true,
+    "d1_coverage_ceiling_note": "D1 coverage is bounded by municipal usage station count (~219), not by join failure. EvCharger master is ~4k stations.",
+    "exists": true,
+    "feature_rows": 230
+  },
+  "kpis": [
+    {
+      "id": "K1",
+      "name": "status 루프 연속성",
+      "value": "틱 49 · median 10.02분 · gap>12=1",
+      "target": "≈5분 · gap≤2",
+      "status": "OK"
+    },
+    {
+      "id": "K2",
+      "name": "EvCharger 일일 호출",
+      "value": "223 / 1000",
+      "target": "≤800",
+      "status": "OK"
+    },
+    {
+      "id": "K3",
+      "name": "UTIC 돌발 루프",
+      "value": "오늘 1회 · age=47.9분 · 대구 5건",
+      "target": "≈15분 · 최근 1시간 내 성공",
+      "status": "OK"
+    },
+    {
+      "id": "K4",
+      "name": "UTIC 조인 커버",
+      "value": "287/4201 (rate=0.0683)",
+      "target": "matched > 0",
+      "status": "OK"
+    },
+    {
+      "id": "K5",
+      "name": "D1 관측 가용률",
+      "value": "0.755",
+      "target": "추세 보고용 (단정 금지)",
+      "status": "OK"
+    },
+    {
+      "id": "K6",
+      "name": "확정 가용 소 비율",
+      "value": "79.7% (3357/4210)",
+      "target": "≥50%",
+      "status": "OK"
+    },
+    {
+      "id": "K7",
+      "name": "미관측률",
+      "value": "0.229",
+      "target": "≤0.5",
+      "status": "OK"
+    },
+    {
+      "id": "K8",
+      "name": "D1 신선도",
+      "value": "2026-07-31T08:12:11+09:00 (age=0.92h)",
+      "target": "당일·최근 (핸드오프 전 재빌드)",
+      "status": "OK"
+    },
+    {
+      "id": "K9",
+      "name": "mock 혼입",
+      "value": "traffic=utic/mock=False · parking=team5_pis",
+      "target": "traffic 실 · 주차 mock거리 미투입",
+      "status": "WARN"
+    },
+    {
+      "id": "K10",
+      "name": "일일 점검 health",
+      "value": "status_daily/ 참고 (자동 판정은 루프 체크포인트)",
+      "target": "healthy 또는 사유 기록",
+      "status": "OK"
+    }
+  ]
+}

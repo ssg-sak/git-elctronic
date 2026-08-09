@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-05",
+  "complex_name": "화성파크드림구수산공원",
+  "gu": "북구",
+  "dong": "읍내동",
+  "move_in_ym": "2025-02",
+  "households": "520",
+  "cohort": "2025",
+  "notes": NaN,
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.9480902,
+  "geocode_lng": 128.5521832,
+  "geocode_note": "읍내동, 북구, 대구광역시, 대한민국",
+  "nearby_300m_stations": 6,
+  "nearby_500m_stations": 20,
+  "nearby_500m_chargers": 95,
+  "d1_rows_for_nearby_or_name": 20
+}

@@ -4,8 +4,9 @@
 |---|---|
 | **대상** | AI·데이터 ① (데이터·파이프라인) — 이현석 |
 | **근거** | [`대구_EV_세이프차지_종합_요구사항_정의서_v1.0.md`](./대구_EV_세이프차지_종합_요구사항_정의서_v1.0.md) |
-| **작성** | 2026-07-22 |
+| **작성** | 2026-07-22 · **갱신** 2026-08-04 |
 | **한 줄** | **추천 점수는 안 만든다.** 점수에 넣을 **깨끗한 재료(수집·전처리·피처·이력)** 를 만든다. |
+| **로드맵** | [`../데이터파트_①_8월9일까지_로드맵.md`](../데이터파트_①_8월9일까지_로드맵.md) · 8/4 mid-cut까지 ✅ |
 
 > 팀 공통: 루트 [`AGENTS.md`](../../AGENTS.md) · 데이터 가이드 [`데이터파트_작업가이드.md`](../데이터파트_작업가이드.md)  
 > 요약본: [`요구사항_정리_전체_및_DA➀.md`](./요구사항_정리_전체_및_DA➀.md) · KPI: [`../data/KPI.md`](../data/운영/KPI.md)  
@@ -51,7 +52,7 @@
 | **DR-007** | 목/실 구분 | `*_is_mock` · 트랙 문서 | ✅ |
 | **IFR-001** | EvCharger 연동 | SANDBOX 수집 (공식 collection과 경계) | ✅ |
 | **IFR-002** | 교통 | **돌발 UTIC** · 소통은 미완/대체 | 돌발 ✅ |
-| **IFR-003** | 주차 연결 | 조인·플래그 · 실API 대기(KOTSA) | 부분 |
+| **IFR-003** | 주차 연결 | Team5 실조인 · `PARKING_AUXILIARY_ONLY` (점수 금지) | ✅ |
 | **IFR-004** | Tour·산책 통합 | 추출·조인·중복 제거 | ✅ |
 | **NFR-006** | API 키 보호 | `.env`만 · 커밋 금지 | ✅ |
 | **BR-004** 지원 | 데이터 투명성 | mock 플래그를 D1에 실어 ②·화면에 넘김 | ✅ |
@@ -97,13 +98,13 @@
 |---|---|---|---|
 | 충전소 기본정보 | 사용 | 단발 추출·마스터·대구 필터 | ✅ |
 | 충전기 상태 | 5~10분 | **루프 상시** · 이력 누적 | ✅ |
-| 교통 소통 | 사용 | **linkspeed 복구·추출(1,960)** · 루프·D1 조인 후속 | 🟡 |
+| 교통 소통 | 사용 | linkspeed 루프·D1 조인 (경로 ETA 대체 금지) | ✅ |
 | 돌발 | 사용 | UTIC 15분 루프 · 1km 조인 | ✅ |
-| 주차 기본 | 사용 | 실API 오면 조인 | ⏳ KOTSA |
-| 주차 혼잡 | **목** | `is_mock` · 거리 null(실 전) | ✅ 정책 |
+| 주차 기본 | 사용 | Team5 PIS 1km 조인 · realtime≈428 | ✅ |
+| 주차 혼잡 | 보조만 | 점수 금지 · realtime 한계 문서화 | ✅ |
 | 날씨 | **중단** | 2026-07-22 팀 합의 — 미수집·D1 미포함 |
 | Tour·관광·산책 | 사용 | 통합·중복 제거 | ✅ |
-| (추가) 대구시 이용현황 CSV | 권장 | 좌표 조인 → 이용강도 피처 | 📋 다음 |
+| (추가) 대구시 이용현황 CSV | 권장 | 조인·D1 `usage_level` · **HOLD_SPARSE** | ✅ |
 
 ---
 
@@ -118,9 +119,9 @@
 | data_reliability_score | `reliability_grade*` | ✅ 재료 |
 | operation_available | `is_operating_now` | ✅ |
 | incident_* | `nearest_incident_m` · UTIC | ✅ |
-| parking_* | `nearest_parking_m` · team5_pis · `parking_is_mock=false` | ✅ 2026-07-23 |
-| weather_risk | 격자 조인 수준 | 부분 |
-| historical_availability | D2 기반 · 또는 대구시 이용 CSV | 강화 중 |
+| parking_* | `nearest_parking_m` · team5_pis · `parking_is_mock=false` | ✅ |
+| weather_risk | 격자 조인 수준 | 부분 (미사용 합의) |
+| historical_availability | usage 피처 · HOLD_SPARSE (MVP 제외) | ✅ 평가완료 |
 | eta_minutes | 컬럼만 | 백엔드 채움 |
 | charger_type_match | 규격 필드 정리 | FE 필터와 합의 |
 
@@ -140,19 +141,21 @@
 
 | # | 할 일 | 요구 | 산출 | 상태 |
 |---|---|---|---|---|
-| 1 | D1 **주기 재빌드** (루프 반영) | DR-002 · 핸드오프 | `station_feature_snapshot_latest` | ✅ 2026-07-22 11:46 |
-| 2 | team_5 주차 export → 1km 조인 → D1 | IFR-003 · DR-007 | `parking_is_mock=false` · [기록](../data/주차/주차_조인_D1_기록_20260723.md) | ✅ 2026-07-23 |
-| 3 | 대구시 **이용현황 CSV** 입고 · 좌표→`statId` 조인 | historical · 발표 | `station_history_features_latest` | ✅ 201/219 · D1 미merge |
-| 4 | ②에게 D1 컬럼·`as_of_ts` 최신본 공유 | AIR-001 입력 | 핸드오프 갱신 | ✅ 2026-07-22 블록 |
+| 1 | D1 **주기 재빌드** (루프 반영) | DR-002 · 핸드오프 | `station_feature_snapshot_latest` | ✅ 일일 |
+| 2 | team_5 주차 export → 1km 조인 → D1 | IFR-003 · DR-007 | `parking_is_mock=false` | ✅ |
+| 3 | 대구시 **이용현황 CSV** 입고 · 좌표→`statId` 조인 | historical | `station_history_features_latest` · D1 merge | ✅ HOLD_SPARSE |
+| 4 | ②에게 D1·학습·replay 핸드오프 | AIR-001 입력 | `팀공유_핸드오프_①to②_20260804.md` | ✅ 2026-08-04 |
+| 5 | 도착 replay 10/15/30 mid | 로드맵 8/4 | `arrival_availability_replay_20260804` | ✅ |
+| 6 | 품질 모니터·pytest 게이트 | 로드맵 8/5 | monitor PASS · 65 passed | ✅ 선실행 |
 
-### P2 — 여유 시
+### P2 — 여유 시 / 8/9 전
 
 | # | 할 일 | 요구 |
 |---|---|---|
-| 5 | 이용강도 `usage_level`(적음/보통/많음) → D1 | §8.1 historical |
-| 6 | 이상 징후(이용 급감) × 상태코드 교차 EDA | 품질 |
-| 7 | 행정동 인프라 압력 (발표용) | 확장 분석 |
-| 8 | D3 라벨 초안 (ETA 후 가용) — **②와 정의만** | AIR-002 |
+| 7 | 저녁·최종 mid 패키지 zip (조장 모델 테스트) | 로드맵 8/6 ✅ 20260806 |
+| 8 | 이상 징후(이용 급감) × 상태코드 교차 EDA | 품질 |
+| 9 | 행정동 인프라 압력 (발표용) | 확장 분석 |
+| 10 | 8/9 최종 `DA1_READY_FOR_DA2_MODEL_EVALUATION` | 로드맵 최종 |
 
 ### 하지 말 것 (시간 낭비)
 
@@ -185,11 +188,13 @@
 - [x] 상태 이력 루프 가동 (DR-002)  
 - [x] 돌발 실데이터 조인 (IFR-002 일부)  
 - [x] D1/D2 + mock 구분으로 ② 핸드오프 가능  
-- [ ] 주차 실조인 또는 문서상 “목 유지” 팀 합의 유지  
-- [x] D1 `as_of`가 핸드오프 시점 기준으로 신선 (2026-07-22 11:46)  
-- [x] (권장) 과거 이용강도 피처 1종 이상 (`station_history_features_latest` · D1 merge는 다음)  
+- [x] 주차 Team5 실조인 + 점수 금지 계약 (`PARKING_AUXILIARY_ONLY`)  
+- [x] D1 `as_of` 핸드오프 신선 (일일 갱신 · 2026-08-04 mid)  
+- [x] 과거 이용강도 피처 + D1 merge · MVP는 HOLD_SPARSE  
+- [x] horizon 학습·도착 replay mid · 품질 모니터 PASS  
 
-점수·화면·ETA 숫자는 **① 완료 조건이 아님**.
+점수·화면·ETA 숫자는 **① 완료 조건이 아님**.  
+8/9 최종 패키지 선언은 로드맵 최종일 작업.
 
 ---
 
@@ -206,5 +211,5 @@
 ```
 
 ```
-DA➀ | role & todo from SRS v1.0 | 2026-07-22
+DA➀ | role & todo from SRS v1.0 | 2026-08-04 mid-cut
 ```

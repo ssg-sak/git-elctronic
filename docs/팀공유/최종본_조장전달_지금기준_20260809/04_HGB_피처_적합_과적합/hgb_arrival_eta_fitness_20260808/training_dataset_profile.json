@@ -1,0 +1,16 @@
+{
+  "rows_sampled": 453830,
+  "stations": 1612,
+  "pos_rate_sampled": 0.8813873036158915,
+  "feature_as_of_min": "2026-07-17 13:41:56",
+  "feature_as_of_max": "2026-08-08 11:07:45",
+  "split_counts": {
+    "train": 298658,
+    "valid": 85294,
+    "test": 69878
+  },
+  "eta_is_proxy_rate": 0.0,
+  "labels": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived.parquet",
+  "panel": "apps/data-pipeline/evaluation/results/datasets/station_feature_panel_latest.parquet",
+  "note": "negatives kept in full; positives subsampled for fit speed"
+}

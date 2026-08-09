@@ -1,0 +1,56 @@
+{
+  "version": "derived_v0",
+  "target": "target_available_at_arrival",
+  "grain": "statId × feature_as_of × horizon_minutes",
+  "mvp_base": [
+    "available_count",
+    "total_chargers",
+    "known_charger_count",
+    "observation_coverage",
+    "observation_age_minutes",
+    "horizon_minutes"
+  ],
+  "derived_retain": [
+    {
+      "name": "single_charger",
+      "dtype": "int0_1",
+      "definition": "total_chargers == 1",
+      "role": "feature"
+    },
+    {
+      "name": "eta_bucket",
+      "dtype": "category",
+      "definition": "tmap_eta_min in {0_10,10_20,20_40,40p}",
+      "role": "feature_alt",
+      "note": "horizon_minutes와 택1 — 기본은 horizon"
+    }
+  ],
+  "exclude_training": [
+    {
+      "name": "eta_is_proxy",
+      "reason": "TMAP quota selection bias; use for eval stratification only"
+    },
+    {
+      "name": "slack_chargers",
+      "reason": "identical to available_count-1 under candidate filter"
+    },
+    {
+      "name": "age_x_eta",
+      "reason": "no evidence on current labels"
+    }
+  ],
+  "hold": [
+    {
+      "name": "avail_ratio_t0",
+      "reason": "weak/unstable; ablation only after TMAP real-ETA refresh"
+    },
+    {
+      "name": "stale_flag / unobserved_flag",
+      "reason": "D2 panel lacks per-tick observation_age/state; recheck after panel columns exist"
+    }
+  ],
+  "files": {
+    "labels": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived.parquet",
+    "d1_companion": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_with_eta_derived_latest.csv"
+  }
+}

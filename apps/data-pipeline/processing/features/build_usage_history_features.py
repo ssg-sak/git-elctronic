@@ -11,7 +11,8 @@ Outputs:
   - apps/data-pipeline/evaluation/results/datasets/station_history_features_latest.csv
   - .../station_history_features_meta.json
 
-Does NOT merge into D1 (quality review first). Does NOT compute recommendation scores.
+Does merge into D1 via build_d1_snapshot (history_observed / usage_level).
+Does NOT compute recommendation scores.
 """
 from __future__ import annotations
 
@@ -334,7 +335,11 @@ def main() -> int:
         "feature_rows": int(len(feat)),
         "feature_file": str(feat_csv.relative_to(REPO)).replace("\\", "/"),
         "usage_level": "tertile of sessions_per_charger within charger_type",
-        "d1_merged": False,
+        "d1_merged": True,
+        "d1_coverage_note": (
+            "D1 merges usage_level when history_observed; "
+            "coverage ~5% is bounded by municipal ~219 stations vs ~4k EvCharger"
+        ),
         "owner": "AI·data ①",
         "consumer": "AI·data ② (optional prior for stale/unobserved)",
     }

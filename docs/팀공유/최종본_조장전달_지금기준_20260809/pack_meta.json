@@ -1,0 +1,11 @@
+{
+  "folder": "00_최종본_DA1_조장전달_지금기준_20260809",
+  "generated_at": "2026-08-09T07:41:27+09:00",
+  "copied_n": 40,
+  "missing": [
+    "docs/data/quality/kpi_report_latest.json",
+    "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest_meta.json",
+    "apps/data-pipeline/evaluation/results/datasets/feature_schema_v1.json"
+  ],
+  "note": "showcase of current finals; full raw+code via pack_da1_lead_handoff"
+}

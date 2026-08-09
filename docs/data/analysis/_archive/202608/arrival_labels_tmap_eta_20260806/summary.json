@@ -1,0 +1,620 @@
+{
+  "role": "DA① real TMAP ETA + arrival availability labels",
+  "as_of_kst": "2026-08-06T15:31:05+09:00",
+  "origin": {
+    "id": "dongdaegu",
+    "label": "동대구역 인근",
+    "lat": 35.8797,
+    "lng": 128.6284
+  },
+  "eta_stations_ok": 1848,
+  "panel_path": "apps/data-pipeline/evaluation/results/datasets/station_feature_panel_latest.parquet",
+  "panel_range": {
+    "min": "2026-07-17 13:41:56",
+    "max": "2026-08-06 08:16:01"
+  },
+  "labeled_rows": 2138025,
+  "labeled_stations": 1596,
+  "positive_rate": 0.9789689082213725,
+  "by_horizon": [
+    {
+      "horizon_minutes": 1,
+      "labeled_rows": 293,
+      "stations": 2,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 2,
+      "labeled_rows": 668,
+      "stations": 3,
+      "positive_rate": 0.9955089820359282
+    },
+    {
+      "horizon_minutes": 3,
+      "labeled_rows": 10185,
+      "stations": 6,
+      "positive_rate": 0.9965635738831615
+    },
+    {
+      "horizon_minutes": 4,
+      "labeled_rows": 14863,
+      "stations": 10,
+      "positive_rate": 0.9926663526878826
+    },
+    {
+      "horizon_minutes": 5,
+      "labeled_rows": 6975,
+      "stations": 5,
+      "positive_rate": 0.9972759856630824
+    },
+    {
+      "horizon_minutes": 6,
+      "labeled_rows": 10258,
+      "stations": 6,
+      "positive_rate": 0.9972704230844219
+    },
+    {
+      "horizon_minutes": 7,
+      "labeled_rows": 13609,
+      "stations": 9,
+      "positive_rate": 0.9781027261371151
+    },
+    {
+      "horizon_minutes": 8,
+      "labeled_rows": 17233,
+      "stations": 10,
+      "positive_rate": 0.9917019671560379
+    },
+    {
+      "horizon_minutes": 9,
+      "labeled_rows": 48384,
+      "stations": 28,
+      "positive_rate": 0.9879298941798942
+    },
+    {
+      "horizon_minutes": 10,
+      "labeled_rows": 69601,
+      "stations": 40,
+      "positive_rate": 0.9899426732374534
+    },
+    {
+      "horizon_minutes": 11,
+      "labeled_rows": 3750,
+      "stations": 24,
+      "positive_rate": 0.9810666666666666
+    },
+    {
+      "horizon_minutes": 12,
+      "labeled_rows": 8956,
+      "stations": 43,
+      "positive_rate": 0.9906208128628852
+    },
+    {
+      "horizon_minutes": 13,
+      "labeled_rows": 49183,
+      "stations": 29,
+      "positive_rate": 0.9871093670577232
+    },
+    {
+      "horizon_minutes": 14,
+      "labeled_rows": 71732,
+      "stations": 42,
+      "positive_rate": 0.9837311102436849
+    },
+    {
+      "horizon_minutes": 15,
+      "labeled_rows": 83022,
+      "stations": 46,
+      "positive_rate": 0.9850521548505216
+    },
+    {
+      "horizon_minutes": 16,
+      "labeled_rows": 114382,
+      "stations": 69,
+      "positive_rate": 0.9874630623699533
+    },
+    {
+      "horizon_minutes": 17,
+      "labeled_rows": 76896,
+      "stations": 46,
+      "positive_rate": 0.9846285892634207
+    },
+    {
+      "horizon_minutes": 18,
+      "labeled_rows": 99848,
+      "stations": 60,
+      "positive_rate": 0.9855380177870363
+    },
+    {
+      "horizon_minutes": 19,
+      "labeled_rows": 81507,
+      "stations": 50,
+      "positive_rate": 0.9767872698050474
+    },
+    {
+      "horizon_minutes": 20,
+      "labeled_rows": 120773,
+      "stations": 73,
+      "positive_rate": 0.9848724466561235
+    },
+    {
+      "horizon_minutes": 21,
+      "labeled_rows": 8038,
+      "stations": 56,
+      "positive_rate": 0.9773575516297587
+    },
+    {
+      "horizon_minutes": 22,
+      "labeled_rows": 8447,
+      "stations": 51,
+      "positive_rate": 0.9764413401207529
+    },
+    {
+      "horizon_minutes": 23,
+      "labeled_rows": 94417,
+      "stations": 55,
+      "positive_rate": 0.9721978033616827
+    },
+    {
+      "horizon_minutes": 24,
+      "labeled_rows": 44479,
+      "stations": 28,
+      "positive_rate": 0.9451651341082309
+    },
+    {
+      "horizon_minutes": 25,
+      "labeled_rows": 44374,
+      "stations": 25,
+      "positive_rate": 0.9579483481317889
+    },
+    {
+      "horizon_minutes": 26,
+      "labeled_rows": 58032,
+      "stations": 32,
+      "positive_rate": 0.9679831816928591
+    },
+    {
+      "horizon_minutes": 27,
+      "labeled_rows": 43322,
+      "stations": 24,
+      "positive_rate": 0.9684686764230644
+    },
+    {
+      "horizon_minutes": 28,
+      "labeled_rows": 52912,
+      "stations": 31,
+      "positive_rate": 0.9606894466283641
+    },
+    {
+      "horizon_minutes": 29,
+      "labeled_rows": 31693,
+      "stations": 18,
+      "positive_rate": 0.9775975767519641
+    },
+    {
+      "horizon_minutes": 30,
+      "labeled_rows": 66901,
+      "stations": 38,
+      "positive_rate": 0.9609572353178577
+    },
+    {
+      "horizon_minutes": 31,
+      "labeled_rows": 4549,
+      "stations": 31,
+      "positive_rate": 0.979336117828094
+    },
+    {
+      "horizon_minutes": 32,
+      "labeled_rows": 6439,
+      "stations": 31,
+      "positive_rate": 0.9641248641093337
+    },
+    {
+      "horizon_minutes": 33,
+      "labeled_rows": 38858,
+      "stations": 26,
+      "positive_rate": 0.9742138041072623
+    },
+    {
+      "horizon_minutes": 34,
+      "labeled_rows": 64958,
+      "stations": 43,
+      "positive_rate": 0.9818498106468795
+    },
+    {
+      "horizon_minutes": 35,
+      "labeled_rows": 43458,
+      "stations": 28,
+      "positive_rate": 0.9808090570205716
+    },
+    {
+      "horizon_minutes": 36,
+      "labeled_rows": 62560,
+      "stations": 38,
+      "positive_rate": 0.984255115089514
+    },
+    {
+      "horizon_minutes": 37,
+      "labeled_rows": 37424,
+      "stations": 23,
+      "positive_rate": 0.9676410859341599
+    },
+    {
+      "horizon_minutes": 38,
+      "labeled_rows": 29889,
+      "stations": 17,
+      "positive_rate": 0.980461039178293
+    },
+    {
+      "horizon_minutes": 39,
+      "labeled_rows": 49595,
+      "stations": 26,
+      "positive_rate": 0.9836677084383506
+    },
+    {
+      "horizon_minutes": 40,
+      "labeled_rows": 41828,
+      "stations": 25,
+      "positive_rate": 0.9757100506837525
+    },
+    {
+      "horizon_minutes": 41,
+      "labeled_rows": 4707,
+      "stations": 23,
+      "positive_rate": 0.9570851922668366
+    },
+    {
+      "horizon_minutes": 42,
+      "labeled_rows": 3543,
+      "stations": 20,
+      "positive_rate": 0.9771380186282811
+    },
+    {
+      "horizon_minutes": 43,
+      "labeled_rows": 41160,
+      "stations": 26,
+      "positive_rate": 0.9884110787172011
+    },
+    {
+      "horizon_minutes": 44,
+      "labeled_rows": 16216,
+      "stations": 11,
+      "positive_rate": 0.9605944745929945
+    },
+    {
+      "horizon_minutes": 45,
+      "labeled_rows": 21472,
+      "stations": 15,
+      "positive_rate": 0.9845380029806259
+    },
+    {
+      "horizon_minutes": 46,
+      "labeled_rows": 20931,
+      "stations": 12,
+      "positive_rate": 0.9748220343031867
+    },
+    {
+      "horizon_minutes": 47,
+      "labeled_rows": 11633,
+      "stations": 8,
+      "positive_rate": 0.9846987019685378
+    },
+    {
+      "horizon_minutes": 48,
+      "labeled_rows": 13670,
+      "stations": 8,
+      "positive_rate": 0.9917337234820776
+    },
+    {
+      "horizon_minutes": 49,
+      "labeled_rows": 18404,
+      "stations": 11,
+      "positive_rate": 0.9744620734622909
+    },
+    {
+      "horizon_minutes": 50,
+      "labeled_rows": 31150,
+      "stations": 17,
+      "positive_rate": 0.9796147672552167
+    },
+    {
+      "horizon_minutes": 51,
+      "labeled_rows": 5387,
+      "stations": 18,
+      "positive_rate": 0.9686281789493224
+    },
+    {
+      "horizon_minutes": 52,
+      "labeled_rows": 6198,
+      "stations": 29,
+      "positive_rate": 0.9757986447241046
+    },
+    {
+      "horizon_minutes": 53,
+      "labeled_rows": 17399,
+      "stations": 13,
+      "positive_rate": 0.9782746134835335
+    },
+    {
+      "horizon_minutes": 54,
+      "labeled_rows": 22955,
+      "stations": 12,
+      "positive_rate": 0.9639294271400566
+    },
+    {
+      "horizon_minutes": 55,
+      "labeled_rows": 8889,
+      "stations": 5,
+      "positive_rate": 0.9935875801552481
+    },
+    {
+      "horizon_minutes": 56,
+      "labeled_rows": 5415,
+      "stations": 3,
+      "positive_rate": 0.9977839335180055
+    },
+    {
+      "horizon_minutes": 57,
+      "labeled_rows": 7155,
+      "stations": 4,
+      "positive_rate": 0.9928721174004193
+    },
+    {
+      "horizon_minutes": 58,
+      "labeled_rows": 17396,
+      "stations": 11,
+      "positive_rate": 0.9933892848930789
+    },
+    {
+      "horizon_minutes": 59,
+      "labeled_rows": 14675,
+      "stations": 10,
+      "positive_rate": 0.9867802385008518
+    },
+    {
+      "horizon_minutes": 60,
+      "labeled_rows": 8985,
+      "stations": 5,
+      "positive_rate": 0.9643850862548692
+    },
+    {
+      "horizon_minutes": 61,
+      "labeled_rows": 185,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 62,
+      "labeled_rows": 134,
+      "stations": 1,
+      "positive_rate": 0.9850746268656716
+    },
+    {
+      "horizon_minutes": 64,
+      "labeled_rows": 2096,
+      "stations": 1,
+      "positive_rate": 0.958969465648855
+    },
+    {
+      "horizon_minutes": 65,
+      "labeled_rows": 2213,
+      "stations": 1,
+      "positive_rate": 0.9941256213285133
+    },
+    {
+      "horizon_minutes": 66,
+      "labeled_rows": 2425,
+      "stations": 2,
+      "positive_rate": 0.9562886597938144
+    },
+    {
+      "horizon_minutes": 67,
+      "labeled_rows": 2259,
+      "stations": 1,
+      "positive_rate": 0.9915891987605135
+    },
+    {
+      "horizon_minutes": 68,
+      "labeled_rows": 4037,
+      "stations": 3,
+      "positive_rate": 0.9995045826108496
+    },
+    {
+      "horizon_minutes": 71,
+      "labeled_rows": 136,
+      "stations": 1,
+      "positive_rate": 0.9485294117647058
+    },
+    {
+      "horizon_minutes": 72,
+      "labeled_rows": 68,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 73,
+      "labeled_rows": 972,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 74,
+      "labeled_rows": 1487,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 75,
+      "labeled_rows": 2677,
+      "stations": 2,
+      "positive_rate": 0.9731042211430706
+    },
+    {
+      "horizon_minutes": 77,
+      "labeled_rows": 84,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 78,
+      "labeled_rows": 1813,
+      "stations": 1,
+      "positive_rate": 0.9966905681191396
+    },
+    {
+      "horizon_minutes": 79,
+      "labeled_rows": 2161,
+      "stations": 1,
+      "positive_rate": 0.996298010180472
+    },
+    {
+      "horizon_minutes": 82,
+      "labeled_rows": 72,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 83,
+      "labeled_rows": 0,
+      "stations": 0
+    },
+    {
+      "horizon_minutes": 87,
+      "labeled_rows": 2285,
+      "stations": 1,
+      "positive_rate": 0.9522975929978118
+    },
+    {
+      "horizon_minutes": 88,
+      "labeled_rows": 1434,
+      "stations": 1,
+      "positive_rate": 0.9874476987447699
+    },
+    {
+      "horizon_minutes": 89,
+      "labeled_rows": 4017,
+      "stations": 3,
+      "positive_rate": 0.9626587005227782
+    },
+    {
+      "horizon_minutes": 91,
+      "labeled_rows": 435,
+      "stations": 3,
+      "positive_rate": 0.9908045977011494
+    },
+    {
+      "horizon_minutes": 92,
+      "labeled_rows": 276,
+      "stations": 3,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 93,
+      "labeled_rows": 2261,
+      "stations": 2,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 95,
+      "labeled_rows": 1488,
+      "stations": 1,
+      "positive_rate": 0.9737903225806451
+    },
+    {
+      "horizon_minutes": 96,
+      "labeled_rows": 15711,
+      "stations": 9,
+      "positive_rate": 0.9655655273375342
+    },
+    {
+      "horizon_minutes": 97,
+      "labeled_rows": 4904,
+      "stations": 3,
+      "positive_rate": 0.9863376835236541
+    },
+    {
+      "horizon_minutes": 98,
+      "labeled_rows": 4272,
+      "stations": 3,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 99,
+      "labeled_rows": 7831,
+      "stations": 4,
+      "positive_rate": 0.9894010981994636
+    },
+    {
+      "horizon_minutes": 100,
+      "labeled_rows": 4313,
+      "stations": 4,
+      "positive_rate": 0.9816832830976119
+    },
+    {
+      "horizon_minutes": 101,
+      "labeled_rows": 512,
+      "stations": 3,
+      "positive_rate": 0.99609375
+    },
+    {
+      "horizon_minutes": 102,
+      "labeled_rows": 1480,
+      "stations": 5,
+      "positive_rate": 0.9243243243243243
+    },
+    {
+      "horizon_minutes": 103,
+      "labeled_rows": 3756,
+      "stations": 3,
+      "positive_rate": 0.987220447284345
+    },
+    {
+      "horizon_minutes": 107,
+      "labeled_rows": 1431,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 108,
+      "labeled_rows": 2384,
+      "stations": 2,
+      "positive_rate": 0.9819630872483222
+    },
+    {
+      "horizon_minutes": 116,
+      "labeled_rows": 247,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 117,
+      "labeled_rows": 1621,
+      "stations": 1,
+      "positive_rate": 0.9691548426896978
+    },
+    {
+      "horizon_minutes": 118,
+      "labeled_rows": 1619,
+      "stations": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "horizon_minutes": 120,
+      "labeled_rows": 21298,
+      "stations": 14,
+      "positive_rate": 0.9721570100478918
+    }
+  ],
+  "label_column": "target_available_at_arrival",
+  "files": {
+    "eta_latest": "apps/data-pipeline/evaluation/results/datasets/station_tmap_eta_latest.csv",
+    "labels_parquet": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1.parquet",
+    "d1_with_eta": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_with_eta_latest.csv",
+    "analysis": "docs/data/analysis/arrival_labels_tmap_eta_20260806"
+  },
+  "contract": {
+    "runtime_eta_authority": "backend TMAP on final 3~5 still recommended",
+    "d1_main_eta_minutes_null_contract": "main snapshot_latest may stay null; with_eta companion is for ② training",
+    "label": "1 if available_count>0 at arrival tick; requires current available>0 candidate filter"
+  }
+}

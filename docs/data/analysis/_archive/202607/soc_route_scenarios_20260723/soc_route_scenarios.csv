@@ -1,0 +1,2026 @@
+﻿statId,statNm,tmap_eta_min,tmap_road_km,model_name,current_soc_percent,arrival_soc_percent,soc_safety_margin_percent,soc_risk_level,hard_filter,can_reach,used_fallback,spec_source
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,17년도 아이오닉,10.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,17년도 아이오닉,15.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,17년도 아이오닉,20.0,19.2,9.2,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,17년도 아이오닉,30.0,29.2,19.2,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,17년도 아이오닉,50.0,49.2,39.2,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,피스,10.0,8.05,-1.95,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,피스,15.0,13.05,3.05,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,피스,20.0,18.05,8.05,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,피스,30.0,28.05,18.05,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,피스,50.0,48.05,38.05,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘나타 PHEV,10.0,6.54,-3.46,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘나타 PHEV,15.0,11.54,1.54,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘나타 PHEV,20.0,16.54,6.54,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘나타 PHEV,30.0,26.54,16.54,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘나타 PHEV,50.0,46.54,36.54,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,코나EV,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,코나EV,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,코나EV,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,코나EV,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,코나EV,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,18년도 아이오닉 PHEV,10.0,6.69,-3.31,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,18년도 아이오닉 PHEV,15.0,11.69,1.69,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,18년도 아이오닉 PHEV,20.0,16.69,6.69,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,18년도 아이오닉 PHEV,30.0,26.69,16.69,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,18년도 아이오닉 PHEV,50.0,46.69,36.69,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,레이,10.0,8.33,-1.67,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,레이,15.0,13.33,3.33,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,레이,20.0,18.33,8.33,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,레이,30.0,28.33,18.33,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,레이,50.0,48.33,38.33,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘울,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘울,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘울,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘울,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,쏘울,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,니로_EV,10.0,9.6,-0.4,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,니로_EV,15.0,14.6,4.6,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,니로_EV,20.0,19.6,9.6,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,니로_EV,30.0,29.6,19.6,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,니로_EV,50.0,49.6,39.6,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,SM3,10.0,9.29,-0.71,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,SM3,15.0,14.29,4.29,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,SM3,20.0,19.29,9.29,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,SM3,30.0,29.29,19.29,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,SM3,50.0,49.29,39.29,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,조에,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,조에,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,조에,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,조에,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,조에,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,스파크,10.0,8.81,-1.19,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,스파크,15.0,13.81,3.81,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,스파크,20.0,18.81,8.81,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,스파크,30.0,28.81,18.81,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,스파크,50.0,48.81,38.81,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_EV,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_EV,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_EV,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_EV,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_EV,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_PHEV,10.0,8.29,-1.71,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_PHEV,15.0,13.29,3.29,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_PHEV,20.0,18.29,8.29,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_PHEV,30.0,28.29,18.29,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,볼트_PHEV,50.0,48.29,38.29,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,i3,10.0,9.39,-0.61,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,i3,15.0,14.39,4.39,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,i3,20.0,19.39,9.39,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,i3,30.0,29.39,19.39,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,i3,50.0,49.39,39.39,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 7 PHEV,10.0,4.15,-5.85,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 7 PHEV,15.0,9.15,-0.85,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 7 PHEV,20.0,14.15,4.15,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 7 PHEV,30.0,24.15,14.15,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 7 PHEV,50.0,44.15,34.15,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 530e PHEV,10.0,6.1,-3.9,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 530e PHEV,15.0,11.1,1.1,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 530e PHEV,20.0,16.1,6.1,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 530e PHEV,30.0,26.1,16.1,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW 530e PHEV,50.0,46.1,36.1,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW X3 xDRIVE30e,10.0,5.09,-4.91,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW X3 xDRIVE30e,15.0,10.09,0.09,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW X3 xDRIVE30e,20.0,15.09,5.09,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW X3 xDRIVE30e,30.0,25.09,15.09,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,BMW X3 xDRIVE30e,50.0,45.09,35.09,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,LEAF,10.0,9.34,-0.66,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,LEAF,15.0,14.34,4.34,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,LEAF,20.0,19.34,9.34,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,LEAF,30.0,29.34,19.34,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,LEAF,50.0,49.34,39.34,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,테슬라 모델 S,10.0,9.68,-0.32,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,테슬라 모델 S,15.0,14.68,4.68,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,테슬라 모델 S,20.0,19.68,9.68,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,테슬라 모델 S,30.0,29.68,19.68,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,테슬라 모델 S,50.0,49.68,39.68,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,GLC 350e PHEV,10.0,-0.14,-10.14,DANGER,True,False,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,GLC 350e PHEV,15.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,GLC 350e PHEV,20.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,GLC 350e PHEV,30.0,19.86,9.86,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,GLC 350e PHEV,50.0,39.86,29.86,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 EQC400,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 EQC400,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 EQC400,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 EQC400,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 EQC400,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 s560e,10.0,5.09,-4.91,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 s560e,15.0,10.09,0.09,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 s560e,20.0,15.09,5.09,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 s560e,30.0,25.09,15.09,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤츠 s560e,50.0,45.09,35.09,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤테이가 PHEV,10.0,6.1,-3.9,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤테이가 PHEV,15.0,11.1,1.1,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤테이가 PHEV,20.0,16.1,6.1,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤테이가 PHEV,30.0,26.1,16.1,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,벤테이가 PHEV,50.0,46.1,36.1,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,E6,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,E6,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,E6,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,E6,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,E6,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,VOLVO S90 T8,10.0,5.53,-4.47,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,VOLVO S90 T8,15.0,10.53,0.53,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,VOLVO S90 T8,20.0,15.53,5.53,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,VOLVO S90 T8,30.0,25.53,15.53,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,VOLVO S90 T8,50.0,45.53,35.53,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,포드 익스플로러(PHEV),10.0,4.93,-5.07,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,포드 익스플로러(PHEV),15.0,9.93,-0.07,DANGER,True,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,포드 익스플로러(PHEV),20.0,14.93,4.93,WARNING,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,포드 익스플로러(PHEV),30.0,24.93,14.93,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,포드 익스플로러(PHEV),50.0,44.93,34.93,SAFE,False,True,False,vehicle_master
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,미등록차량_FALLBACK,10.0,9.24,-0.76,DANGER,True,True,True,fallback
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,미등록차량_FALLBACK,15.0,14.24,4.24,WARNING,False,True,True,fallback
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,미등록차량_FALLBACK,20.0,19.24,9.24,WARNING,False,True,True,fallback
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,미등록차량_FALLBACK,30.0,29.24,19.24,SAFE,False,True,True,fallback
+ST600335,코레일 동대구역(제1주차장),4.2,1.521,미등록차량_FALLBACK,50.0,49.24,39.24,SAFE,False,True,True,fallback
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,17년도 아이오닉,10.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,17년도 아이오닉,15.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,17년도 아이오닉,20.0,19.2,9.2,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,17년도 아이오닉,30.0,29.2,19.2,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,17년도 아이오닉,50.0,49.2,39.2,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,피스,10.0,8.05,-1.95,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,피스,15.0,13.05,3.05,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,피스,20.0,18.05,8.05,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,피스,30.0,28.05,18.05,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,피스,50.0,48.05,38.05,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘나타 PHEV,10.0,6.54,-3.46,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘나타 PHEV,15.0,11.54,1.54,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘나타 PHEV,20.0,16.54,6.54,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘나타 PHEV,30.0,26.54,16.54,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘나타 PHEV,50.0,46.54,36.54,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,코나EV,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,코나EV,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,코나EV,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,코나EV,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,코나EV,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,18년도 아이오닉 PHEV,10.0,6.69,-3.31,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,18년도 아이오닉 PHEV,15.0,11.69,1.69,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,18년도 아이오닉 PHEV,20.0,16.69,6.69,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,18년도 아이오닉 PHEV,30.0,26.69,16.69,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,18년도 아이오닉 PHEV,50.0,46.69,36.69,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,레이,10.0,8.33,-1.67,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,레이,15.0,13.33,3.33,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,레이,20.0,18.33,8.33,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,레이,30.0,28.33,18.33,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,레이,50.0,48.33,38.33,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘울,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘울,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘울,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘울,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,쏘울,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,니로_EV,10.0,9.6,-0.4,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,니로_EV,15.0,14.6,4.6,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,니로_EV,20.0,19.6,9.6,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,니로_EV,30.0,29.6,19.6,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,니로_EV,50.0,49.6,39.6,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,SM3,10.0,9.29,-0.71,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,SM3,15.0,14.29,4.29,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,SM3,20.0,19.29,9.29,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,SM3,30.0,29.29,19.29,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,SM3,50.0,49.29,39.29,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,조에,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,조에,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,조에,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,조에,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,조에,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,스파크,10.0,8.81,-1.19,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,스파크,15.0,13.81,3.81,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,스파크,20.0,18.81,8.81,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,스파크,30.0,28.81,18.81,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,스파크,50.0,48.81,38.81,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_EV,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_EV,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_EV,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_EV,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_EV,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_PHEV,10.0,8.29,-1.71,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_PHEV,15.0,13.29,3.29,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_PHEV,20.0,18.29,8.29,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_PHEV,30.0,28.29,18.29,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,볼트_PHEV,50.0,48.29,38.29,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,i3,10.0,9.39,-0.61,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,i3,15.0,14.39,4.39,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,i3,20.0,19.39,9.39,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,i3,30.0,29.39,19.39,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,i3,50.0,49.39,39.39,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 7 PHEV,10.0,4.15,-5.85,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 7 PHEV,15.0,9.15,-0.85,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 7 PHEV,20.0,14.15,4.15,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 7 PHEV,30.0,24.15,14.15,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 7 PHEV,50.0,44.15,34.15,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 530e PHEV,10.0,6.1,-3.9,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 530e PHEV,15.0,11.1,1.1,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 530e PHEV,20.0,16.1,6.1,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 530e PHEV,30.0,26.1,16.1,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW 530e PHEV,50.0,46.1,36.1,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW X3 xDRIVE30e,10.0,5.09,-4.91,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW X3 xDRIVE30e,15.0,10.09,0.09,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW X3 xDRIVE30e,20.0,15.09,5.09,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW X3 xDRIVE30e,30.0,25.09,15.09,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,BMW X3 xDRIVE30e,50.0,45.09,35.09,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,LEAF,10.0,9.34,-0.66,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,LEAF,15.0,14.34,4.34,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,LEAF,20.0,19.34,9.34,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,LEAF,30.0,29.34,19.34,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,LEAF,50.0,49.34,39.34,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,테슬라 모델 S,10.0,9.68,-0.32,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,테슬라 모델 S,15.0,14.68,4.68,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,테슬라 모델 S,20.0,19.68,9.68,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,테슬라 모델 S,30.0,29.68,19.68,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,테슬라 모델 S,50.0,49.68,39.68,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,GLC 350e PHEV,10.0,-0.14,-10.14,DANGER,True,False,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,GLC 350e PHEV,15.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,GLC 350e PHEV,20.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,GLC 350e PHEV,30.0,19.86,9.86,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,GLC 350e PHEV,50.0,39.86,29.86,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 EQC400,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 EQC400,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 EQC400,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 EQC400,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 EQC400,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 s560e,10.0,5.09,-4.91,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 s560e,15.0,10.09,0.09,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 s560e,20.0,15.09,5.09,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 s560e,30.0,25.09,15.09,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤츠 s560e,50.0,45.09,35.09,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤테이가 PHEV,10.0,6.1,-3.9,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤테이가 PHEV,15.0,11.1,1.1,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤테이가 PHEV,20.0,16.1,6.1,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤테이가 PHEV,30.0,26.1,16.1,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,벤테이가 PHEV,50.0,46.1,36.1,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,E6,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,E6,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,E6,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,E6,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,E6,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,VOLVO S90 T8,10.0,5.53,-4.47,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,VOLVO S90 T8,15.0,10.53,0.53,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,VOLVO S90 T8,20.0,15.53,5.53,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,VOLVO S90 T8,30.0,25.53,15.53,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,VOLVO S90 T8,50.0,45.53,35.53,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,포드 익스플로러(PHEV),10.0,4.93,-5.07,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,포드 익스플로러(PHEV),15.0,9.93,-0.07,DANGER,True,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,포드 익스플로러(PHEV),20.0,14.93,4.93,WARNING,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,포드 익스플로러(PHEV),30.0,24.93,14.93,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,포드 익스플로러(PHEV),50.0,44.93,34.93,SAFE,False,True,False,vehicle_master
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,미등록차량_FALLBACK,10.0,9.24,-0.76,DANGER,True,True,True,fallback
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,미등록차량_FALLBACK,15.0,14.24,4.24,WARNING,False,True,True,fallback
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,미등록차량_FALLBACK,20.0,19.24,9.24,WARNING,False,True,True,fallback
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,미등록차량_FALLBACK,30.0,29.24,19.24,SAFE,False,True,True,fallback
+ST600336,코레일 동대구역(제2주차장),4.2,1.521,미등록차량_FALLBACK,50.0,49.24,39.24,SAFE,False,True,True,fallback
+CV001323,롯데렌탈 동대구점,2.3,0.451,17년도 아이오닉,10.0,9.76,-0.24,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,17년도 아이오닉,15.0,14.76,4.76,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,17년도 아이오닉,20.0,19.76,9.76,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,17년도 아이오닉,30.0,29.76,19.76,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,17년도 아이오닉,50.0,49.76,39.76,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,피스,10.0,9.42,-0.58,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,피스,15.0,14.42,4.42,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,피스,20.0,19.42,9.42,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,피스,30.0,29.42,19.42,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,피스,50.0,49.42,39.42,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘나타 PHEV,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘나타 PHEV,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘나타 PHEV,20.0,18.98,8.98,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘나타 PHEV,30.0,28.98,18.98,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘나타 PHEV,50.0,48.98,38.98,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,코나EV,10.0,9.89,-0.11,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,코나EV,15.0,14.89,4.89,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,코나EV,20.0,19.89,9.89,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,코나EV,30.0,29.89,19.89,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,코나EV,50.0,49.89,39.89,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,18년도 아이오닉 PHEV,10.0,9.02,-0.98,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,18년도 아이오닉 PHEV,15.0,14.02,4.02,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,18년도 아이오닉 PHEV,20.0,19.02,9.02,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,18년도 아이오닉 PHEV,30.0,29.02,19.02,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,18년도 아이오닉 PHEV,50.0,49.02,39.02,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,레이,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,레이,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,레이,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,레이,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,레이,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘울,10.0,9.7,-0.3,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘울,15.0,14.7,4.7,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘울,20.0,19.7,9.7,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘울,30.0,29.7,19.7,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,쏘울,50.0,49.7,39.7,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,니로_EV,10.0,9.88,-0.12,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,니로_EV,15.0,14.88,4.88,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,니로_EV,20.0,19.88,9.88,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,니로_EV,30.0,29.88,19.88,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,니로_EV,50.0,49.88,39.88,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,SM3,10.0,9.79,-0.21,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,SM3,15.0,14.79,4.79,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,SM3,20.0,19.79,9.79,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,SM3,30.0,29.79,19.79,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,SM3,50.0,49.79,39.79,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,조에,10.0,9.85,-0.15,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,조에,15.0,14.85,4.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,조에,20.0,19.85,9.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,조에,30.0,29.85,19.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,조에,50.0,49.85,39.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,스파크,10.0,9.65,-0.35,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,스파크,15.0,14.65,4.65,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,스파크,20.0,19.65,9.65,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,스파크,30.0,29.65,19.65,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,스파크,50.0,49.65,39.65,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_EV,10.0,9.89,-0.11,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_EV,15.0,14.89,4.89,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_EV,20.0,19.89,9.89,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_EV,30.0,29.89,19.89,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_EV,50.0,49.89,39.89,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_PHEV,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_PHEV,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_PHEV,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_PHEV,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,볼트_PHEV,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,i3,10.0,9.82,-0.18,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,i3,15.0,14.82,4.82,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,i3,20.0,19.82,9.82,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,i3,30.0,29.82,19.82,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,i3,50.0,49.82,39.82,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 7 PHEV,10.0,8.27,-1.73,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 7 PHEV,15.0,13.27,3.27,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 7 PHEV,20.0,18.27,8.27,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 7 PHEV,30.0,28.27,18.27,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 7 PHEV,50.0,48.27,38.27,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 530e PHEV,10.0,8.84,-1.16,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 530e PHEV,15.0,13.84,3.84,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 530e PHEV,20.0,18.84,8.84,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 530e PHEV,30.0,28.84,18.84,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW 530e PHEV,50.0,48.84,38.84,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW X3 xDRIVE30e,10.0,8.55,-1.45,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW X3 xDRIVE30e,15.0,13.55,3.55,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW X3 xDRIVE30e,20.0,18.55,8.55,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW X3 xDRIVE30e,30.0,28.55,18.55,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,BMW X3 xDRIVE30e,50.0,48.55,38.55,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,LEAF,10.0,9.8,-0.2,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,LEAF,15.0,14.8,4.8,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,LEAF,20.0,19.8,9.8,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,LEAF,30.0,29.8,19.8,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,LEAF,50.0,49.8,39.8,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,테슬라 모델 S,10.0,9.91,-0.09,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,테슬라 모델 S,15.0,14.91,4.91,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,테슬라 모델 S,20.0,19.91,9.91,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,테슬라 모델 S,30.0,29.91,19.91,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,테슬라 모델 S,50.0,49.91,39.91,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,GLC 350e PHEV,10.0,6.99,-3.01,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,GLC 350e PHEV,15.0,11.99,1.99,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,GLC 350e PHEV,20.0,16.99,6.99,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,GLC 350e PHEV,30.0,26.99,16.99,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,GLC 350e PHEV,50.0,46.99,36.99,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 EQC400,10.0,9.85,-0.15,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 EQC400,15.0,14.85,4.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 EQC400,20.0,19.85,9.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 EQC400,30.0,29.85,19.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 EQC400,50.0,49.85,39.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 s560e,10.0,8.55,-1.45,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 s560e,15.0,13.55,3.55,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 s560e,20.0,18.55,8.55,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 s560e,30.0,28.55,18.55,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤츠 s560e,50.0,48.55,38.55,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤테이가 PHEV,10.0,8.84,-1.16,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤테이가 PHEV,15.0,13.84,3.84,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤테이가 PHEV,20.0,18.84,8.84,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤테이가 PHEV,30.0,28.84,18.84,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,벤테이가 PHEV,50.0,48.84,38.84,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,E6,10.0,9.85,-0.15,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,E6,15.0,14.85,4.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,E6,20.0,19.85,9.85,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,E6,30.0,29.85,19.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,E6,50.0,49.85,39.85,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,VOLVO S90 T8,10.0,8.67,-1.33,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,VOLVO S90 T8,15.0,13.67,3.67,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,VOLVO S90 T8,20.0,18.67,8.67,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,VOLVO S90 T8,30.0,28.67,18.67,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,VOLVO S90 T8,50.0,48.67,38.67,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,포드 익스플로러(PHEV),10.0,8.5,-1.5,DANGER,True,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,포드 익스플로러(PHEV),15.0,13.5,3.5,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,포드 익스플로러(PHEV),20.0,18.5,8.5,WARNING,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,포드 익스플로러(PHEV),30.0,28.5,18.5,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,포드 익스플로러(PHEV),50.0,48.5,38.5,SAFE,False,True,False,vehicle_master
+CV001323,롯데렌탈 동대구점,2.3,0.451,미등록차량_FALLBACK,10.0,9.77,-0.23,DANGER,True,True,True,fallback
+CV001323,롯데렌탈 동대구점,2.3,0.451,미등록차량_FALLBACK,15.0,14.77,4.77,WARNING,False,True,True,fallback
+CV001323,롯데렌탈 동대구점,2.3,0.451,미등록차량_FALLBACK,20.0,19.77,9.77,WARNING,False,True,True,fallback
+CV001323,롯데렌탈 동대구점,2.3,0.451,미등록차량_FALLBACK,30.0,29.77,19.77,SAFE,False,True,True,fallback
+CV001323,롯데렌탈 동대구점,2.3,0.451,미등록차량_FALLBACK,50.0,49.77,39.77,SAFE,False,True,True,fallback
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,17년도 아이오닉,10.0,9.77,-0.23,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,17년도 아이오닉,15.0,14.77,4.77,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,17년도 아이오닉,20.0,19.77,9.77,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,17년도 아이오닉,30.0,29.77,19.77,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,17년도 아이오닉,50.0,49.77,39.77,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,피스,10.0,9.44,-0.56,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,피스,15.0,14.44,4.44,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,피스,20.0,19.44,9.44,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,피스,30.0,29.44,19.44,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,피스,50.0,49.44,39.44,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘나타 PHEV,10.0,9.02,-0.98,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘나타 PHEV,15.0,14.02,4.02,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘나타 PHEV,20.0,19.02,9.02,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘나타 PHEV,30.0,29.02,19.02,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘나타 PHEV,50.0,49.02,39.02,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,코나EV,10.0,9.89,-0.11,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,코나EV,15.0,14.89,4.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,코나EV,20.0,19.89,9.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,코나EV,30.0,29.89,19.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,코나EV,50.0,49.89,39.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,18년도 아이오닉 PHEV,10.0,9.06,-0.94,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,18년도 아이오닉 PHEV,15.0,14.06,4.06,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,18년도 아이오닉 PHEV,20.0,19.06,9.06,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,18년도 아이오닉 PHEV,30.0,29.06,19.06,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,18년도 아이오닉 PHEV,50.0,49.06,39.06,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,레이,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,레이,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,레이,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,레이,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,레이,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘울,10.0,9.71,-0.29,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘울,15.0,14.71,4.71,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘울,20.0,19.71,9.71,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘울,30.0,29.71,19.71,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,쏘울,50.0,49.71,39.71,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,니로_EV,10.0,9.89,-0.11,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,니로_EV,15.0,14.89,4.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,니로_EV,20.0,19.89,9.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,니로_EV,30.0,29.89,19.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,니로_EV,50.0,49.89,39.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,SM3,10.0,9.8,-0.2,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,SM3,15.0,14.8,4.8,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,SM3,20.0,19.8,9.8,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,SM3,30.0,29.8,19.8,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,SM3,50.0,49.8,39.8,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,조에,10.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,조에,15.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,조에,20.0,19.86,9.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,조에,30.0,29.86,19.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,조에,50.0,49.86,39.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,스파크,10.0,9.66,-0.34,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,스파크,15.0,14.66,4.66,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,스파크,20.0,19.66,9.66,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,스파크,30.0,29.66,19.66,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,스파크,50.0,49.66,39.66,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_EV,10.0,9.9,-0.1,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_EV,15.0,14.9,4.9,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_EV,20.0,19.9,9.9,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_EV,30.0,29.9,19.9,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_EV,50.0,49.9,39.9,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_PHEV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_PHEV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_PHEV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_PHEV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,볼트_PHEV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,i3,10.0,9.83,-0.17,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,i3,15.0,14.83,4.83,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,i3,20.0,19.83,9.83,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,i3,30.0,29.83,19.83,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,i3,50.0,49.83,39.83,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 7 PHEV,10.0,8.33,-1.67,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 7 PHEV,15.0,13.33,3.33,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 7 PHEV,20.0,18.33,8.33,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 7 PHEV,30.0,28.33,18.33,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 7 PHEV,50.0,48.33,38.33,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 530e PHEV,10.0,8.89,-1.11,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 530e PHEV,15.0,13.89,3.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 530e PHEV,20.0,18.89,8.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 530e PHEV,30.0,28.89,18.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW 530e PHEV,50.0,48.89,38.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW X3 xDRIVE30e,10.0,8.6,-1.4,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW X3 xDRIVE30e,15.0,13.6,3.6,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW X3 xDRIVE30e,20.0,18.6,8.6,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW X3 xDRIVE30e,30.0,28.6,18.6,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,BMW X3 xDRIVE30e,50.0,48.6,38.6,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,LEAF,10.0,9.81,-0.19,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,LEAF,15.0,14.81,4.81,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,LEAF,20.0,19.81,9.81,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,LEAF,30.0,29.81,19.81,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,LEAF,50.0,49.81,39.81,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,테슬라 모델 S,10.0,9.91,-0.09,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,테슬라 모델 S,15.0,14.91,4.91,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,테슬라 모델 S,20.0,19.91,9.91,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,테슬라 모델 S,30.0,29.91,19.91,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,테슬라 모델 S,50.0,49.91,39.91,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,GLC 350e PHEV,10.0,7.11,-2.89,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,GLC 350e PHEV,15.0,12.11,2.11,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,GLC 350e PHEV,20.0,17.11,7.11,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,GLC 350e PHEV,30.0,27.11,17.11,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,GLC 350e PHEV,50.0,47.11,37.11,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 EQC400,10.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 EQC400,15.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 EQC400,20.0,19.86,9.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 EQC400,30.0,29.86,19.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 EQC400,50.0,49.86,39.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 s560e,10.0,8.6,-1.4,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 s560e,15.0,13.6,3.6,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 s560e,20.0,18.6,8.6,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 s560e,30.0,28.6,18.6,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤츠 s560e,50.0,48.6,38.6,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤테이가 PHEV,10.0,8.89,-1.11,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤테이가 PHEV,15.0,13.89,3.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤테이가 PHEV,20.0,18.89,8.89,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤테이가 PHEV,30.0,28.89,18.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,벤테이가 PHEV,50.0,48.89,38.89,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,E6,10.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,E6,15.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,E6,20.0,19.86,9.86,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,E6,30.0,29.86,19.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,E6,50.0,49.86,39.86,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,VOLVO S90 T8,10.0,8.73,-1.27,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,VOLVO S90 T8,15.0,13.73,3.73,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,VOLVO S90 T8,20.0,18.73,8.73,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,VOLVO S90 T8,30.0,28.73,18.73,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,VOLVO S90 T8,50.0,48.73,38.73,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,포드 익스플로러(PHEV),10.0,8.56,-1.44,DANGER,True,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,포드 익스플로러(PHEV),15.0,13.56,3.56,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,포드 익스플로러(PHEV),20.0,18.56,8.56,WARNING,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,포드 익스플로러(PHEV),30.0,28.56,18.56,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,포드 익스플로러(PHEV),50.0,48.56,38.56,SAFE,False,True,False,vehicle_master
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,미등록차량_FALLBACK,10.0,9.78,-0.22,DANGER,True,True,True,fallback
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,미등록차량_FALLBACK,15.0,14.78,4.78,WARNING,False,True,True,fallback
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,미등록차량_FALLBACK,20.0,19.78,9.78,WARNING,False,True,True,fallback
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,미등록차량_FALLBACK,30.0,29.78,19.78,SAFE,False,True,True,fallback
+ME19Y406,롯데렌탈 대구지점,2.3,0.433,미등록차량_FALLBACK,50.0,49.78,39.78,SAFE,False,True,True,fallback
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,17년도 아이오닉,10.0,9.67,-0.33,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,17년도 아이오닉,15.0,14.67,4.67,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,17년도 아이오닉,20.0,19.67,9.67,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,17년도 아이오닉,30.0,29.67,19.67,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,17년도 아이오닉,50.0,49.67,39.67,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,피스,10.0,9.18,-0.82,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,피스,15.0,14.18,4.18,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,피스,20.0,19.18,9.18,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,피스,30.0,29.18,19.18,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,피스,50.0,49.18,39.18,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘나타 PHEV,10.0,8.55,-1.45,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘나타 PHEV,15.0,13.55,3.55,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘나타 PHEV,20.0,18.55,8.55,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘나타 PHEV,30.0,28.55,18.55,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘나타 PHEV,50.0,48.55,38.55,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,코나EV,10.0,9.84,-0.16,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,코나EV,15.0,14.84,4.84,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,코나EV,20.0,19.84,9.84,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,코나EV,30.0,29.84,19.84,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,코나EV,50.0,49.84,39.84,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,18년도 아이오닉 PHEV,10.0,8.61,-1.39,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,18년도 아이오닉 PHEV,15.0,13.61,3.61,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,18년도 아이오닉 PHEV,20.0,18.61,8.61,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,18년도 아이오닉 PHEV,30.0,28.61,18.61,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,18년도 아이오닉 PHEV,50.0,48.61,38.61,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,레이,10.0,9.3,-0.7,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,레이,15.0,14.3,4.3,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,레이,20.0,19.3,9.3,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,레이,30.0,29.3,19.3,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,레이,50.0,49.3,39.3,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘울,10.0,9.57,-0.43,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘울,15.0,14.57,4.57,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘울,20.0,19.57,9.57,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘울,30.0,29.57,19.57,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,쏘울,50.0,49.57,39.57,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,니로_EV,10.0,9.83,-0.17,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,니로_EV,15.0,14.83,4.83,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,니로_EV,20.0,19.83,9.83,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,니로_EV,30.0,29.83,19.83,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,니로_EV,50.0,49.83,39.83,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,SM3,10.0,9.7,-0.3,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,SM3,15.0,14.7,4.7,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,SM3,20.0,19.7,9.7,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,SM3,30.0,29.7,19.7,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,SM3,50.0,49.7,39.7,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,조에,10.0,9.79,-0.21,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,조에,15.0,14.79,4.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,조에,20.0,19.79,9.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,조에,30.0,29.79,19.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,조에,50.0,49.79,39.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,스파크,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,스파크,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,스파크,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,스파크,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,스파크,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_EV,10.0,9.85,-0.15,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_EV,15.0,14.85,4.85,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_EV,20.0,19.85,9.85,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_EV,30.0,29.85,19.85,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_EV,50.0,49.85,39.85,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_PHEV,10.0,9.28,-0.72,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_PHEV,15.0,14.28,4.28,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_PHEV,20.0,19.28,9.28,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_PHEV,30.0,29.28,19.28,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,볼트_PHEV,50.0,49.28,39.28,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,i3,10.0,9.74,-0.26,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,i3,15.0,14.74,4.74,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,i3,20.0,19.74,9.74,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,i3,30.0,29.74,19.74,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,i3,50.0,49.74,39.74,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 7 PHEV,10.0,7.54,-2.46,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 7 PHEV,15.0,12.54,2.54,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 7 PHEV,20.0,17.54,7.54,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 7 PHEV,30.0,27.54,17.54,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 7 PHEV,50.0,47.54,37.54,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 530e PHEV,10.0,8.36,-1.64,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 530e PHEV,15.0,13.36,3.36,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 530e PHEV,20.0,18.36,8.36,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 530e PHEV,30.0,28.36,18.36,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW 530e PHEV,50.0,48.36,38.36,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW X3 xDRIVE30e,10.0,7.94,-2.06,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW X3 xDRIVE30e,15.0,12.94,2.94,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW X3 xDRIVE30e,20.0,17.94,7.94,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW X3 xDRIVE30e,30.0,27.94,17.94,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,BMW X3 xDRIVE30e,50.0,47.94,37.94,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,LEAF,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,LEAF,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,LEAF,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,LEAF,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,LEAF,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,테슬라 모델 S,10.0,9.87,-0.13,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,테슬라 모델 S,15.0,14.87,4.87,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,테슬라 모델 S,20.0,19.87,9.87,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,테슬라 모델 S,30.0,29.87,19.87,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,테슬라 모델 S,50.0,49.87,39.87,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,GLC 350e PHEV,10.0,5.74,-4.26,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,GLC 350e PHEV,15.0,10.74,0.74,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,GLC 350e PHEV,20.0,15.74,5.74,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,GLC 350e PHEV,30.0,25.74,15.74,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,GLC 350e PHEV,50.0,45.74,35.74,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 EQC400,10.0,9.79,-0.21,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 EQC400,15.0,14.79,4.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 EQC400,20.0,19.79,9.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 EQC400,30.0,29.79,19.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 EQC400,50.0,49.79,39.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 s560e,10.0,7.94,-2.06,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 s560e,15.0,12.94,2.94,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 s560e,20.0,17.94,7.94,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 s560e,30.0,27.94,17.94,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤츠 s560e,50.0,47.94,37.94,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤테이가 PHEV,10.0,8.36,-1.64,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤테이가 PHEV,15.0,13.36,3.36,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤테이가 PHEV,20.0,18.36,8.36,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤테이가 PHEV,30.0,28.36,18.36,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,벤테이가 PHEV,50.0,48.36,38.36,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,E6,10.0,9.79,-0.21,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,E6,15.0,14.79,4.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,E6,20.0,19.79,9.79,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,E6,30.0,29.79,19.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,E6,50.0,49.79,39.79,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,VOLVO S90 T8,10.0,8.12,-1.88,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,VOLVO S90 T8,15.0,13.12,3.12,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,VOLVO S90 T8,20.0,18.12,8.12,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,VOLVO S90 T8,30.0,28.12,18.12,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,VOLVO S90 T8,50.0,48.12,38.12,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,포드 익스플로러(PHEV),10.0,7.87,-2.13,DANGER,True,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,포드 익스플로러(PHEV),15.0,12.87,2.87,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,포드 익스플로러(PHEV),20.0,17.87,7.87,WARNING,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,포드 익스플로러(PHEV),30.0,27.87,17.87,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,포드 익스플로러(PHEV),50.0,47.87,37.87,SAFE,False,True,False,vehicle_master
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,미등록차량_FALLBACK,10.0,9.68,-0.32,DANGER,True,True,True,fallback
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,미등록차량_FALLBACK,15.0,14.68,4.68,WARNING,False,True,True,fallback
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,미등록차량_FALLBACK,20.0,19.68,9.68,WARNING,False,True,True,fallback
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,미등록차량_FALLBACK,30.0,29.68,19.68,SAFE,False,True,True,fallback
+PL032360,대구 동구 동대구역화성파크드림아파트,4.1,0.639,미등록차량_FALLBACK,50.0,49.68,39.68,SAFE,False,True,True,fallback
+CV003123,대구시_동대구복합환승센터,9.0,2.39,17년도 아이오닉,10.0,8.75,-1.25,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,17년도 아이오닉,15.0,13.75,3.75,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,17년도 아이오닉,20.0,18.75,8.75,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,17년도 아이오닉,30.0,28.75,18.75,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,17년도 아이오닉,50.0,48.75,38.75,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,피스,10.0,6.94,-3.06,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,피스,15.0,11.94,1.94,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,피스,20.0,16.94,6.94,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,피스,30.0,26.94,16.94,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,피스,50.0,46.94,36.94,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘나타 PHEV,10.0,4.57,-5.43,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘나타 PHEV,15.0,9.57,-0.43,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘나타 PHEV,20.0,14.57,4.57,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘나타 PHEV,30.0,24.57,14.57,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘나타 PHEV,50.0,44.57,34.57,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,코나EV,10.0,9.41,-0.59,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,코나EV,15.0,14.41,4.41,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,코나EV,20.0,19.41,9.41,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,코나EV,30.0,29.41,19.41,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,코나EV,50.0,49.41,39.41,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,18년도 아이오닉 PHEV,10.0,4.8,-5.2,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,18년도 아이오닉 PHEV,15.0,9.8,-0.2,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,18년도 아이오닉 PHEV,20.0,14.8,4.8,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,18년도 아이오닉 PHEV,30.0,24.8,14.8,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,18년도 아이오닉 PHEV,50.0,44.8,34.8,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,레이,10.0,7.37,-2.63,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,레이,15.0,12.37,2.37,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,레이,20.0,17.37,7.37,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,레이,30.0,27.37,17.37,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,레이,50.0,47.37,37.37,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘울,10.0,8.39,-1.61,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘울,15.0,13.39,3.39,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘울,20.0,18.39,8.39,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘울,30.0,28.39,18.39,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,쏘울,50.0,48.39,38.39,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,니로_EV,10.0,9.38,-0.62,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,니로_EV,15.0,14.38,4.38,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,니로_EV,20.0,19.38,9.38,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,니로_EV,30.0,29.38,19.38,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,니로_EV,50.0,49.38,39.38,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,SM3,10.0,8.88,-1.12,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,SM3,15.0,13.88,3.88,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,SM3,20.0,18.88,8.88,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,SM3,30.0,28.88,18.88,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,SM3,50.0,48.88,38.88,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,조에,10.0,9.23,-0.77,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,조에,15.0,14.23,4.23,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,조에,20.0,19.23,9.23,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,조에,30.0,29.23,19.23,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,조에,50.0,49.23,39.23,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,스파크,10.0,8.13,-1.87,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,스파크,15.0,13.13,3.13,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,스파크,20.0,18.13,8.13,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,스파크,30.0,28.13,18.13,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,스파크,50.0,48.13,38.13,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_EV,10.0,9.42,-0.58,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_EV,15.0,14.42,4.42,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_EV,20.0,19.42,9.42,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_EV,30.0,29.42,19.42,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_EV,50.0,49.42,39.42,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_PHEV,10.0,7.31,-2.69,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_PHEV,15.0,12.31,2.31,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_PHEV,20.0,17.31,7.31,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_PHEV,30.0,27.31,17.31,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,볼트_PHEV,50.0,47.31,37.31,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,i3,10.0,9.04,-0.96,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,i3,15.0,14.04,4.04,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,i3,20.0,19.04,9.04,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,i3,30.0,29.04,19.04,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,i3,50.0,49.04,39.04,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 7 PHEV,10.0,0.81,-9.19,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 7 PHEV,15.0,5.81,-4.19,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 7 PHEV,20.0,10.81,0.81,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 7 PHEV,30.0,20.81,10.81,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 7 PHEV,50.0,40.81,30.81,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 530e PHEV,10.0,3.87,-6.13,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 530e PHEV,15.0,8.87,-1.13,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 530e PHEV,20.0,13.87,3.87,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 530e PHEV,30.0,23.87,13.87,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW 530e PHEV,50.0,43.87,33.87,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW X3 xDRIVE30e,10.0,2.29,-7.71,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW X3 xDRIVE30e,15.0,7.29,-2.71,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW X3 xDRIVE30e,20.0,12.29,2.29,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW X3 xDRIVE30e,30.0,22.29,12.29,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,BMW X3 xDRIVE30e,50.0,42.29,32.29,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,LEAF,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,LEAF,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,LEAF,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,LEAF,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,LEAF,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,테슬라 모델 S,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,테슬라 모델 S,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,테슬라 모델 S,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,테슬라 모델 S,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,테슬라 모델 S,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,GLC 350e PHEV,10.0,-5.93,-15.93,DANGER,True,False,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,GLC 350e PHEV,15.0,-0.93,-10.93,DANGER,True,False,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,GLC 350e PHEV,20.0,4.07,-5.93,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,GLC 350e PHEV,30.0,14.07,4.07,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,GLC 350e PHEV,50.0,34.07,24.07,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 EQC400,10.0,9.23,-0.77,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 EQC400,15.0,14.23,4.23,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 EQC400,20.0,19.23,9.23,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 EQC400,30.0,29.23,19.23,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 EQC400,50.0,49.23,39.23,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 s560e,10.0,2.29,-7.71,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 s560e,15.0,7.29,-2.71,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 s560e,20.0,12.29,2.29,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 s560e,30.0,22.29,12.29,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤츠 s560e,50.0,42.29,32.29,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤테이가 PHEV,10.0,3.87,-6.13,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤테이가 PHEV,15.0,8.87,-1.13,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤테이가 PHEV,20.0,13.87,3.87,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤테이가 PHEV,30.0,23.87,13.87,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,벤테이가 PHEV,50.0,43.87,33.87,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,E6,10.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,E6,15.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,E6,20.0,19.2,9.2,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,E6,30.0,29.2,19.2,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,E6,50.0,49.2,39.2,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,VOLVO S90 T8,10.0,2.97,-7.03,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,VOLVO S90 T8,15.0,7.97,-2.03,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,VOLVO S90 T8,20.0,12.97,2.97,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,VOLVO S90 T8,30.0,22.97,12.97,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,VOLVO S90 T8,50.0,42.97,32.97,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,포드 익스플로러(PHEV),10.0,2.03,-7.97,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,포드 익스플로러(PHEV),15.0,7.03,-2.97,DANGER,True,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,포드 익스플로러(PHEV),20.0,12.03,2.03,WARNING,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,포드 익스플로러(PHEV),30.0,22.03,12.03,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,포드 익스플로러(PHEV),50.0,42.03,32.03,SAFE,False,True,False,vehicle_master
+CV003123,대구시_동대구복합환승센터,9.0,2.39,미등록차량_FALLBACK,10.0,8.8,-1.2,DANGER,True,True,True,fallback
+CV003123,대구시_동대구복합환승센터,9.0,2.39,미등록차량_FALLBACK,15.0,13.8,3.8,WARNING,False,True,True,fallback
+CV003123,대구시_동대구복합환승센터,9.0,2.39,미등록차량_FALLBACK,20.0,18.8,8.8,WARNING,False,True,True,fallback
+CV003123,대구시_동대구복합환승센터,9.0,2.39,미등록차량_FALLBACK,30.0,28.8,18.8,SAFE,False,True,True,fallback
+CV003123,대구시_동대구복합환승센터,9.0,2.39,미등록차량_FALLBACK,50.0,48.8,38.8,SAFE,False,True,True,fallback
+ALAL0013,대영빌딩,7.9,2.152,17년도 아이오닉,10.0,8.87,-1.13,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,17년도 아이오닉,15.0,13.87,3.87,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,17년도 아이오닉,20.0,18.87,8.87,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,17년도 아이오닉,30.0,28.87,18.87,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,17년도 아이오닉,50.0,48.87,38.87,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,피스,10.0,7.24,-2.76,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,피스,15.0,12.24,2.24,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,피스,20.0,17.24,7.24,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,피스,30.0,27.24,17.24,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,피스,50.0,47.24,37.24,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘나타 PHEV,10.0,5.11,-4.89,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘나타 PHEV,15.0,10.11,0.11,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘나타 PHEV,20.0,15.11,5.11,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘나타 PHEV,30.0,25.11,15.11,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘나타 PHEV,50.0,45.11,35.11,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,코나EV,10.0,9.47,-0.53,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,코나EV,15.0,14.47,4.47,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,코나EV,20.0,19.47,9.47,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,코나EV,30.0,29.47,19.47,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,코나EV,50.0,49.47,39.47,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,18년도 아이오닉 PHEV,10.0,5.32,-4.68,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,18년도 아이오닉 PHEV,15.0,10.32,0.32,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,18년도 아이오닉 PHEV,20.0,15.32,5.32,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,18년도 아이오닉 PHEV,30.0,25.32,15.32,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,18년도 아이오닉 PHEV,50.0,45.32,35.32,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,레이,10.0,7.64,-2.36,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,레이,15.0,12.64,2.64,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,레이,20.0,17.64,7.64,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,레이,30.0,27.64,17.64,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,레이,50.0,47.64,37.64,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘울,10.0,8.55,-1.45,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘울,15.0,13.55,3.55,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘울,20.0,18.55,8.55,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘울,30.0,28.55,18.55,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,쏘울,50.0,48.55,38.55,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,니로_EV,10.0,9.44,-0.56,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,니로_EV,15.0,14.44,4.44,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,니로_EV,20.0,19.44,9.44,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,니로_EV,30.0,29.44,19.44,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,니로_EV,50.0,49.44,39.44,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,SM3,10.0,8.99,-1.01,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,SM3,15.0,13.99,3.99,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,SM3,20.0,18.99,8.99,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,SM3,30.0,28.99,18.99,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,SM3,50.0,48.99,38.99,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,조에,10.0,9.3,-0.7,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,조에,15.0,14.3,4.3,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,조에,20.0,19.3,9.3,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,조에,30.0,29.3,19.3,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,조에,50.0,49.3,39.3,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,스파크,10.0,8.32,-1.68,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,스파크,15.0,13.32,3.32,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,스파크,20.0,18.32,8.32,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,스파크,30.0,28.32,18.32,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,스파크,50.0,48.32,38.32,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_EV,10.0,9.48,-0.52,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_EV,15.0,14.48,4.48,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_EV,20.0,19.48,9.48,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_EV,30.0,29.48,19.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_EV,50.0,49.48,39.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_PHEV,10.0,7.58,-2.42,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_PHEV,15.0,12.58,2.58,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_PHEV,20.0,17.58,7.58,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_PHEV,30.0,27.58,17.58,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,볼트_PHEV,50.0,47.58,37.58,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,i3,10.0,9.13,-0.87,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,i3,15.0,14.13,4.13,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,i3,20.0,19.13,9.13,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,i3,30.0,29.13,19.13,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,i3,50.0,49.13,39.13,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 7 PHEV,10.0,1.72,-8.28,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 7 PHEV,15.0,6.72,-3.28,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 7 PHEV,20.0,11.72,1.72,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 7 PHEV,30.0,21.72,11.72,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 7 PHEV,50.0,41.72,31.72,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 530e PHEV,10.0,4.48,-5.52,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 530e PHEV,15.0,9.48,-0.52,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 530e PHEV,20.0,14.48,4.48,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 530e PHEV,30.0,24.48,14.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW 530e PHEV,50.0,44.48,34.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW X3 xDRIVE30e,10.0,3.06,-6.94,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW X3 xDRIVE30e,15.0,8.06,-1.94,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW X3 xDRIVE30e,20.0,13.06,3.06,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW X3 xDRIVE30e,30.0,23.06,13.06,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,BMW X3 xDRIVE30e,50.0,43.06,33.06,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,LEAF,10.0,9.07,-0.93,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,LEAF,15.0,14.07,4.07,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,LEAF,20.0,19.07,9.07,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,LEAF,30.0,29.07,19.07,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,LEAF,50.0,49.07,39.07,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,테슬라 모델 S,10.0,9.55,-0.45,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,테슬라 모델 S,15.0,14.55,4.55,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,테슬라 모델 S,20.0,19.55,9.55,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,테슬라 모델 S,30.0,29.55,19.55,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,테슬라 모델 S,50.0,49.55,39.55,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,GLC 350e PHEV,10.0,-4.35,-14.35,DANGER,True,False,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,GLC 350e PHEV,15.0,0.65,-9.35,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,GLC 350e PHEV,20.0,5.65,-4.35,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,GLC 350e PHEV,30.0,15.65,5.65,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,GLC 350e PHEV,50.0,35.65,25.65,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 EQC400,10.0,9.3,-0.7,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 EQC400,15.0,14.3,4.3,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 EQC400,20.0,19.3,9.3,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 EQC400,30.0,29.3,19.3,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 EQC400,50.0,49.3,39.3,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 s560e,10.0,3.06,-6.94,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 s560e,15.0,8.06,-1.94,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 s560e,20.0,13.06,3.06,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 s560e,30.0,23.06,13.06,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤츠 s560e,50.0,43.06,33.06,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤테이가 PHEV,10.0,4.48,-5.52,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤테이가 PHEV,15.0,9.48,-0.52,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤테이가 PHEV,20.0,14.48,4.48,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤테이가 PHEV,30.0,24.48,14.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,벤테이가 PHEV,50.0,44.48,34.48,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,E6,10.0,9.28,-0.72,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,E6,15.0,14.28,4.28,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,E6,20.0,19.28,9.28,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,E6,30.0,29.28,19.28,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,E6,50.0,49.28,39.28,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,VOLVO S90 T8,10.0,3.67,-6.33,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,VOLVO S90 T8,15.0,8.67,-1.33,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,VOLVO S90 T8,20.0,13.67,3.67,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,VOLVO S90 T8,30.0,23.67,13.67,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,VOLVO S90 T8,50.0,43.67,33.67,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,포드 익스플로러(PHEV),10.0,2.83,-7.17,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,포드 익스플로러(PHEV),15.0,7.83,-2.17,DANGER,True,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,포드 익스플로러(PHEV),20.0,12.83,2.83,WARNING,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,포드 익스플로러(PHEV),30.0,22.83,12.83,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,포드 익스플로러(PHEV),50.0,42.83,32.83,SAFE,False,True,False,vehicle_master
+ALAL0013,대영빌딩,7.9,2.152,미등록차량_FALLBACK,10.0,8.92,-1.08,DANGER,True,True,True,fallback
+ALAL0013,대영빌딩,7.9,2.152,미등록차량_FALLBACK,15.0,13.92,3.92,WARNING,False,True,True,fallback
+ALAL0013,대영빌딩,7.9,2.152,미등록차량_FALLBACK,20.0,18.92,8.92,WARNING,False,True,True,fallback
+ALAL0013,대영빌딩,7.9,2.152,미등록차량_FALLBACK,30.0,28.92,18.92,SAFE,False,True,True,fallback
+ALAL0013,대영빌딩,7.9,2.152,미등록차량_FALLBACK,50.0,48.92,38.92,SAFE,False,True,True,fallback
+IN053020,신세계백화점대구점,6.4,1.971,17년도 아이오닉,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,17년도 아이오닉,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,17년도 아이오닉,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,17년도 아이오닉,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,17년도 아이오닉,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,피스,10.0,7.47,-2.53,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,피스,15.0,12.47,2.47,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,피스,20.0,17.47,7.47,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,피스,30.0,27.47,17.47,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,피스,50.0,47.47,37.47,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘나타 PHEV,10.0,5.52,-4.48,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘나타 PHEV,15.0,10.52,0.52,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘나타 PHEV,20.0,15.52,5.52,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘나타 PHEV,30.0,25.52,15.52,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘나타 PHEV,50.0,45.52,35.52,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,코나EV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,코나EV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,코나EV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,코나EV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,코나EV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,10.0,5.72,-4.28,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,15.0,10.72,0.72,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,20.0,15.72,5.72,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,30.0,25.72,15.72,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,50.0,45.72,35.72,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,레이,10.0,7.83,-2.17,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,레이,15.0,12.83,2.83,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,레이,20.0,17.83,7.83,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,레이,30.0,27.83,17.83,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,레이,50.0,47.83,37.83,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘울,10.0,8.67,-1.33,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘울,15.0,13.67,3.67,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘울,20.0,18.67,8.67,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘울,30.0,28.67,18.67,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,쏘울,50.0,48.67,38.67,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,니로_EV,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,니로_EV,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,니로_EV,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,니로_EV,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,니로_EV,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,SM3,10.0,9.07,-0.93,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,SM3,15.0,14.07,4.07,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,SM3,20.0,19.07,9.07,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,SM3,30.0,29.07,19.07,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,SM3,50.0,49.07,39.07,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,조에,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,조에,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,조에,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,조에,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,조에,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,스파크,10.0,8.46,-1.54,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,스파크,15.0,13.46,3.46,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,스파크,20.0,18.46,8.46,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,스파크,30.0,28.46,18.46,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,스파크,50.0,48.46,38.46,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_EV,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_EV,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_EV,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_EV,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_EV,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_PHEV,10.0,7.79,-2.21,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_PHEV,15.0,12.79,2.79,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_PHEV,20.0,17.79,7.79,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_PHEV,30.0,27.79,17.79,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,볼트_PHEV,50.0,47.79,37.79,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,i3,10.0,9.21,-0.79,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,i3,15.0,14.21,4.21,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,i3,20.0,19.21,9.21,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,i3,30.0,29.21,19.21,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,i3,50.0,49.21,39.21,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 7 PHEV,10.0,2.42,-7.58,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 7 PHEV,15.0,7.42,-2.58,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 7 PHEV,20.0,12.42,2.42,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 7 PHEV,30.0,22.42,12.42,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 7 PHEV,50.0,42.42,32.42,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 530e PHEV,10.0,4.95,-5.05,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 530e PHEV,15.0,9.95,-0.05,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 530e PHEV,20.0,14.95,4.95,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 530e PHEV,30.0,24.95,14.95,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW 530e PHEV,50.0,44.95,34.95,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,LEAF,10.0,9.15,-0.85,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,LEAF,15.0,14.15,4.15,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,LEAF,20.0,19.15,9.15,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,LEAF,30.0,29.15,19.15,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,LEAF,50.0,49.15,39.15,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,테슬라 모델 S,10.0,9.59,-0.41,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,테슬라 모델 S,15.0,14.59,4.59,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,테슬라 모델 S,20.0,19.59,9.59,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,테슬라 모델 S,30.0,29.59,19.59,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,테슬라 모델 S,50.0,49.59,39.59,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,GLC 350e PHEV,10.0,-3.14,-13.14,DANGER,True,False,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,GLC 350e PHEV,15.0,1.86,-8.14,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,GLC 350e PHEV,20.0,6.86,-3.14,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,GLC 350e PHEV,30.0,16.86,6.86,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,GLC 350e PHEV,50.0,36.86,26.86,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 EQC400,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 EQC400,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 EQC400,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 EQC400,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 EQC400,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 s560e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 s560e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 s560e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 s560e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤츠 s560e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤테이가 PHEV,10.0,4.95,-5.05,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤테이가 PHEV,15.0,9.95,-0.05,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤테이가 PHEV,20.0,14.95,4.95,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤테이가 PHEV,30.0,24.95,14.95,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,벤테이가 PHEV,50.0,44.95,34.95,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,E6,10.0,9.34,-0.66,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,E6,15.0,14.34,4.34,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,E6,20.0,19.34,9.34,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,E6,30.0,29.34,19.34,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,E6,50.0,49.34,39.34,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,VOLVO S90 T8,10.0,4.2,-5.8,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,VOLVO S90 T8,15.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,VOLVO S90 T8,20.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,VOLVO S90 T8,30.0,24.2,14.2,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,VOLVO S90 T8,50.0,44.2,34.2,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),10.0,3.43,-6.57,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),15.0,8.43,-1.57,DANGER,True,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),20.0,13.43,3.43,WARNING,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),30.0,23.43,13.43,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),50.0,43.43,33.43,SAFE,False,True,False,vehicle_master
+IN053020,신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,10.0,9.01,-0.99,DANGER,True,True,True,fallback
+IN053020,신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,15.0,14.01,4.01,WARNING,False,True,True,fallback
+IN053020,신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,20.0,19.01,9.01,WARNING,False,True,True,fallback
+IN053020,신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,30.0,29.01,19.01,SAFE,False,True,True,fallback
+IN053020,신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,50.0,49.01,39.01,SAFE,False,True,True,fallback
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,17년도 아이오닉,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,17년도 아이오닉,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,17년도 아이오닉,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,17년도 아이오닉,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,17년도 아이오닉,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,피스,10.0,7.47,-2.53,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,피스,15.0,12.47,2.47,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,피스,20.0,17.47,7.47,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,피스,30.0,27.47,17.47,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,피스,50.0,47.47,37.47,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘나타 PHEV,10.0,5.52,-4.48,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘나타 PHEV,15.0,10.52,0.52,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘나타 PHEV,20.0,15.52,5.52,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘나타 PHEV,30.0,25.52,15.52,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘나타 PHEV,50.0,45.52,35.52,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,코나EV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,코나EV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,코나EV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,코나EV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,코나EV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,10.0,5.72,-4.28,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,15.0,10.72,0.72,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,20.0,15.72,5.72,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,30.0,25.72,15.72,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,18년도 아이오닉 PHEV,50.0,45.72,35.72,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,레이,10.0,7.83,-2.17,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,레이,15.0,12.83,2.83,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,레이,20.0,17.83,7.83,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,레이,30.0,27.83,17.83,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,레이,50.0,47.83,37.83,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘울,10.0,8.67,-1.33,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘울,15.0,13.67,3.67,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘울,20.0,18.67,8.67,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘울,30.0,28.67,18.67,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,쏘울,50.0,48.67,38.67,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,니로_EV,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,니로_EV,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,니로_EV,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,니로_EV,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,니로_EV,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,SM3,10.0,9.07,-0.93,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,SM3,15.0,14.07,4.07,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,SM3,20.0,19.07,9.07,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,SM3,30.0,29.07,19.07,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,SM3,50.0,49.07,39.07,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,조에,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,조에,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,조에,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,조에,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,조에,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,스파크,10.0,8.46,-1.54,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,스파크,15.0,13.46,3.46,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,스파크,20.0,18.46,8.46,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,스파크,30.0,28.46,18.46,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,스파크,50.0,48.46,38.46,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_EV,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_EV,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_EV,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_EV,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_EV,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_PHEV,10.0,7.79,-2.21,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_PHEV,15.0,12.79,2.79,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_PHEV,20.0,17.79,7.79,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_PHEV,30.0,27.79,17.79,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,볼트_PHEV,50.0,47.79,37.79,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,i3,10.0,9.21,-0.79,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,i3,15.0,14.21,4.21,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,i3,20.0,19.21,9.21,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,i3,30.0,29.21,19.21,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,i3,50.0,49.21,39.21,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 7 PHEV,10.0,2.42,-7.58,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 7 PHEV,15.0,7.42,-2.58,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 7 PHEV,20.0,12.42,2.42,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 7 PHEV,30.0,22.42,12.42,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 7 PHEV,50.0,42.42,32.42,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 530e PHEV,10.0,4.95,-5.05,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 530e PHEV,15.0,9.95,-0.05,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 530e PHEV,20.0,14.95,4.95,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 530e PHEV,30.0,24.95,14.95,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW 530e PHEV,50.0,44.95,34.95,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,BMW X3 xDRIVE30e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,LEAF,10.0,9.15,-0.85,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,LEAF,15.0,14.15,4.15,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,LEAF,20.0,19.15,9.15,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,LEAF,30.0,29.15,19.15,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,LEAF,50.0,49.15,39.15,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,테슬라 모델 S,10.0,9.59,-0.41,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,테슬라 모델 S,15.0,14.59,4.59,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,테슬라 모델 S,20.0,19.59,9.59,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,테슬라 모델 S,30.0,29.59,19.59,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,테슬라 모델 S,50.0,49.59,39.59,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,GLC 350e PHEV,10.0,-3.14,-13.14,DANGER,True,False,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,GLC 350e PHEV,15.0,1.86,-8.14,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,GLC 350e PHEV,20.0,6.86,-3.14,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,GLC 350e PHEV,30.0,16.86,6.86,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,GLC 350e PHEV,50.0,36.86,26.86,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 EQC400,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 EQC400,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 EQC400,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 EQC400,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 EQC400,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 s560e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 s560e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 s560e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 s560e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤츠 s560e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤테이가 PHEV,10.0,4.95,-5.05,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤테이가 PHEV,15.0,9.95,-0.05,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤테이가 PHEV,20.0,14.95,4.95,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤테이가 PHEV,30.0,24.95,14.95,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,벤테이가 PHEV,50.0,44.95,34.95,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,E6,10.0,9.34,-0.66,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,E6,15.0,14.34,4.34,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,E6,20.0,19.34,9.34,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,E6,30.0,29.34,19.34,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,E6,50.0,49.34,39.34,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,VOLVO S90 T8,10.0,4.2,-5.8,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,VOLVO S90 T8,15.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,VOLVO S90 T8,20.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,VOLVO S90 T8,30.0,24.2,14.2,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,VOLVO S90 T8,50.0,44.2,34.2,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),10.0,3.43,-6.57,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),15.0,8.43,-1.57,DANGER,True,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),20.0,13.43,3.43,WARNING,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),30.0,23.43,13.43,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,포드 익스플로러(PHEV),50.0,43.43,33.43,SAFE,False,True,False,vehicle_master
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,10.0,9.01,-0.99,DANGER,True,True,True,fallback
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,15.0,14.01,4.01,WARNING,False,True,True,fallback
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,20.0,19.01,9.01,WARNING,False,True,True,fallback
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,30.0,29.01,19.01,SAFE,False,True,True,fallback
+PIS00550,대구 동구 신세계백화점대구점,6.4,1.971,미등록차량_FALLBACK,50.0,49.01,39.01,SAFE,False,True,True,fallback
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,17년도 아이오닉,10.0,8.97,-1.03,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,17년도 아이오닉,15.0,13.97,3.97,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,17년도 아이오닉,20.0,18.97,8.97,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,17년도 아이오닉,30.0,28.97,18.97,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,17년도 아이오닉,50.0,48.97,38.97,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,피스,10.0,7.47,-2.53,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,피스,15.0,12.47,2.47,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,피스,20.0,17.47,7.47,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,피스,30.0,27.47,17.47,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,피스,50.0,47.47,37.47,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘나타 PHEV,10.0,5.52,-4.48,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘나타 PHEV,15.0,10.52,0.52,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘나타 PHEV,20.0,15.52,5.52,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘나타 PHEV,30.0,25.52,15.52,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘나타 PHEV,50.0,45.52,35.52,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,코나EV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,코나EV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,코나EV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,코나EV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,코나EV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,18년도 아이오닉 PHEV,10.0,5.71,-4.29,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,18년도 아이오닉 PHEV,15.0,10.71,0.71,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,18년도 아이오닉 PHEV,20.0,15.71,5.71,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,18년도 아이오닉 PHEV,30.0,25.71,15.71,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,18년도 아이오닉 PHEV,50.0,45.71,35.71,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,레이,10.0,7.83,-2.17,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,레이,15.0,12.83,2.83,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,레이,20.0,17.83,7.83,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,레이,30.0,27.83,17.83,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,레이,50.0,47.83,37.83,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘울,10.0,8.67,-1.33,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘울,15.0,13.67,3.67,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘울,20.0,18.67,8.67,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘울,30.0,28.67,18.67,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,쏘울,50.0,48.67,38.67,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,니로_EV,10.0,9.49,-0.51,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,니로_EV,15.0,14.49,4.49,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,니로_EV,20.0,19.49,9.49,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,니로_EV,30.0,29.49,19.49,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,니로_EV,50.0,49.49,39.49,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,SM3,10.0,9.07,-0.93,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,SM3,15.0,14.07,4.07,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,SM3,20.0,19.07,9.07,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,SM3,30.0,29.07,19.07,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,SM3,50.0,49.07,39.07,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,조에,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,조에,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,조에,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,조에,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,조에,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,스파크,10.0,8.46,-1.54,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,스파크,15.0,13.46,3.46,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,스파크,20.0,18.46,8.46,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,스파크,30.0,28.46,18.46,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,스파크,50.0,48.46,38.46,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_EV,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_EV,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_EV,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_EV,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_EV,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_PHEV,10.0,7.78,-2.22,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_PHEV,15.0,12.78,2.78,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_PHEV,20.0,17.78,7.78,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_PHEV,30.0,27.78,17.78,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,볼트_PHEV,50.0,47.78,37.78,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,i3,10.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,i3,15.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,i3,20.0,19.2,9.2,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,i3,30.0,29.2,19.2,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,i3,50.0,49.2,39.2,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 7 PHEV,10.0,2.42,-7.58,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 7 PHEV,15.0,7.42,-2.58,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 7 PHEV,20.0,12.42,2.42,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 7 PHEV,30.0,22.42,12.42,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 7 PHEV,50.0,42.42,32.42,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 530e PHEV,10.0,4.94,-5.06,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 530e PHEV,15.0,9.94,-0.06,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 530e PHEV,20.0,14.94,4.94,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 530e PHEV,30.0,24.94,14.94,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW 530e PHEV,50.0,44.94,34.94,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW X3 xDRIVE30e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW X3 xDRIVE30e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW X3 xDRIVE30e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW X3 xDRIVE30e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,BMW X3 xDRIVE30e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,LEAF,10.0,9.15,-0.85,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,LEAF,15.0,14.15,4.15,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,LEAF,20.0,19.15,9.15,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,LEAF,30.0,29.15,19.15,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,LEAF,50.0,49.15,39.15,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,테슬라 모델 S,10.0,9.59,-0.41,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,테슬라 모델 S,15.0,14.59,4.59,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,테슬라 모델 S,20.0,19.59,9.59,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,테슬라 모델 S,30.0,29.59,19.59,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,테슬라 모델 S,50.0,49.59,39.59,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,GLC 350e PHEV,10.0,-3.15,-13.15,DANGER,True,False,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,GLC 350e PHEV,15.0,1.85,-8.15,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,GLC 350e PHEV,20.0,6.85,-3.15,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,GLC 350e PHEV,30.0,16.85,6.85,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,GLC 350e PHEV,50.0,36.85,26.85,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 EQC400,10.0,9.36,-0.64,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 EQC400,15.0,14.36,4.36,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 EQC400,20.0,19.36,9.36,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 EQC400,30.0,29.36,19.36,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 EQC400,50.0,49.36,39.36,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 s560e,10.0,3.64,-6.36,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 s560e,15.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 s560e,20.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 s560e,30.0,23.64,13.64,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤츠 s560e,50.0,43.64,33.64,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤테이가 PHEV,10.0,4.94,-5.06,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤테이가 PHEV,15.0,9.94,-0.06,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤테이가 PHEV,20.0,14.94,4.94,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤테이가 PHEV,30.0,24.94,14.94,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,벤테이가 PHEV,50.0,44.94,34.94,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,E6,10.0,9.34,-0.66,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,E6,15.0,14.34,4.34,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,E6,20.0,19.34,9.34,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,E6,30.0,29.34,19.34,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,E6,50.0,49.34,39.34,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,VOLVO S90 T8,10.0,4.2,-5.8,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,VOLVO S90 T8,15.0,9.2,-0.8,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,VOLVO S90 T8,20.0,14.2,4.2,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,VOLVO S90 T8,30.0,24.2,14.2,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,VOLVO S90 T8,50.0,44.2,34.2,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,포드 익스플로러(PHEV),10.0,3.43,-6.57,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,포드 익스플로러(PHEV),15.0,8.43,-1.57,DANGER,True,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,포드 익스플로러(PHEV),20.0,13.43,3.43,WARNING,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,포드 익스플로러(PHEV),30.0,23.43,13.43,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,포드 익스플로러(PHEV),50.0,43.43,33.43,SAFE,False,True,False,vehicle_master
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,미등록차량_FALLBACK,10.0,9.01,-0.99,DANGER,True,True,True,fallback
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,미등록차량_FALLBACK,15.0,14.01,4.01,WARNING,False,True,True,fallback
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,미등록차량_FALLBACK,20.0,19.01,9.01,WARNING,False,True,True,fallback
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,미등록차량_FALLBACK,30.0,29.01,19.01,SAFE,False,True,True,fallback
+CV000899,포르쉐 HPC 신세계백화점 대구점,6.4,1.972,미등록차량_FALLBACK,50.0,49.01,39.01,SAFE,False,True,True,fallback
+LU101629,동대구역우방아이유쉘,8.4,2.006,17년도 아이오닉,10.0,8.95,-1.05,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,17년도 아이오닉,15.0,13.95,3.95,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,17년도 아이오닉,20.0,18.95,8.95,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,17년도 아이오닉,30.0,28.95,18.95,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,17년도 아이오닉,50.0,48.95,38.95,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,피스,10.0,7.43,-2.57,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,피스,15.0,12.43,2.43,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,피스,20.0,17.43,7.43,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,피스,30.0,27.43,17.43,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,피스,50.0,47.43,37.43,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘나타 PHEV,10.0,5.44,-4.56,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘나타 PHEV,15.0,10.44,0.44,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘나타 PHEV,20.0,15.44,5.44,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘나타 PHEV,30.0,25.44,15.44,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘나타 PHEV,50.0,45.44,35.44,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,코나EV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,코나EV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,코나EV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,코나EV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,코나EV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,18년도 아이오닉 PHEV,10.0,5.64,-4.36,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,18년도 아이오닉 PHEV,15.0,10.64,0.64,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,18년도 아이오닉 PHEV,20.0,15.64,5.64,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,18년도 아이오닉 PHEV,30.0,25.64,15.64,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,18년도 아이오닉 PHEV,50.0,45.64,35.64,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,레이,10.0,7.8,-2.2,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,레이,15.0,12.8,2.8,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,레이,20.0,17.8,7.8,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,레이,30.0,27.8,17.8,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,레이,50.0,47.8,37.8,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘울,10.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘울,15.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘울,20.0,18.64,8.64,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘울,30.0,28.64,18.64,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,쏘울,50.0,48.64,38.64,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,니로_EV,10.0,9.48,-0.52,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,니로_EV,15.0,14.48,4.48,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,니로_EV,20.0,19.48,9.48,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,니로_EV,30.0,29.48,19.48,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,니로_EV,50.0,49.48,39.48,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,SM3,10.0,9.06,-0.94,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,SM3,15.0,14.06,4.06,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,SM3,20.0,19.06,9.06,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,SM3,30.0,29.06,19.06,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,SM3,50.0,49.06,39.06,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,조에,10.0,9.35,-0.65,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,조에,15.0,14.35,4.35,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,조에,20.0,19.35,9.35,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,조에,30.0,29.35,19.35,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,조에,50.0,49.35,39.35,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,스파크,10.0,8.43,-1.57,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,스파크,15.0,13.43,3.43,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,스파크,20.0,18.43,8.43,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,스파크,30.0,28.43,18.43,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,스파크,50.0,48.43,38.43,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_EV,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_EV,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_EV,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_EV,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_EV,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_PHEV,10.0,7.75,-2.25,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_PHEV,15.0,12.75,2.75,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_PHEV,20.0,17.75,7.75,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_PHEV,30.0,27.75,17.75,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,볼트_PHEV,50.0,47.75,37.75,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,i3,10.0,9.19,-0.81,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,i3,15.0,14.19,4.19,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,i3,20.0,19.19,9.19,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,i3,30.0,29.19,19.19,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,i3,50.0,49.19,39.19,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 7 PHEV,10.0,2.28,-7.72,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 7 PHEV,15.0,7.28,-2.72,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 7 PHEV,20.0,12.28,2.28,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 7 PHEV,30.0,22.28,12.28,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 7 PHEV,50.0,42.28,32.28,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 530e PHEV,10.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 530e PHEV,15.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 530e PHEV,20.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 530e PHEV,30.0,24.86,14.86,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW 530e PHEV,50.0,44.86,34.86,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW X3 xDRIVE30e,10.0,3.53,-6.47,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW X3 xDRIVE30e,15.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW X3 xDRIVE30e,20.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW X3 xDRIVE30e,30.0,23.53,13.53,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,BMW X3 xDRIVE30e,50.0,43.53,33.53,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,LEAF,10.0,9.13,-0.87,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,LEAF,15.0,14.13,4.13,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,LEAF,20.0,19.13,9.13,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,LEAF,30.0,29.13,19.13,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,LEAF,50.0,49.13,39.13,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,테슬라 모델 S,10.0,9.58,-0.42,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,테슬라 모델 S,15.0,14.58,4.58,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,테슬라 모델 S,20.0,19.58,9.58,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,테슬라 모델 S,30.0,29.58,19.58,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,테슬라 모델 S,50.0,49.58,39.58,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,GLC 350e PHEV,10.0,-3.37,-13.37,DANGER,True,False,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,GLC 350e PHEV,15.0,1.63,-8.37,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,GLC 350e PHEV,20.0,6.63,-3.37,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,GLC 350e PHEV,30.0,16.63,6.63,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,GLC 350e PHEV,50.0,36.63,26.63,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 EQC400,10.0,9.35,-0.65,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 EQC400,15.0,14.35,4.35,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 EQC400,20.0,19.35,9.35,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 EQC400,30.0,29.35,19.35,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 EQC400,50.0,49.35,39.35,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 s560e,10.0,3.53,-6.47,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 s560e,15.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 s560e,20.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 s560e,30.0,23.53,13.53,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤츠 s560e,50.0,43.53,33.53,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤테이가 PHEV,10.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤테이가 PHEV,15.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤테이가 PHEV,20.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤테이가 PHEV,30.0,24.86,14.86,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,벤테이가 PHEV,50.0,44.86,34.86,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,E6,10.0,9.33,-0.67,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,E6,15.0,14.33,4.33,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,E6,20.0,19.33,9.33,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,E6,30.0,29.33,19.33,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,E6,50.0,49.33,39.33,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,VOLVO S90 T8,10.0,4.1,-5.9,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,VOLVO S90 T8,15.0,9.1,-0.9,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,VOLVO S90 T8,20.0,14.1,4.1,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,VOLVO S90 T8,30.0,24.1,14.1,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,VOLVO S90 T8,50.0,44.1,34.1,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,포드 익스플로러(PHEV),10.0,3.31,-6.69,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,포드 익스플로러(PHEV),15.0,8.31,-1.69,DANGER,True,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,포드 익스플로러(PHEV),20.0,13.31,3.31,WARNING,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,포드 익스플로러(PHEV),30.0,23.31,13.31,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,포드 익스플로러(PHEV),50.0,43.31,33.31,SAFE,False,True,False,vehicle_master
+LU101629,동대구역우방아이유쉘,8.4,2.006,미등록차량_FALLBACK,10.0,9.0,-1.0,DANGER,True,True,True,fallback
+LU101629,동대구역우방아이유쉘,8.4,2.006,미등록차량_FALLBACK,15.0,14.0,4.0,WARNING,False,True,True,fallback
+LU101629,동대구역우방아이유쉘,8.4,2.006,미등록차량_FALLBACK,20.0,19.0,9.0,WARNING,False,True,True,fallback
+LU101629,동대구역우방아이유쉘,8.4,2.006,미등록차량_FALLBACK,30.0,29.0,19.0,SAFE,False,True,True,fallback
+LU101629,동대구역우방아이유쉘,8.4,2.006,미등록차량_FALLBACK,50.0,49.0,39.0,SAFE,False,True,True,fallback
+PL006988,동대구역우방아이유쉘,8.2,2.006,17년도 아이오닉,10.0,8.95,-1.05,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,17년도 아이오닉,15.0,13.95,3.95,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,17년도 아이오닉,20.0,18.95,8.95,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,17년도 아이오닉,30.0,28.95,18.95,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,17년도 아이오닉,50.0,48.95,38.95,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,피스,10.0,7.43,-2.57,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,피스,15.0,12.43,2.43,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,피스,20.0,17.43,7.43,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,피스,30.0,27.43,17.43,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,피스,50.0,47.43,37.43,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘나타 PHEV,10.0,5.44,-4.56,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘나타 PHEV,15.0,10.44,0.44,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘나타 PHEV,20.0,15.44,5.44,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘나타 PHEV,30.0,25.44,15.44,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘나타 PHEV,50.0,45.44,35.44,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,코나EV,10.0,9.51,-0.49,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,코나EV,15.0,14.51,4.51,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,코나EV,20.0,19.51,9.51,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,코나EV,30.0,29.51,19.51,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,코나EV,50.0,49.51,39.51,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,18년도 아이오닉 PHEV,10.0,5.64,-4.36,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,18년도 아이오닉 PHEV,15.0,10.64,0.64,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,18년도 아이오닉 PHEV,20.0,15.64,5.64,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,18년도 아이오닉 PHEV,30.0,25.64,15.64,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,18년도 아이오닉 PHEV,50.0,45.64,35.64,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,레이,10.0,7.8,-2.2,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,레이,15.0,12.8,2.8,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,레이,20.0,17.8,7.8,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,레이,30.0,27.8,17.8,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,레이,50.0,47.8,37.8,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘울,10.0,8.64,-1.36,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘울,15.0,13.64,3.64,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘울,20.0,18.64,8.64,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘울,30.0,28.64,18.64,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,쏘울,50.0,48.64,38.64,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,니로_EV,10.0,9.48,-0.52,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,니로_EV,15.0,14.48,4.48,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,니로_EV,20.0,19.48,9.48,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,니로_EV,30.0,29.48,19.48,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,니로_EV,50.0,49.48,39.48,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,SM3,10.0,9.06,-0.94,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,SM3,15.0,14.06,4.06,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,SM3,20.0,19.06,9.06,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,SM3,30.0,29.06,19.06,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,SM3,50.0,49.06,39.06,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,조에,10.0,9.35,-0.65,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,조에,15.0,14.35,4.35,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,조에,20.0,19.35,9.35,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,조에,30.0,29.35,19.35,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,조에,50.0,49.35,39.35,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,스파크,10.0,8.43,-1.57,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,스파크,15.0,13.43,3.43,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,스파크,20.0,18.43,8.43,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,스파크,30.0,28.43,18.43,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,스파크,50.0,48.43,38.43,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_EV,10.0,9.52,-0.48,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_EV,15.0,14.52,4.52,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_EV,20.0,19.52,9.52,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_EV,30.0,29.52,19.52,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_EV,50.0,49.52,39.52,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_PHEV,10.0,7.75,-2.25,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_PHEV,15.0,12.75,2.75,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_PHEV,20.0,17.75,7.75,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_PHEV,30.0,27.75,17.75,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,볼트_PHEV,50.0,47.75,37.75,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,i3,10.0,9.19,-0.81,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,i3,15.0,14.19,4.19,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,i3,20.0,19.19,9.19,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,i3,30.0,29.19,19.19,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,i3,50.0,49.19,39.19,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 7 PHEV,10.0,2.28,-7.72,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 7 PHEV,15.0,7.28,-2.72,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 7 PHEV,20.0,12.28,2.28,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 7 PHEV,30.0,22.28,12.28,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 7 PHEV,50.0,42.28,32.28,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 530e PHEV,10.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 530e PHEV,15.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 530e PHEV,20.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 530e PHEV,30.0,24.86,14.86,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW 530e PHEV,50.0,44.86,34.86,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW X3 xDRIVE30e,10.0,3.53,-6.47,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW X3 xDRIVE30e,15.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW X3 xDRIVE30e,20.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW X3 xDRIVE30e,30.0,23.53,13.53,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,BMW X3 xDRIVE30e,50.0,43.53,33.53,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,LEAF,10.0,9.13,-0.87,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,LEAF,15.0,14.13,4.13,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,LEAF,20.0,19.13,9.13,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,LEAF,30.0,29.13,19.13,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,LEAF,50.0,49.13,39.13,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,테슬라 모델 S,10.0,9.58,-0.42,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,테슬라 모델 S,15.0,14.58,4.58,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,테슬라 모델 S,20.0,19.58,9.58,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,테슬라 모델 S,30.0,29.58,19.58,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,테슬라 모델 S,50.0,49.58,39.58,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,GLC 350e PHEV,10.0,-3.37,-13.37,DANGER,True,False,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,GLC 350e PHEV,15.0,1.63,-8.37,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,GLC 350e PHEV,20.0,6.63,-3.37,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,GLC 350e PHEV,30.0,16.63,6.63,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,GLC 350e PHEV,50.0,36.63,26.63,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 EQC400,10.0,9.35,-0.65,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 EQC400,15.0,14.35,4.35,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 EQC400,20.0,19.35,9.35,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 EQC400,30.0,29.35,19.35,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 EQC400,50.0,49.35,39.35,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 s560e,10.0,3.53,-6.47,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 s560e,15.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 s560e,20.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 s560e,30.0,23.53,13.53,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤츠 s560e,50.0,43.53,33.53,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤테이가 PHEV,10.0,4.86,-5.14,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤테이가 PHEV,15.0,9.86,-0.14,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤테이가 PHEV,20.0,14.86,4.86,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤테이가 PHEV,30.0,24.86,14.86,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,벤테이가 PHEV,50.0,44.86,34.86,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,E6,10.0,9.33,-0.67,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,E6,15.0,14.33,4.33,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,E6,20.0,19.33,9.33,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,E6,30.0,29.33,19.33,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,E6,50.0,49.33,39.33,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,VOLVO S90 T8,10.0,4.1,-5.9,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,VOLVO S90 T8,15.0,9.1,-0.9,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,VOLVO S90 T8,20.0,14.1,4.1,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,VOLVO S90 T8,30.0,24.1,14.1,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,VOLVO S90 T8,50.0,44.1,34.1,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,포드 익스플로러(PHEV),10.0,3.31,-6.69,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,포드 익스플로러(PHEV),15.0,8.31,-1.69,DANGER,True,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,포드 익스플로러(PHEV),20.0,13.31,3.31,WARNING,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,포드 익스플로러(PHEV),30.0,23.31,13.31,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,포드 익스플로러(PHEV),50.0,43.31,33.31,SAFE,False,True,False,vehicle_master
+PL006988,동대구역우방아이유쉘,8.2,2.006,미등록차량_FALLBACK,10.0,9.0,-1.0,DANGER,True,True,True,fallback
+PL006988,동대구역우방아이유쉘,8.2,2.006,미등록차량_FALLBACK,15.0,14.0,4.0,WARNING,False,True,True,fallback
+PL006988,동대구역우방아이유쉘,8.2,2.006,미등록차량_FALLBACK,20.0,19.0,9.0,WARNING,False,True,True,fallback
+PL006988,동대구역우방아이유쉘,8.2,2.006,미등록차량_FALLBACK,30.0,29.0,19.0,SAFE,False,True,True,fallback
+PL006988,동대구역우방아이유쉘,8.2,2.006,미등록차량_FALLBACK,50.0,49.0,39.0,SAFE,False,True,True,fallback
+PWE06835,이안센트럴D아파트,4.8,1.146,17년도 아이오닉,10.0,9.4,-0.6,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,17년도 아이오닉,15.0,14.4,4.4,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,17년도 아이오닉,20.0,19.4,9.4,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,17년도 아이오닉,30.0,29.4,19.4,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,17년도 아이오닉,50.0,49.4,39.4,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,피스,10.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,피스,15.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,피스,20.0,18.53,8.53,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,피스,30.0,28.53,18.53,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,피스,50.0,48.53,38.53,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘나타 PHEV,10.0,7.4,-2.6,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘나타 PHEV,15.0,12.4,2.4,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘나타 PHEV,20.0,17.4,7.4,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘나타 PHEV,30.0,27.4,17.4,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘나타 PHEV,50.0,47.4,37.4,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,코나EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,코나EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,코나EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,코나EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,코나EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,18년도 아이오닉 PHEV,10.0,7.51,-2.49,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,18년도 아이오닉 PHEV,15.0,12.51,2.51,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,18년도 아이오닉 PHEV,20.0,17.51,7.51,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,18년도 아이오닉 PHEV,30.0,27.51,17.51,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,18년도 아이오닉 PHEV,50.0,47.51,37.51,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,레이,10.0,8.74,-1.26,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,레이,15.0,13.74,3.74,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,레이,20.0,18.74,8.74,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,레이,30.0,28.74,18.74,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,레이,50.0,48.74,38.74,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘울,10.0,9.23,-0.77,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘울,15.0,14.23,4.23,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘울,20.0,19.23,9.23,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘울,30.0,29.23,19.23,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,쏘울,50.0,49.23,39.23,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,니로_EV,10.0,9.7,-0.3,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,니로_EV,15.0,14.7,4.7,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,니로_EV,20.0,19.7,9.7,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,니로_EV,30.0,29.7,19.7,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,니로_EV,50.0,49.7,39.7,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,SM3,10.0,9.46,-0.54,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,SM3,15.0,14.46,4.46,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,SM3,20.0,19.46,9.46,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,SM3,30.0,29.46,19.46,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,SM3,50.0,49.46,39.46,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,조에,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,조에,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,조에,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,조에,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,조에,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,스파크,10.0,9.1,-0.9,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,스파크,15.0,14.1,4.1,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,스파크,20.0,19.1,9.1,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,스파크,30.0,29.1,19.1,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,스파크,50.0,49.1,39.1,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_PHEV,10.0,8.71,-1.29,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_PHEV,15.0,13.71,3.71,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_PHEV,20.0,18.71,8.71,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_PHEV,30.0,28.71,18.71,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,볼트_PHEV,50.0,48.71,38.71,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,i3,10.0,9.54,-0.46,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,i3,15.0,14.54,4.54,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,i3,20.0,19.54,9.54,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,i3,30.0,29.54,19.54,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,i3,50.0,49.54,39.54,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 7 PHEV,10.0,5.59,-4.41,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 7 PHEV,15.0,10.59,0.59,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 7 PHEV,20.0,15.59,5.59,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 7 PHEV,30.0,25.59,15.59,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 7 PHEV,50.0,45.59,35.59,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 530e PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 530e PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 530e PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 530e PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW 530e PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW X3 xDRIVE30e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW X3 xDRIVE30e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW X3 xDRIVE30e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW X3 xDRIVE30e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,BMW X3 xDRIVE30e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,LEAF,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,LEAF,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,LEAF,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,LEAF,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,LEAF,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,테슬라 모델 S,10.0,9.76,-0.24,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,테슬라 모델 S,15.0,14.76,4.76,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,테슬라 모델 S,20.0,19.76,9.76,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,테슬라 모델 S,30.0,29.76,19.76,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,테슬라 모델 S,50.0,49.76,39.76,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,GLC 350e PHEV,10.0,2.36,-7.64,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,GLC 350e PHEV,15.0,7.36,-2.64,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,GLC 350e PHEV,20.0,12.36,2.36,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,GLC 350e PHEV,30.0,22.36,12.36,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,GLC 350e PHEV,50.0,42.36,32.36,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 EQC400,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 EQC400,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 EQC400,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 EQC400,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 EQC400,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 s560e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 s560e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 s560e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 s560e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤츠 s560e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤테이가 PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤테이가 PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤테이가 PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤테이가 PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,벤테이가 PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,E6,10.0,9.62,-0.38,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,E6,15.0,14.62,4.62,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,E6,20.0,19.62,9.62,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,E6,30.0,29.62,19.62,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,E6,50.0,49.62,39.62,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,VOLVO S90 T8,10.0,6.63,-3.37,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,VOLVO S90 T8,15.0,11.63,1.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,VOLVO S90 T8,20.0,16.63,6.63,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,VOLVO S90 T8,30.0,26.63,16.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,VOLVO S90 T8,50.0,46.63,36.63,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,포드 익스플로러(PHEV),10.0,6.18,-3.82,DANGER,True,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,포드 익스플로러(PHEV),15.0,11.18,1.18,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,포드 익스플로러(PHEV),20.0,16.18,6.18,WARNING,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,포드 익스플로러(PHEV),30.0,26.18,16.18,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,포드 익스플로러(PHEV),50.0,46.18,36.18,SAFE,False,True,False,vehicle_master
+PWE06835,이안센트럴D아파트,4.8,1.146,미등록차량_FALLBACK,10.0,9.43,-0.57,DANGER,True,True,True,fallback
+PWE06835,이안센트럴D아파트,4.8,1.146,미등록차량_FALLBACK,15.0,14.43,4.43,WARNING,False,True,True,fallback
+PWE06835,이안센트럴D아파트,4.8,1.146,미등록차량_FALLBACK,20.0,19.43,9.43,WARNING,False,True,True,fallback
+PWE06835,이안센트럴D아파트,4.8,1.146,미등록차량_FALLBACK,30.0,29.43,19.43,SAFE,False,True,True,fallback
+PWE06835,이안센트럴D아파트,4.8,1.146,미등록차량_FALLBACK,50.0,49.43,39.43,SAFE,False,True,True,fallback
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,17년도 아이오닉,10.0,9.4,-0.6,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,17년도 아이오닉,15.0,14.4,4.4,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,17년도 아이오닉,20.0,19.4,9.4,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,17년도 아이오닉,30.0,29.4,19.4,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,17년도 아이오닉,50.0,49.4,39.4,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,피스,10.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,피스,15.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,피스,20.0,18.53,8.53,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,피스,30.0,28.53,18.53,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,피스,50.0,48.53,38.53,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘나타 PHEV,10.0,7.4,-2.6,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘나타 PHEV,15.0,12.4,2.4,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘나타 PHEV,20.0,17.4,7.4,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘나타 PHEV,30.0,27.4,17.4,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘나타 PHEV,50.0,47.4,37.4,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,코나EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,코나EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,코나EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,코나EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,코나EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,18년도 아이오닉 PHEV,10.0,7.51,-2.49,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,18년도 아이오닉 PHEV,15.0,12.51,2.51,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,18년도 아이오닉 PHEV,20.0,17.51,7.51,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,18년도 아이오닉 PHEV,30.0,27.51,17.51,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,18년도 아이오닉 PHEV,50.0,47.51,37.51,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,레이,10.0,8.74,-1.26,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,레이,15.0,13.74,3.74,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,레이,20.0,18.74,8.74,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,레이,30.0,28.74,18.74,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,레이,50.0,48.74,38.74,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘울,10.0,9.23,-0.77,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘울,15.0,14.23,4.23,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘울,20.0,19.23,9.23,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘울,30.0,29.23,19.23,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,쏘울,50.0,49.23,39.23,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,니로_EV,10.0,9.7,-0.3,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,니로_EV,15.0,14.7,4.7,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,니로_EV,20.0,19.7,9.7,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,니로_EV,30.0,29.7,19.7,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,니로_EV,50.0,49.7,39.7,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,SM3,10.0,9.46,-0.54,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,SM3,15.0,14.46,4.46,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,SM3,20.0,19.46,9.46,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,SM3,30.0,29.46,19.46,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,SM3,50.0,49.46,39.46,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,조에,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,조에,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,조에,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,조에,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,조에,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,스파크,10.0,9.1,-0.9,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,스파크,15.0,14.1,4.1,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,스파크,20.0,19.1,9.1,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,스파크,30.0,29.1,19.1,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,스파크,50.0,49.1,39.1,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_PHEV,10.0,8.71,-1.29,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_PHEV,15.0,13.71,3.71,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_PHEV,20.0,18.71,8.71,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_PHEV,30.0,28.71,18.71,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,볼트_PHEV,50.0,48.71,38.71,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,i3,10.0,9.54,-0.46,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,i3,15.0,14.54,4.54,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,i3,20.0,19.54,9.54,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,i3,30.0,29.54,19.54,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,i3,50.0,49.54,39.54,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 7 PHEV,10.0,5.59,-4.41,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 7 PHEV,15.0,10.59,0.59,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 7 PHEV,20.0,15.59,5.59,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 7 PHEV,30.0,25.59,15.59,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 7 PHEV,50.0,45.59,35.59,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 530e PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 530e PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 530e PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 530e PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW 530e PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW X3 xDRIVE30e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW X3 xDRIVE30e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW X3 xDRIVE30e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW X3 xDRIVE30e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,BMW X3 xDRIVE30e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,LEAF,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,LEAF,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,LEAF,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,LEAF,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,LEAF,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,테슬라 모델 S,10.0,9.76,-0.24,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,테슬라 모델 S,15.0,14.76,4.76,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,테슬라 모델 S,20.0,19.76,9.76,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,테슬라 모델 S,30.0,29.76,19.76,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,테슬라 모델 S,50.0,49.76,39.76,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,GLC 350e PHEV,10.0,2.36,-7.64,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,GLC 350e PHEV,15.0,7.36,-2.64,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,GLC 350e PHEV,20.0,12.36,2.36,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,GLC 350e PHEV,30.0,22.36,12.36,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,GLC 350e PHEV,50.0,42.36,32.36,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 EQC400,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 EQC400,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 EQC400,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 EQC400,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 EQC400,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 s560e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 s560e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 s560e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 s560e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤츠 s560e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤테이가 PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤테이가 PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤테이가 PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤테이가 PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,벤테이가 PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,E6,10.0,9.62,-0.38,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,E6,15.0,14.62,4.62,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,E6,20.0,19.62,9.62,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,E6,30.0,29.62,19.62,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,E6,50.0,49.62,39.62,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,VOLVO S90 T8,10.0,6.63,-3.37,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,VOLVO S90 T8,15.0,11.63,1.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,VOLVO S90 T8,20.0,16.63,6.63,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,VOLVO S90 T8,30.0,26.63,16.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,VOLVO S90 T8,50.0,46.63,36.63,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,포드 익스플로러(PHEV),10.0,6.18,-3.82,DANGER,True,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,포드 익스플로러(PHEV),15.0,11.18,1.18,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,포드 익스플로러(PHEV),20.0,16.18,6.18,WARNING,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,포드 익스플로러(PHEV),30.0,26.18,16.18,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,포드 익스플로러(PHEV),50.0,46.18,36.18,SAFE,False,True,False,vehicle_master
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,미등록차량_FALLBACK,10.0,9.43,-0.57,DANGER,True,True,True,fallback
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,미등록차량_FALLBACK,15.0,14.43,4.43,WARNING,False,True,True,fallback
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,미등록차량_FALLBACK,20.0,19.43,9.43,WARNING,False,True,True,fallback
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,미등록차량_FALLBACK,30.0,29.43,19.43,SAFE,False,True,True,fallback
+PW014666,이안센트럴D 입주자대표회의,4.8,1.146,미등록차량_FALLBACK,50.0,49.43,39.43,SAFE,False,True,True,fallback
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,17년도 아이오닉,10.0,9.4,-0.6,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,17년도 아이오닉,15.0,14.4,4.4,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,17년도 아이오닉,20.0,19.4,9.4,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,17년도 아이오닉,30.0,29.4,19.4,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,17년도 아이오닉,50.0,49.4,39.4,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,피스,10.0,8.53,-1.47,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,피스,15.0,13.53,3.53,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,피스,20.0,18.53,8.53,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,피스,30.0,28.53,18.53,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,피스,50.0,48.53,38.53,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘나타 PHEV,10.0,7.4,-2.6,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘나타 PHEV,15.0,12.4,2.4,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘나타 PHEV,20.0,17.4,7.4,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘나타 PHEV,30.0,27.4,17.4,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘나타 PHEV,50.0,47.4,37.4,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,코나EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,코나EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,코나EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,코나EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,코나EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,18년도 아이오닉 PHEV,10.0,7.51,-2.49,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,18년도 아이오닉 PHEV,15.0,12.51,2.51,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,18년도 아이오닉 PHEV,20.0,17.51,7.51,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,18년도 아이오닉 PHEV,30.0,27.51,17.51,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,18년도 아이오닉 PHEV,50.0,47.51,37.51,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,레이,10.0,8.74,-1.26,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,레이,15.0,13.74,3.74,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,레이,20.0,18.74,8.74,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,레이,30.0,28.74,18.74,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,레이,50.0,48.74,38.74,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘울,10.0,9.23,-0.77,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘울,15.0,14.23,4.23,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘울,20.0,19.23,9.23,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘울,30.0,29.23,19.23,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,쏘울,50.0,49.23,39.23,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,니로_EV,10.0,9.7,-0.3,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,니로_EV,15.0,14.7,4.7,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,니로_EV,20.0,19.7,9.7,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,니로_EV,30.0,29.7,19.7,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,니로_EV,50.0,49.7,39.7,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,SM3,10.0,9.46,-0.54,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,SM3,15.0,14.46,4.46,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,SM3,20.0,19.46,9.46,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,SM3,30.0,29.46,19.46,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,SM3,50.0,49.46,39.46,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,조에,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,조에,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,조에,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,조에,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,조에,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,스파크,10.0,9.1,-0.9,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,스파크,15.0,14.1,4.1,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,스파크,20.0,19.1,9.1,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,스파크,30.0,29.1,19.1,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,스파크,50.0,49.1,39.1,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_EV,10.0,9.72,-0.28,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_EV,15.0,14.72,4.72,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_EV,20.0,19.72,9.72,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_EV,30.0,29.72,19.72,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_EV,50.0,49.72,39.72,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_PHEV,10.0,8.71,-1.29,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_PHEV,15.0,13.71,3.71,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_PHEV,20.0,18.71,8.71,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_PHEV,30.0,28.71,18.71,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,볼트_PHEV,50.0,48.71,38.71,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,i3,10.0,9.54,-0.46,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,i3,15.0,14.54,4.54,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,i3,20.0,19.54,9.54,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,i3,30.0,29.54,19.54,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,i3,50.0,49.54,39.54,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 7 PHEV,10.0,5.59,-4.41,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 7 PHEV,15.0,10.59,0.59,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 7 PHEV,20.0,15.59,5.59,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 7 PHEV,30.0,25.59,15.59,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 7 PHEV,50.0,45.59,35.59,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 530e PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 530e PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 530e PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 530e PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW 530e PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW X3 xDRIVE30e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW X3 xDRIVE30e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW X3 xDRIVE30e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW X3 xDRIVE30e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,BMW X3 xDRIVE30e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,LEAF,10.0,9.5,-0.5,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,LEAF,15.0,14.5,4.5,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,LEAF,20.0,19.5,9.5,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,LEAF,30.0,29.5,19.5,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,LEAF,50.0,49.5,39.5,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,테슬라 모델 S,10.0,9.76,-0.24,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,테슬라 모델 S,15.0,14.76,4.76,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,테슬라 모델 S,20.0,19.76,9.76,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,테슬라 모델 S,30.0,29.76,19.76,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,테슬라 모델 S,50.0,49.76,39.76,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,GLC 350e PHEV,10.0,2.36,-7.64,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,GLC 350e PHEV,15.0,7.36,-2.64,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,GLC 350e PHEV,20.0,12.36,2.36,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,GLC 350e PHEV,30.0,22.36,12.36,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,GLC 350e PHEV,50.0,42.36,32.36,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 EQC400,10.0,9.63,-0.37,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 EQC400,15.0,14.63,4.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 EQC400,20.0,19.63,9.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 EQC400,30.0,29.63,19.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 EQC400,50.0,49.63,39.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 s560e,10.0,6.3,-3.7,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 s560e,15.0,11.3,1.3,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 s560e,20.0,16.3,6.3,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 s560e,30.0,26.3,16.3,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤츠 s560e,50.0,46.3,36.3,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤테이가 PHEV,10.0,7.06,-2.94,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤테이가 PHEV,15.0,12.06,2.06,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤테이가 PHEV,20.0,17.06,7.06,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤테이가 PHEV,30.0,27.06,17.06,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,벤테이가 PHEV,50.0,47.06,37.06,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,E6,10.0,9.62,-0.38,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,E6,15.0,14.62,4.62,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,E6,20.0,19.62,9.62,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,E6,30.0,29.62,19.62,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,E6,50.0,49.62,39.62,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,VOLVO S90 T8,10.0,6.63,-3.37,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,VOLVO S90 T8,15.0,11.63,1.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,VOLVO S90 T8,20.0,16.63,6.63,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,VOLVO S90 T8,30.0,26.63,16.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,VOLVO S90 T8,50.0,46.63,36.63,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,포드 익스플로러(PHEV),10.0,6.18,-3.82,DANGER,True,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,포드 익스플로러(PHEV),15.0,11.18,1.18,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,포드 익스플로러(PHEV),20.0,16.18,6.18,WARNING,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,포드 익스플로러(PHEV),30.0,26.18,16.18,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,포드 익스플로러(PHEV),50.0,46.18,36.18,SAFE,False,True,False,vehicle_master
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,미등록차량_FALLBACK,10.0,9.43,-0.57,DANGER,True,True,True,fallback
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,미등록차량_FALLBACK,15.0,14.43,4.43,WARNING,False,True,True,fallback
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,미등록차량_FALLBACK,20.0,19.43,9.43,WARNING,False,True,True,fallback
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,미등록차량_FALLBACK,30.0,29.43,19.43,SAFE,False,True,True,fallback
+PW014688,이안센트럴D 입주자대표회의(SP),4.8,1.146,미등록차량_FALLBACK,50.0,49.43,39.43,SAFE,False,True,True,fallback

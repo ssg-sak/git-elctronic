@@ -126,7 +126,7 @@ cd apps/data-pipeline/evaluation && pytest tests/ -v
 - [x] EDA 보완 실행 → `EDA_보고서.md` §11–14 · `evaluation/results/eda/` · [`EDA_보고서_쉬운요약.md`](../../docs/보고/EDA_보고서_쉬운요약.md)
 - [x] **이중 신선도** F04b/F05b · D1 `observation_age` / `reliability_grade_effective` → `status_as_of.py` · `station_features.py` · [`EDA_보고서.md` §15](../../docs/보고/EDA_보고서.md)
 - [x] status loop **10분/15분** 재가동 (2026-07-20 15:55~) — **현재 PC에서 수집 중**
-- [x] **공식 가이드 반영** — [`DATA_PART_WORK_GUIDE`](../../docs/데이터파트_작업가이드.md) · `json/` · `run_mock_pipeline.py`
+- [x] **공식 가이드 반영** — [`DATA_PART_WORK_GUIDE`](../../docs/데이터파트_작업가이드.md) · **목데이터 폐지(2026-08-08)**
 - [ ] **필수** 주차·교통 대체 API — [`docs/data/API/주차교통_대체API_전략.md`](../../docs/data/API/주차교통_대체API_전략.md) (KOTSA·UTIC 신청 → 프로브)
 
 ---
@@ -176,10 +176,9 @@ python apps/data-pipeline/evaluation/personal/experiments/SANDBOX_20260717_statu
 | **공식 데이터 파트 가이드** | [`docs/데이터파트_작업가이드.md`](../../docs/데이터파트_작업가이드.md) |
 | **DA➀ 실행계획서** | [`docs/데이터파트_①_실행계획서.md`](../../docs/데이터파트_①_실행계획서.md) |
 | **DA➀ 완료체크** | [`docs/데이터파트_①_완료체크.md`](../../docs/데이터파트_①_완료체크.md) |
-| **목데이터 json/** | [`json/`](../../json/) |
+| **목데이터** | **폐지** — `json/` · mock 파이프 삭제, 실루프만 |
 | **UTIC 준수사항** | [`docs/data/API/UTIC_개방데이터_준수사항.md`](../../docs/data/API/UTIC_개방데이터_준수사항.md) |
 | **UTIC 팀 공유 (2026-07-21)** | [`docs/팀공유_UTIC_20260721.md`](../../docs/팀공유/팀공유_UTIC_20260721.md) |
-| **Mock 걷어내기·루프 분리** | [`docs/data/운영/실데이터_목데이터_트랙.md`](../../docs/data/운영/실데이터_목데이터_트랙.md) |
 | **GitHub 필수 준수** | [`깃허브_필수준수.md`](./깃허브_필수준수.md) |
 | **데이터 타당성 게이트 보고서 (2026-07-22)** | [`docs/보고/데이터타당성_게이트보고서_20260722.md`](../../docs/보고/데이터타당성_게이트보고서_20260722.md) |
 | **Status 4층 저장 설계** | [`docs/data/운영/status_4층_저장설계.md`](../../docs/data/운영/status_4층_저장설계.md) |

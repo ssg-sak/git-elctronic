@@ -133,11 +133,9 @@ def main():
     tour = load_spatial_counts(spatial_dir / "join_city_tour_geocoded_1000m.csv", "tourist_spots_1km")
     # Traffic
     traffic = load_spatial_counts(spatial_dir / "join_traffic_incident_utic_1000m.csv", "traffic_incidents_1km")
-    # Parking
+    # Parking (team5 only — mock join removed)
     parking = load_spatial_counts(spatial_dir / "join_parking_team5_1000m.csv", "parking_spots_1km")
-    if parking.empty:
-        parking = load_spatial_counts(spatial_dir / "join_parking_mock_1000m.csv", "parking_spots_1km")
-        
+
     # Merge
     master = features.rename(columns={"stationId": "statId"})
     master = master.merge(tour, on='statId', how='left').fillna({'tourist_spots_1km': 0})

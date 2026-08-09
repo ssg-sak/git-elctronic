@@ -5,12 +5,20 @@ import json
 from datetime import datetime
 
 def main():
-    panel_path = r"apps\data-pipeline\evaluation\results\datasets\station_feature_panel_latest.csv"
-    out_dir = r"apps\data-pipeline\evaluation\results\eda"
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
+    datasets = os.path.join(root, "apps", "data-pipeline", "evaluation", "results", "datasets")
+    out_dir = os.path.join(root, "apps", "data-pipeline", "evaluation", "results", "eda")
     os.makedirs(out_dir, exist_ok=True)
-    
+
+    parquet = os.path.join(datasets, "station_feature_panel_latest.parquet")
+    csv = os.path.join(datasets, "station_feature_panel_latest.csv")
+    panel_path = parquet if os.path.exists(parquet) else csv
+
     print(f"Loading {panel_path}...")
-    df = pd.read_csv(panel_path)
+    if panel_path.endswith(".parquet"):
+        df = pd.read_parquet(panel_path)
+    else:
+        df = pd.read_csv(panel_path)
     df['panel_ts'] = pd.to_datetime(df['panel_ts'])
     
     # Sort just in case

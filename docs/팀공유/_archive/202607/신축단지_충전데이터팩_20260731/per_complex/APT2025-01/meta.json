@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-01",
+  "complex_name": "두류역서한포레스트",
+  "gu": "달서구",
+  "dong": "두류동",
+  "move_in_ym": "2025-01",
+  "households": "480",
+  "cohort": "2025",
+  "notes": "주상복합",
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8566057,
+  "geocode_lng": 128.5648257,
+  "geocode_note": "두류동, 두류1·2동, 달서구, 대구광역시, 41863, 대한민국",
+  "nearby_300m_stations": 6,
+  "nearby_500m_stations": 14,
+  "nearby_500m_chargers": 53,
+  "d1_rows_for_nearby_or_name": 14
+}

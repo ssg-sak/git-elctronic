@@ -1,0 +1,22 @@
+{
+  "complex_id": "APT2025-14",
+  "complex_name": "힐스테이트서대구역센트럴",
+  "gu": "서구",
+  "dong": "비산동",
+  "move_in_ym": "2025-07",
+  "households": "762",
+  "cohort": "2025",
+  "notes": "주상복합",
+  "source": "savetime_2025_list",
+  "match_verdict": "MISSING_IN_INFO",
+  "matched_stations": 0,
+  "matched_statIds": [],
+  "matched_statNms": [],
+  "geocode_lat": 35.8811212,
+  "geocode_lng": 128.5665792,
+  "geocode_note": "비산동, 서구, 대구광역시, 대한민국",
+  "nearby_300m_stations": 1,
+  "nearby_500m_stations": 5,
+  "nearby_500m_chargers": 6,
+  "d1_rows_for_nearby_or_name": 5
+}

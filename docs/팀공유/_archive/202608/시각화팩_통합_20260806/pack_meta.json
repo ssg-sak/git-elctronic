@@ -1,0 +1,22 @@
+{
+  "stamp": "20260806",
+  "out": "docs/팀공유/시각화팩_통합_20260806",
+  "n_files": 39,
+  "sections": {
+    "01_시간대_가용률": 9,
+    "02_D1_최신화의미": 4,
+    "03_도시혼잡": 3,
+    "04_돌발_UTIC": 4,
+    "08_상태수집_패널차트": 12,
+    "05_주차장_유료무료": 3,
+    "06_피처적합도": 1,
+    "07_daily_checkpoint": 1,
+    "00_가이드": 2
+  },
+  "sources": {
+    "availability": "C:\\Users\\PC\\Desktop\\electronic-aimodel\\git-elctronic\\docs\\팀공유\\시간대_가용률_20260806",
+    "d1": "C:\\Users\\PC\\Desktop\\electronic-aimodel\\git-elctronic\\docs\\팀공유\\D1_최신화의미_20260806",
+    "congestion": "C:\\Users\\PC\\Desktop\\electronic-aimodel\\git-elctronic\\docs\\팀공유\\도시혼잡_시계열_20260806",
+    "utic": "C:\\Users\\PC\\Desktop\\electronic-aimodel\\git-elctronic\\docs\\팀공유\\돌발_UTIC_분석_20260806"
+  }
+}

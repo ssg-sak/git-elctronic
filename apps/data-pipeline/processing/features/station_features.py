@@ -235,6 +235,26 @@ def aggregate_observation_freshness(
     return out.reset_index(drop=True)
 
 
+def observation_state(
+    observed_count: pd.Series,
+    reliability_grade_effective: pd.Series,
+) -> pd.Series:
+    """Separate unobserved vs stale for UI/② (does not change reliability_grade*).
+
+    UNOBSERVED — no charger status observed at as_of
+    FRESH      — effective grade HIGH (≤5 min)
+    NORMAL     — effective grade NORMAL (≤15 min)
+    STALE      — observed but CHECK_REQUIRED (or unknown)
+    """
+    obs = pd.to_numeric(observed_count, errors="coerce").fillna(0)
+    grade = reliability_grade_effective.fillna("CHECK_REQUIRED").astype(str)
+    out = pd.Series("STALE", index=observed_count.index, dtype=object)
+    out = out.mask(obs <= 0, "UNOBSERVED")
+    out = out.mask((obs > 0) & grade.eq("HIGH"), "FRESH")
+    out = out.mask((obs > 0) & grade.eq("NORMAL"), "NORMAL")
+    return out
+
+
 def aggregate_reliability_combined(
     df_chargers: pd.DataFrame,
 ) -> pd.DataFrame:

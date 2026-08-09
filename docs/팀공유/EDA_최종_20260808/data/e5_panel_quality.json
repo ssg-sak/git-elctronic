@@ -1,0 +1,16 @@
+{
+  "analysis_date": "2026-08-09 08:49:45",
+  "total_rows": 8673877,
+  "total_stations": 3741,
+  "total_segments": 28994,
+  "segment_duration_mean_min": 2907.413683290796,
+  "segment_duration_median_min": 546.3,
+  "segment_duration_max_min": 20368.65,
+  "ticks_per_segment_mean": 299.16110229702696,
+  "total_gaps_gt_25m": 25253,
+  "gap_duration_mean_min": 954.9839108224767,
+  "gap_duration_median_min": 671.9833333333333,
+  "gap_duration_max_min": 29411.216666666667,
+  "panel_start": "2026-07-17 13:41:56",
+  "panel_end": "2026-08-08 11:17:46"
+}

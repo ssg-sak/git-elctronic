@@ -12,12 +12,14 @@ EXTRACTED = Path(__file__).resolve().parents[4] / "docs" / "data" / "extracted"
 
 
 def test_merge_chargers_joins_status() -> None:
-    info = load_charger_info_csv(
-        EXTRACTED / "daegu_charger_info_20260717_194107.csv"
-    ).head(5)
-    status = load_charger_status_csv(
-        EXTRACTED / "daegu_charger_status_20260717_194107.csv"
-    ).head(5)
+    info_path = EXTRACTED / "charger" / "info" / "daegu_charger_info_20260717_194107.csv"
+    status_path = (
+        EXTRACTED / "charger" / "status" / "daegu_charger_status_20260717_194107.csv"
+    )
+    if not info_path.exists() or not status_path.exists():
+        pytest.skip("legacy extracted sample CSV 없음")
+    info = load_charger_info_csv(info_path).head(5)
+    status = load_charger_status_csv(status_path).head(5)
     merged = merge_chargers(info, status)
     assert "stat_updated_at" in merged.columns
     assert len(merged) == 5

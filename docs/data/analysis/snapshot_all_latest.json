@@ -1,0 +1,11 @@
+﻿{
+    "canonical_artifact":  "docs/data/analysis/snapshot_all_20260723",
+    "artifact_name_legacy":  "snapshot_all_20260723",
+    "as_of_kst":  "2026-07-30T09:49:47+09:00",
+    "latest_snapshot":  "2026-07-30 09:04:27",
+    "first_snapshot":  "2026-07-17 13:41:56",
+    "unique_snapshots":  1531,
+    "event_rows":  724521,
+    "panel_availability_mean":  0.6401888985575093,
+    "note":  "Folder name is retained for backward-compatible references; use this pointer for the current 湲곗???"
+}

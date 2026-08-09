@@ -1,0 +1,21 @@
+{
+  "role": "DA① real TMAP ETA table for public candidates",
+  "origin": {
+    "id": "dongdaegu",
+    "label": "동대구역 인근",
+    "lat": 35.8797,
+    "lng": 128.6284
+  },
+  "n_stations": 1848,
+  "tmap_ok": 1848,
+  "tmap_fail": 0,
+  "eta_min_median": 28.4,
+  "eta_min_p50": 28.4,
+  "eta_min_p90": 49.6,
+  "files": {
+    "latest_csv": "apps/data-pipeline/evaluation/results/datasets/station_tmap_eta_latest.csv",
+    "latest_parquet": "apps/data-pipeline/evaluation/results/datasets/station_tmap_eta_latest.parquet",
+    "work": "docs/data/analysis/station_tmap_eta_20260808"
+  },
+  "note": "Serve-time ranking still should re-call TMAP for final 3~5; this table is training/label/input pack."
+}
