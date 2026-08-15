@@ -1,6 +1,0 @@
-이 폴더의 표는 repo datasets/ 최신본을 복사한 것.
-원본: C:\Users\PC\Desktop\electronic-aimodel\git-elctronic\apps\data-pipeline\evaluation\results\datasets
-시간표 parquet ≈ 37MB · 라벨 ≈ 10MB 포함됨.
-tick 패널이 datasets에 없으면 누락(missing)으로 pack_meta에 기록.
-재빌드 전 컷오프: 현재표/시간표는 아직 2026-08-08 오전분일 수 있음.
-오늘(8/9) pull은 06_오늘_Lightsail_pull 참고 · 표 재생성은 별도.

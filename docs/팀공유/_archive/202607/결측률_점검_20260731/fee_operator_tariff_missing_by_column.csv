@@ -1,9 +1,0 @@
-﻿dataset,column,rows,missing,missing_pct,non_missing,non_missing_pct
-fee_operator_tariff,member_note,232,179,77.16,53,22.84
-fee_operator_tariff,nonmember_won_per_kwh,232,29,12.5,203,87.5
-fee_operator_tariff,member_won_per_kwh,232,2,0.86,230,99.14
-fee_operator_tariff,seq,232,0,0.0,232,100.0
-fee_operator_tariff,capacity_class,232,0,0.0,232,100.0
-fee_operator_tariff,fee_type,232,0,0.0,232,100.0
-fee_operator_tariff,operator_nm,232,0,0.0,232,100.0
-fee_operator_tariff,updated_at,232,0,0.0,232,100.0
