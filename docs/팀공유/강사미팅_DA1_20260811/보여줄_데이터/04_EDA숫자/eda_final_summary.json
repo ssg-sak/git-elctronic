@@ -1,0 +1,91 @@
+{
+  "stamp": "20260808",
+  "generated_at": "2026-08-09T08:50:56+09:00",
+  "panel_ts_min": "2026-07-17 13:41:56",
+  "panel_ts_max": "2026-08-08 11:17:46",
+  "d1_as_of": "2026-08-09T07:23:21+09:00",
+  "e1": {
+    "peak_hour": 11,
+    "trough_hour": 22,
+    "morning_8_11": 0.7909,
+    "evening_18_21": 0.6875
+  },
+  "e2": {
+    "provisional": true,
+    "weekday": 0.7236,
+    "weekend": 0.7021,
+    "calendar_dates_n": 23
+  },
+  "e3": {
+    "stations_total": 4210,
+    "buckets": [
+      {
+        "bucket": "1",
+        "stations": "729",
+        "total_chargers_mean": "1.0",
+        "unobserved_rate_mean": "0.1756",
+        "confirmed_rate": "0.7037",
+        "d1_avail_mean_observed": "0.8536",
+        "d1_avail_n": "601",
+        "d2_avail_mean": "0.8035",
+        "d2_stations_with_panel": "613"
+      },
+      {
+        "bucket": "2-3",
+        "stations": "1507",
+        "total_chargers_mean": "2.36",
+        "unobserved_rate_mean": "0.2252",
+        "confirmed_rate": "0.7658",
+        "d1_avail_mean_observed": "0.7793",
+        "d1_avail_n": "1253",
+        "d2_avail_mean": "0.7656",
+        "d2_stations_with_panel": "1270"
+      },
+      {
+        "bucket": "4-6",
+        "stations": "882",
+        "total_chargers_mean": "4.89",
+        "unobserved_rate_mean": "0.1643",
+        "confirmed_rate": "0.8639",
+        "d1_avail_mean_observed": "0.6991",
+        "d1_avail_n": "795",
+        "d2_avail_mean": "0.7053",
+        "d2_stations_with_panel": "802"
+      },
+      {
+        "bucket": "7+",
+        "stations": "1092",
+        "total_chargers_mean": "15.36",
+        "unobserved_rate_mean": "0.1559",
+        "confirmed_rate": "0.9167",
+        "d1_avail_mean_observed": "0.6487",
+        "d1_avail_n": "1007",
+        "d2_avail_mean": "0.6664",
+        "d2_stations_with_panel": "1011"
+      }
+    ]
+  },
+  "e4": {
+    "high": 176,
+    "normal": 181,
+    "check": 3299,
+    "unobserved": 554
+  },
+  "e5": {
+    "total_rows": 8673877,
+    "total_stations": 3741,
+    "panel_start": "2026-07-17 13:41:56",
+    "panel_end": "2026-08-08 11:17:46",
+    "gaps_gt_25m": 25253
+  },
+  "figures": [
+    "01_시간대_가용률_프로필.png",
+    "02_시간대_히트맵.png",
+    "03_시간대_가용_패널.png",
+    "04_신뢰도_등급.png",
+    "05_수집_볼륨.png",
+    "06_혼잡_vs_가용.png",
+    "07_혼잡_시간대.png",
+    "08_주차_점유_시간대.png"
+  ]
+}

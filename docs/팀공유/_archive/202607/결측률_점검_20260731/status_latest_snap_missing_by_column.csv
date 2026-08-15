@@ -1,9 +1,0 @@
-﻿dataset,column,rows,missing,missing_pct,non_missing,non_missing_pct
-status_latest_snap,statNm,618,618,100.0,0,0.0
-status_latest_snap,statId,618,0,0.0,618,100.0
-status_latest_snap,chgerId,618,0,0.0,618,100.0
-status_latest_snap,stat,618,0,0.0,618,100.0
-status_latest_snap,statUpdDt,618,0,0.0,618,100.0
-status_latest_snap,fetchedAt,618,0,0.0,618,100.0
-status_latest_snap,snapshotId,618,0,0.0,618,100.0
-status_latest_snap,pageNo,618,0,0.0,618,100.0

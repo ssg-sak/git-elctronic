@@ -121,7 +121,7 @@ EDA_최종_20260809/
 재생성:
 ```
 # E1~E5 재실행 후
-python apps/data-pipeline/processing/tools/share/pack_eda_final_20260808.py
+`python apps/data-pipeline/processing/tools/share/copy_availability_share.py`
 ```
 
 ```
