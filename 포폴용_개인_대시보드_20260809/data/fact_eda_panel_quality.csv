@@ -1,2 +1,0 @@
-﻿analysis_date,total_rows,total_stations,total_segments,segment_duration_mean_min,segment_duration_median_min,segment_duration_max_min,ticks_per_segment_mean,total_gaps_gt_25m,gap_duration_mean_min,gap_duration_median_min,gap_duration_max_min,panel_start,panel_end
-2026-08-09 08:49:45,8673877,3741,28994,2907.413683290796,546.3,20368.65,299.16110229702696,25253,954.9839108224767,671.9833333333333,29411.216666666667,2026-07-17 13:41:56,2026-08-08 11:17:46

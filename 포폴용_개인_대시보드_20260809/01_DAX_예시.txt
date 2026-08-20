@@ -1,4 +1,0 @@
-// 카드용 예시 (열 이름은 가져온 뒤 맞게 수정)
-KPI_OK_수 = CALCULATE(COUNTROWS(fact_kpi), fact_kpi[status]="OK")
-현재표_as_of = SELECTEDVALUE(dim_meta[as_of])
-가용_오전 = CALCULATE(AVERAGE(fact_eda_hour[avail_mean]), fact_eda_hour[hour]>=8, fact_eda_hour[hour]<=11)

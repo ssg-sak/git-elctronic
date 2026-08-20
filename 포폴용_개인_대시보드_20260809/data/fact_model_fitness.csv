@@ -1,2 +1,0 @@
-﻿status,fitness,overfit,final_features,overfit_overall,test_pr_auc,test_neg_recall,test_brier
-DA1_MODEL_FITNESS_AND_OVERFIT_COMPLETE,hgb_arrival_eta_fitness_20260808,docs/data/analysis/hgb_overfit_risk_20260808,"[""available_count"", ""total_chargers"", ""known_charger_count"", ""observation_coverage"", ""hour"", ""weekday"", ""avail_rate_lag_15m"", ""avail_rate_lag_60m"", ""tmap_eta_min""]",PASS,0.9812916256968585,0.8337172473365966,0.16031623550651145
