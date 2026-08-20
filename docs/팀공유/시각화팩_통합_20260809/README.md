@@ -8,89 +8,28 @@
 | 항목 | 내용 |
 |---|---|
 | **작성** | AI·데이터 ① |
-| **생성** | 2026-08-09T13:59:47+09:00 |
-| **용도** | 팀 공유용 그림 모음 (점수/모델 아님) |
+| **용도** | 팀 공유용 그림 **인덱스** (PNG 본체는 주제 폴더에만 둠 · 2026-08-17 중복 정리) |
 
 ## 해석 보고서
 
 그림 본문 해석(보고서식): [`../시각자료_해석보고서_20260810.md`](../시각자료_해석보고서_20260810.md)
 
-## 보는 순서
+## 보는 순서 → 정본 위치
 
-1. `01_시간대_가용률` — 패널 가용률·히트맵·공용/주거
-2. `02_D1_최신화의미` — 공용/제한·주차·돌발 커버
-3. `03_도시혼잡` — 소통 혼잡 시계열
-4. `04_돌발_UTIC` — 돌발 건수·조인
-5. `05_주차장_유료무료` — Team5 유료/무료
-6. `06_피처적합도` — target_available 변별력
-7. `07_daily_checkpoint` — 당일 수집 health
-8. `08_상태수집_패널차트` — 편향/패널·관측분포·데이터가치 공식 차트
-9. `00_가이드` — 계약·한계 문서
+PNG는 이 폴더에 다시 복사하지 않는다. 아래 주제 폴더 `figures/`를 연다.
 
-## 폴더별 파일
-
-### 00_가이드
-
-- `README.md`
-- `주차_realtime_428_한계_20260803.md`
-- (구 KPI 핸드오프 사본이 있으면 참고용 · 정본 숫자는 역할 보고·`kpi_report_latest.json`)
-
-### 01_시간대_가용률
-
-- `01_availability_timeseries.png`
-- `02_gap_distribution.png`
-- `03_by_date.png`
-- `04_hourly_heatmap.png`
-- `05_reliability_grades.png`
-- `06_reliability_by_day.png`
-- `07_coverage_map.png`
-- `08_hourly_union_profile.png`
-- `09_hourly_public_vs_residential.png`
-
-### 02_D1_최신화의미
-
-- `01_public_vs_restricted.png`
-- `02_public_availability.png`
-- `03_usage_level.png`
-- `04_parking_incident_coverage.png`
-
-### 03_도시혼잡
-
-- `01_congestion_timeseries.png`
-- `02_hourly_congestion_profile.png`
-- `03_hourly_vs_availability.png`
-
-### 04_돌발_UTIC
-
-- `01_incident_count_by_tick.png`
-- `02_type_and_roads.png`
-- `03_station_join_coverage.png`
-- `04_incident_map.png`
-
-### 05_주차장_유료무료
-
-- `01_parking_paid_free_pie.png`
-- `02_parking_paid_free_bar.png`
-- `03_parking_paid_free_map.png`
-
-### 07_daily_checkpoint
-
-- `daily_checkpoint.png`
-
-### 08_상태수집_패널차트
-
-- `chart_availability_panel.png`
-- `chart_bias_comparison.png`
-- `chart_collection_volume.png`
-- `chart_coverage_map.png`
-- `chart_day_comparison.png`
-- `chart_day_comparison_panel.png`
-- `chart_hourly_availability.png`
-- `chart_observation_histogram.png`
-- `chart_reliability.png`
-- `chart_status_by_hour.png`
-- `dashboard_status_collection.png`
-- `status_data_value_20260718.png`
+| 순 | 주제 | 정본 |
+|---|---|---|
+| 1 | 시간대 가용률 | [`../시간대_가용률_20260809/figures/`](../시간대_가용률_20260809/figures/) |
+| 2 | D1 최신화 의미 | [`../D1_최신화의미_20260809/figures/`](../D1_최신화의미_20260809/figures/) |
+| 3 | 도시 혼잡 | [`../도시혼잡_시계열_20260809/figures/`](../도시혼잡_시계열_20260809/figures/) |
+| 4 | 돌발 UTIC | [`../돌발_UTIC_분석_20260809/figures/`](../돌발_UTIC_분석_20260809/figures/) |
+| 5 | 주차장 유료/무료 | 시각화팩 하위는 비움 · Team5 EDA·관련 주제 폴더 참고 |
+| 6 | 피처 적합도 | [`../피처선정_최종_HGB_도착ETA_20260808/figures/`](../피처선정_최종_HGB_도착ETA_20260808/figures/) |
+| 7 | daily checkpoint | 강사 시연 [`../강사미팅_DA1_20260811/보여줄_데이터/05_수집패널/`](../강사미팅_DA1_20260811/보여줄_데이터/05_수집패널/) |
+| 8 | 상태수집 패널차트 | [`../상태수집_패널차트_20260809/figures/`](../상태수집_패널차트_20260809/figures/) |
+| 9 | EDA 요약 | [`../EDA_최종_20260809/figures/`](../EDA_최종_20260809/figures/) |
+| — | 가이드 md | [`00_가이드/`](./00_가이드/) |
 
 ## 주의
 
@@ -99,5 +38,5 @@
 - 피처 AUC는 단변량 — 모델 우승자 선정 ≠ ①
 
 ```
-DA① | viz pack | 20260809
+DA① | viz pack index | 20260809
 ```

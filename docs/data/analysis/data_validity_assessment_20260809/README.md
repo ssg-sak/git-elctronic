@@ -28,6 +28,9 @@
 
 ![자동 검사 판정](figures/02_check_verdicts.png)
 
+> **WARN이 뭔지 쉽게:** [`WARN의미_쉽게읽기.md`](./WARN의미_쉽게읽기.md)  
+> → PASS/WARN/FAIL 차이 · 30초 멘트 · WARN 10건 쉬운 표
+
 ## WARN / FAIL의 의미
 
 | domain | check_id | status | observed | interpretation |
