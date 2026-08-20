@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # Deploy status (5m) + Daegu traffic (15m) to Lightsail / AWS.
 # From repo root:
-#   export AWS_HOST=52.79.224.112
+#   export AWS_HOST=3.36.50.99
 #   export AWS_USER=ubuntu
 #   export AWS_KEY=~/.ssh/LightsailDefaultKey-ap-northeast-2.pem
 #   bash infra/deployment/deploy_loops_lightsail.sh
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-HOST="${AWS_HOST:-52.79.224.112}"
+HOST="${AWS_HOST:-3.36.50.99}"
 USER="${AWS_USER:-ubuntu}"
 KEY="${AWS_KEY:-}"
 REMOTE_DIR="${AWS_REMOTE_DIR:-/opt/ev-safecharge}"

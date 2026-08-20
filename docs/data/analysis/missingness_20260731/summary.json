@@ -1,0 +1,667 @@
+{
+  "generated_at": "2026-07-31T09:02:25.172208+09:00",
+  "stamp": "20260731",
+  "datasets": [
+    {
+      "name": "D1_station_feature_snapshot",
+      "path": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest.csv",
+      "rows": 4210,
+      "cols": 55,
+      "bands": {
+        "complete_0pct": 30,
+        "low_lt5": 1,
+        "mid_5_50": 10,
+        "high_50_90": 5,
+        "almost_all_ge90": 9
+      },
+      "top_missing": [
+        {
+          "column": "eta_minutes",
+          "missing": 4210,
+          "missing_pct": 100.0
+        },
+        {
+          "column": "usage_weekend_avg",
+          "missing": 4012,
+          "missing_pct": 95.3
+        },
+        {
+          "column": "usage_weekday_avg",
+          "missing": 4010,
+          "missing_pct": 95.25
+        },
+        {
+          "column": "sessions_per_charger",
+          "missing": 4010,
+          "missing_pct": 95.25
+        },
+        {
+          "column": "usage_charger_type",
+          "missing": 4010,
+          "missing_pct": 95.25
+        },
+        {
+          "column": "usage_level",
+          "missing": 4010,
+          "missing_pct": 95.25
+        },
+        {
+          "column": "nearest_incident_m",
+          "missing": 3923,
+          "missing_pct": 93.18
+        },
+        {
+          "column": "parking_congestion_status",
+          "missing": 3795,
+          "missing_pct": 90.14
+        },
+        {
+          "column": "parking_occupancy_rate",
+          "missing": 3793,
+          "missing_pct": 90.1
+        },
+        {
+          "column": "parking_realtime_ticks_1h",
+          "missing": 3782,
+          "missing_pct": 89.83
+        },
+        {
+          "column": "parking_remaining_std_1h",
+          "missing": 3782,
+          "missing_pct": 89.83
+        },
+        {
+          "column": "parking_remaining_spaces",
+          "missing": 3782,
+          "missing_pct": 89.83
+        },
+        {
+          "column": "parking_remaining_delta_1h",
+          "missing": 3782,
+          "missing_pct": 89.83
+        },
+        {
+          "column": "parking_total_spaces",
+          "missing": 3782,
+          "missing_pct": 89.83
+        },
+        {
+          "column": "link_cong_grade",
+          "missing": 1494,
+          "missing_pct": 35.49
+        },
+        {
+          "column": "nearest_link_id",
+          "missing": 1494,
+          "missing_pct": 35.49
+        },
+        {
+          "column": "link_speed_kph",
+          "missing": 1494,
+          "missing_pct": 35.49
+        },
+        {
+          "column": "nearest_link_m",
+          "missing": 1494,
+          "missing_pct": 35.49
+        },
+        {
+          "column": "link_cong_grade_nm",
+          "missing": 1494,
+          "missing_pct": 35.49
+        },
+        {
+          "column": "availability_ratio_observed",
+          "missing": 631,
+          "missing_pct": 14.99
+        }
+      ],
+      "key_columns": [
+        {
+          "column": "statId",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "lat",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "lng",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "coord_ok",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "available_count",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "observed_count",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "availability_ratio_observed",
+          "missing_pct": 14.99,
+          "missing": 631
+        },
+        {
+          "column": "status_age_minutes",
+          "missing_pct": 14.99,
+          "missing": 631
+        },
+        {
+          "column": "reliability_grade_effective",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "observation_state",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "usage_level",
+          "missing_pct": 95.25,
+          "missing": 4010
+        },
+        {
+          "column": "eta_minutes",
+          "missing_pct": 100.0,
+          "missing": 4210
+        },
+        {
+          "column": "nearest_parking_m",
+          "missing_pct": 6.84,
+          "missing": 288
+        },
+        {
+          "column": "parking_remaining_spaces",
+          "missing_pct": 89.83,
+          "missing": 3782
+        },
+        {
+          "column": "parking_has_realtime",
+          "missing_pct": 1.64,
+          "missing": 69
+        },
+        {
+          "column": "nearest_incident_m",
+          "missing_pct": 93.18,
+          "missing": 3923
+        },
+        {
+          "column": "nearest_link_id",
+          "missing_pct": 35.49,
+          "missing": 1494
+        },
+        {
+          "column": "link_speed_kph",
+          "missing_pct": 35.49,
+          "missing": 1494
+        }
+      ],
+      "detail_csv": "docs/data/analysis/missingness_20260731/D1_station_feature_snapshot_missing_by_column.csv"
+    },
+    {
+      "name": "fee_station_operator_hint",
+      "path": "docs/data/analysis/fee_operator_evorkr_probe_20260731/daegu_station_operator_fee_hint.csv",
+      "rows": 4210,
+      "cols": 12,
+      "bands": {
+        "complete_0pct": 6,
+        "low_lt5": 5,
+        "mid_5_50": 1,
+        "high_50_90": 0,
+        "almost_all_ge90": 0
+      },
+      "top_missing": [
+        {
+          "column": "nonmember_won_sample",
+          "missing": 1013,
+          "missing_pct": 24.06
+        },
+        {
+          "column": "member_won_sample",
+          "missing": 124,
+          "missing_pct": 2.95
+        },
+        {
+          "column": "fee_type_sample",
+          "missing": 123,
+          "missing_pct": 2.92
+        },
+        {
+          "column": "fee_operator_nm",
+          "missing": 123,
+          "missing_pct": 2.92
+        },
+        {
+          "column": "capacity_class_sample",
+          "missing": 123,
+          "missing_pct": 2.92
+        },
+        {
+          "column": "fee_updated_at_sample",
+          "missing": 123,
+          "missing_pct": 2.92
+        },
+        {
+          "column": "busiId",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "statId",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "bnm",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "busiNm",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "fee_match_level",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "match_name",
+          "missing": 0,
+          "missing_pct": 0.0
+        }
+      ],
+      "key_columns": [
+        {
+          "column": "statId",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "busiId",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "busiNm",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "fee_operator_nm",
+          "missing_pct": 2.92,
+          "missing": 123
+        },
+        {
+          "column": "fee_match_level",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "member_won_sample",
+          "missing_pct": 2.95,
+          "missing": 124
+        },
+        {
+          "column": "nonmember_won_sample",
+          "missing_pct": 24.06,
+          "missing": 1013
+        },
+        {
+          "column": "capacity_class_sample",
+          "missing_pct": 2.92,
+          "missing": 123
+        }
+      ],
+      "detail_csv": "docs/data/analysis/missingness_20260731/fee_station_operator_hint_missing_by_column.csv"
+    },
+    {
+      "name": "fee_operator_tariff",
+      "path": "docs/data/extracted/fee/fee_tariff_ref_operator_evorkr_20260731.csv",
+      "rows": 232,
+      "cols": 8,
+      "bands": {
+        "complete_0pct": 5,
+        "low_lt5": 1,
+        "mid_5_50": 1,
+        "high_50_90": 1,
+        "almost_all_ge90": 0
+      },
+      "top_missing": [
+        {
+          "column": "member_note",
+          "missing": 179,
+          "missing_pct": 77.16
+        },
+        {
+          "column": "nonmember_won_per_kwh",
+          "missing": 29,
+          "missing_pct": 12.5
+        },
+        {
+          "column": "member_won_per_kwh",
+          "missing": 2,
+          "missing_pct": 0.86
+        },
+        {
+          "column": "seq",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "capacity_class",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "fee_type",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "operator_nm",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "updated_at",
+          "missing": 0,
+          "missing_pct": 0.0
+        }
+      ],
+      "key_columns": [
+        {
+          "column": "operator_nm",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "capacity_class",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "member_won_per_kwh",
+          "missing_pct": 0.86,
+          "missing": 2
+        },
+        {
+          "column": "nonmember_won_per_kwh",
+          "missing_pct": 12.5,
+          "missing": 29
+        },
+        {
+          "column": "member_note",
+          "missing_pct": 77.16,
+          "missing": 179
+        },
+        {
+          "column": "updated_at",
+          "missing_pct": 0.0,
+          "missing": 0
+        }
+      ],
+      "detail_csv": "docs/data/analysis/missingness_20260731/fee_operator_tariff_missing_by_column.csv"
+    },
+    {
+      "name": "status_latest_snap",
+      "path": "docs/data/loops/loop1/snapshots/20260731/daegu_charger_status_20260731_081211.csv",
+      "rows": 618,
+      "cols": 8,
+      "bands": {
+        "complete_0pct": 7,
+        "low_lt5": 0,
+        "mid_5_50": 0,
+        "high_50_90": 0,
+        "almost_all_ge90": 1
+      },
+      "top_missing": [
+        {
+          "column": "statNm",
+          "missing": 618,
+          "missing_pct": 100.0
+        },
+        {
+          "column": "statId",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "chgerId",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "stat",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "statUpdDt",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "fetchedAt",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "snapshotId",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "pageNo",
+          "missing": 0,
+          "missing_pct": 0.0
+        }
+      ],
+      "key_columns": [
+        {
+          "column": "statId",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "chgerId",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "stat",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "statUpdDt",
+          "missing_pct": 0.0,
+          "missing": 0
+        },
+        {
+          "column": "lat",
+          "missing_pct": null,
+          "note": "not in dataset"
+        },
+        {
+          "column": "lng",
+          "missing_pct": null,
+          "note": "not in dataset"
+        },
+        {
+          "column": "busiId",
+          "missing_pct": null,
+          "note": "not in dataset"
+        }
+      ],
+      "detail_csv": "docs/data/analysis/missingness_20260731/status_latest_snap_missing_by_column.csv"
+    },
+    {
+      "name": "parking_realtime_latest_file",
+      "path": "docs/data/extracted/parking/incremental/20260731/team5_parking_incremental_20260731_081849/parking_realtime_status_new.csv",
+      "rows": 11880,
+      "cols": 13,
+      "bands": {
+        "complete_0pct": 11,
+        "low_lt5": 2,
+        "mid_5_50": 0,
+        "high_50_90": 0,
+        "almost_all_ge90": 0
+      },
+      "top_missing": [
+        {
+          "column": "congestion_status",
+          "missing": 113,
+          "missing_pct": 0.95
+        },
+        {
+          "column": "occupancy_rate",
+          "missing": 110,
+          "missing_pct": 0.93
+        },
+        {
+          "column": "pklt_id",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "source_raw_id",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "id",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "pklt_se_cd",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "collected_at",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "floor_count",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "pklt_type_cd",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "total_spaces",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "remaining_spaces",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "occupied_spaces",
+          "missing": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "raw_item",
+          "missing": 0,
+          "missing_pct": 0.0
+        }
+      ],
+      "key_columns": [],
+      "detail_csv": "docs/data/analysis/missingness_20260731/parking_realtime_latest_file_missing_by_column.csv"
+    }
+  ],
+  "d1_family_summary": [
+    {
+      "family": "eta",
+      "cols": 1,
+      "mean_missing_pct": 100.0,
+      "max_missing_pct": 100.0,
+      "min_missing_pct": 100.0
+    },
+    {
+      "family": "incident",
+      "cols": 1,
+      "mean_missing_pct": 93.18,
+      "max_missing_pct": 93.18,
+      "min_missing_pct": 93.18
+    },
+    {
+      "family": "parking_1h",
+      "cols": 3,
+      "mean_missing_pct": 89.83,
+      "max_missing_pct": 89.83,
+      "min_missing_pct": 89.83
+    },
+    {
+      "family": "usage_history",
+      "cols": 3,
+      "mean_missing_pct": 63.5,
+      "max_missing_pct": 95.25,
+      "min_missing_pct": 0.0
+    },
+    {
+      "family": "parking",
+      "cols": 5,
+      "mean_missing_pct": 55.65,
+      "max_missing_pct": 90.1,
+      "min_missing_pct": 1.64
+    },
+    {
+      "family": "linkspeed",
+      "cols": 5,
+      "mean_missing_pct": 35.49,
+      "max_missing_pct": 35.49,
+      "min_missing_pct": 35.49
+    },
+    {
+      "family": "status_asof",
+      "cols": 7,
+      "mean_missing_pct": 4.28,
+      "max_missing_pct": 14.99,
+      "min_missing_pct": 0.0
+    },
+    {
+      "family": "access",
+      "cols": 4,
+      "mean_missing_pct": 0.0,
+      "max_missing_pct": 0.0,
+      "min_missing_pct": 0.0
+    },
+    {
+      "family": "identity",
+      "cols": 6,
+      "mean_missing_pct": 0.0,
+      "max_missing_pct": 0.0,
+      "min_missing_pct": 0.0
+    },
+    {
+      "family": "poi",
+      "cols": 1,
+      "mean_missing_pct": 0.0,
+      "max_missing_pct": 0.0,
+      "min_missing_pct": 0.0
+    }
+  ]
+}

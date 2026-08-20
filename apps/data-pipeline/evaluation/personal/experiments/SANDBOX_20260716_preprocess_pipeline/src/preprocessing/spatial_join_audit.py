@@ -128,6 +128,8 @@ def main() -> int:
     tour = pd.read_csv(PROC / "tour_attractions_clean.csv", dtype=str)
     parks = pd.read_csv(PROC / "walk_parks_clean.csv", dtype=str)
     city_nocoord = pd.read_csv(PROC / "poi_city_tour_no_coords.csv", dtype=str)
+    city_geocoded_path = PROC / "poi_city_tour_geocoded.csv"
+    city_geocoded = pd.read_csv(city_geocoded_path, dtype=str) if city_geocoded_path.exists() else pd.DataFrame()
     tour_city = pd.read_csv(PROC / "poi_tour_city_match_candidates.csv", dtype=str)
 
     # normalize parking/traffic coords
@@ -146,6 +148,11 @@ def main() -> int:
     if "lat" not in tour.columns and "mapy" in tour.columns:
         tour = tour.assign(lat=pd.to_numeric(tour["mapy"], errors="coerce"), lng=pd.to_numeric(tour["mapx"], errors="coerce"))
         layers[1] = ("tour_api", tour, "lat", "lng", "contentid", "title")
+
+    if not city_geocoded.empty and "lat" in city_geocoded.columns:
+        valid_city = city_geocoded[city_geocoded["has_coords"].astype(str) == "True"].copy()
+        if not valid_city.empty:
+            layers.append(("city_tour_geocoded", valid_city, "lat", "lng", "poi_id", "name"))
 
     summaries = []
     fail_frames = []
@@ -169,13 +176,18 @@ def main() -> int:
         summaries.append(summarize(f"parking_mock@{r}m", res, n))
 
     # city_tour: all fail spatial (no coords)
+    if not city_geocoded.empty:
+        still_nocoord = city_geocoded[city_geocoded["has_coords"].astype(str) != "True"]
+    else:
+        still_nocoord = city_nocoord
+        
     city_fail = pd.DataFrame(
         {
             "layer": "city_tour",
             "radius_m": "",
             "reason": "NO_COORDINATES",
-            "poi_id": city_nocoord.get("poi_id", pd.Series(dtype=str)),
-            "name": city_nocoord.get("name", city_nocoord.get("attractname", pd.Series(dtype=str))),
+            "poi_id": still_nocoord.get("poi_id", pd.Series(dtype=str)),
+            "name": still_nocoord.get("name", still_nocoord.get("attractname", pd.Series(dtype=str))),
         }
     )
     city_fail.to_csv(OUT_DIR / "fail_city_tour_no_coords.csv", index=False, encoding="utf-8-sig")

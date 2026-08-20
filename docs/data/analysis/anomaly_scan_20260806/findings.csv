@@ -1,0 +1,7 @@
+﻿severity,kind,title,n,detail,action
+medium,schema,total_chargers==99 (상한 의심),2,아파트 단지 실측일 수도 있으나 99 고정이 반복되면 수집/표기 상한 가능,info CSV·단지 메타와 total 교차확인
+low,scope,군위·북부 좌표(lat>36.1),61,행정구역 편입 소 — 데이터 오류 아님. MVP 반경 필터 시 제외 후보,추천 반경/도시 코어 정책에서 명시
+high,parking,주차 1:N 조인 증폭(동일 lot Δ공유),11,|Δremaining_1h|≥40 인 실시간 주차 lot이 여러 충전소에 복제됨. 최대 fanout lot당 31소,주차는 AUX only — 점수 금지. lot 단위로 dedupe 후 해석
+medium,coverage,공용 추천후보인데 UNOBSERVED,285,변경분 수집에서 안 잡힌 공용소 — 가용정보 부재,status 루프 커버리지/인포 동기화 점검
+medium,usage,충전기≤2 + sessions_per_charger 상위1%,2,희소 이력 과적합 위험(이미 HOLD_SPARSE 정책과 정합),
+low,ops,초대형 단지(충전기≥60),13,실측 가능성 높음(아파트). 변경분 관측 편향으로 available 해석 주의,

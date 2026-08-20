@@ -1,0 +1,57 @@
+{
+  "attach": {
+    "role": "DA① derived_v0 attach on arrival labels",
+    "as_of_kst": "2026-08-08T13:25:04+09:00",
+    "rows": 2521157,
+    "stations": 1620,
+    "retain_features": [
+      "single_charger",
+      "horizon_minutes",
+      "eta_bucket"
+    ],
+    "horizon_vs_eta_bucket": "택1 — 권장 horizon_minutes; eta_bucket는 대안",
+    "exclude_from_training": [
+      "eta_is_proxy",
+      "slack_chargers",
+      "age_x_eta"
+    ],
+    "hold_diagnostic": [
+      "avail_ratio_t0"
+    ],
+    "files": {
+      "labels_with_derived": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived.parquet",
+      "sample": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived_sample.csv",
+      "analysis": "docs/data/analysis/derived_v0_20260808"
+    },
+    "doc": "docs/팀공유/파생변수_검토_도착라벨_20260806.md",
+    "d1_derived": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_with_eta_derived_latest.csv",
+    "schema": "apps/data-pipeline/evaluation/results/datasets/derived_v0_schema.json"
+  },
+  "hold_recheck": {
+    "sample_n": 861280,
+    "sample_pos_rate": 0.9375,
+    "avail_ratio_t0": {
+      "auc": 0.45465207742218816,
+      "corr_with_current_available": -0.0062336383014984596,
+      "verdict": "HOLD_KEEP — weak vs available_count; do not add to MVP yet"
+    },
+    "single_charger": {
+      "auc": 0.3363496191714658,
+      "rate_multi": 0.9644340445654744,
+      "rate_single": 0.8709041427275477,
+      "verdict": "RETAIN"
+    },
+    "eta_bucket_vs_horizon": {
+      "auc_horizon": 0.45235445510469924,
+      "note": "택1 — prefer horizon_minutes already in schema"
+    },
+    "stale_unobserved": {
+      "verdict": "HOLD_BLOCKED",
+      "reason": "station_feature_panel has no observation_age_minutes / observation_state per tick; cannot validate at feature_as_of without panel schema change"
+    },
+    "eta_is_proxy": {
+      "auc": null,
+      "verdict": "EXCLUDE_TRAINING — eval stratification only"
+    }
+  }
+}

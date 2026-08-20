@@ -1,77 +1,69 @@
 {
-  "stations_ok_coords": 4199,
+  "stations_ok_coords": 4201,
   "primary_radius_m": 1000,
   "layer_summaries": [
     {
       "layer": "parking_mock",
       "radius_m": 1000,
-      "stations": 4199,
-      "matched": 604,
-      "unmatched": 3595,
-      "match_rate_pct": 14.38
-    },
-    {
-      "layer": "traffic_link_mock",
-      "radius_m": 1000,
-      "stations": 4199,
-      "matched": 773,
-      "unmatched": 3426,
-      "match_rate_pct": 18.41
-    },
-    {
-      "layer": "traffic_incident_mock",
-      "radius_m": 1000,
-      "stations": 4199,
-      "matched": 650,
-      "unmatched": 3549,
-      "match_rate_pct": 15.48
+      "stations": 4201,
+      "matched": 2201,
+      "unmatched": 2000,
+      "match_rate_pct": 52.39
     },
     {
       "layer": "tour_api",
       "radius_m": 1000,
-      "stations": 4199,
-      "matched": 1113,
+      "stations": 4201,
+      "matched": 1115,
       "unmatched": 3086,
-      "match_rate_pct": 26.51
+      "match_rate_pct": 26.54
     },
     {
       "layer": "walk_parks",
       "radius_m": 1000,
-      "stations": 4199,
-      "matched": 2637,
-      "unmatched": 1562,
-      "match_rate_pct": 62.8
+      "stations": 4201,
+      "matched": 2638,
+      "unmatched": 1563,
+      "match_rate_pct": 62.79
+    },
+    {
+      "layer": "city_tour_geocoded",
+      "radius_m": 1000,
+      "stations": 4201,
+      "matched": 2318,
+      "unmatched": 1883,
+      "match_rate_pct": 55.18
     },
     {
       "layer": "parking_mock@500m",
       "radius_m": 500,
-      "stations": 4199,
-      "matched": 186,
-      "unmatched": 4013,
-      "match_rate_pct": 4.43
+      "stations": 4201,
+      "matched": 1792,
+      "unmatched": 2409,
+      "match_rate_pct": 42.66
     },
     {
       "layer": "parking_mock@1000m",
       "radius_m": 1000,
-      "stations": 4199,
-      "matched": 604,
-      "unmatched": 3595,
-      "match_rate_pct": 14.38
+      "stations": 4201,
+      "matched": 2201,
+      "unmatched": 2000,
+      "match_rate_pct": 52.39
     },
     {
       "layer": "parking_mock@3000m",
       "radius_m": 3000,
-      "stations": 4199,
-      "matched": 2238,
-      "unmatched": 1961,
-      "match_rate_pct": 53.3
+      "stations": 4201,
+      "matched": 3165,
+      "unmatched": 1036,
+      "match_rate_pct": 75.34
     }
   ],
   "name_match": {
     "layer": "tour_city_name_match",
-    "candidates": 16,
+    "candidates": 25,
     "auto_confirmed": 0,
-    "needs_review": 7,
+    "needs_review": 12,
     "tour_with_coords": 57,
     "city_total": 239,
     "city_spatial_match_rate_pct": 0.0,

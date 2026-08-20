@@ -2,5 +2,15 @@
   "name": "@ev-safecharge/web",
   "version": "0.1.0",
   "private": true,
-  "description": "EV SafeCharge 프론트엔드 (Next.js). 아직 초기화 전 — `npx create-next-app@latest . --ts` 로 초기화 후 이 파일이 갱신됩니다."
+  "description": "EV SafeCharge 프론트엔드 (Next.js).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
 }

@@ -1,7 +1,9 @@
-"""수집 스케줄러: getChargerInfo(매일 03:00) · getChargerStatus(3분 간격) · 카카오 로컬(매일 03:30).
+"""수집 스케줄러: getChargerInfo(매일 03:00) · getChargerStatus(5분 간격) · 카카오 로컬(매일 03:30).
 
 실행: python scheduler.py
 시작 시 getChargerInfo를 1회 즉시 실행해 충전소 목록을 부트스트랩한다.
+
+주의: SANDBOX status 루프와 동시에 돌리면 EvCharger 일 한도를 이중으로 쓴다. 둘 중 하나만.
 """
 from __future__ import annotations
 
@@ -11,6 +13,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
 
+import config
 import db
 import ev_charger_info
 import ev_charger_status
@@ -43,16 +46,27 @@ def main() -> None:
     db.init_db()
     logging.getLogger("apscheduler").setLevel(logging.WARNING)
 
+    interval = int(config.STATUS_INTERVAL_MINUTES)
+    period = int(config.STATUS_PERIOD_MINUTES)
+
     logger.info("초기 부트스트랩: getChargerInfo 최초 1회 실행")
     job_charger_info()
     job_charger_status()
 
     scheduler = BlockingScheduler(timezone="Asia/Seoul")
     scheduler.add_job(job_charger_info, CronTrigger(hour=3, minute=0), id="charger_info")
-    scheduler.add_job(job_charger_status, IntervalTrigger(minutes=3), id="charger_status")
+    scheduler.add_job(
+        job_charger_status,
+        IntervalTrigger(minutes=interval),
+        id="charger_status",
+    )
     scheduler.add_job(job_kakao_local, CronTrigger(hour=3, minute=30), id="kakao_local")
 
-    logger.info("수집 스케줄러 시작: getChargerInfo 매일 03:00 / getChargerStatus 3분 간격 / 카카오 로컬 매일 03:30")
+    logger.info(
+        "수집 스케줄러 시작: getChargerInfo 매일 03:00 / getChargerStatus %s분 간격 (period=%s) / 카카오 로컬 매일 03:30",
+        interval,
+        period,
+    )
     try:
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):

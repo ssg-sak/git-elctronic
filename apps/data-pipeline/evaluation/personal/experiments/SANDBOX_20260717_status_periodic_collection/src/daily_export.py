@@ -107,7 +107,7 @@ def export_daily_status_csv(report_date: date, *, force: bool = False) -> dict[s
     _append_index(
         {
             "exportDate": export_date,
-            "path": str(out_path.relative_to(SANDBOX_ROOT)).replace("\\", "/"),
+            "path": str(out_path.relative_to(_REPO)).replace("\\", "/"),
             "snapshots": int(snapshot_ids.nunique()),
             "rawRows": raw_rows,
             "dedupRows": dedup_rows,

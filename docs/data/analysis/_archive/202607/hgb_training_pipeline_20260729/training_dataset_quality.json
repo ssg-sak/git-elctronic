@@ -1,0 +1,275 @@
+{
+  "dataset": "station_horizon_training_v1",
+  "grain": "station_id × feature_as_of × horizon_minutes",
+  "source_profile": {
+    "eligible_stations": 1590,
+    "panel_ticks": 1030,
+    "panel_first_tick": "2026-07-22T21:38:30",
+    "panel_latest_tick": "2026-07-29T08:07:30",
+    "horizons": {
+      "5": {
+        "mapped_source_ticks": 1020,
+        "candidate_rows": 315108,
+        "labeled_rows": 238148,
+        "excluded_partial_unknown_rows": 76960,
+        "positive": 218044,
+        "negative": 20104,
+        "positive_rate": 0.9155819070493979,
+        "stations": 1538
+      },
+      "10": {
+        "mapped_source_ticks": 1015,
+        "candidate_rows": 313442,
+        "labeled_rows": 233492,
+        "excluded_partial_unknown_rows": 79950,
+        "positive": 214239,
+        "negative": 19253,
+        "positive_rate": 0.9175432134719819,
+        "stations": 1538
+      },
+      "15": {
+        "mapped_source_ticks": 1009,
+        "candidate_rows": 311534,
+        "labeled_rows": 214007,
+        "excluded_partial_unknown_rows": 97527,
+        "positive": 198748,
+        "negative": 15259,
+        "positive_rate": 0.9286985939712252,
+        "stations": 1538
+      },
+      "30": {
+        "mapped_source_ticks": 995,
+        "candidate_rows": 307632,
+        "labeled_rows": 187053,
+        "excluded_partial_unknown_rows": 120579,
+        "positive": 176593,
+        "negative": 10460,
+        "positive_rate": 0.9440800201012547,
+        "stations": 1284
+      }
+    }
+  },
+  "checks": [
+    {
+      "code": "PRIMARY_KEY_UNIQUENESS",
+      "status": "PASS",
+      "evidence": {
+        "duplicate_rows": 0,
+        "key": [
+          "station_id",
+          "feature_as_of",
+          "horizon_minutes"
+        ]
+      }
+    },
+    {
+      "code": "TARGET_VALIDITY",
+      "status": "PASS",
+      "evidence": {
+        "invalid_rows": 0,
+        "allowed": [
+          0,
+          1
+        ],
+        "null_rows": 0
+      }
+    },
+    {
+      "code": "NO_TIME_TRAVEL",
+      "status": "PASS",
+      "evidence": {
+        "feature_at_or_after_label_rows": 0
+      }
+    },
+    {
+      "code": "TEMPORAL_SPLIT",
+      "status": "PASS",
+      "evidence": {
+        "dates": {
+          "test": [
+            "2026-07-28",
+            "2026-07-29"
+          ],
+          "train": [
+            "2026-07-22",
+            "2026-07-23",
+            "2026-07-24",
+            "2026-07-25"
+          ],
+          "valid": [
+            "2026-07-26",
+            "2026-07-27"
+          ]
+        },
+        "overlap": false,
+        "chronology_ok": true
+      }
+    },
+    {
+      "code": "HISTORY_PRECEDES_PANEL",
+      "status": "PASS",
+      "evidence": {
+        "history_date_max": "2026-03-31",
+        "panel_feature_min": "2026-07-22 21:38:30"
+      }
+    },
+    {
+      "code": "CONSERVATIVE_NEGATIVE_LABEL",
+      "status": "PASS",
+      "evidence": {
+        "negative_rows": 65076,
+        "negative_min_target_coverage": 1.0,
+        "rule": "negative only when all station chargers are known"
+      }
+    },
+    {
+      "code": "CLASS_IMBALANCE",
+      "status": "WARN",
+      "evidence": {
+        "positive_rate": 0.9254314197318666,
+        "negative_rows": 65076,
+        "note": "DA② should use class-aware metrics and weighting tests"
+      }
+    },
+    {
+      "code": "HORIZON_DISTINCTNESS_5M_10M",
+      "status": "WARN",
+      "evidence": {
+        "paired_rows": 230072,
+        "same_target_rate": 0.9946929656803087,
+        "collection_cadence_note": "approximately 10-minute ticks can map 5m and 10m to the same future observation"
+      }
+    },
+    {
+      "code": "TIME_COVERAGE",
+      "status": "WARN",
+      "evidence": {
+        "distinct_dates": 8,
+        "recommended_minimum_for_model_acceptance": 14
+      }
+    },
+    {
+      "code": "USAGE_HISTORY_COVERAGE",
+      "status": "WARN",
+      "evidence": {
+        "history_observed_rate": 0.07254382949467171,
+        "policy": "sparse history features are optional, not default"
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TEST_5M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 42581,
+        "positive": 39278,
+        "negative": 3303
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TEST_10M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 42581,
+        "positive": 39278,
+        "negative": 3303
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TEST_15M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 38492,
+        "positive": 35985,
+        "negative": 2507
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TEST_30M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 34599,
+        "positive": 32791,
+        "negative": 1808
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TRAIN_5M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 129730,
+        "positive": 118489,
+        "negative": 11241
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TRAIN_10M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 125074,
+        "positive": 114684,
+        "negative": 10390
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TRAIN_15M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 115934,
+        "positive": 107426,
+        "negative": 8508
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_TRAIN_30M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 98916,
+        "positive": 93342,
+        "negative": 5574
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_VALID_5M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 65837,
+        "positive": 60277,
+        "negative": 5560
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_VALID_10M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 65837,
+        "positive": 60277,
+        "negative": 5560
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_VALID_15M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 59581,
+        "positive": 55337,
+        "negative": 4244
+      }
+    },
+    {
+      "code": "CLASS_SUPPORT_VALID_30M",
+      "status": "PASS",
+      "evidence": {
+        "rows": 53538,
+        "positive": 50460,
+        "negative": 3078
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 18,
+    "WARN": 4,
+    "FAIL": 0
+  },
+  "training_data_handoff_ready": true,
+  "interpretation": "DA① data handoff readiness only; this does not approve an HGB model."
+}

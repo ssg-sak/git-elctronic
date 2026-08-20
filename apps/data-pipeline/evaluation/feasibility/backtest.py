@@ -7,7 +7,10 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from .paths import OUT_FIGURES, OUT_JSON, OUT_TABLES, ensure_out
+try:
+    from .paths import OUT_FIGURES, OUT_JSON, OUT_TABLES, ensure_out
+except ImportError:  # direct script execution for the fast smoke command
+    from paths import OUT_FIGURES, OUT_JSON, OUT_TABLES, ensure_out
 
 MIN_LABELED = 500
 MIN_TEST = 50
@@ -73,15 +76,16 @@ def _hit_ndcg_at_k(df: pd.DataFrame, score_col: str, k: int = 5) -> dict[str, fl
     }
 
 
-def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
+def run_backtest(eta15_path: str | None = None, max_rows: int | None = None) -> dict[str, Any]:
     ensure_out()
     from pathlib import Path as _P
+    suffix = "_fast" if max_rows else ""
 
     path = _P(eta15_path) if eta15_path else OUT_TABLES / "eta_targets_15m.csv"
     if not path.exists():
         return {"ok": False, "skipped": True, "reason": "eta_targets_15m.csv missing"}
 
-    raw = pd.read_csv(path)
+    raw = pd.read_csv(path, nrows=max_rows) if max_rows else pd.read_csv(path)
     lab = raw[raw["target_available"].notna()].copy()
     lab["y"] = lab["target_available"].astype(int)
     lab["t"] = pd.to_datetime(lab["t"])
@@ -116,6 +120,20 @@ def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
             "labeled_rows": int(len(lab)),
             "split": {"train": list(train_dates), "valid": list(valid_dates), "test": list(test_dates)},
         }
+
+    # 0) Inject Historical Features
+    hist_path = _P(__file__).resolve().parents[2] / "results/datasets/station_history_features_latest.csv"
+    if hist_path.exists():
+        hf = pd.read_csv(hist_path)
+        hf = hf.rename(columns={"statId": "station_id"})
+        hist_cols = ["station_id", "avg_sessions_all", "avg_sessions_7d", "sessions_per_charger"]
+        hf = hf[[c for c in hist_cols if c in hf.columns]]
+        train = train.merge(hf, on="station_id", how="left")
+        test = test.merge(hf, on="station_id", how="left")
+        for c in hist_cols:
+            if c in train.columns and c != "station_id":
+                train[c] = train[c].fillna(0.0)
+                test[c] = test[c].fillna(0.0)
 
     # Features at t only (no future leak)
     # 1) persistence: P(available soon) ≈ 1 if currently observed available
@@ -191,6 +209,8 @@ def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
         from sklearn.ensemble import GradientBoostingClassifier
 
         feat_cols = ["available_observed_at_t", "observed_chargers_at_t", "hour", "weekday"]
+        if hist_path.exists():
+            feat_cols.extend(["avg_sessions_all", "avg_sessions_7d", "sessions_per_charger"])
         Xtr = train[feat_cols].fillna(0).to_numpy()
         ytr = train["y"].to_numpy()
         Xte = test[feat_cols].fillna(0).to_numpy()
@@ -198,8 +218,34 @@ def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
         gb.fit(Xtr, ytr)
         p_gb = gb.predict_proba(Xte)[:, 1]
         test["p_gb"] = p_gb
-        results.append(pack("sklearn_gradient_boosting", p_gb))
+        results.append(pack("sklearn_gbdt_with_history", p_gb))
         model_scores["gbdt"] = True
+        
+        # --- Add Vehicle Master & SOC Penalty ---
+        import sys
+        _proc_path = _P(__file__).resolve().parents[2] / "processing"
+        if str(_proc_path) not in sys.path:
+            sys.path.insert(0, str(_proc_path))
+        from vehicle.eta_soc_calculator_utils import EtaSocCalculator
+        
+        calc = EtaSocCalculator()
+        np.random.seed(42)
+        vehicles = calc.df["model_name"].tolist()
+        sim_vehicles = np.random.choice(vehicles, size=len(test))
+        sim_distances = np.random.uniform(5.0, 20.0, size=len(test))
+        sim_socs = np.random.uniform(15.0, 30.0, size=len(test))
+        
+        soc_penalized_p = np.copy(p_gb)
+        for i in range(len(test)):
+            try:
+                res = calc.calculate_eta_soc(sim_vehicles[i], sim_socs[i], sim_distances[i])
+                if res["arrival_soc_percent"] <= 10.0:
+                    soc_penalized_p[i] = 0.0 # Hard drop filter
+            except Exception:
+                pass
+        test["p_gb_soc_penalized"] = soc_penalized_p
+        results.append(pack("sklearn_gbdt_with_history_and_soc_penalty", soc_penalized_p))
+        model_scores["gbdt_soc_penalty"] = True
     except Exception as exc:  # noqa: BLE001
         model_scores["gbdt_error"] = str(exc)
 
@@ -221,12 +267,12 @@ def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
         ax.set_title("Reliability (labeled test only)")
         ax.legend()
         fig.tight_layout()
-        fig.savefig(OUT_FIGURES / "calibration_eta15.png", dpi=120)
+        fig.savefig(OUT_FIGURES / f"calibration_eta15{suffix}.png", dpi=120)
         plt.close(fig)
     except Exception as exc:  # noqa: BLE001
         model_scores["calib_error"] = str(exc)
 
-    pd.DataFrame(results).to_csv(OUT_TABLES / "backtest_metrics.csv", index=False, encoding="utf-8-sig")
+    pd.DataFrame(results).to_csv(OUT_TABLES / f"backtest_metrics{suffix}.csv", index=False, encoding="utf-8-sig")
 
     # leakage checklist
     leakage = {
@@ -258,7 +304,26 @@ def run_backtest(eta15_path: str | None = None) -> dict[str, Any]:
             "or labels too sparse/biased by change-feed."
         ),
     }
-    (OUT_JSON / "backtest.json").write_text(
+    out["max_rows"] = max_rows
+    (OUT_JSON / f"backtest{suffix}.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
     )
     return out
+
+
+if __name__ == "__main__":
+    import argparse
+
+    if hasattr(__import__("sys").stdout, "reconfigure"):
+        __import__("sys").stdout.reconfigure(encoding="utf-8", errors="replace")
+
+    parser = argparse.ArgumentParser(description="Run the ETA 15m temporal backtest.")
+    parser.add_argument("--eta15-path", default=None)
+    parser.add_argument(
+        "--fast",
+        action="store_true",
+        help="Read the first 200,000 rows for a quick smoke backtest.",
+    )
+    args = parser.parse_args()
+    result = run_backtest(args.eta15_path, max_rows=200_000 if args.fast else None)
+    print(json.dumps(result, ensure_ascii=False, indent=2, default=str))

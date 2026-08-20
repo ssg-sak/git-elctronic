@@ -1,0 +1,85 @@
+{
+  "generated_from_latest_tick": "2026-07-28T16:32:17",
+  "source_panel": "apps/data-pipeline/reports/timeseries_feasibility/tables/station_tick_panel.parquet",
+  "source_d1": "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest.csv",
+  "grain": "station × t0 × fixed arrival horizon",
+  "eligible_public_coordinate_stations": 1576,
+  "replay_rows": 705689,
+  "horizons": {
+    "5": {
+      "horizon_minutes": 5,
+      "mapped_ticks": 927,
+      "labeled_rows": 194686,
+      "stations": 1503,
+      "arrival_available_rate": 0.9664844929784371,
+      "became_unavailable_rate": 0.033515507021562925,
+      "recommendation_change_rate": 0.08872235291700482,
+      "failed_rows": 6525,
+      "fallback_candidate_coverage": 0.5301149425287356,
+      "single_available_arrival_rate": 0.9566716383232277,
+      "multi_available_arrival_rate": 0.9878556388031928
+    },
+    "10": {
+      "horizon_minutes": 10,
+      "mapped_ticks": 922,
+      "labeled_rows": 190013,
+      "stations": 1503,
+      "arrival_available_rate": 0.9604711256598233,
+      "became_unavailable_rate": 0.039528874340176726,
+      "recommendation_change_rate": 0.1044665365001342,
+      "failed_rows": 7511,
+      "fallback_candidate_coverage": 0.5217680734922114,
+      "single_available_arrival_rate": 0.9490578287551591,
+      "multi_available_arrival_rate": 0.9848262440005937
+    },
+    "15": {
+      "horizon_minutes": 15,
+      "mapped_ticks": 916,
+      "labeled_rows": 172516,
+      "stations": 1503,
+      "arrival_available_rate": 0.9291891766560783,
+      "became_unavailable_rate": 0.07081082334392172,
+      "recommendation_change_rate": 0.15990980546731898,
+      "failed_rows": 12216,
+      "fallback_candidate_coverage": 0.45898821218074654,
+      "single_available_arrival_rate": 0.9095667727595549,
+      "multi_available_arrival_rate": 0.9674677157273582
+    },
+    "30": {
+      "horizon_minutes": 30,
+      "mapped_ticks": 902,
+      "labeled_rows": 148474,
+      "stations": 1037,
+      "arrival_available_rate": 0.8841278607702359,
+      "became_unavailable_rate": 0.11587213922976414,
+      "recommendation_change_rate": 0.21392971159933727,
+      "failed_rows": 17204,
+      "fallback_candidate_coverage": 0.3868286445012788,
+      "single_available_arrival_rate": 0.8522584358280221,
+      "multi_available_arrival_rate": 0.9388449714536671
+    }
+  },
+  "overall": {
+    "arrival_available_rate": 0.9384204656725554,
+    "recommendation_change_rate": 0.13670752980420553,
+    "failed_rows": 43456,
+    "fallback_candidate_coverage": 0.4519513991163476
+  },
+  "quality_rules": {
+    "raw_page_duplicates": "latest statUpdDt wins",
+    "state_hold_minutes": 25,
+    "target_tick_tolerance_minutes": 7.5,
+    "fallback_definition": "among the five stations nearest to the primary station, candidate was available at t0 and remains available at arrival"
+  },
+  "limitations": [
+    "Fixed horizons are used because historical request-level TMAP ETA is unavailable.",
+    "Fallback proximity is straight-line station-to-station distance, not route time.",
+    "State is reconstructed only within a continuous segment and 25-minute hold.",
+    "Availability means API status=2, not a reservation or charging guarantee."
+  ],
+  "files": {
+    "canonical": "arrival_availability_replay.parquet",
+    "csv": "arrival_availability_replay.csv",
+    "sample": "arrival_availability_replay_sample.csv"
+  }
+}

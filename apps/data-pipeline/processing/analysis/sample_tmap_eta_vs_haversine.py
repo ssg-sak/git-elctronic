@@ -107,20 +107,49 @@ def main() -> int:
         print("FAIL: TMAP_APP_KEY missing or mock — DA sample needs a real key")
         return 1
 
-    info_path = REPO / "docs/data/extracted/charger/info/daegu_charger_info_20260723_latest.csv"
+    # Prefer current D1 public candidates; fall back to static info extract.
+    d1_path = (
+        REPO
+        / "apps/data-pipeline/evaluation/results/datasets/station_feature_snapshot_latest.csv"
+    )
     hours_path = REPO / "docs/data/extracted/charger/hours/daegu_charger_hours_latest.csv"
-    if not info_path.is_file():
-        print(f"FAIL: missing {info_path}")
+    info_path = REPO / "docs/data/extracted/charger/info/daegu_charger_info_20260723_latest.csv"
+    source_label = ""
+
+    if d1_path.is_file():
+        d1 = pd.read_csv(d1_path, dtype=str, low_memory=False)
+        for c in ("lat", "lng"):
+            d1[c] = pd.to_numeric(d1[c], errors="coerce")
+        pub = d1["recommend_public_default"].astype(str).str.lower().isin(["true", "1"])
+        ok = d1["coord_ok"].astype(str).str.lower().isin(["true", "1"])
+        stations = (
+            d1.loc[pub & ok]
+            .dropna(subset=["lat", "lng"])
+            .drop_duplicates(subset=["statId"], keep="first")
+            .copy()
+        )
+        if "useTime" not in stations.columns:
+            stations["useTime"] = pd.NA
+        source_label = str(d1_path.relative_to(REPO)).replace("\\", "/")
+        info_path = d1_path
+    else:
+        if not info_path.is_file():
+            print(f"FAIL: missing {info_path}")
+            return 1
+        info = pd.read_csv(info_path, dtype=str)
+        for c in ("lat", "lng"):
+            info[c] = pd.to_numeric(info[c], errors="coerce")
+        stations = (
+            info.dropna(subset=["lat", "lng"])
+            .drop_duplicates(subset=["statId"], keep="first")
+            .copy()
+        )
+        source_label = str(info_path.relative_to(REPO)).replace("\\", "/")
+
+    if stations.empty:
+        print("FAIL: no candidate stations")
         return 1
 
-    info = pd.read_csv(info_path, dtype=str)
-    for c in ("lat", "lng"):
-        info[c] = pd.to_numeric(info[c], errors="coerce")
-    stations = (
-        info.dropna(subset=["lat", "lng"])
-        .drop_duplicates(subset=["statId"], keep="first")
-        .copy()
-    )
     stations["haversine_km"] = stations.apply(
         lambda r: _haversine_km(ORIGIN_LAT, ORIGIN_LNG, float(r["lat"]), float(r["lng"])),
         axis=1,
@@ -188,8 +217,9 @@ def main() -> int:
         "tmap_fail": int(SAMPLE_N - ok),
         "as_of_kst": now.isoformat(timespec="seconds"),
         "haversine_speed_proxy_kmh": ASSUME_SPEED_KMH,
-        "info_source": str(info_path.relative_to(REPO)),
+        "info_source": source_label,
         "hours_source": str(hours_path.relative_to(REPO)) if hours_path.is_file() else None,
+        "candidate_filter": "recommend_public_default & coord_ok from D1 when available",
         "outputs": {
             "csv": str(csv_path.relative_to(REPO)),
         },
@@ -200,13 +230,14 @@ def main() -> int:
 
     # Short markdown for team
     md_lines = [
-        "# DA① TMAP ETA 샘플 (직선거리 대비) — 2026-07-23",
+        "# DA① TMAP ETA 샘플 (직선거리 대비)",
         "",
         "## 범위",
-        "- **하는 일**: 동대구역 인근 기준 가까운 충전소 **15곳**만 TMAP `/tmap/routes` 1회씩 호출 → 직선거리·ETA 비교 + **도착시각×useTime** 게이트",
-        "- **안 하는 일**: TMAP 수집 루프, 백엔드 `/routes` API, 프론트 키 노출",
+        "- **하는 일**: 동대구역 인근 기준 가까운 **공용** 충전소 **15곳**만 TMAP `/tmap/routes` 1회씩 호출 → 직선거리·ETA 비교 + **도착시각×useTime** 게이트",
+        "- **안 하는 일**: TMAP 수집 루프, D1 `eta_minutes` 일괄 채우기, 백엔드 `/routes` API, 프론트 키 노출",
         "",
         f"- 기준점: {ORIGIN_LABEL} ({ORIGIN_LAT}, {ORIGIN_LNG})",
+        f"- 후보 소스: `{source_label}`",
         f"- 시각(KST): {now.isoformat(timespec='seconds')}",
         f"- TMAP 성공: **{ok}/{SAMPLE_N}**",
         "",

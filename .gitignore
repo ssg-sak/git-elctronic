@@ -1,13 +1,14 @@
 # 인증키·시크릿
 .env
 .env.local
+.env.loca
 .env.*.local
 
 # 수집 원본 데이터 (대용량)
 apps/data-pipeline/collection/raw/
 apps/data-pipeline/collection/data/
 
-# DA① 대용량 산출·원천 (GitHub 미포함 — 로컬/서버 보관)
+# DA① 대용량 산출·원천 (GitHub 미포함 — 로컬/서버·Desktop zip 보관)
 docs/data/extracted/
 docs/data/loops/**/snapshots/
 docs/data/loops/_archive/
@@ -18,6 +19,17 @@ apps/data-pipeline/evaluation/results/
 apps/data-pipeline/evaluation/**/data/
 apps/data-pipeline/reports/
 apps/data-pipeline/scratch/
+
+# GitHub 100MB 초과·대용량 분석 덤프 (로컬/조장 zip만)
+docs/data/analysis/**/arrival_availability_replay.csv
+docs/data/analysis/**/arrival_availability_replay.parquet
+docs/data/analysis/**/parking_realtime_history_used.csv
+**/parking_realtime_history_used.csv
+**/daegu_me_history_all.csv
+docs/data/analysis/**/arrival_labels_tmap_eta_v1.parquet
+docs/data/analysis/**/arrival_labels_with_derived.parquet
+docs/data/quality/master_training_dataset.csv
+*.zip
 
 # API 테스트 결과 파일
 scripts/api-tests/*-result.json
@@ -43,3 +55,9 @@ __pycache__/
 docs/data/loops/**/logs/
 *.jsonl
 
+
+# Personal portfolio (not for public/main)
+포폴용_개인_대시보드_20260809/
+포폴용_주니어DA_BI_계획_20260809/
+cols.txt
+temp_vehicles.json

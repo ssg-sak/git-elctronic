@@ -66,9 +66,19 @@ FIELDS = [
 
 def _load_key() -> str:
     load_dotenv(REPO / ".env")
-    key = os.environ.get("UTIC_API_KEY", "").strip()
+    profile = os.environ.get("UTIC_KEY_PROFILE", "").strip().lower()
+    profile_vars = {
+        "home": "UTIC_API_KEY_HOME",
+        "education": "UTIC_API_KEY_EDUCATION",
+    }
+    if profile and profile not in profile_vars:
+        raise RuntimeError(
+            "UTIC_KEY_PROFILE must be 'home' or 'education' when set"
+        )
+    key_var = profile_vars.get(profile, "UTIC_API_KEY")
+    key = os.environ.get(key_var, "").strip()
     if not key:
-        raise RuntimeError("UTIC_API_KEY missing in .env")
+        raise RuntimeError(f"{key_var} missing in .env")
     return key
 
 

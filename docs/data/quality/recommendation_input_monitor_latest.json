@@ -1,0 +1,59 @@
+{
+  "checked_at_kst": "2026-08-09T13:47:39+09:00",
+  "monitor_status": "FAIL",
+  "recommendation_ready": false,
+  "source_report": "docs/data/loops/loop1/snapshots",
+  "profile": {
+    "files": 2956,
+    "raw_rows": 1415711,
+    "curated_rows": 1412597,
+    "snapshot_count": 2956,
+    "charger_count": 21368,
+    "first_snapshot_kst": "2026-07-17T13:41:56",
+    "latest_snapshot_kst": "2026-08-09T07:23:21",
+    "latest_local_age_minutes": 384.3,
+    "cadence_median_minutes": 10.02,
+    "cadence_p95_minutes": 15.0,
+    "latest_rows": 393,
+    "latest_available_rows": 333
+  },
+  "metrics": [
+    {
+      "code": "RAW_DUPLICATE_RATE",
+      "status": "PASS",
+      "value": 0.0022,
+      "warn_at": 0.005,
+      "fail_at": 0.02,
+      "policy": "raw duplicate is retained; curated grain must still be unique"
+    },
+    {
+      "code": "CONFLICTING_STATUS_GROUPS",
+      "status": "WARN",
+      "value": 22,
+      "warn_at": 20,
+      "fail_at": 100,
+      "policy": "inspect page-boundary conflicts and keep latest statUpdDt"
+    },
+    {
+      "code": "CADENCE_P95_MINUTES",
+      "status": "PASS",
+      "value": 15.0,
+      "warn_at": 20.0,
+      "fail_at": 30.0,
+      "policy": "collection gaps reduce temporal coverage"
+    },
+    {
+      "code": "LATEST_SNAPSHOT_AGE_MINUTES",
+      "status": "FAIL",
+      "value": 384.3,
+      "warn_at": 60.0,
+      "fail_at": 180.0,
+      "policy": "freshness warning; do not use stale data as current status"
+    }
+  ],
+  "validator_summary": {
+    "PASS": 6,
+    "WARN": 1,
+    "FAIL": 0
+  }
+}

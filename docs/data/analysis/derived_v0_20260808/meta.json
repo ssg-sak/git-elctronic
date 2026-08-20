@@ -1,0 +1,26 @@
+{
+  "role": "DA① derived_v0 attach on arrival labels",
+  "as_of_kst": "2026-08-08T13:25:04+09:00",
+  "rows": 2521157,
+  "stations": 1620,
+  "retain_features": [
+    "single_charger",
+    "horizon_minutes",
+    "eta_bucket"
+  ],
+  "horizon_vs_eta_bucket": "택1 — 권장 horizon_minutes; eta_bucket는 대안",
+  "exclude_from_training": [
+    "eta_is_proxy",
+    "slack_chargers",
+    "age_x_eta"
+  ],
+  "hold_diagnostic": [
+    "avail_ratio_t0"
+  ],
+  "files": {
+    "labels_with_derived": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived.parquet",
+    "sample": "apps/data-pipeline/evaluation/results/datasets/arrival_labels_tmap_eta_v1_with_derived_sample.csv",
+    "analysis": "docs/data/analysis/derived_v0_20260808"
+  },
+  "doc": "docs/팀공유/파생변수_검토_도착라벨_20260806.md"
+}

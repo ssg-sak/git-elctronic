@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-08-06T20:48:24+09:00",
+  "stamp": "20260806",
+  "source": "docs/data/loops/loop2 (UTIC PC collect)",
+  "server_loop": false,
+  "ticks": 116,
+  "first_ts": "2026-07-21 09:21:28",
+  "last_ts": "2026-08-06 10:14:24",
+  "row_obs": 1387,
+  "unique_incidents": 210,
+  "n_per_tick_median": 12,
+  "type_counts": {
+    "공사·작업(2)": 173,
+    "사고·기타(1)": 31,
+    "기타(5)": 4,
+    "미상": 2
+  },
+  "join_stations": 4201,
+  "join_matched": 382,
+  "join_match_rate": 0.0909,
+  "figures": [
+    "01_incident_count_by_tick.png",
+    "02_type_and_roads.png",
+    "03_station_join_coverage.png",
+    "04_incident_map.png"
+  ]
+}

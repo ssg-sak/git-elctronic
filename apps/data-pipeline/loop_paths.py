@@ -1,6 +1,14 @@
-"""Canonical paths for periodic collection loops (docs/data/loops/loop1..3)."""
+"""Canonical paths for periodic collection loops (docs/data/loops/loop1..3).
+
+Layout (by date):
+  loop1/snapshots/YYYYMMDD/daegu_charger_status_YYYYMMDD_HHMMSS.csv
+  loop3/YYYYMMDD/daegu_traffic_linkspeed_*.csv
+  loop3/YYYYMMDD/daegu_traffic_incident_*.csv
+  loop3/*_latest.csv  — always at loop3 root (pointer)
+"""
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -20,17 +28,17 @@ EXTRACTED_TMAP = EXTRACTED_DIR / "tmap"
 EXTRACTED_PROBES = EXTRACTED_DIR / "probes"
 EXTRACTED_DAILY = EXTRACTED_DIR / "daily"
 
-# loop1 — EvCharger status (5 min) · alias: status
+# loop1 — EvCharger status · alias: status
 LOOP1_DIR = LOOPS_ROOT / "loop1"
 LOOP1_SNAPSHOTS = LOOP1_DIR / "snapshots"
 LOOP1_DAILY = LOOP1_DIR / "daily"
 LOOP1_LOGS = LOOP1_DIR / "logs"
 LOOP1_INDEX = LOOP1_DIR / "index.csv"
 
-# loop2 — UTIC incident (15 min) · alias: utic
+# loop2 — UTIC incident · alias: utic
 LOOP2_DIR = LOOPS_ROOT / "loop2"
 
-# loop3 — Daegu ITS linkspeed + dgincident (15 min) · alias: daegu_traffic
+# loop3 — Daegu ITS linkspeed + dgincident · alias: daegu_traffic
 LOOP3_DIR = LOOPS_ROOT / "loop3"
 
 _LEGACY_SANDBOX_DATA = (
@@ -40,6 +48,72 @@ _LEGACY_SANDBOX_DATA = (
 )
 _LEGACY_LOOP2 = LOOPS_ROOT / "utic"
 _LEGACY_LOOP3 = LOOPS_ROOT / "daegu_traffic"
+
+_YMD_IN_NAME = re.compile(r"_(\d{8})_")
+
+
+def ymd_from_filename(name: str) -> str | None:
+    """Extract YYYYMMDD from loop CSV names like …_20260725_083340.csv."""
+    m = _YMD_IN_NAME.search(name)
+    return m.group(1) if m else None
+
+
+def loop1_day_dir(ymd: str) -> Path:
+    return LOOP1_SNAPSHOTS / ymd
+
+
+def loop3_day_dir(ymd: str) -> Path:
+    return LOOP3_DIR / ymd
+
+
+def iter_status_csvs(directory: Path) -> list[Path]:
+    """Status CSVs in a snapshots root: flat and/or YYYYMMDD/ nested."""
+    if not directory.is_dir():
+        return []
+    found: dict[str, Path] = {}
+    for pattern in ("daegu_charger_status_*.csv", "*/daegu_charger_status_*.csv"):
+        for fp in directory.glob(pattern):
+            if not fp.is_file():
+                continue
+            prev = found.get(fp.name)
+            if prev is None or len(fp.parts) >= len(prev.parts):
+                found[fp.name] = fp
+    return sorted(found.values(), key=lambda p: p.name)
+
+
+def iter_loop3_csvs(
+    root: Path | None = None,
+    *,
+    kind: str = "linkspeed",
+) -> list[Path]:
+    """Dated loop3 CSVs (excludes *_latest). kind: linkspeed | incident | all."""
+    root = root or LOOP3_DIR
+    if not root.is_dir():
+        return []
+    if kind == "linkspeed":
+        patterns = [
+            "daegu_traffic_linkspeed_*.csv",
+            "*/daegu_traffic_linkspeed_*.csv",
+        ]
+    elif kind == "incident":
+        patterns = [
+            "daegu_traffic_incident_*.csv",
+            "*/daegu_traffic_incident_*.csv",
+        ]
+    else:
+        patterns = [
+            "daegu_traffic_*.csv",
+            "*/daegu_traffic_*.csv",
+        ]
+    found: dict[str, Path] = {}
+    for pattern in patterns:
+        for fp in root.glob(pattern):
+            if not fp.is_file() or "latest" in fp.name:
+                continue
+            prev = found.get(fp.name)
+            if prev is None or len(fp.parts) >= len(prev.parts):
+                found[fp.name] = fp
+    return sorted(found.values(), key=lambda p: p.name)
 
 
 def status_data_dir() -> Path:
@@ -51,11 +125,10 @@ def status_data_dir() -> Path:
 
 
 def status_snapshots_dirs() -> list[Path]:
-    """All snapshot dirs to read (live loop1 + Lightsail archive pulls + legacy)."""
+    """All snapshot roots to read (live loop1 + Lightsail archive + legacy)."""
     seen: set[Path] = set()
     dirs: list[Path] = []
     candidates: list[Path] = [LOOP1_SNAPSHOTS]
-    # archive pulls (from_lightsail_*) — fill gaps when live PC was off
     if LOOPS_ARCHIVE.is_dir():
         candidates.extend(sorted(LOOPS_ARCHIVE.glob("from_lightsail_*/loop1/snapshots")))
     candidates.append(_LEGACY_SANDBOX_DATA / "snapshots")
@@ -98,6 +171,22 @@ def charger_info_csvs() -> list[Path]:
     return files
 
 
+def daily_charger_info_latests() -> list[Path]:
+    """Day pointers under extracted/daily/**/daegu_charger_info_*_latest.csv (oldest→newest)."""
+    if not EXTRACTED_DAILY.is_dir():
+        return []
+    return sorted(
+        EXTRACTED_DAILY.glob("**/daegu_charger_info_*_latest.csv"),
+        key=lambda p: (p.parent.name, p.name),
+    )
+
+
+def latest_daily_charger_info() -> Path | None:
+    """Newest fixed daily info dump pointer, or None."""
+    days = daily_charger_info_latests()
+    return days[-1] if days else None
+
+
 def charger_status_oneshot_csvs() -> list[Path]:
     return sorted(EXTRACTED_CHARGER_STATUS.glob("daegu_charger_status_*.csv"))
 
@@ -105,7 +194,3 @@ def charger_status_oneshot_csvs() -> list[Path]:
 def parking_team5_csvs() -> list[Path]:
     return sorted(EXTRACTED_PARKING.glob("daegu_parking_*_team5*.csv"))
 
-
-def parking_mock_csvs() -> list[Path]:
-    """Deprecated: mock parking removed 2026-07-23. Kept as empty-safe alias."""
-    return sorted(EXTRACTED_PARKING.glob("daegu_parking_*_mock.csv"))

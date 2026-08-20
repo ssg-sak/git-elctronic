@@ -1,0 +1,100 @@
+﻿busiId,busiNm,fee_operator_nm,fee_match_level,stations
+CV,채비,채비,OPERATOR_TYPE,594
+PI,GS차지비,GS차지비,OPERATOR_TYPE,578
+EV,에버온,에버온,OPERATOR_TYPE,319
+PW,파워큐브,파워큐브,OPERATOR_TYPE,300
+KP,한국전력,한국전력공사,OPERATOR_TYPE,237
+LU,LG유플러스볼트업,LG유플러스 볼트업,OPERATOR_TYPE,202
+PL,플러그링크,플러그링크,OPERATOR_TYPE,177
+PW,파워큐브코리아,파워큐브,OPERATOR_TYPE,171
+ME,기후에너지환경부,기후에너지환경부,OPERATOR_TYPE,133
+PW,파워큐브(SP),파워큐브,OPERATOR_TYPE,127
+HM,휴맥스이브이,휴맥스이브이,OPERATOR_TYPE,116
+HY,현대엔지니어링,현대엔지니어링,OPERATOR_TYPE,102
+ST,SK일렉링크,SK일렉링크,OPERATOR_TYPE,96
+IN,신세계아이앤씨,신세계아이앤씨,OPERATOR_TYPE,81
+EZ,(주)차지인,,NONE,72
+PC,아이파킹,아이파킹,OPERATOR_TYPE,58
+HM,HUMAX EV,휴맥스이브이,OPERATOR_TYPE,57
+PC,파킹클라우드,아이파킹,OPERATOR_TYPE,50
+SF,(주)스타코프,스타코프,OPERATOR_TYPE,48
+KE,한국전기차인프라기술,한국전기차인프라기술,OPERATOR_TYPE,41
+TS,주식회사 태성콘텍,태성콘텍,OPERATOR_TYPE,40
+NT,한국전자금융,NICE인프라,OPERATOR_TYPE,38
+LU,엘지유플러스,LG유플러스 볼트업,OPERATOR_TYPE,37
+KP,한국전기차충전서비스,한국전력공사,OPERATOR_TYPE,34
+EC,이지차저,이지차저,OPERATOR_TYPE,28
+HE,한국전기차충전서비스,한국전기차충전서비스,OPERATOR_TYPE,27
+HW,한화솔루션,한화솔루션,OPERATOR_TYPE,26
+EV,주식회사 에버온,에버온,OPERATOR_TYPE,24
+SF,스타코프,스타코프,OPERATOR_TYPE,24
+PI,차지비,GS차지비,OPERATOR_TYPE,23
+DC,대성물류건설(주),대성물류건설,OPERATOR_TYPE,23
+LU,LG유플러스,LG유플러스 볼트업,OPERATOR_TYPE,20
+EP,이카플러그,이카플러그,OPERATOR_TYPE,19
+KL,(주)클린일렉스,클린일렉스,OPERATOR_TYPE,19
+EZ,차지인,,NONE,17
+BN,블루네트웍스,블루네트웍스,OPERATOR_TYPE,16
+SF,스타코프(주)스타코프,스타코프,OPERATOR_TYPE,15
+ME,기후부,기후에너지환경부,OPERATOR_TYPE,14
+LU,LG유플러스 볼트업,LG유플러스 볼트업,OPERATOR_TYPE,13
+CU,씨어스,,NONE,12
+JA,이브이시스,이브이시스,OPERATOR_TYPE,12
+CG,서울씨엔지(서울이브이),서울씨엔지,OPERATOR_TYPE,11
+NT,NICE인프라,NICE인프라,OPERATOR_TYPE,10
+ER,위브이,이엘일렉트릭,OPERATOR_TYPE,9
+AZ,이에스앤에이치,이에스앤에이치,OPERATOR_TYPE,9
+KL,클린일렉스,클린일렉스,OPERATOR_TYPE,7
+KE,한국전기차인프라기술(주),한국전기차인프라기술,OPERATOR_TYPE,7
+ST,SK 일렉링크,SK일렉링크,OPERATOR_TYPE,7
+PC,아이파킹 주식회사,아이파킹,OPERATOR_TYPE,6
+NX,넥씽,넥씽,OPERATOR_TYPE,6
+YC,(주)차지인,,NONE,5
+GS,GS칼텍스,,NONE,5
+TD,타디스테크놀로지,타디스테크놀로지,OPERATOR_TYPE,5
+ER,이엘일렉트릭,이엘일렉트릭,OPERATOR_TYPE,5
+BE,브라이트에너지파트너스,브라이트에너지파트너스,OPERATOR_TYPE,4
+LI,엘에스이링크(주),엘에스이링크,OPERATOR_TYPE,4
+CI,쿨사인 주식회사,쿨사인,OPERATOR_TYPE,4
+UN,유니이브이,,NONE,4
+EO,E1,E1,OPERATOR_TYPE,3
+RE,레드이엔지,레드이엔지,OPERATOR_TYPE,3
+KR,이브이씨원,이브이씨코리아,OPERATOR_TYPE,3
+SB,소프트베리,소프트베리,OPERATOR_TYPE,3
+PK,펌프킨,펌프킨,OPERATOR_TYPE,3
+AM,아마노코리아,아마노코리아,OPERATOR_TYPE,3
+DC,대성물류건설,대성물류건설,OPERATOR_TYPE,3
+CP,(주)캐스트프로,캐스트프로,OPERATOR_TYPE,2
+AH,아하(주),아하,OPERATOR_TYPE,2
+L3,이지차저,,NONE,2
+S1,(주)이브이에스이피,,NONE,2
+ME,환경부,기후에너지환경부,OPERATOR_TYPE,2
+CS,한국EV충전서비스센터,한국EV충전서비스센터,OPERATOR_TYPE,2
+MO,매니지온,매니지온,OPERATOR_TYPE,2
+HJ,㈜한진,,NONE,1
+DO,대한송유관공사,대한송유관공사,OPERATOR_TYPE,1
+HD,현대자동차,현대자동차,OPERATOR_TYPE,1
+CI,쿨사인,쿨사인,OPERATOR_TYPE,1
+AL,아론,아론,OPERATOR_TYPE,1
+AH,(주)아하,아하,OPERATOR_TYPE,1
+DY,동양이엔피,동양이엔피,OPERATOR_TYPE,1
+EB,일렉트리,일렉트리,OPERATOR_TYPE,1
+CC,코콤,,NONE,1
+CP,캐스트프로,캐스트프로,OPERATOR_TYPE,1
+DG,대구환경공단,,NONE,1
+NU,뉴로모빌리티,뉴로모빌리티,OPERATOR_TYPE,1
+NS,뉴텍솔루션(주),뉴텍솔루션,OPERATOR_TYPE,1
+NH,농협경제지주(주) 신재생에너지센터,농협경제지주 신재생에너지센터,OPERATOR_TYPE,1
+LD,롯데이노베이트,롯데이노베이트,OPERATOR_TYPE,1
+JE,제주전기자동차서비스,제주전기자동차서비스,OPERATOR_TYPE,1
+HU,한솔엠에스,한솔엠에스,OPERATOR_TYPE,1
+PC,파킹클라우드 주식회사,아이파킹,OPERATOR_TYPE,1
+PI,포스코ICT,GS차지비,OPERATOR_TYPE,1
+PW,파워큐브(sp),파워큐브,OPERATOR_TYPE,1
+SG,SK시그넷,SK시그넷,OPERATOR_TYPE,1
+SF,(주) 스타코프,스타코프,OPERATOR_TYPE,1
+SO,㈜선광시스템,선광시스템,OPERATOR_TYPE,1
+ST,에스에스차저,SK일렉링크,OPERATOR_TYPE,1
+ST,에스트래픽,SK일렉링크,OPERATOR_TYPE,1
+UP,유플러스아이티,유플러스아이티,OPERATOR_TYPE,1
+VT,볼타,,NONE,1

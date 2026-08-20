@@ -1,0 +1,57 @@
+{
+  "generated": true,
+  "report_date": "2026-08-08",
+  "health": "healthy",
+  "daily": {
+    "snapshots": 68,
+    "raw_rows": 31067,
+    "dedup_rows": 31049,
+    "api_calls": 338,
+    "api_limit_usage_pct": 33.8,
+    "rows_mean": 456.9,
+    "rows_min": 317,
+    "rows_max": 902,
+    "status_counts": {
+      "communication_error": 383,
+      "available": 23792,
+      "in_use": 6079,
+      "operation_stopped": 1,
+      "under_inspection": 250,
+      "status_unknown": 544
+    }
+  },
+  "timing": {
+    "first": "2026-08-08T00:03:25",
+    "last": "2026-08-08T11:17:46",
+    "active_span_hours": 11.2,
+    "interval_median_minutes": 10.0,
+    "interval_max_minutes": 13.6,
+    "expected_rounds_within_active_span": 136,
+    "continuity_pct_within_active_span": 50.0,
+    "gap_count": 0,
+    "gaps": []
+  },
+  "quality": {
+    "null_statId": 0,
+    "null_chgerId": 0,
+    "null_stat": 0,
+    "duplicate_rows_removed_at_read": 18,
+    "invalid_status_rows": 0
+  },
+  "cumulative_through_date": {
+    "unique_chargers": 21330,
+    "observed_at_least_2": 20816,
+    "observed_at_least_5": 18896,
+    "observed_at_least_10": 17172,
+    "observations_median": 29.0,
+    "observations_mean": 63.8
+  },
+  "gap_safe_panel": {
+    "availability_mean_pct": 62.5,
+    "availability_min_pct": 55.9,
+    "availability_max_pct": 78.3,
+    "known_chargers_median": 20428,
+    "known_chargers_last": 20478,
+    "segments": 1
+  }
+}
