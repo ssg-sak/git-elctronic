@@ -55,3 +55,9 @@ __pycache__/
 docs/data/loops/**/logs/
 *.jsonl
 
+
+# Personal portfolio (not for public/main)
+포폴용_개인_대시보드_20260809/
+포폴용_주니어DA_BI_계획_20260809/
+cols.txt
+temp_vehicles.json
