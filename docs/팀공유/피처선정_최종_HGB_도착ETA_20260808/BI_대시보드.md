@@ -7,7 +7,7 @@
 | **파생변수** | **불필요** |
 | **최종 피처** | **9개** · ETA=`tmap_eta_min` |
 | **타당도** | **PASS** · test PR-AUC 0.981 · neg-recall 0.834 |
-| **신뢰도** | **WARN** (시간블록 CV만 경계 · valid/test·seed PASS) |
+| **신뢰도** | **WARN** (시간블록 CV만 경계 · valid/test·seed PASS) → [`신뢰도WARN_의미_쉽게읽기.md`](./신뢰도WARN_의미_쉽게읽기.md) |
 | **D: 복사** | `D:/EV_SafeCharge_DA1/BI_피처선정_HGB_도착ETA_20260808/` |
 
 ## ⚠ 조장 필독 — ETA
