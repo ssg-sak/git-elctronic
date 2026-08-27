@@ -91,24 +91,37 @@
 ## 데이터 파이프라인
 
 ```mermaid
-flowchart LR
-    A[원천 수집<br/>Collection] --> B[정의·품질]
-    B --> C[전처리·표준화]
-    C --> D[as-of / gap-safe]
-    D --> E[공간 결합<br/>주차·교통]
-    E --> F[EDA·피처]
-    F --> G[현재표]
-    F --> H[시간표]
-    G --> I[점수·모델<br/>DA②]
-    H --> I
-    I --> J[API · BE]
-    J --> K[화면 · FE]
+%%{init: {
+  "flowchart": { "nodeSpacing": 28, "rankSpacing": 36, "padding": 16, "curve": "basis" },
+  "themeVariables": { "fontSize": "20px", "fontFamily": "Pretendard, Apple SD Gothic Neo, sans-serif" }
+}}%%
+flowchart TB
+    A["① 원천 수집 · Collection"]
+    B["② 정의 · 품질"]
+    C["③ 전처리 · 표준화"]
+    D["④ as-of · gap-safe 25분"]
+    E["⑤ 공간 결합 · 주차 · 교통"]
+    F["⑥ EDA · 피처"]
+    G["⑦ 현재표 D1"]
+    H["⑦ 시간표 D2"]
+    I["⑧ 점수 · 모델 · DA②"]
+    J["⑨ API · BE"]
+    K["⑩ 화면 · FE"]
 
-    classDef mine fill:#dff5e8,stroke:#198754,stroke-width:2px,color:#102a1d;
+    A --> B --> C --> D --> E --> F
+    F --> G
+    F --> H
+    G --> I
+    H --> I
+    I --> J --> K
+
+    classDef mine fill:#c8f0d8,stroke:#0f7a45,stroke-width:3px,color:#0a2418;
+    classDef other fill:#eef2f6,stroke:#64748b,stroke-width:2px,color:#1e293b;
     class B,C,D,E,F,G,H mine;
+    class A,I,J,K other;
 ```
 
-초록 = ① 담당. 수집 코드는 Collection, 점수·추천은 ②, API·UI는 BE·FE.
+**초록 = AI·데이터 ① 담당.** 수집은 Collection, 점수·추천은 DA②, API·UI는 BE·FE.
 
 ---
 
