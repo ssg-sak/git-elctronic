@@ -1,9 +1,0 @@
-﻿variable,measurement_role,construct_fit,current_evidence,allowed_use,threat,decision
-도착 시 실제 충전 성공,목표 개념 / 정답 라벨,직접,미수집,측정 기준으로 정의만 가능,도착 시점 상태·충전 시작 결과가 없음,보류
-현재 관측된 사용 가능 충전기 수,현재 시점의 직접 상태 지표,부분 직접,D1 observed availability; status/master key overlap 99.19%,즉시 후보 필터,도착 전 상태 변화·관측 누락,MVP 사용
-상태 갱신·관측 신선도,현재 상태 지표의 측정 품질,타당성 보정,상태 snapshot 1959개; 공백 11회,신뢰도 경고·후보 tier,신선도가 높아도 도착 시 비어 있다는 뜻은 아님,MVP 사용
-전체 충전기 수,대기·고장 충격 완화 능력,구조적 proxy,D1 total_chargers,동률 후보의 실패 위험 완화 보조,현재 가용 수·도착 시 상태를 직접 관측하지 않음,보조
-과거 이용량·회전율,장기 수요·이용 강도 proxy,간접,D1 history coverage 4.75%,표본이 있는 충전소의 장기 설명,200/4210만 연결; live availability와 시간 단위가 다름,보조
-주차 점유율,접근·주차 가능성 proxy,조건부 간접,realtime station links 428; 100m STRONG 표본 검토 필요,검증된 STRONG 공존 후보의 안내 문구,1km 주차장은 충전소 내부 주차장이 아닐 수 있음,직접 점수화 금지
-도시 링크속도·UTIC 돌발,이동 마찰·주의 상황 proxy,간접,UTIC live matches 108,경로 계산 전 경고·도시 맥락,경로별 ETA·도착 시간을 측정하지 않음,ETA 대체 금지
-ETA 후 예상 상태,목표와 가장 가까운 선행 예측치,직접에 가까움,D1 ETA values 0,현재 미사용,TMAP ETA·상태 전이·도착 결과 라벨이 없음,향후 핵심 측정치

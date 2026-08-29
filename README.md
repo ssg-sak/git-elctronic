@@ -40,7 +40,7 @@
 | 스키마 정본 | [`docs/data/스키마/`](./docs/data/스키마/) |
 | 팀공유 문서 | [`docs/팀공유/`](./docs/팀공유/) |
 | 집계 편향 그림 (70.9 / 54.0 / **66.4**) | [`chart_bias_comparison.png`](./docs/팀공유/상태수집_패널차트_20260809/figures/chart_bias_comparison.png) |
-| 타당성 WARN | [`WARN의미_쉽게읽기.md`](./docs/data/analysis/data_validity_assessment_20260809/WARN의미_쉽게읽기.md) |
+| 타당성 WARN | [`자동타당성_WARN의미_쉽게.md`](./docs/팀공유/자동타당성_WARN의미_쉽게.md) |
 | 피처 신뢰도 WARN | [`신뢰도WARN_의미_쉽게읽기.md`](./docs/팀공유/피처선정_최종_HGB_도착ETA_20260808/신뢰도WARN_의미_쉽게읽기.md) |
 | 팀 에이전트 규칙 | [`AGENTS.md`](./AGENTS.md) |
 

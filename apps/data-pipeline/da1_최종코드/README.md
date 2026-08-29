@@ -16,9 +16,7 @@
 | `07_공간조인_HOLD/` | 주차·UTIC·usage | `join_parking_team5.py` … |
 | `08_테스트/` | 핵심 테스트 | `test_gap_safe_panel.py` … |
 
-**총 49개 .py**
-
-Cursor: `Ctrl+P` → `da1_최종코드` 또는 파일명.
+**총 49개 .py** (확인용 모음. 실행·수정 정본은 `processing/` · `evaluation/`)
 
 ```
 da1_최종코드 | 작업코드 모아보기

@@ -61,3 +61,19 @@ docs/data/loops/**/logs/
 포폴용_주니어DA_BI_계획_20260809/
 cols.txt
 temp_vehicles.json
+
+# 로컬 전달 팩 (docs/팀공유와 중복)
+최종본_20260809/
+
+# 일자별 분석 덤프·아카이브 (GitHub 비대 — 로컬/조장 zip)
+docs/data/analysis/_archive/
+docs/data/analysis/*/
+docs/data/analysis/*.json
+!docs/data/analysis/README.md
+
+# 품질 중간 컷 (최신 20260809만 GitHub)
+docs/data/quality/*20260729*
+docs/data/quality/*20260804*
+
+# Cursor IDE 로컬 규칙 (기여자/산출물에 넣지 않음)
+.cursor/
