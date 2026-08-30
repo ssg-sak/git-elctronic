@@ -71,9 +71,25 @@ docs/data/analysis/*/
 docs/data/analysis/*.json
 !docs/data/analysis/README.md
 
-# 품질 중간 컷 (최신 20260809만 GitHub)
-docs/data/quality/*20260729*
-docs/data/quality/*20260804*
+# 품질·공간조인 산출 덤프 (README만 GitHub)
+docs/data/quality/**
+!docs/data/quality/*.md
+docs/data/spatial_join/**
+!docs/data/spatial_join/README.md
+
+# 일일 checkpoint·실험 리포트 덤프
+apps/data-pipeline/evaluation/personal/results/
+apps/data-pipeline/evaluation/personal/experiments/**/*.csv
+apps/data-pipeline/evaluation/personal/experiments/**/*.parquet
+apps/data-pipeline/evaluation/personal/experiments/**/*.png
+apps/data-pipeline/evaluation/personal/experiments/**/reports/**/*.json
+!**/stat_code_map.json
+
+# 팀공유 표·메타 덤프 (그림 PNG·md는 유지)
+docs/팀공유/**/*.csv
+docs/팀공유/**/*.json
+docs/팀공유/**/*.parquet
+docs/팀공유/강사미팅_DA1_20260811/보여줄_데이터/**/*.png
 
 # Cursor IDE 로컬 규칙 (기여자/산출물에 넣지 않음)
 .cursor/

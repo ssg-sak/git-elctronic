@@ -1,8 +1,7 @@
-# quality/ — 품질 메모
+# quality/
 
-| | |
+품질 검사 CSV/JSON 덤프는 GitHub에 올리지 않는다. 로컬·조장 zip에 있다.
+
+| 문서 | |
 |---|---|
 | [`목_이력_품질보고.md`](./목_이력_품질보고.md) | 목→실 걷어내기 이력 |
-| [`recommendation_input_quality_latest.json`](./recommendation_input_quality_latest.json) | 추천 입력용 loop1 기준시각·중복·시간 정합성 최신 검사 |
-
-`mock_*.csv|json` 스키마 샘플은 **2026-07-24 삭제** (D1 미사용).
